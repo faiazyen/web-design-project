@@ -183,14 +183,16 @@ Lookup lists used by filters and the quiz: `types[]` (workshop, show, social), `
 `id`, `slug`, `name`, `type` (instructor, dj, band, singer, show-team), `members[]` (for couples and teams), `country`, `styles[]`, `bio`, `featured`, `image{src, alt, credit, source}`.
 
 ### programmeItems (72 records)
-`id`, `slug`, `title`, `type`, `level`, `roleFocus`, `style`, `dayId`, `start`, `end`, `dayPart` (night when it starts at 20:00 or later, otherwise day), `venueId`, `performerIds[]`, `description`, `capacity`, `tags[]`.
+`id`, `slug`, `title`, `type`, `level`, `roleFocus`, `style`, `dayId`, `start`, `end`, `dayPart` (night when it starts at 20:00 or later, or before 06:00, otherwise day), `venueId`, `performerIds[]`, `description`, `capacity`, `tags[]`.
+
+A **programme day runs from 06:00 to 06:00**. A set that starts at 01:30 on Saturday morning belongs to Friday night, so its `dayId` is `day-fri`.
 
 ### Relations
 - `programmeItems.venueId` → `venues.id` (many to one).
 - `programmeItems.performerIds[]` → `performers.id` (many to many).
 - `programmeItems.dayId` → `days.id`.
 - A performer's sessions are **derived** from `programmeItems`, never stored on the performer.
-- Rules checked by `scripts/validate-data.py`: every performer appears in at least one item; no venue has overlapping items; no performer is in two places at once; all referenced ids exist; no duplicate ids or slugs; every item starts inside 25–27 June 2027 (late socials may end up to 06:00 the next morning); `dayId` and `dayPart` match `start`.
+- Rules checked by `scripts/validate-data.py`: every performer appears in at least one item; no venue has overlapping items; no performer is in two places at once; all referenced ids exist; no duplicate ids or slugs; every item belongs to a programme day of 25–27 June 2027 (06:00 to 06:00) and ends by 06:00 the next morning at the latest; `dayId` and `dayPart` match `start`; workshops start between 09:00 and 21:00, and beginner workshops start before 19:00.
 
 ## 8. Technical and Quality Principles
 
@@ -215,9 +217,9 @@ Lookup lists used by filters and the quiz: `types[]` (workshop, show, social), `
 
 | Role | Person | Tasks | Status |
 |---|---|---|---|
-| **A** | Faiaz Hossain Mazumder Yen | Claude Code work: repo, `CLAUDE.md`, skills, concept options and name check, schema, `data.json`, `validate-data.py`, `build-data.py`, `ai-log.md`, commits | Repo, rules, skills, name check, reference analysis and spec draft done. Schema, data and scripts in progress. |
-| **B** | Oscar Muz *(role assignment to confirm)* | Spec text and scenarios: review and edit sections 1–6 | Not yet done |
-| **C** | Sebastian Betancur *(role assignment to confirm)* | Critique of the spec against the brief, optional 5-slide deck, Moodle upload | Not yet done |
+| **A** | Faiaz Hossain Mazumder Yen | Claude Code work: repo, `CLAUDE.md`, skills, concept options and name check, schema, `data.json`, `validate-data.py`, `build-data.py`, `ai-log.md`, commits | Done: repo, rules, skills, name check, reference analysis, spec draft, data schema, `data.json` (64 performers, 72 items), `validate-data.py`, `build-data.py`, log entries. To do: log the final review and the commit. |
+| **B** | Oscar Muz | Spec text and scenarios: review and edit sections 1–6 | Not yet done |
+| **C** | Sebastian Betancur | Critique of the spec against the brief, optional 5-slide deck, Moodle upload | Not yet done |
 
 ### What was decided by the team (not by AI)
 - **Concept:** Faiaz and the team chose Valencia with the Dominican-roots theme from three options AI proposed. The reason is in section 1. The team call with B and C took place on 2026-10-19.
@@ -227,12 +229,15 @@ Lookup lists used by filters and the quiz: `types[]` (workshop, show, social), `
 ### Accepted, changed, rejected
 - **Rejected:** the first name "Raíces del Mar", because a web search found a real festival, RAICES, with the same word and a 5th edition. The 4-day length, because the brief asks for 3 days.
 - **Changed:** the spec structure was rewritten from a free-form draft to the 9 sections required by the brief. Detail URLs changed from `?id=` to `?slug=`. Timezone: the brief's schema prompt says Europe/Prague, which is for a Czech festival. Our festival is in Valencia, so we use Europe/Madrid. In June both are UTC+02:00.
-- **Accepted:** pending B and C review.
+- **Accepted:** the data schema (approved by Faiaz, with 3 venues and the 64-performer mix). The spec text is waiting for review by B and C.
 
 ### How we checked
 - Name: web searches for six names, then for the exact chosen name (no exact match found). To be repeated by hand.
 - Reference site: structure, navigation and missing search and breadcrumbs confirmed in the live page.
-- Data: `scripts/validate-data.py` will report overlaps and broken references. Errors found and fixes will be listed here with concrete examples after the first run.
+- Data: `python3 scripts/validate-data.py` checks counts, duplicate ids and slugs, all references, performers in at least one item, venue overlaps, performer double-booking, date range, `dayId` and `dayPart`, sensible workshop times, and real-artist names. **Real errors found:** the first run reported 9 errors. Eight late-night sets that start after midnight were given the wrong `dayId`, and one Sunday set started on 28 June. The cause was that our schema had no rule for after-midnight sets, so we added a programme day of 06:00 to 06:00. While fixing this we also found that a 01:30 set was labelled `day`, so `dayPart` now treats 00:00–05:59 as `night`. After the fix the run reports 0 errors.
+- Validator test: we broke the data on purpose in 11 ways (venue overlap, performer in two places, unknown performer id, duplicate slug, unused performer, beginner workshop at 02:00, real artist name, date outside the festival, wrong `dayPart`, wrong UTC offset, too few performers). The validator caught all 11.
+- Spot check: 10 random records were read by hand (for example item-021, a club social at 01:30 on Saturday, belongs to Friday night; item-026, a beginner workshop at 11:00). Times make sense for a bachata festival, with all beginner workshops starting between 09:30 and 15:30.
+- Scenarios: Scenario 1 has four Saturday beginner follow or both workshops, two of which do not clash. Scenario 2 has four Friday club sets with a DJ and an end time each. Scenario 3 has instructors teaching up to three workshops.
 - Pages: HTML and CSS validators, an accessibility check, and a manual keyboard pass, evidence in `docs/evidence/`.
 
 The step-by-step record is in `ai-log.md`.

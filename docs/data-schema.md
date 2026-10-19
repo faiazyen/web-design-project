@@ -1,6 +1,6 @@
 # data.json schema proposal (Step 1.4)
 
-**Status:** PROPOSAL. No data has been generated yet. Waiting for approval from Faiaz (A) before Step 1.5.
+**Status:** APPROVED by Faiaz (A) on 2026-10-19, with 3 venues and the 64-performer mix. Amended once after the first validator run: a programme day runs from 06:00 to 06:00 (see Global rules). Data generated and validated.
 
 Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts it into `web/js/data.js` as `window.FESTIVAL_DATA = {...};`.
 
@@ -9,7 +9,7 @@ Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts 
 - **Ids:** stable strings. `ven-001`…, `perf-001`…, `item-001`…, `day-fri|day-sat|day-sun`. Never reused.
 - **Slugs:** lowercase ASCII, hyphens, unique inside their entity. Used in `?slug=` detail URLs.
 - **Time:** ISO 8601 with offset, e.g. `2027-06-26T11:00:00+02:00`. Timezone `Europe/Madrid`, which is UTC+02:00 in June 2027. (The brief's prompt mentions Europe/Prague because it assumes a Czech festival. Ours is in Valencia, and both are UTC+02:00 in June.)
-- **Range:** every item **starts** between 2027-06-25 00:00 and 2027-06-27 23:59. An item may **end** up to 06:00 the next morning (late socials).
+- **Programme day:** a programme day runs from 06:00 to 06:00. A set that starts at 01:30 on Saturday morning belongs to **Friday** night (`dayId = day-fri`). Every item starts between 2027-06-25 06:00 and 2027-06-28 05:59 and ends no later than 06:00 the morning after its programme day.
 - **Fictional:** every person, band, venue and organisation is invented. No name may match a well-known real bachata artist.
 - **Images:** every image object has `src`, `alt`, `credit`, `source` (AI-generated or free licence).
 - **Derived, not stored:** a performer's sessions, a venue's sessions, and `dayPart` consistency are derived from `programmeItems`.
@@ -96,9 +96,9 @@ Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts 
 | `level` | enum | yes | `beginner`, `intermediate`, `advanced`, `all-levels` (shows and socials use `all-levels`) |
 | `roleFocus` | enum | yes | `lead`, `follow`, `both` |
 | `style` | enum | yes | from `categories.styles` |
-| `dayId` | string | yes | must match the date of `start` |
+| `dayId` | string | yes | the programme day of `start` (start minus 6 hours gives its date) |
 | `start`, `end` | datetime | yes | ISO 8601 with offset, `end` after `start` |
-| `dayPart` | enum | yes | `night` if `start` is 20:00 or later, otherwise `day` |
+| `dayPart` | enum | yes | `night` if `start` is 20:00 or later, or before 06:00. Otherwise `day`. |
 | `venueId` | string | yes | → `venues.id` |
 | `performerIds[]` | string[] | yes | → `performers.id`, at least one |
 | `description` | string | yes | |
@@ -249,8 +249,8 @@ Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts 
 | Scenario 2 (DJ tonight, end time) | `type=social`, `dayPart`, `performerIds`, `end`, `performers.type=dj` | yes |
 | Scenario 3 (search an instructor) | `performers.name`, derived sessions | yes |
 
-## Questions before generating data
+## Decisions on the open questions
 
-1. Is the schema approved as written?
-2. Are three venues enough (Arena Stage on the beach, a seaside pavilion for workshops, an indoor club for night socials)? The brief requires at least 2.
-3. Performer mix for 64: roughly 22 instructor couples or solos, 14 DJs, 12 bands or singers, 16 show teams. Is that acceptable?
+1. Schema approved as written, then amended once (programme-day rule above).
+2. Three venues: Arena Stage (beach), Pabellón Brisa (pavilion), Marea Club (club).
+3. Performer mix for 64: 22 instructors, 14 DJs, 6 bands, 6 singers, 16 show teams.
