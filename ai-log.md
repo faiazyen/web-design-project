@@ -230,3 +230,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none.
 - Rejected (what and why): none.
 - Errors/limitations found: no source link was recorded. If the teacher asks, Oscar should be ready to show where he checked.
+
+## 2026-10-19 – Bios decision – Oscar Muz (B), entered by Claude Code
+- Tool/model: none (decision by Oscar, chosen as multiple choice)
+- Prompt (short): Oscar was asked whether to send his own bios, let the AI rewrite them, or keep the current ones. He chose to keep the current bios.
+- What AI produced: an update of Oscar's status and subsection in the spec ("bios stay as they are for Seminar 2"). This replaces the earlier note that Oscar would rewrite some bios.
+- How we verified it: `validate-data.py` still passes; `data.json` was not changed.
+- Accepted: the current bios, which Oscar judged good enough for Seminar 2.
+- Modified (what and why): none.
+- Rejected (what and why): rewriting the bios now, to save time before submission.
+- Errors/limitations found: the bios are still short and formulaic. Slide 5 and the spec both say so honestly.
