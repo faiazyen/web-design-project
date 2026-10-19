@@ -72,7 +72,7 @@ Drafted by the AI from its own history. **C: confirm each line is true and add y
 | # | First AI draft | Final | Why |
 |---|---|---|---|
 | 1 | Free-form structure (identity, audience, sitemap, navigation, search, "open sections") | The sections the course requires, plus interactive functions and the data model | Draft did not match the required structure. Sebastian later removed the technical principles (SEO, AEO, GEO, WCAG) and the reference-site text because the course did not ask for them. |
-| 2 | Name "Raíces del Mar", 5th edition | "Latino Mar Bachata Festival", 1st edition | A real festival, RAICES (5th edition), uses the same word and theme |
+| 2 | Name "Raíces del Mar", 5th edition | "Atardecer Bachata Festival", 1st edition | A real festival, RAICES (5th edition), uses the same word and theme |
 | 3 | 4 days (24–27 June) | 3 days (25–27 June 2027) | The team brief asks for a 3-day range |
 | 4 | Pages "Artists" and "Workshops" | Programme, Performers, Venues | Required sitemap items |
 | 5 | Detail pages by `?id=` | `?slug=` | The brief asks for slugs in detail URLs |
@@ -91,7 +91,7 @@ Drafted by the AI from its own history. **C: confirm each line is true and add y
 
 | # | Item | Owner | Done |
 |---|---|---|---|
-| 1 | Search "Latino Mar Bachata Festival" online by hand and note the date | C | ☑ S.B. 2026-10-19 |
+| 1 | Search "Atardecer Bachata Festival" online by hand and note the date | C | ☑ S.B. 2026-10-19 |
 | 2 | Read all bios and descriptions in `data.json` and rewrite any that sound generic | B | ☑ S.B. 2026-10-19 |
 | 3 | Check the 2019 UNESCO line and the airport metro time (Roots and Travel text) | B | ☑ S.B. 2026-10-19 |
 | 4 | Fill your own words into section 9 of the spec | B and C | ☑ S.B. 2026-10-19 |

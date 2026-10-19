@@ -1,4 +1,4 @@
-# Project Specification — Latino Mar Bachata Festival
+# Project Specification — Atardecer Bachata Festival
 
 CZU Web Design course, Seminar 2 submission. Fictional festival.
 **Team:** Faiaz Hossain Mazumder Yen (A), Oscar Muz (B), Sebastian Betancur (C).
@@ -8,12 +8,14 @@ CZU Web Design course, Seminar 2 submission. Fictional festival.
 
 | Field | Decision |
 |---|---|
-| **Name** | Latino Mar Bachata Festival |
+| **Name** | Atardecer Bachata Festival |
 | **Edition / year** | 1st edition ("Primera Ola"), 2027 |
 | **Location** | Valencia, Spain. Open-air stage on the beachfront, a seaside pavilion for workshops, and an indoor club for night socials. |
 | **Date range** | Friday 25 June – Sunday 27 June 2027 (3 days) |
 | **Type / character** | Social-first, beginner-friendly Latin bachata festival. **Sea by day, club by night:** outdoor dancing on the sand in the daytime, indoor socials with DJs after dark. Workshops by level, evening shows, late socials. |
 | **Main genres / themes** | **Genres:** bachata dominicana (traditional), bachata sensual, bachata moderna, plus salsa socials. **Themes:** the sea, the Dominican roots of bachata, dancers from many countries meeting in one city. |
+
+**The name:** *Atardecer* is Spanish for sunset. The sunset social on the sand is the festival's signature moment each day.
 
 **Why this concept (team reason, from Faiaz):** We want a Latin bachata festival where people from different parts of the world come to dance. Valencia is a clean, modern Spanish city with good access to the sea, so we can dance outdoors by the water and indoors at night. There are bars, artists, shows and DJs playing bachata, Latin American music and salsa.
 
@@ -24,7 +26,7 @@ CZU Web Design course, Seminar 2 submission. Fictional festival.
 **What it is for.** The website helps dancers decide to come, plan their three days, and find practical information. It is the only official source for the programme, the artists, the venues and the tickets.
 
 **Main objectives**
-1. Show clearly what Latino Mar is: dates, city, mood, who it is for.
+1. Show clearly what Atardecer is: dates, city, mood, who it is for.
 2. Let visitors build a personal schedule (workshops, socials, shows) without time clashes.
 3. Make every artist, venue and session findable by browsing, filtering or search.
 4. Give beginners the confidence to come (levels, role focus, what to expect, code of conduct).
@@ -212,11 +214,11 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
 
 ### What was decided by the team (not by AI)
 - **Concept:** Faiaz and the team chose Valencia with the Dominican-roots theme from three options AI proposed. The reason is in section 1. The team call with B and C took place on 2026-10-19.
-- **Name:** AI proposed six names. Three were dropped because real events already use them (Ola Latina, Sal y Sol, Brisa Bachata). The team chose "Latino Mar Bachata Festival".
+- **Name:** the first name, "Raíces del Mar", was dropped because of the real festival RAICES. The second name was dropped after Sebastian (C) searched it and found a festival with a similar name, and judged it too generic. The team then chose "Atardecer Bachata Festival" from options AI had searched. Atardecer is Spanish for sunset.
 - **Dates and extras:** 3 days, 25–27 June 2027. Roots page and sustainability note kept. Partners row, Volunteers page, and talks as item types rejected.
 
 ### Accepted, changed, rejected
-- **Rejected:** the first name "Raíces del Mar", because a web search found a real festival, RAICES, with the same word and a 5th edition. The 4-day length, because the brief asks for 3 days.
+- **Rejected:** the first name "Raíces del Mar", because a web search found a real festival, RAICES, with the same word and a 5th edition. The second name, "Latino Mar Bachata Festival", because Sebastian found a festival with a similar name. 72 programme items, cut to 65, which is closer to the minimum of 60. The 4-day length, because the brief asks for 3 days.
 - **Changed:** the spec structure was rewritten from a free-form draft to the sections the course requires (identity, purpose, target groups, information architecture, scenarios), plus interactive functions and the data model. Detail URLs changed from `?id=` to `?slug=`. Timezone: the brief's schema prompt says Europe/Prague, which is for a Czech festival. Our festival is in Valencia, so we use Europe/Madrid. In June both are UTC+02:00.
 - **Accepted:** the data schema (approved by Faiaz, with 3 venues and the 64-performer mix). The spec text was checked by Sebastian (C) by hand. Oscar (B) is still reviewing it.
 

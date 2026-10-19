@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate data.json (Latino Mar Bachata Festival).
+"""Validate data.json (Atardecer Bachata Festival).
 
 Usage:  python3 scripts/validate-data.py [path/to/data.json]
 Exit code 0 = all checks pass, 1 = at least one error.

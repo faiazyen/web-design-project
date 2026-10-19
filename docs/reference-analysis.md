@@ -92,7 +92,7 @@ Observed in the browser and from Firecrawl branding data. Treat colour and font 
 - **Confirmed gaps:** there is **no search field and no breadcrumb** anywhere (checked in the live DOM). Both are required for us.
 - **Stack:** Next.js with Tailwind. Not allowed for us.
 
-## 8. What our festival is missing: ideas for the "Latino Mar" vibe
+## 8. What our festival is missing: ideas for the "Atardecer" vibe
 
 Ideas only. Each one that enters the spec needs approval, because the spec is binding.
 

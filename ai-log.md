@@ -170,3 +170,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): the technical rules (no build, `file://`, semantic HTML, WCAG, SEO) are no longer in the spec, but they stay in `CLAUDE.md` as the project's implementation rules, so later phases still follow them. Sebastian's status says "To do: Moodle upload" because the upload has not happened yet.
 - Rejected (what and why): nothing.
 - Errors/limitations found: the instruction "the third of the 9 sections, Use of AI and Verification, should be removed" conflicts with keeping the roles table inside that section, so the section was kept in short form and the question was sent back to the team. The record of the closest real festivals is still in this log (name search entries).
+
+## 2026-10-19 – Festival renamed to Atardecer Bachata Festival – Claude Code, decided by the team (Sebastian proposed the change)
+- Tool/model: Claude Code (Sonnet 5.5); Firecrawl web search
+- Prompt (short): Sebastian found a festival with a name similar to "Latino Mar Bachata Festival" and called it too generic; the team asked for a Latin-word name. The team picked "Atardecer Bachata Festival".
+- What AI produced: candidate names with exact web searches; a repo-wide rename (spec, data, XML, `data.js`, deck, README, `CLAUDE.md`, docs, checklist); the new slug `atardecer-bachata-festival-2027` and email domain `atardecer.example`.
+- How we verified it: searched the exact name: no festival called "Atardecer Bachata Festival" appeared; results were songs and posts that use the word (for example "Bachata al Atardecer", "Bachata Sunset"). A search of the repo for the old name now finds it only in older log entries, which are kept as history. `validate-data.py` passes; `json-to-xml.py` confirms the XML matches; the deck file validates and slide 1 was re-read.
+- Accepted: the name "Atardecer Bachata Festival" (Spanish for sunset; fits the daily sunset social).
+- Modified (what and why): the spec's name story now lists both rejected names and the reason. Deck slides 1 and 5 say "renamed twice".
+- Rejected (what and why): Orilla, Cala and Ola y Sal were kept in reserve; Marejada, Oleaje, Brisamar, Ritmo y Raíz were rejected because they already exist.
+- Errors/limitations found: "Atardecer" is a common word, so the name is distinctive only with "Bachata Festival" after it, and searches only return excerpts. Sebastian must search the name by hand (checklist item 31 is still open).
