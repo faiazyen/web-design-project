@@ -161,7 +161,7 @@ Scenarios 1, 2 and 3 are the **KEY** scenarios.
 
 ## 7. Data Model
 
-`data.json` is the single source of truth. Entity fields below. The full schema with one example record per entity is in `docs/data-schema.md`.
+`data.json` is the single source of truth. `data.xml` is generated from it by `scripts/json-to-xml.py` for the Seminar 2 submission, because the assignment accepts XML or JSON and the submission list names both. `scripts/json-to-xml.py` also checks that both files hold the same ids, counts and relations. Entity fields below. The full schema with one example record per entity is in `docs/data-schema.md`.
 
 Top-level keys: `festival`, `days`, `categories`, `venues`, `performers`, `programmeItems`.
 
@@ -217,7 +217,7 @@ A **programme day runs from 06:00 to 06:00**. A set that starts at 01:30 on Satu
 
 | Role | Person | Tasks | Status |
 |---|---|---|---|
-| **A** | Faiaz Hossain Mazumder Yen | Claude Code work: repo, `CLAUDE.md`, skills, concept options and name check, schema, `data.json`, `validate-data.py`, `build-data.py`, `ai-log.md`, commits | Done: repo, rules, skills, name check, reference analysis, spec draft, data schema, `data.json` (64 performers, 72 items), `validate-data.py`, `build-data.py`, log entries. To do: log the final review and the commit. |
+| **A** | Faiaz Hossain Mazumder Yen | Claude Code work: repo, `CLAUDE.md`, skills, concept options and name check, schema, `data.json`, `validate-data.py`, `build-data.py`, `ai-log.md`, commits | Done: repo, rules, skills, name check, reference analysis, spec draft, data schema, `data.json` (64 performers, 72 items), `data.xml`, `validate-data.py`, `build-data.py`, `json-to-xml.py`, the 5-slide presentation file, log entries. |
 | **B** | Oscar Muz | Spec text and scenarios: review and edit sections 1–6 | Not yet done |
 | **C** | Sebastian Betancur | Critique of the spec against the brief, optional 5-slide deck, Moodle upload | Not yet done |
 
@@ -236,8 +236,13 @@ A **programme day runs from 06:00 to 06:00**. A set that starts at 01:30 on Satu
 - Reference site: structure, navigation and missing search and breadcrumbs confirmed in the live page.
 - Data: `python3 scripts/validate-data.py` checks counts, duplicate ids and slugs, all references, performers in at least one item, venue overlaps, performer double-booking, date range, `dayId` and `dayPart`, sensible workshop times, and real-artist names. **Real errors found:** the first run reported 9 errors. Eight late-night sets that start after midnight were given the wrong `dayId`, and one Sunday set started on 28 June. The cause was that our schema had no rule for after-midnight sets, so we added a programme day of 06:00 to 06:00. While fixing this we also found that a 01:30 set was labelled `day`, so `dayPart` now treats 00:00–05:59 as `night`. After the fix the run reports 0 errors.
 - Validator test: we broke the data on purpose in 11 ways (venue overlap, performer in two places, unknown performer id, duplicate slug, unused performer, beginner workshop at 02:00, real artist name, date outside the festival, wrong `dayPart`, wrong UTC offset, too few performers). The validator caught all 11.
+- XML: `python3 scripts/json-to-xml.py` writes `data.xml` and re-reads it. It confirms 3 venues, 64 performers and 72 programme items, identical ids, and that every venue and performer reference resolves.
 - Spot check: 10 random records were read by hand (for example item-021, a club social at 01:30 on Saturday, belongs to Friday night; item-026, a beginner workshop at 11:00). Times make sense for a bachata festival, with all beginner workshops starting between 09:30 and 15:30.
 - Scenarios: Scenario 1 has four Saturday beginner follow or both workshops, two of which do not clash. Scenario 2 has four Friday club sets with a DJ and an end time each. Scenario 3 has instructors teaching up to three workshops.
 - Pages: HTML and CSS validators, an accessibility check, and a manual keyboard pass, evidence in `docs/evidence/`.
+
+### Limits of our checking
+- The spec text was drafted by AI and checked by AI against the brief. That alone is not validation. The independent check is the checklist in `review/spec-critique-checklist.md`, which Oscar Muz (B) and Sebastian Betancur (C) tick by hand.
+- Bios and descriptions in `data.json` are short and need a human rewrite. Image files do not exist yet.
 
 The step-by-step record is in `ai-log.md`.

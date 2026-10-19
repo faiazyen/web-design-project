@@ -130,3 +130,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none.
 - Rejected (what and why): none.
 - Errors/limitations found: B has not yet reviewed the spec text and C has not yet written the critique (step 1.3), so the "changed versus the AI draft" list is still to be written by them.
+
+## 2026-10-19 – Strict audit against the official Seminar 2 requirements – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), scripts in `scripts/`, LibreOffice render of the deck
+- Prompt (short): audit everything against the official Seminar 1/2 requirements and fix what is missing so the Seminar 2 deliverables are complete.
+- What AI produced: an audit table; `data.xml` and `scripts/json-to-xml.py`; `presentation.pptx` (5 slides, speaker notes); `docs/image-prompts.md`; `review/spec-critique-checklist.md`; a rewritten `README.md`; small edits to the spec (data.xml, limits of our checking).
+- How we verified it: `python3 scripts/validate-data.py` (0 errors); `python3 scripts/json-to-xml.py` (3 venues, 64 performers, 72 items, ids and references match JSON); `xmllint` finds `data.xml` well-formed; deck file passes the pptx validator; every slide was rendered and read as an image.
+- Accepted: the deliverable set (spec, data.json, data.xml, deck).
+- Modified (what and why): slide 1 had a heading that wrapped over its text and several slides had large empty areas; fixed by shortening the heading and raising body text to 17–18 pt.
+- Rejected (what and why): nothing new.
+- Errors/limitations found by the audit: (1) the official text says groups of 4, but only 3 people are named. Open question. (2) The submission list names `data.xml` and `data.json`, and we only had JSON. Fixed. (3) `data.json` pointed to `docs/image-prompts.md`, which did not exist. Fixed. (4) No presentation file existed, and only submitted files may be presented. Fixed. (5) Our own check of the spec against the brief was done by the AI. That is not valid verification, so a manual checklist for B and C was written. Still open until they tick it. (6) Bios and descriptions need a human pass; images do not exist yet; the name search must be repeated by hand.
