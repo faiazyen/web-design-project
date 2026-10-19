@@ -78,3 +78,39 @@ The spec is binding, so these are proposals to approve before they enter `projec
 ## 6. Sources checked
 
 Pages fetched: `/`, `/about`, `/team`, `/venue`, `/nations`, `/ambassadors`, `/volunteers`, `/roundtable`, `/summit`, `/royal-rumble`, `/masterclasses`, `/press-corner`, `/responsibility`, `/we-care`, `/promote`, `/tickets`, `/program`, `/getting-around`, `/accommodation`. Several were read as summaries, so wording, not structure, may differ from the live page.
+
+## 7. Visual and navigation findings (added after browser inspection, 2026-10-19)
+
+Observed in the browser and from Firecrawl branding data. Treat colour and font values as approximate (extractor confidence about 70%).
+
+- **Mood:** dark, high-energy, nightclub. Near-black background (`rgb(10,0,0)`), warm amber accent (`#FFB347`, theme colour `#ff9900`), cream links (`#D3BDA8`).
+- **Type:** League Spartan for headings (hero h1 about 128px), Montserrat for body text. Big, confident headline, wide letter-spaced small caps for labels (dates, venue, "Full Pass").
+- **Shapes:** fully rounded pill buttons, 3px base radius on cards.
+- **Hero:** full-bleed party photo with a dark overlay, an eyebrow chip ("Thank you, BGF26 · See you in 2027"), a Spanish headline (*¿Repetimos?*), one line of copy, a dates-and-venue row, then a price card with one primary button.
+- **Navigation:** logo plus four dropdown groups (**Festival, Travel, About Us, Support**) and one icon button. Desktop only was checked; the mobile menu was not.
+- **Cookie banner:** appears on first load with *Customize*, *Reject All* and *Accept All*. Rejecting is one click, which we should copy as a principle if we ever need a banner. Our site stores only the visitor's own schedule locally, so a short plain-language storage notice is enough.
+- **Confirmed gaps:** there is **no search field and no breadcrumb** anywhere (checked in the live DOM). Both are required for us.
+- **Stack:** Next.js with Tailwind. Not allowed for us.
+
+## 8. What our festival is missing: ideas for the "Latino Mar" vibe
+
+Ideas only. Each one that enters the spec needs approval, because the spec is binding.
+
+| # | Idea | Why it adds to the vibe | Fits our rules? |
+|---|---|---|---|
+| 1 | **Day / Night mode** for the whole site: sand-and-turquoise by day, deep navy and amber by night, plus a toggle and respect for the system setting | Makes "sea by day, club by night" visible on every page, not just in the text | Yes, CSS variables and a few lines of JS. Both themes must reach AA contrast. |
+| 2 | **Day / Night badge and filter** on every programme item | Beginners find beach workshops, night owls find club socials | Yes, uses the existing filter |
+| 3 | **Spanish-flavoured microcopy** (headline, button labels, section eyebrows) with English meaning always present | Gives personality like the reference's *¿Repetimos?* without hurting accessibility | Yes. Add `lang="es"` on Spanish phrases. |
+| 4 | **"Primera Ola" (first wave)** as the name of the 1st edition | A built-in story for a new festival | Content only |
+| 5 | **Sunset Social** as a daily signature event at the beach stage | A recognisable ritual the site can repeat on Home, Programme and Venue | Data only |
+| 6 | **Interactive SVG venue map** with clickable zones (beach stage, pavilion, club, workshop hall) | Matches the reference's strongest feature, built with plain SVG and JS | Yes, works from `file://` |
+| 7 | **"Which level am I?"** mini-quiz for beginners | Serves the beginner-friendly goal and the first-timer scenario | Yes, plain JS |
+| 8 | **Level and role tags with icons**, never colour alone (beginner, intermediate, advanced, lead, follow) | Clear, and accessible | Yes |
+| 9 | **Roots timeline** on the Roots page: origins of bachata dominicana, instruments (guitar, requinto, güira), and its UNESCO listing (*date and wording to be verified before use*) | Our unique angle. Gives real cultural depth, not generic party copy | Content, simple list or CSS timeline |
+| 10 | **Countdown** to opening night on Home | Energy and urgency | Yes, plain JS |
+| 11 | **Stats strip** (days, venues, artists, sessions, countries) generated from `data.json` | Keeps numbers always correct | Yes, uses `data.js` |
+| 12 | **My Programme with clash warnings and a downloadable calendar file** | Strong, useful interactive function | Yes. `localStorage` and a generated file download both work from `file://`. |
+| 13 | **"What to pack and wear"** card (dance shoes on sand, sun, night dress code) | Practical, adds character | Content |
+| 14 | **Image credit on every photo** | Required by our rules and mirrors the reference's credit lines | Yes |
+
+**Identity guardrails so we do not copy the reference:** different palette (light-first with a night mode, turquoise, coral and sand rather than black and amber), different fonts (free-licensed and bundled locally, so the site works offline), different structure (Programme, Performers, Venues and My Programme as first-class pages), and original copy throughout.

@@ -48,3 +48,14 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none yet.
 - Rejected (what and why): `/terms`, `/privacy` and `/hq` were not analysed (legal text and a private dashboard).
 - Errors/limitations found: Firecrawl rate-limited the first batch (`429`), so nine pages were retried, and the last 11 pages were read as summaries, not full text. The reference mixes 2026 and 2027 data (ticket price €199 vs €140). Visual design, fonts and the interactive maps were not inspected. `scripts/validate-data.py` and `scripts/build-data.py`, which the rules and the quality-gate skill call, do not exist yet.
+
+## 2026-10-19 – Name check, concept decisions, deeper reference analysis – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), Firecrawl search and scrape, built-in browser
+- Prompt (short): check the name for clashes; suggest new names; analyse the Geneva site further for visual identity and ideas we are missing.
+- What AI produced: six candidate names; a rename recommendation; sections 7 and 8 added to `docs/reference-analysis.md` (visual and navigation findings, 14 vibe ideas).
+- How we verified it: name searches (5 results each) dropped three names that already exist (Ola Latina, Sal y Sol, Brisa Bachata) and found a real festival "RAICES" (5th edition) that clashed with our first name. The Geneva navigation, fonts and the missing search and breadcrumbs were checked in the live page DOM, not only from scraped text. Excerpt-level search is not proof, so the team must still search the chosen name by hand.
+- Accepted (team decisions, by Faiaz): name **Latino Mar Bachata Festival**; dates Fri 25 – Sun 27 June 2027; genres bachata dominicana, sensual, moderna plus salsa; character social-first, beginner-friendly, sea by day and club by night; keep the Roots page and the sustainability note; drop the partners row, the Volunteers page and talks and live music as item types. Team concept call with B and C: done.
+- Reason for the concept (Faiaz, in own words): a Latin bachata festival where people from around the world come to dance. Valencia is a clean, modern Spanish city with good sea access, so there is outdoor dancing by the sea and indoor dancing at night, with bars, artists, shows and DJs playing bachata, Latin American music and salsa.
+- Modified: none yet.
+- Rejected: the name "Raíces del Mar" (clashes with the real festival RAICES); the 4-day length (brief asks for 3 days).
+- Errors/limitations found: browser inspection did not show the dropdown contents except Support, which lists FAQ. The earlier JSON extraction of the nav menu disagreed with the live page and was discarded. Open: names of team members B and C not yet provided; edition number (1st) not yet confirmed.
