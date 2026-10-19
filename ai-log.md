@@ -38,3 +38,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - **AI did:** created the required folder structure, `CLAUDE.md` with the project rules, and this log.
 - **Checked:** reviewed the rules against the brief (no build, `file://`, semantic HTML, AI logging).
 - **Accepted:** yes.
+
+## 2026-10-19 – Install project rules and skills; analyse reference site – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), Firecrawl scrape (19 pages of bachatagenevafestival.com)
+- Prompt (short): "Inspect this festival website A to Z, every page and its structure"; paste of CLAUDE.md rules and the ai-log and quality-gate skills.
+- What AI produced: `CLAUDE.md` (replaced my earlier version with the supplied rules, kept the public-repo and commit-and-push rule), `.claude/skills/ai-log/SKILL.md`, `.claude/skills/quality-gate/SKILL.md`, and `docs/reference-analysis.md` (sitemap, patterns, gaps, proposed adaptations).
+- How we verified it: page lists and links came from the scraped home-page link list; 19 of the linked pages returned HTTP 200. Facts in the analysis were checked against the scraped text. Not yet checked visually in a browser.
+- Accepted: pending review by the user.
+- Modified (what and why): none yet.
+- Rejected (what and why): `/terms`, `/privacy` and `/hq` were not analysed (legal text and a private dashboard).
+- Errors/limitations found: Firecrawl rate-limited the first batch (`429`), so ten pages were retried and read as summaries, not full text. The reference mixes 2026 and 2027 data (ticket price €199 vs €140). Visual design, fonts and the interactive maps were not inspected. `scripts/validate-data.py` and `scripts/build-data.py`, which the rules and the quality-gate skill call, do not exist yet.
