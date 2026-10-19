@@ -47,4 +47,4 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Accepted: pending review by the user.
 - Modified (what and why): none yet.
 - Rejected (what and why): `/terms`, `/privacy` and `/hq` were not analysed (legal text and a private dashboard).
-- Errors/limitations found: Firecrawl rate-limited the first batch (`429`), so ten pages were retried and read as summaries, not full text. The reference mixes 2026 and 2027 data (ticket price €199 vs €140). Visual design, fonts and the interactive maps were not inspected. `scripts/validate-data.py` and `scripts/build-data.py`, which the rules and the quality-gate skill call, do not exist yet.
+- Errors/limitations found: Firecrawl rate-limited the first batch (`429`), so nine pages were retried, and the last 11 pages were read as summaries, not full text. The reference mixes 2026 and 2027 data (ticket price €199 vs €140). Visual design, fonts and the interactive maps were not inspected. `scripts/validate-data.py` and `scripts/build-data.py`, which the rules and the quality-gate skill call, do not exist yet.
