@@ -150,3 +150,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): closes the open question from the audit entry about "groups of 4". If the course adds a fourth member, the spec header, `CLAUDE.md` and slide 5 need updating.
 - Rejected (what and why): none.
 - Errors/limitations found: none new.
+
+## 2026-10-19 – Sebastian's review round: 65 items, checklist ticks, name search – Claude Code, on request of Sebastian Betancur (C)
+- Tool/model: Claude Code (Sonnet 5.5); Firecrawl web search; the one-off generator in the session scratchpad
+- Prompt (short): Sebastian (C) asked to cut programme items from 72 to 65 (closer to the minimum of 60), reported that he checked the checklist by hand, and reported that the name needs to change because a similar festival exists.
+- What AI produced: `data.json` regenerated with 65 items (36 workshops, 20 socials, 9 shows) and 64 performers; `data.xml`, `web/js/data.js` rebuilt; deck and docs updated to 65; checklist ticks entered; candidate festival names with web searches.
+- How we verified it: `validate-data.py` 0 errors (minimum items now 65); `json-to-xml.py` match; every performer still appears in an item; spot check repeated on 10 random records of the final data.
+- Accepted: 65 items; Sebastian's finding that the name is too generic and needs a new Latin-word name.
+- Modified (what and why): the 7 socials removed were extra late practicas and late sets, so no performer lost all their sessions and the club schedule that the FAQ and scenarios describe is unchanged. Ticks on the checklist were entered by Claude on Sebastian's verbal confirmation because he cannot edit `.md` files; item 31 (name search) stays open.
+- Rejected (what and why): candidate names that already exist: Ola Latina, Sal y Sol, Brisa Bachata, Marejada (a Latin music event and venue), Oleaje (a dance act at a salsa and bachata festival), Brisamar (clubs and bars), Ritmo y Raíz (a dance school offering bachata workshops).
+- Errors/limitations found: **the hand spot check found a real error the validator cannot see:** a beginner specialist (Jimena Cruz) was co-teaching an advanced lead class, and instructors who teach leaders were teaching a follower workshop. Fixed with teaching-fit rules in the generator (0 mismatches afterwards). The spec's spot-check text had cited item ids from the old 72-item version; it was rewritten to match the new data. Name searches are excerpt-only (5 results each).
