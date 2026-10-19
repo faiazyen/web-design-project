@@ -213,6 +213,7 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
   - The performer bios in the data are too formulaic. Oscar decided to rewrite some of them in his own words.
   - He agreed to keep this section short and to cut the sitemap to 12 pages.
   - He found no errors in the spec text or the scenarios.
+  - He checked two facts in the data himself on 2026-10-19: the 2019 UNESCO listing in the Roots timeline and the airport metro time in the Travel text. Both are correct.
 - **Accepted without changes:** the spec text, the five scenarios, the data schema, the three venues and the validator results.
 - **What the AI got wrong or overdid:** it wrote generic, repetitive performer bios, and it added more than the teacher asked (17 pages, 7 interactive functions and a technical section).
 

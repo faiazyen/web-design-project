@@ -220,3 +220,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none yet. Oscar chose to rewrite some featured performer bios in his own words; they are still to be sent and added to `data.json`.
 - Rejected (what and why): none.
 - Errors/limitations found: Oscar's status says "to do: rewrite bios". The UNESCO 2019 line and the airport metro time still need a fact check. The answers are multiple choice, so the wording is Claude's and Oscar should read his subsection.
+
+## 2026-10-19 – Fact check of two data lines – Oscar Muz (B), entered by Claude Code
+- Tool/model: none (manual look-up by Oscar)
+- Prompt (short): Claude asked Oscar to confirm the 2019 UNESCO line in the Roots timeline and the airport metro time in the Travel text.
+- What AI produced: nothing new; the two lines were written by the AI earlier from general knowledge and flagged as unchecked.
+- How we verified it: Oscar looked both facts up himself and reported on 2026-10-19 that both are right. Claude has not seen his sources, so the check is Oscar's, not Claude's.
+- Accepted: both lines stay unchanged in `data.json`.
+- Modified (what and why): none.
+- Rejected (what and why): none.
+- Errors/limitations found: no source link was recorded. If the teacher asks, Oscar should be ready to show where he checked.
