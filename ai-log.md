@@ -200,3 +200,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none.
 - Rejected (what and why): none.
 - Errors/limitations found: web searches cannot prove that no small local event uses a name.
+
+## 2026-10-19 – Sebastian's section 8 answers – Sebastian Betancur (C), written into the spec by Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), questions answered by Sebastian as multiple choice
+- Prompt (short): Claude asked Sebastian what he checked, found, decided, accepted and saw the AI get wrong; he chose the options.
+- What AI produced: the "Sebastian's part (C)" subsection of section 8 in the spec, using only the options Sebastian ticked.
+- How we verified it: each line matches a choice Sebastian made in this session; the spec facts (65 items, 12 pages, final name) match the files in the repo.
+- Accepted: Sebastian ticked: spec and data checked against the brief; found the name too similar, 72 items too many, the spec trimmed, the sitemap cut to 12 pages; accepted the target groups, the scenarios and the presentation; saw the AI overdo names, scope, data count and bios.
+- Modified (what and why): none.
+- Rejected (what and why): none.
+- Errors/limitations found: the answers are multiple choice, so the wording is Claude's. Sebastian should read his subsection and change anything that is not how he would say it.
