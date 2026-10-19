@@ -195,7 +195,7 @@ Claude Code (Sonnet 5.5) was used for the specification draft, the data schema, 
 | Role | Person | Tasks | Status |
 |---|---|---|---|
 | **A** | Faiaz Hossain Mazumder Yen | Claude Code work: repo, `CLAUDE.md`, skills, concept options and name check, schema, `data.json`, `validate-data.py`, `build-data.py`, `ai-log.md`, commits | Done: repo, rules, skills, name check, spec draft, data schema, `data.json` (64 performers, 65 items), `data.xml`, `validate-data.py`, `build-data.py`, `json-to-xml.py`, the 5-slide presentation file, log entries. |
-| **B** | Oscar Muz | Spec text and scenarios: review and edit sections 1–6 | Not yet done |
+| **B** | Oscar Muz | Spec text and scenarios: review and edit sections 1–6 | 🟢 Done (2026-10-19): read sections 1–6 and the scenarios, checked them against the data and the slides he presents, no changes needed. To do: rewrite the featured performers' bios in his own words. |
 | **C** | Sebastian Betancur | Critique of the spec and data against the brief, name check, Moodle upload | 🟢 Done (2026-10-19): checked every item of the critique checklist by hand, searched the name and found a similar festival, asked for the name change and for 65 programme items. To do: Moodle upload. |
 
 ### Presentation split
@@ -206,6 +206,15 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
 | 1 Festival, purpose and main decisions; 5 Use of AI and verification | Faiaz Hossain Mazumder Yen (A) |
 | 2 Target groups; 3 Information architecture | Oscar Muz (B) |
 | 4 Two key scenarios | Sebastian Betancur (C) |
+
+### Oscar's part (B)
+- **Checked:** Oscar read the spec sections 1 to 6 (identity, purpose, target groups, sitemap, interactive functions, scenarios), checked the scenarios against the data files, looked through `data.json`, and checked slides 2 and 3, which he presents.
+- **Found and decided:**
+  - The performer bios in the data are too formulaic. Oscar decided to rewrite some of them in his own words.
+  - He agreed to keep this section short and to cut the sitemap to 12 pages.
+  - He found no errors in the spec text or the scenarios.
+- **Accepted without changes:** the spec text, the five scenarios, the data schema, the three venues and the validator results.
+- **What the AI got wrong or overdid:** it wrote generic, repetitive performer bios, and it added more than the teacher asked (17 pages, 7 interactive functions and a technical section).
 
 ### Sebastian's part (C)
 - **Checked:** Sebastian read the spec and the data against the teacher's requirements and ticked every item of the critique checklist by hand (`review/spec-critique-checklist.md`, 2026-10-19).
