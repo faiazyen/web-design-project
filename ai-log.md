@@ -140,3 +140,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): slide 1 had a heading that wrapped over its text and several slides had large empty areas; fixed by shortening the heading and raising body text to 17–18 pt.
 - Rejected (what and why): nothing new.
 - Errors/limitations found by the audit: (1) the official text says groups of 4, but only 3 people are named. Open question. (2) The submission list names `data.xml` and `data.json`, and we only had JSON. Fixed. (3) `data.json` pointed to `docs/image-prompts.md`, which did not exist. Fixed. (4) No presentation file existed, and only submitted files may be presented. Fixed. (5) Our own check of the spec against the brief was done by the AI. That is not valid verification, so a manual checklist for B and C was written. Still open until they tick it. (6) Bios and descriptions need a human pass; images do not exist yet; the name search must be repeated by hand.
+
+## 2026-10-19 – Team size and presentation split confirmed – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): Oscar Muz and Sebastian Betancur, with Faiaz, confirmed the team has three members (no fourth assigned yet) and accepted the proposed slide split.
+- What AI produced: a "Presentation split" table in section 9 of the spec.
+- How we verified it: matched the table with the presenter lines in the speaker notes of `presentation.pptx` (slides 1 and 5 Faiaz, 2 and 3 Oscar, 4 Sebastian).
+- Accepted: the split and the team size of three.
+- Modified (what and why): closes the open question from the audit entry about "groups of 4". If the course adds a fourth member, the spec header, `CLAUDE.md` and slide 5 need updating.
+- Rejected (what and why): none.
+- Errors/limitations found: none new.

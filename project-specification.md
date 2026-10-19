@@ -221,6 +221,15 @@ A **programme day runs from 06:00 to 06:00**. A set that starts at 01:30 on Satu
 | **B** | Oscar Muz | Spec text and scenarios: review and edit sections 1–6 | Not yet done |
 | **C** | Sebastian Betancur | Critique of the spec against the brief, optional 5-slide deck, Moodle upload | Not yet done |
 
+### Presentation split
+Team size is three (confirmed by the team on 2026-10-19; the course has not assigned a fourth member). Each person presents one or two slides.
+
+| Slides | Presenter |
+|---|---|
+| 1 Festival, purpose and main decisions; 5 Use of AI and verification | Faiaz Hossain Mazumder Yen (A) |
+| 2 Target groups; 3 Information architecture | Oscar Muz (B) |
+| 4 Two key scenarios | Sebastian Betancur (C) |
+
 ### What was decided by the team (not by AI)
 - **Concept:** Faiaz and the team chose Valencia with the Dominican-roots theme from three options AI proposed. The reason is in section 1. The team call with B and C took place on 2026-10-19.
 - **Name:** AI proposed six names. Three were dropped because real events already use them (Ola Latina, Sal y Sol, Brisa Bachata). The team chose "Latino Mar Bachata Festival".
