@@ -20,6 +20,14 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - **Rejected:** I decided to keep the project name **web-design-project** and not use `bachata-festival`. That repo is unused.
 - **Lesson:** state visibility explicitly; verify local and remote match after every push.
 
+### 5. Festival identity options
+- **AI did:** proposed three fictional festivals (Sabor del Mar in Valencia, Noches de Bachata in Berlin, Raíces in Santo Domingo) with name, edition, location, dates, character, genres and themes, and recommended A.
+- **Checked:** I compared them against site workload, imagery and WCAG AA contrast.
+- **Accepted:** location, edition and dates from A; genres and themes from C.
+- **Rejected:** B (dark neon theme, harder AA contrast) and the Santo Domingo location.
+- **Follow-up from me:** "theme of the sea" and "theme of number C". AI read this as two themes together (the sea plus C's roots and heritage) and made both explicit in the themes row.
+- **AI then:** wrote section 1 of `project-specification.md`. It invented the merged working name "Raíces del Mar", which I have not yet confirmed.
+
 ### 4. Project setup in this repo
 - **AI did:** created the required folder structure, `CLAUDE.md` with the project rules, and this log.
 - **Checked:** reviewed the rules against the brief (no build, `file://`, semantic HTML, AI logging).
