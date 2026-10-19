@@ -46,9 +46,9 @@ CZU Web Design course, Seminar 2 submission. Fictional festival.
 | Group | Needs | Expectations | Information and functions needed |
 |---|---|---|---|
 | **1. First-time and beginner dancers** (many are followers who come with friends) | Know which workshops suit their level. Feel welcome and safe. | Clear level labels, a place to start, no jargon. Beginner workshops during the day, not at night. | Level guide and "Which level am I?" quiz. Programme filter by level and role focus (lead, follow, both). My Programme. Code of conduct. |
-| **2. Experienced social dancers from abroad** | Plan nights: who plays where, when the social ends. Book travel and a room. | A fast overview of DJs, live acts and set times. Travel and accommodation facts they can trust. | Programme filter by day, venue and Night. DJ and band pages with set times. Venue pages. Travel and accommodation pages. Tickets. |
+| **2. Experienced social dancers from abroad** | Plan nights: who plays where, when the social ends. Book travel and a room. | A fast overview of DJs, live acts and set times. Travel and accommodation facts they can trust. | Programme filter by day, venue and Night. DJ and band pages with set times. Venue pages. Travel and accommodation sections. Tickets. |
 | **3. Returning visitors and fans of specific artists** | Find a particular instructor, DJ or show team and see everything they do at the festival. | Search that understands names. A page per artist that lists all their sessions. | Search with results page. Performer detail with their sessions. Link to save each session. |
-| **4. Visitors with access needs, and people in groups** | Check step-free access, toilets, quiet areas and the conduct policy. Plan for a group. | Honest, specific accessibility facts per venue. Contact for questions. | Accessibility page. Access details on each venue page. Code of conduct. FAQ. Group information on Tickets. |
+| **4. Visitors with access needs, and people in groups** | Check step-free access, toilets, quiet areas and the conduct policy. Plan for a group. | Honest, specific accessibility facts per venue. Contact for questions. | Accessibility section. Access details on each venue page. Code of conduct. FAQ. Group information on Tickets. |
 
 ## 4. Information Architecture
 
@@ -64,21 +64,16 @@ All pages are static HTML files in `web/`. Detail pages are one template each, f
   - **Venues** (`venues.html`) — the three venues with an interactive map.
     - **Venue detail** (`venue.html?slug=`) — address, access details, sessions held there.
   - **Roots** (`roots.html`) — story of bachata dominicana: origins, instruments, timeline.
-  - **Practical info** (`practical.html`) — hub linking to the six pages below.
+  - **Practical info** (`practical.html`) — one page with five sections, reached from an anchor menu at the top: Travel (including the sustainability note), Accommodation, Accessibility, FAQ and Code of conduct.
     - **Tickets** (`tickets.html`) — passes, prices, what is included, group information.
-    - **Travel** (`travel.html`) — how to reach Valencia and the venues, local transport, sustainability note.
-    - **Accommodation** (`accommodation.html`) — recommended places to stay with distance and price.
-    - **Accessibility** (`accessibility.html`) — access facts per venue and the site's accessibility statement.
-    - **FAQ** (`faq.html`) — short, direct answers to common questions.
-    - **Code of conduct** (`code-of-conduct.html`) — rules for a safe, respectful dance floor and how to report.
   - **My Programme** (`my-programme.html`) — the visitor's personal schedule with clash warnings.
   - **Search results** (`search.html?q=`) — results for a query, grouped by type.
 
-17 page files in total. Search field and the main navigation appear on every page.
+12 page files in total. Travel, Accommodation, Accessibility, FAQ and Code of conduct are sections of the Practical info page, not separate pages. Search field and the main navigation appear on every page.
 
 ### Main navigation
 
-**Programme, Performers, Venues, Roots, Practical info, My Programme.** A search field sits in the header of every page. **Tickets** is a highlighted button linking to `tickets.html`. The footer repeats the Practical info pages, the festival dates and location, and a contact email.
+**Programme, Performers, Venues, Roots, Practical info, My Programme.** A search field sits in the header of every page. **Tickets** is a highlighted button linking to `tickets.html`. The footer links to Practical info and Tickets, and shows the festival dates and location, and a contact email.
 
 ### Breadcrumbs
 
@@ -90,7 +85,7 @@ Every page except Home shows breadcrumbs as an ordered list inside `<nav aria-la
 | Programme item detail | Home > Programme > *Session title* |
 | Performer detail | Home > Performers > *Artist name* |
 | Venue detail | Home > Venues > *Venue name* |
-| Tickets, Travel, Accommodation, Accessibility, FAQ, Code of conduct | Home > Practical info > Page |
+| Tickets | Home > Practical info > Tickets |
 | Search results | Home > Search results for "*query*" |
 
 ### Relationships between sections
@@ -99,7 +94,7 @@ Every page except Home shows breadcrumbs as an ordered list inside `<nav aria-la
 - Programme item ⇄ Venue: a session names its venue, and a venue page lists all sessions held there.
 - Programme item → My Programme: every session has a Save button.
 - Search covers sessions, performers, venues, Roots and FAQ.
-- Accessibility facts appear on each venue page and are summarised on the Accessibility page.
+- Accessibility facts appear on each venue page and are summarised in the Accessibility section of Practical info.
 - Home links to Programme, Tickets and Roots.
 
 ## 5. Interactive Functions (planned)
@@ -145,14 +140,14 @@ Scenarios 1, 2 and 3 are the **KEY** scenarios.
 - **User type:** Group 4, visitor with reduced mobility travelling with a friend.
 - **Goal:** Confirm that all venues are step-free and read the conduct policy before buying a pass.
 - **Initial situation:** He is on Practical info and has not decided to attend.
-- **Expected outcome:** He opens Accessibility, sees step-free and toilet facts for each venue, opens a venue page for details, reads the Code of conduct, and finds the contact address in the FAQ.
+- **Expected outcome:** He goes to the Accessibility section of Practical info, sees step-free and toilet facts for each venue, opens a venue page for details, reads the Code of conduct section, and finds the contact address in the FAQ section.
 - **Data needed:** `venues.accessibility`; `festival.codeOfConduct`; `festival.faq`.
 
 ### Scenario 5: Group of friends planning the trip
 - **User type:** Group 2, four friends flying in from different countries.
 - **Goal:** Compare pass prices, find a place to stay near the venues, and work out how to get from the airport.
 - **Initial situation:** They know the dates and have not yet booked.
-- **Expected outcome:** On Tickets they compare passes, on Accommodation they pick a place by distance and price, and on Travel they find airport-to-city options.
+- **Expected outcome:** On Tickets they compare passes. On Practical info they use the Accommodation section to pick a place by distance and price, and the Travel section to find airport-to-city options.
 - **Data needed:** `festival.tickets`, `festival.accommodation`, `festival.travel`.
 
 ## 7. Data Model

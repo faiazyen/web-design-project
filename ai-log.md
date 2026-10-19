@@ -180,3 +180,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): the spec's name story now lists both rejected names and the reason. Deck slides 1 and 5 say "renamed twice".
 - Rejected (what and why): Orilla, Cala and Ola y Sal were kept in reserve; Marejada, Oleaje, Brisamar, Ritmo y Raíz were rejected because they already exist.
 - Errors/limitations found: "Atardecer" is a common word, so the name is distinctive only with "Bachata Festival" after it, and searches only return excerpts. Sebastian must search the name by hand (checklist item 31 is still open).
+
+## 2026-10-19 – Sitemap reduced from 17 to 12 pages – Claude Code, decided by the team
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): after an audit against the teacher's requirements, the team agreed to merge the six practical pages into one so the sitemap shrinks from 17 to about 12 pages. Everything else in the audit suggestions stays as it is.
+- What AI produced: spec section 4 with one Practical info page (sections Travel, Accommodation, Accessibility, FAQ, Code of conduct) and a separate Tickets page, 12 pages in total; updated breadcrumbs, relationships, scenarios 4 and 5 and the target group table; deck slides 2 and 3 redrawn.
+- How we verified it: searched the spec, README, docs and checklist for the old page names and the number 17 (no leftovers); rebuilt the deck, validated the file and read slide 3 as an image; data files unchanged (`validate-data.py` still passes).
+- Accepted: the 12-page sitemap. Tickets stays its own page because it is the main call to action and the key user action "find ticket prices".
+- Modified (what and why): the team said "about 12"; merging all six pages would give 11, so Tickets was kept separate to make 12.
+- Rejected (what and why): the other audit suggestions (fewer interactive functions, shorter data model and section 8) were not applied, by the team's decision.
+- Errors/limitations found: the spec still mentions `docs/data-schema.md` and scripts that are not in the Moodle upload.
