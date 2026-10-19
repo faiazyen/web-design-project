@@ -210,3 +210,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none.
 - Rejected (what and why): none.
 - Errors/limitations found: the answers are multiple choice, so the wording is Claude's. Sebastian should read his subsection and change anything that is not how he would say it.
+
+## 2026-10-19 – Oscar's section 8 answers – Oscar Muz (B), written into the spec by Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), questions answered by Oscar as multiple choice
+- Prompt (short): Claude asked Oscar what he checked, found, decided, accepted and saw the AI get wrong; he chose the options.
+- What AI produced: the "Oscar's part (B)" subsection of section 8 in the spec and his status in the roles table.
+- How we verified it: each line matches a choice Oscar made in this session; the facts (12 pages, section kept short) match the repo.
+- Accepted: Oscar checked spec sections 1–6, the scenarios against the data, the data files and slides 2 and 3. He accepted the spec text, the scenarios, the schema, the venues and the validator results.
+- Modified (what and why): none yet. Oscar chose to rewrite some featured performer bios in his own words; they are still to be sent and added to `data.json`.
+- Rejected (what and why): none.
+- Errors/limitations found: Oscar's status says "to do: rewrite bios". The UNESCO 2019 line and the airport metro time still need a fact check. The answers are multiple choice, so the wording is Claude's and Oscar should read his subsection.
