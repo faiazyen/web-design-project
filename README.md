@@ -1,4 +1,4 @@
-# Latino Mar Bachata Festival (web-design-project)
+# Atardecer Bachata Festival (web-design-project)
 
 CZU Web Design course project: a website for a fictional bachata festival in Valencia, 25–27 June 2027. Sea by day, club by night.
 

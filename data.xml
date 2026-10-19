@@ -2,8 +2,8 @@
 <festivalData>
   <festival>
     <id>fest-2027</id>
-    <slug>latino-mar-bachata-festival-2027</slug>
-    <name>Latino Mar Bachata Festival</name>
+    <slug>atardecer-bachata-festival-2027</slug>
+    <name>Atardecer Bachata Festival</name>
     <edition>1</edition>
     <editionLabel>1st edition · Primera Ola</editionLabel>
     <year>2027</year>
@@ -29,7 +29,7 @@
     <language>en</language>
     <currency>EUR</currency>
     <contact>
-      <email>info@latinomar.example</email>
+      <email>info@atardecer.example</email>
     </contact>
     <tickets>
       <ticket>
@@ -188,7 +188,7 @@
         <id>faq-007</id>
         <topic>conduct</topic>
         <question>How do I report a problem?</question>
-        <answer>Tell any staff member wearing a Latino Mar T-shirt, or write to info@latinomar.example. All reports are handled in confidence. See the Code of conduct page.</answer>
+        <answer>Tell any staff member wearing a Atardecer T-shirt, or write to info@atardecer.example. All reports are handled in confidence. See the Code of conduct page.</answer>
       </entry>
       <entry>
         <id>faq-008</id>
@@ -198,7 +198,7 @@
       </entry>
     </faq>
     <codeOfConduct>
-      <summary>Latino Mar is a place to dance, and everyone has the right to feel safe, respected and free to say no.</summary>
+      <summary>Atardecer is a place to dance, and everyone has the right to feel safe, respected and free to say no.</summary>
       <principles>
         <principle>Ask before you dance. A no is a complete answer, with or without a reason.</principle>
         <principle>Respect your partner's boundaries on the dance floor, in dips and in close hold.</principle>
@@ -208,7 +208,7 @@
         <principle>Respect all levels. Beginners are welcome, and teaching on the floor is for classes only unless asked.</principle>
         <principle>Alcohol is not an excuse for crossing a boundary.</principle>
       </principles>
-      <reportContact>info@latinomar.example</reportContact>
+      <reportContact>info@atardecer.example</reportContact>
     </codeOfConduct>
     <accessibility>
       <summary>All three venues have step-free entrances, accessible toilets and a quiet space. This website is built to WCAG 2.0 AA.</summary>

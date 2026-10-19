@@ -31,7 +31,7 @@ Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts 
 |---|---|---|---|
 | `id` | string | yes | `fest-2027` |
 | `slug` | string | yes | |
-| `name` | string | yes | Latino Mar Bachata Festival |
+| `name` | string | yes | Atardecer Bachata Festival |
 | `edition` | integer | yes | 1 |
 | `editionLabel` | string | yes | "1st edition · Primera Ola" |
 | `year` | integer | yes | 2027 |
@@ -112,8 +112,8 @@ Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts 
 ```json
 {
   "id": "fest-2027",
-  "slug": "latino-mar-bachata-festival-2027",
-  "name": "Latino Mar Bachata Festival",
+  "slug": "atardecer-bachata-festival-2027",
+  "name": "Atardecer Bachata Festival",
   "edition": 1,
   "editionLabel": "1st edition · Primera Ola",
   "year": 2027,
@@ -128,7 +128,7 @@ Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts 
   "genres": ["bachata dominicana", "bachata sensual", "bachata moderna", "salsa"],
   "language": "en",
   "currency": "EUR",
-  "contact": { "email": "info@latinomar.example" },
+  "contact": { "email": "info@atardecer.example" },
   "tickets": [
     { "id": "tick-full", "name": "Full Pass", "price": 149, "currency": "EUR",
       "includes": ["All workshops", "All socials", "All shows"], "notes": "Three days." }

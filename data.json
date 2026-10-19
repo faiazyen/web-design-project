@@ -1,8 +1,8 @@
 {
   "festival": {
     "id": "fest-2027",
-    "slug": "latino-mar-bachata-festival-2027",
-    "name": "Latino Mar Bachata Festival",
+    "slug": "atardecer-bachata-festival-2027",
+    "name": "Atardecer Bachata Festival",
     "edition": 1,
     "editionLabel": "1st edition · Primera Ola",
     "year": 2027,
@@ -28,7 +28,7 @@
     "language": "en",
     "currency": "EUR",
     "contact": {
-      "email": "info@latinomar.example"
+      "email": "info@atardecer.example"
     },
     "tickets": [
       {
@@ -187,7 +187,7 @@
         "id": "faq-007",
         "topic": "conduct",
         "question": "How do I report a problem?",
-        "answer": "Tell any staff member wearing a Latino Mar T-shirt, or write to info@latinomar.example. All reports are handled in confidence. See the Code of conduct page."
+        "answer": "Tell any staff member wearing a Atardecer T-shirt, or write to info@atardecer.example. All reports are handled in confidence. See the Code of conduct page."
       },
       {
         "id": "faq-008",
@@ -197,7 +197,7 @@
       }
     ],
     "codeOfConduct": {
-      "summary": "Latino Mar is a place to dance, and everyone has the right to feel safe, respected and free to say no.",
+      "summary": "Atardecer is a place to dance, and everyone has the right to feel safe, respected and free to say no.",
       "principles": [
         "Ask before you dance. A no is a complete answer, with or without a reason.",
         "Respect your partner's boundaries on the dance floor, in dips and in close hold.",
@@ -207,7 +207,7 @@
         "Respect all levels. Beginners are welcome, and teaching on the floor is for classes only unless asked.",
         "Alcohol is not an excuse for crossing a boundary."
       ],
-      "reportContact": "info@latinomar.example"
+      "reportContact": "info@atardecer.example"
     },
     "accessibility": {
       "summary": "All three venues have step-free entrances, accessible toilets and a quiet space. This website is built to WCAG 2.0 AA.",
