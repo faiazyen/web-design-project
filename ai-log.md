@@ -59,3 +59,34 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified: none yet.
 - Rejected: the name "Raíces del Mar" (clashes with the real festival RAICES); the 4-day length (brief asks for 3 days).
 - Errors/limitations found: browser inspection did not show the dropdown contents except Support, which lists FAQ. The earlier JSON extraction of the nav menu disagreed with the live page and was discarded. Open: names of team members B and C not yet provided; edition number (1st) not yet confirmed.
+
+## 2026-10-19 – Step 1.1 Lock the concept – Claude Code (chat), decided by the team
+- Tool/model: Claude Code (Sonnet 5.5); Firecrawl web search
+- Prompt (short): asked for concept options for a fictional bachata festival, then for new names after a clash was found.
+- What AI produced: three concepts (Valencia, Berlin, Santo Domingo), six name candidates.
+- How we verified it: web searches per name (5–8 results each). A real festival "RAICES" (5th edition) clashed with the first name, so it was rejected. Three further names (Ola Latina, Sal y Sol, Brisa Bachata) already exist. Exact search for "Latino Mar Bachata Festival" found no match. The team still searches by hand.
+- Accepted: Valencia location with the Dominican-roots theme; name Latino Mar Bachata Festival; 3 days, 25–27 June 2027. Decided by Faiaz after the team call with Oscar Muz and Sebastian Betancur.
+- Modified (what and why): date range cut from 4 days to 3 because the brief asks for 3.
+- Rejected (what and why): Berlin concept (dark neon, harder AA contrast, too different from the team's vision); the name "Raíces del Mar" (clash with RAICES).
+- Errors/limitations found: the brief asks for 5 concepts; AI gave 3. Search results were excerpts only.
+- Reason for the choice (Faiaz): a Latin bachata festival where people from around the world come to dance. Valencia is clean and modern with good sea access, so dancing outdoors by the sea and indoors at night, with bars, artists, shows and DJs playing bachata, Latin music and salsa.
+
+## 2026-10-19 – Step 1.2 Draft the specification – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): write `project-specification.md` with the 9 required sections for the chosen concept; the sitemap must include all pages named in the brief.
+- What AI produced: the spec with 9 sections, a 17-page sitemap, 4 target groups, 7 interactive functions, 5 scenarios (3 KEY), data model summary.
+- How we verified it: AI re-read the brief line by line: identity table has the 6 fields; sitemap includes Home, Programme with day/venue/type/level filters, item detail, performers and venues lists and details, six practical pages, search on every page plus results page, My Programme, and breadcrumbs; every scenario has user type, goal, situation and outcome; every function names its user need. Independent review by B and C is still to do.
+- Accepted: pending B and C review.
+- Modified (what and why): an earlier free-form draft was replaced because it did not follow the 9-section structure. Detail URLs changed from `?id=` to `?slug=` to match the brief's schema step. Timezone Europe/Madrid instead of the brief's Europe/Prague (our festival is in Valencia; both are UTC+02:00 in June).
+- Rejected (what and why): Volunteers page, partners row, talks as item types (team decision, not needed for the brief).
+- Errors/limitations found: B and C role assignment for Oscar Muz and Sebastian Betancur not yet confirmed. Section 9 is partly filled and needs validator results.
+
+## 2026-10-19 – Step 1.4 Propose the data schema – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): propose a JSON schema for `data.json` with ids, slugs, ISO 8601 times with timezone, address fields, performer and venue references, and fields for every filter. Do not generate data.
+- What AI produced: `docs/data-schema.md` with field tables for festival, days, categories, venues, performers, programme items, one example record per entity, and a self-check table mapping every spec feature and scenario to fields.
+- How we verified it: mapped each filter, search, function and scenario in the spec to a field; all rows answered. Examples are valid JSON by inspection; the validator will test real data.
+- Accepted: waiting for Faiaz's approval.
+- Modified (what and why): none yet.
+- Rejected (what and why): none yet.
+- Errors/limitations found: none yet. Data has not been generated (the brief says to wait for approval).
