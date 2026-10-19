@@ -190,3 +190,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): the team said "about 12"; merging all six pages would give 11, so Tickets was kept separate to make 12.
 - Rejected (what and why): the other audit suggestions (fewer interactive functions, shorter data model and section 8) were not applied, by the team's decision.
 - Errors/limitations found: the spec still mentions `docs/data-schema.md` and scripts that are not in the Moodle upload.
+
+## 2026-10-19 – Hand search of the final name – Sebastian Betancur (C), entered by Claude Code
+- Tool/model: none (manual web search by Sebastian)
+- Prompt (short): Sebastian searched "Atardecer Bachata Festival" by hand and reported the result.
+- What AI produced: ticks for checklist items 1 and 31, and this entry.
+- How we verified it: Sebastian's own search, reported to Claude on 2026-10-19. It agrees with the earlier AI search, which found only songs and posts that use the word.
+- Accepted: the name, with no festival found under it.
+- Modified (what and why): none.
+- Rejected (what and why): none.
+- Errors/limitations found: web searches cannot prove that no small local event uses a name.
