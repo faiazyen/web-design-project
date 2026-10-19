@@ -1,0 +1,3341 @@
+<?xml version='1.0' encoding='utf-8'?>
+<festivalData>
+  <festival>
+    <id>fest-2027</id>
+    <slug>atardecer-bachata-festival-2027</slug>
+    <name>Atardecer Bachata Festival</name>
+    <edition>1</edition>
+    <editionLabel>1st edition · Primera Ola</editionLabel>
+    <year>2027</year>
+    <startDate>2027-06-25</startDate>
+    <endDate>2027-06-27</endDate>
+    <timezone>Europe/Madrid</timezone>
+    <city>Valencia</city>
+    <country>Spain</country>
+    <countryCode>ES</countryCode>
+    <tagline>Sea by day, club by night.</tagline>
+    <description>Three days of bachata in Valencia. Workshops on the sand and in a seaside pavilion by day, socials with DJs, live acts and shows in a club by night. Beginners are welcome, and the Dominican roots of the dance are part of the programme.</description>
+    <themes>
+      <theme>the sea</theme>
+      <theme>roots of bachata dominicana</theme>
+      <theme>dancers from many countries in one city</theme>
+    </themes>
+    <genres>
+      <genre>bachata dominicana</genre>
+      <genre>bachata sensual</genre>
+      <genre>bachata moderna</genre>
+      <genre>salsa</genre>
+    </genres>
+    <language>en</language>
+    <currency>EUR</currency>
+    <contact>
+      <email>info@atardecer.example</email>
+    </contact>
+    <tickets>
+      <ticket>
+        <id>tick-full</id>
+        <name>Full Pass</name>
+        <price>149</price>
+        <currency>EUR</currency>
+        <includes>
+          <include>All workshops</include>
+          <include>All socials</include>
+          <include>All shows</include>
+          <include>Entry to all three venues</include>
+        </includes>
+        <notes>Three days, Friday to Sunday.</notes>
+      </ticket>
+      <ticket>
+        <id>tick-party</id>
+        <name>Party Pass</name>
+        <price>89</price>
+        <currency>EUR</currency>
+        <includes>
+          <include>All socials</include>
+          <include>All shows</include>
+          <include>Entry to the Arena Stage, the pavilion practicas and Marea Club</include>
+        </includes>
+        <notes>No workshops. Good for dancers who live in the city.</notes>
+      </ticket>
+      <ticket>
+        <id>tick-sat</id>
+        <name>Saturday Day Pass</name>
+        <price>69</price>
+        <currency>EUR</currency>
+        <includes>
+          <include>All Saturday workshops</include>
+          <include>Saturday socials and shows</include>
+        </includes>
+        <notes>Saturday only.</notes>
+      </ticket>
+      <ticket>
+        <id>tick-group</id>
+        <name>Group Full Pass (4 or more)</name>
+        <price>129</price>
+        <currency>EUR</currency>
+        <includes>
+          <include>Same as Full Pass</include>
+        </includes>
+        <notes>Price per person. Book four or more passes together.</notes>
+      </ticket>
+    </tickets>
+    <accommodation>
+      <place>
+        <id>acc-001</id>
+        <name>Hotel Faro del Cabanyal</name>
+        <type>hotel</type>
+        <distanceToVenuesKm>0.4</distanceToVenuesKm>
+        <priceFromPerNight>135</priceFromPerNight>
+        <notes>Next to Marea Club. Breakfast included. Quiet rooms on the courtyard side.</notes>
+      </place>
+      <place>
+        <id>acc-002</id>
+        <name>Hostal Sal y Arena</name>
+        <type>hostel</type>
+        <distanceToVenuesKm>0.6</distanceToVenuesKm>
+        <priceFromPerNight>38</priceFromPerNight>
+        <notes>Shared rooms from 38 EUR per bed. A ten-minute walk to the Arena Stage.</notes>
+      </place>
+      <place>
+        <id>acc-003</id>
+        <name>Apartamentos Mar de Fondo</name>
+        <type>apartments</type>
+        <distanceToVenuesKm>0.8</distanceToVenuesKm>
+        <priceFromPerNight>95</priceFromPerNight>
+        <notes>Apartments for 2 to 4 people with a kitchen. Good for groups.</notes>
+      </place>
+      <place>
+        <id>acc-004</id>
+        <name>Hotel Ola Verde</name>
+        <type>hotel</type>
+        <distanceToVenuesKm>1.5</distanceToVenuesKm>
+        <priceFromPerNight>110</priceFromPerNight>
+        <notes>A short tram ride from the venues. Rooms with a balcony.</notes>
+      </place>
+      <place>
+        <id>acc-005</id>
+        <name>Casa Marinera Guesthouse</name>
+        <type>guesthouse</type>
+        <distanceToVenuesKm>1.1</distanceToVenuesKm>
+        <priceFromPerNight>72</priceFromPerNight>
+        <notes>Family-run guesthouse with a roof terrace.</notes>
+      </place>
+    </accommodation>
+    <travel>
+      <option>
+        <id>trav-001</id>
+        <mode>plane</mode>
+        <title>By plane</title>
+        <text>Fly to Valencia Airport. The metro runs from the airport to the city in about 25 minutes. A taxi to the beachfront takes about 25 minutes.</text>
+      </option>
+      <option>
+        <id>trav-002</id>
+        <mode>train</mode>
+        <title>By train</title>
+        <text>High-speed trains arrive at the main station in the city centre. From there, the tram or a bus goes to the beachfront.</text>
+      </option>
+      <option>
+        <id>trav-003</id>
+        <mode>local</mode>
+        <title>Between venues</title>
+        <text>All three venues are within a 15-minute walk of each other along the beachfront. The festival provides a signed walking route.</text>
+      </option>
+      <option>
+        <id>trav-004</id>
+        <mode>bike</mode>
+        <title>By bike</title>
+        <text>Valencia has a long coastal cycle path. Bikes can be parked next to the Arena Stage and Pabellón Brisa.</text>
+      </option>
+    </travel>
+    <faq>
+      <entry>
+        <id>faq-001</id>
+        <topic>levels</topic>
+        <question>Which workshop level should I pick?</question>
+        <answer>Pick beginner if you have danced bachata fewer than ten times. Pick intermediate if you can dance a full song with turns. Pick advanced if you dance often and want to refine technique. The Which level am I? quiz on the Programme page helps you decide.</answer>
+      </entry>
+      <entry>
+        <id>faq-002</id>
+        <topic>partners</topic>
+        <question>Do I need a partner?</question>
+        <answer>No. Workshops rotate partners, and every workshop has a role focus of lead, follow or both. Socials are open to everyone.</answer>
+      </entry>
+      <entry>
+        <id>faq-003</id>
+        <topic>tickets</topic>
+        <question>What does the Full Pass include?</question>
+        <answer>The Full Pass includes all workshops, all socials, all shows and entry to all three venues for the whole festival.</answer>
+      </entry>
+      <entry>
+        <id>faq-004</id>
+        <topic>dress</topic>
+        <question>What should I wear?</question>
+        <answer>Wear light clothes for the day. Bring shoes you can dance in. For the sand, many dancers dance barefoot or in socks. Nights are warm, and the club has a cloakroom.</answer>
+      </entry>
+      <entry>
+        <id>faq-005</id>
+        <topic>access</topic>
+        <question>Are the venues step-free?</question>
+        <answer>Yes. All three venues have step-free access. See the Accessibility page for details on each venue, including quiet rooms and accessible toilets.</answer>
+      </entry>
+      <entry>
+        <id>faq-006</id>
+        <topic>schedule</topic>
+        <question>When do the night socials end?</question>
+        <answer>Friday and Saturday club socials run until 06:00 or earlier. The Sunday farewell night ends around 02:30. Check each set on the Programme page.</answer>
+      </entry>
+      <entry>
+        <id>faq-007</id>
+        <topic>conduct</topic>
+        <question>How do I report a problem?</question>
+        <answer>Tell any staff member wearing a Atardecer T-shirt, or write to info@atardecer.example. All reports are handled in confidence. See the Code of conduct page.</answer>
+      </entry>
+      <entry>
+        <id>faq-008</id>
+        <topic>refunds</topic>
+        <question>Can I transfer or cancel my pass?</question>
+        <answer>You can transfer your pass to another person for free until 14 days before the festival. Cancellations are not refunded.</answer>
+      </entry>
+    </faq>
+    <codeOfConduct>
+      <summary>Atardecer is a place to dance, and everyone has the right to feel safe, respected and free to say no.</summary>
+      <principles>
+        <principle>Ask before you dance. A no is a complete answer, with or without a reason.</principle>
+        <principle>Respect your partner's boundaries on the dance floor, in dips and in close hold.</principle>
+        <principle>Leaders and followers are equal partners. Nobody has to dance with anyone.</principle>
+        <principle>No unwanted touching, comments or photos.</principle>
+        <principle>Look out for each other. Step in kindly if you see something wrong, or tell a staff member.</principle>
+        <principle>Respect all levels. Beginners are welcome, and teaching on the floor is for classes only unless asked.</principle>
+        <principle>Alcohol is not an excuse for crossing a boundary.</principle>
+      </principles>
+      <reportContact>info@atardecer.example</reportContact>
+    </codeOfConduct>
+    <accessibility>
+      <summary>All three venues have step-free entrances, accessible toilets and a quiet space. This website is built to WCAG 2.0 AA.</summary>
+      <features>
+        <feature>Step-free access to Arena Stage, Pabellón Brisa and Marea Club</feature>
+        <feature>Accessible toilets at all venues</feature>
+        <feature>Quiet rooms at the pavilion and the club</feature>
+        <feature>Free ear protection at the club bar</feature>
+        <feature>Seating available at all venues</feature>
+        <feature>Contact us before the festival if you have specific needs</feature>
+      </features>
+    </accessibility>
+    <sustainability>
+      <summary>The festival is held on a public beach. We keep the sea and the sand clean and cut waste where we can.</summary>
+      <commitments>
+        <commitment>Reusable cups at every bar, with a small deposit</commitment>
+        <commitment>Free refill points for drinking water at all three venues</commitment>
+        <commitment>A recycling station at each venue and a beach clean-up on Sunday morning</commitment>
+        <commitment>Signed walking and cycling routes so you do not need a car</commitment>
+        <commitment>No single-use plastic bottles on sale</commitment>
+      </commitments>
+    </sustainability>
+    <roots>
+      <intro>Bachata began in the Dominican Republic and has become one of the most danced Latin styles in the world. It grew in the barrios of Santo Domingo, where guitar-led songs about love and daily life were played at small parties.</intro>
+      <timeline>
+        <event>
+          <year>1961</year>
+          <text>The first bachata recordings are made in the Dominican Republic. They are commonly dated to this year.</text>
+        </event>
+        <event>
+          <year>1960s–1970s</year>
+          <text>Bachata grows in rural and working-class neighbourhoods. Many people look down on the music, and it is rarely played on the radio.</text>
+        </event>
+        <event>
+          <year>1980s–1990s</year>
+          <text>Bachata becomes popular across the country. Guitar styles evolve, and the music reaches a wider audience.</text>
+        </event>
+        <event>
+          <year>2000s</year>
+          <text>Modern bachata spreads worldwide. Dancers start to dance it in a close hold, and the sensual style emerges in Europe.</text>
+        </event>
+        <event>
+          <year>2019</year>
+          <text>UNESCO inscribes bachata dominicana on its list of Intangible Cultural Heritage of Humanity.</text>
+        </event>
+      </timeline>
+      <instruments>
+        <instrument>
+          <name>Requinto guitar</name>
+          <text>A lead guitar that plays the melody lines and gives bachata its bright, twanging sound.</text>
+        </instrument>
+        <instrument>
+          <name>Segunda guitar</name>
+          <text>A rhythm guitar that supports the lead guitar.</text>
+        </instrument>
+        <instrument>
+          <name>Bongo</name>
+          <text>A pair of small drums that mark the steady pulse the dancers follow.</text>
+        </instrument>
+        <instrument>
+          <name>Güira</name>
+          <text>A metal scraper that gives the rhythm its fine, scratchy texture.</text>
+        </instrument>
+        <instrument>
+          <name>Bass</name>
+          <text>Plays a simple repeating line under the guitars.</text>
+        </instrument>
+      </instruments>
+    </roots>
+  </festival>
+  <days>
+    <day>
+      <id>day-fri</id>
+      <date>2027-06-25</date>
+      <label>Friday</label>
+      <theme>Arrival social</theme>
+    </day>
+    <day>
+      <id>day-sat</id>
+      <date>2027-06-26</date>
+      <label>Saturday</label>
+      <theme>Sunset on the sand</theme>
+    </day>
+    <day>
+      <id>day-sun</id>
+      <date>2027-06-27</date>
+      <label>Sunday</label>
+      <theme>Farewell by the sea</theme>
+    </day>
+  </days>
+  <categories>
+    <types>
+      <type>
+        <id>workshop</id>
+        <label>Workshop</label>
+        <description>A class by an instructor.</description>
+      </type>
+      <type>
+        <id>social</id>
+        <label>Social</label>
+        <description>Open dancing with a DJ or live music.</description>
+      </type>
+      <type>
+        <id>show</id>
+        <label>Show</label>
+        <description>A stage performance by a show team.</description>
+      </type>
+    </types>
+    <levels>
+      <level>
+        <id>beginner</id>
+        <label>Beginner</label>
+        <description>You know the basic step or are new to bachata. You can dance part of a song with a partner.</description>
+      </level>
+      <level>
+        <id>intermediate</id>
+        <label>Intermediate</label>
+        <description>You can dance a full song with turns and you feel the music.</description>
+      </level>
+      <level>
+        <id>advanced</id>
+        <label>Advanced</label>
+        <description>You dance often, lead or follow with confidence and want to refine technique.</description>
+      </level>
+      <level>
+        <id>all-levels</id>
+        <label>All levels</label>
+        <description>Open to everyone. Used for socials, shows and relaxed classes.</description>
+      </level>
+    </levels>
+    <roleFocus>
+      <role>
+        <id>lead</id>
+        <label>Lead</label>
+        <description>For people who lead.</description>
+      </role>
+      <role>
+        <id>follow</id>
+        <label>Follow</label>
+        <description>For people who follow.</description>
+      </role>
+      <role>
+        <id>both</id>
+        <label>Lead and follow</label>
+        <description>For everyone, with partners rotating.</description>
+      </role>
+    </roleFocus>
+    <styles>
+      <style>
+        <id>dominicana</id>
+        <label>Bachata dominicana</label>
+        <description>The traditional Dominican style with lively footwork.</description>
+      </style>
+      <style>
+        <id>sensual</id>
+        <label>Bachata sensual</label>
+        <description>A close, flowing style with body movement.</description>
+      </style>
+      <style>
+        <id>moderna</id>
+        <label>Bachata moderna</label>
+        <description>A modern style that mixes turns, musicality and open and close hold.</description>
+      </style>
+      <style>
+        <id>salsa</id>
+        <label>Salsa</label>
+        <description>Salsa classes and socials.</description>
+      </style>
+    </styles>
+    <performerTypes>
+      <performerType>
+        <id>instructor</id>
+        <label>Instructor</label>
+        <description>Teaches workshops.</description>
+      </performerType>
+      <performerType>
+        <id>dj</id>
+        <label>DJ</label>
+        <description>Plays social sets.</description>
+      </performerType>
+      <performerType>
+        <id>band</id>
+        <label>Band</label>
+        <description>Plays live music.</description>
+      </performerType>
+      <performerType>
+        <id>singer</id>
+        <label>Singer</label>
+        <description>Performs live vocals.</description>
+      </performerType>
+      <performerType>
+        <id>show-team</id>
+        <label>Show team</label>
+        <description>Performs on stage.</description>
+      </performerType>
+    </performerTypes>
+    <dayParts>
+      <dayPart>
+        <id>day</id>
+        <label>Day (Sea)</label>
+        <description>Sessions that start before 20:00.</description>
+      </dayPart>
+      <dayPart>
+        <id>night</id>
+        <label>Night (Club)</label>
+        <description>Sessions that start at 20:00 or later.</description>
+      </dayPart>
+    </dayParts>
+  </categories>
+  <venues>
+    <venue>
+      <id>ven-001</id>
+      <slug>arena-stage</slug>
+      <name>Arena Stage</name>
+      <kind>beach-stage</kind>
+      <setting>outdoor</setting>
+      <description>A sand-floor stage on the beachfront. It hosts the daytime sand workshops, the sunset socials and the open-air shows.</description>
+      <address>
+        <streetAddress>Passeig de la Ola 1</streetAddress>
+        <postalCode>46011</postalCode>
+        <addressLocality>Valencia</addressLocality>
+        <addressRegion>Comunitat Valenciana</addressRegion>
+        <addressCountry>ES</addressCountry>
+      </address>
+      <geo>
+        <latitude>39.4775</latitude>
+        <longitude>-0.325</longitude>
+      </geo>
+      <capacity>800</capacity>
+      <accessibility>
+        <stepFree>true</stepFree>
+        <accessibleToilets>true</accessibleToilets>
+        <quietSpace>false</quietSpace>
+        <notes>A firm boardwalk leads from the promenade to the edge of the dance floor. The sand floor itself is soft.</notes>
+      </accessibility>
+      <mapZone>zone-arena</mapZone>
+      <image>
+        <src>images/venues/arena-stage.jpg</src>
+        <alt>Dancers on a sand dance floor at sunset</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </venue>
+    <venue>
+      <id>ven-002</id>
+      <slug>pabellon-brisa</slug>
+      <name>Pabellón Brisa</name>
+      <kind>pavilion</kind>
+      <setting>indoor</setting>
+      <description>An air-conditioned seaside pavilion with a sprung wooden floor. It hosts most workshops, the evening practica socials and the pavilion showcases.</description>
+      <address>
+        <streetAddress>Carrer del Salitre 14</streetAddress>
+        <postalCode>46011</postalCode>
+        <addressLocality>Valencia</addressLocality>
+        <addressRegion>Comunitat Valenciana</addressRegion>
+        <addressCountry>ES</addressCountry>
+      </address>
+      <geo>
+        <latitude>39.4768</latitude>
+        <longitude>-0.3262</longitude>
+      </geo>
+      <capacity>350</capacity>
+      <accessibility>
+        <stepFree>true</stepFree>
+        <accessibleToilets>true</accessibleToilets>
+        <quietSpace>true</quietSpace>
+        <notes>Step-free entrance on the street side. A quiet room is open all day next to the main floor.</notes>
+      </accessibility>
+      <mapZone>zone-pavilion</mapZone>
+      <image>
+        <src>images/venues/pabellon-brisa.jpg</src>
+        <alt>A bright pavilion with a wooden dance floor and sea-view windows</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </venue>
+    <venue>
+      <id>ven-003</id>
+      <slug>marea-club</slug>
+      <name>Marea Club</name>
+      <kind>club</kind>
+      <setting>indoor</setting>
+      <description>The indoor club for the main night socials. It has a large floor, a stage for live acts and two bars. Late sets run until the early morning.</description>
+      <address>
+        <streetAddress>Carrer de la Marinada 8</streetAddress>
+        <postalCode>46011</postalCode>
+        <addressLocality>Valencia</addressLocality>
+        <addressRegion>Comunitat Valenciana</addressRegion>
+        <addressCountry>ES</addressCountry>
+      </address>
+      <geo>
+        <latitude>39.4759</latitude>
+        <longitude>-0.3231</longitude>
+      </geo>
+      <capacity>600</capacity>
+      <accessibility>
+        <stepFree>true</stepFree>
+        <accessibleToilets>true</accessibleToilets>
+        <quietSpace>true</quietSpace>
+        <notes>A ramp at the side entrance replaces the three front steps. Ear protection is free at the bar. A chill room is open all night.</notes>
+      </accessibility>
+      <mapZone>zone-club</mapZone>
+      <image>
+        <src>images/venues/marea-club.jpg</src>
+        <alt>A night club dance floor lit in warm amber</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </venue>
+  </venues>
+  <performers>
+    <performer>
+      <id>perf-001</id>
+      <slug>marisol-and-tavo</slug>
+      <name>Marisol &amp; Tavo</name>
+      <type>instructor</type>
+      <members>
+        <member>Marisol Vega</member>
+        <member>Tavo Reyes</member>
+      </members>
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+        <style>sensual</style>
+      </styles>
+      <bio>Marisol Vega and Tavo Reyes teach bachata from Santo Domingo. Their classes focus on the footwork and side step of traditional Dominican bachata. They count every step out loud until the room does it too.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/marisol-and-tavo.jpg</src>
+        <alt>Portrait of Marisol &amp; Tavo</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-002</id>
+      <slug>ilena-and-dario</slug>
+      <name>Ilena &amp; Dario</name>
+      <type>instructor</type>
+      <members>
+        <member>Ilena Quispe</member>
+        <member>Dario Mena</member>
+      </members>
+      <country>PE</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Ilena Quispe and Dario Mena teach bachata from Lima. Their classes focus on body isolations and slow, patient musicality. Their classes start with two minutes of silence before the first song.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/ilena-and-dario.jpg</src>
+        <alt>Portrait of Ilena &amp; Dario</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-003</id>
+      <slug>noelia-and-bruno</slug>
+      <name>Noelia &amp; Bruno</name>
+      <type>instructor</type>
+      <members>
+        <member>Noelia Ferrer</member>
+        <member>Bruno Salas</member>
+      </members>
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+        <style>salsa</style>
+      </styles>
+      <bio>Noelia Ferrer and Bruno Salas teach bachata from Valencia. Their classes focus on partner communication and clear connection. Both grew up dancing on the Valencia beachfront.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/noelia-and-bruno.jpg</src>
+        <alt>Portrait of Noelia &amp; Bruno</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-004</id>
+      <slug>yara-and-elias</slug>
+      <name>Yara &amp; Elías</name>
+      <type>instructor</type>
+      <members>
+        <member>Yara Montero</member>
+        <member>Elías Brito</member>
+      </members>
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Yara Montero and Elías Brito teach bachata from Santiago de los Caballeros. Their classes focus on guitar-led traditional bachata and how to dance to the requinto. Elías plays guitar and brings it to class.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/yara-and-elias.jpg</src>
+        <alt>Portrait of Yara &amp; Elías</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-005</id>
+      <slug>katia-and-leandro</slug>
+      <name>Katia &amp; Leandro</name>
+      <type>instructor</type>
+      <members>
+        <member>Katia Orlov</member>
+        <member>Leandro Pires</member>
+      </members>
+      <country>PT</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Katia Orlov and Leandro Pires teach bachata from Lisbon. Their classes focus on weight changes, spins and smooth exits. They film every class and share a slow-motion clip afterwards.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/katia-and-leandro.jpg</src>
+        <alt>Portrait of Katia &amp; Leandro</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-006</id>
+      <slug>amparo-and-joaquin</slug>
+      <name>Amparo &amp; Joaquín</name>
+      <type>instructor</type>
+      <members>
+        <member>Amparo Ruiz</member>
+        <member>Joaquín Lledó</member>
+      </members>
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+        <style>sensual</style>
+      </styles>
+      <bio>Amparo Ruiz and Joaquín Lledó teach bachata from Alicante. Their classes focus on lead and follow clarity for social dancing. Their rule: if the move needs a pull, it is not ready.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/amparo-and-joaquin.jpg</src>
+        <alt>Portrait of Amparo &amp; Joaquín</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-007</id>
+      <slug>zoe-and-matteo</slug>
+      <name>Zoe &amp; Matteo</name>
+      <type>instructor</type>
+      <members>
+        <member>Zoe Laurent</member>
+        <member>Matteo Ricci</member>
+      </members>
+      <country>FR</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Zoe Laurent and Matteo Ricci teach bachata from Lyon. Their classes focus on musicality, breaks and playing with the song structure. They teach with a different playlist for every group.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/zoe-and-matteo.jpg</src>
+        <alt>Portrait of Zoe &amp; Matteo</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-008</id>
+      <slug>camila-and-ostap</slug>
+      <name>Camila &amp; Ostap</name>
+      <type>instructor</type>
+      <members>
+        <member>Camila Duarte</member>
+        <member>Ostap Melnyk</member>
+      </members>
+      <country>PL</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Camila Duarte and Ostap Melnyk teach bachata from Warsaw. Their classes focus on styling, shadow work and dancing apart. They run a weekly open floor for beginners in Warsaw.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/camila-and-ostap.jpg</src>
+        <alt>Portrait of Camila &amp; Ostap</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-009</id>
+      <slug>nerea-and-fidel</slug>
+      <name>Nerea &amp; Fidel</name>
+      <type>instructor</type>
+      <members>
+        <member>Nerea Aguirre</member>
+        <member>Fidel Cabrera</member>
+      </members>
+      <country>CU</country>
+      <styles>
+        <style>salsa</style>
+        <style>dominicana</style>
+      </styles>
+      <bio>Nerea Aguirre and Fidel Cabrera teach bachata from Havana. Their classes focus on Latin social fundamentals that carry over from salsa to bachata. Fidel starts every class with a rumba warm-up.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/nerea-and-fidel.jpg</src>
+        <alt>Portrait of Nerea &amp; Fidel</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-010</id>
+      <slug>lourdes-and-pavel</slug>
+      <name>Lourdes &amp; Pavel</name>
+      <type>instructor</type>
+      <members>
+        <member>Lourdes Peña</member>
+        <member>Pavel Horák</member>
+      </members>
+      <country>CZ</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Lourdes Peña and Pavel Horák teach bachata from Prague. Their classes focus on dips, transitions and safe partner support. They always teach the way out of a move before the move itself.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/lourdes-and-pavel.jpg</src>
+        <alt>Portrait of Lourdes &amp; Pavel</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-011</id>
+      <slug>greta-and-isaias</slug>
+      <name>Greta &amp; Isaías</name>
+      <type>instructor</type>
+      <members>
+        <member>Greta Lindqvist</member>
+        <member>Isaías Cordero</member>
+      </members>
+      <country>SE</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Greta Lindqvist and Isaías Cordero teach bachata from Stockholm. Their classes focus on tempo, breathing and relaxed posture. Their advice for nervous dancers is to hum the melody.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/greta-and-isaias.jpg</src>
+        <alt>Portrait of Greta &amp; Isaías</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-012</id>
+      <slug>dalia-and-kofi</slug>
+      <name>Dalia &amp; Kofi</name>
+      <type>instructor</type>
+      <members>
+        <member>Dalia Haddad</member>
+        <member>Kofi Mensah</member>
+      </members>
+      <country>DE</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Dalia Haddad and Kofi Mensah teach bachata from Berlin. Their classes focus on improvisation on a crowded dance floor. They hold a no-choreography rule in all their classes.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dalia-and-kofi.jpg</src>
+        <alt>Portrait of Dalia &amp; Kofi</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-013</id>
+      <slug>ruth-and-anselmo</slug>
+      <name>Ruth &amp; Anselmo</name>
+      <type>instructor</type>
+      <members>
+        <member>Ruth Calderón</member>
+        <member>Anselmo Paz</member>
+      </members>
+      <country>CO</country>
+      <styles>
+        <style>salsa</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Ruth Calderón and Anselmo Paz teach bachata from Cali. Their classes focus on salsa timing for bachata dancers. Anselmo grew up in a family of percussionists.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/ruth-and-anselmo.jpg</src>
+        <alt>Portrait of Ruth &amp; Anselmo</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-014</id>
+      <slug>perla-and-wilmer</slug>
+      <name>Perla &amp; Wilmer</name>
+      <type>instructor</type>
+      <members>
+        <member>Perla Santana</member>
+        <member>Wilmer Rosario</member>
+      </members>
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Perla Santana and Wilmer Rosario teach bachata from San Pedro de Macorís. Their classes focus on merengue-influenced footwork in the Dominican style. They bring a güira to teach the rhythm by ear.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/perla-and-wilmer.jpg</src>
+        <alt>Portrait of Perla &amp; Wilmer</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-015</id>
+      <slug>jimena-cruz</slug>
+      <name>Jimena Cruz</name>
+      <type>instructor</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+        <style>sensual</style>
+      </styles>
+      <bio>Jimena Cruz teaches bachata from Madrid. The classes focus on first steps and confidence for complete beginners. She teaches the first class of the weekend every year.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/jimena-cruz.jpg</src>
+        <alt>Portrait of Jimena Cruz</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-016</id>
+      <slug>rafael-montilla</slug>
+      <name>Rafael Montilla</name>
+      <type>instructor</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Rafael Montilla teaches bachata from Puerto Plata. The classes focus on traditional guitar rhythms and how to dance them. He learned to dance before he learned to walk, his family says.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/rafael-montilla.jpg</src>
+        <alt>Portrait of Rafael Montilla</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-017</id>
+      <slug>sanaa-benali</slug>
+      <name>Sanaa Benali</name>
+      <type>instructor</type>
+      <members />
+      <country>MA</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Sanaa Benali teaches bachata from Casablanca. The classes focus on clear leading and floor craft. She is known for teaching leaders how to lead with their whole body.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/sanaa-benali.jpg</src>
+        <alt>Portrait of Sanaa Benali</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-018</id>
+      <slug>tomasz-wrona</slug>
+      <name>Tomasz Wrona</name>
+      <type>instructor</type>
+      <members />
+      <country>PL</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Tomasz Wrona teaches bachata from Kraków. The classes focus on lead technique and calm posture. He insists on a five-minute stretch before every class.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/tomasz-wrona.jpg</src>
+        <alt>Portrait of Tomasz Wrona</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-019</id>
+      <slug>ayelen-sosa</slug>
+      <name>Ayelén Sosa</name>
+      <type>instructor</type>
+      <members />
+      <country>AR</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Ayelén Sosa teaches bachata from Córdoba. The classes focus on follow technique, balance and styling. She teaches followers to choose, not just react.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/ayelen-sosa.jpg</src>
+        <alt>Portrait of Ayelén Sosa</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-020</id>
+      <slug>mireia-planas</slug>
+      <name>Mireia Planas</name>
+      <type>instructor</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Mireia Planas teaches bachata from Barcelona. The classes focus on body movement and flow for followers. Her background is contemporary dance.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/mireia-planas.jpg</src>
+        <alt>Portrait of Mireia Planas</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-021</id>
+      <slug>dominik-brandt</slug>
+      <name>Dominik Brandt</name>
+      <type>instructor</type>
+      <members />
+      <country>DE</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Dominik Brandt teaches bachata from Hamburg. The classes focus on footwork and rhythm for leaders. He dances in sneakers and tells you why.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dominik-brandt.jpg</src>
+        <alt>Portrait of Dominik Brandt</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-022</id>
+      <slug>luz-marina-echeverri</slug>
+      <name>Luz Marina Echeverri</name>
+      <type>instructor</type>
+      <members />
+      <country>CO</country>
+      <styles>
+        <style>salsa</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Luz Marina Echeverri teaches bachata from Bogotá. The classes focus on solo styling, shines and rhythm. She teaches every class with a live clave on the wood block.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/luz-marina-echeverri.jpg</src>
+        <alt>Portrait of Luz Marina Echeverri</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-023</id>
+      <slug>dj-kiko-mar</slug>
+      <name>DJ Kiko Mar</name>
+      <type>dj</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+        <style>sensual</style>
+      </styles>
+      <bio>DJ Kiko Mar plays smooth bachata sensual with a warm bass. Based in Valencia. He built his first playlist for his cousin's wedding.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-kiko-mar.jpg</src>
+        <alt>Portrait of DJ Kiko Mar</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-024</id>
+      <slug>dj-lorena-vela</slug>
+      <name>DJ Lorena Vela</name>
+      <type>dj</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+        <style>salsa</style>
+      </styles>
+      <bio>DJ Lorena Vela plays bachata moderna that crosses over into salsa. Based in Madrid. She keeps a notebook of every song that cleared a floor.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-lorena-vela.jpg</src>
+        <alt>Portrait of DJ Lorena Vela</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-025</id>
+      <slug>dj-tarek-noor</slug>
+      <name>DJ Tarek Noor</name>
+      <type>dj</type>
+      <members />
+      <country>FR</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>DJ Tarek Noor plays dark, slow bachata for late-night floors. Based in Marseille. He plays vinyl-only sets at home.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-tarek-noor.jpg</src>
+        <alt>Portrait of DJ Tarek Noor</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-026</id>
+      <slug>dj-ximena-flor</slug>
+      <name>DJ Ximena Flor</name>
+      <type>dj</type>
+      <members />
+      <country>MX</country>
+      <styles>
+        <style>moderna</style>
+        <style>dominicana</style>
+      </styles>
+      <bio>DJ Ximena Flor plays classic and new bachata in the same set. Based in Guadalajara. She always opens with a song from the 1990s.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-ximena-flor.jpg</src>
+        <alt>Portrait of DJ Ximena Flor</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-027</id>
+      <slug>dj-bautista</slug>
+      <name>DJ Bautista</name>
+      <type>dj</type>
+      <members />
+      <country>AR</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>DJ Bautista plays emotional, melodic sets. Based in Buenos Aires. He talks to the room between songs.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-bautista.jpg</src>
+        <alt>Portrait of DJ Bautista</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-028</id>
+      <slug>dj-anouk-bell</slug>
+      <name>DJ Anouk Bell</name>
+      <type>dj</type>
+      <members />
+      <country>NL</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>DJ Anouk Bell plays bright, upbeat bachata for big floors. Based in Rotterdam. She plays beach festivals every summer.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-anouk-bell.jpg</src>
+        <alt>Portrait of DJ Anouk Bell</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-029</id>
+      <slug>dj-oriol-pons</slug>
+      <name>DJ Oriol Pons</name>
+      <type>dj</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>DJ Oriol Pons plays late-night sensual sets. Based in Barcelona. His sets are known for long, slow build-ups.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-oriol-pons.jpg</src>
+        <alt>Portrait of DJ Oriol Pons</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-030</id>
+      <slug>dj-soledad-rey</slug>
+      <name>DJ Soledad Rey</name>
+      <type>dj</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>DJ Soledad Rey plays traditional Dominican bachata and its guitar sound. Based in Santo Domingo. She collects old cassettes from record markets.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/dj-soledad-rey.jpg</src>
+        <alt>Portrait of DJ Soledad Rey</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-031</id>
+      <slug>dj-rodion</slug>
+      <name>DJ Rodion</name>
+      <type>dj</type>
+      <members />
+      <country>UA</country>
+      <styles>
+        <style>moderna</style>
+        <style>sensual</style>
+      </styles>
+      <bio>DJ Rodion plays high-energy sets with remixes. Based in Lviv. He plays one request per hour.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-rodion.jpg</src>
+        <alt>Portrait of DJ Rodion</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-032</id>
+      <slug>dj-yasmina-cole</slug>
+      <name>DJ Yasmina Cole</name>
+      <type>dj</type>
+      <members />
+      <country>GB</country>
+      <styles>
+        <style>moderna</style>
+        <style>salsa</style>
+      </styles>
+      <bio>DJ Yasmina Cole plays bachata and salsa blended. Based in Manchester. She mixes live with two controllers and a loop pedal.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-yasmina-cole.jpg</src>
+        <alt>Portrait of DJ Yasmina Cole</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-033</id>
+      <slug>dj-hugo-tamarit</slug>
+      <name>DJ Hugo Tamarit</name>
+      <type>dj</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>dominicana</style>
+        <style>sensual</style>
+      </styles>
+      <bio>DJ Hugo Tamarit plays beach-ready roots bachata for sunset. Based in Valencia. He is the local DJ who knows every beach bar in Valencia.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/dj-hugo-tamarit.jpg</src>
+        <alt>Portrait of DJ Hugo Tamarit</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-034</id>
+      <slug>dj-naia-cortes</slug>
+      <name>DJ Naia Cortés</name>
+      <type>dj</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>DJ Naia Cortés plays romantic bachata with Andalusian touches. Based in Seville. She started as a dancer before she became a DJ.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-naia-cortes.jpg</src>
+        <alt>Portrait of DJ Naia Cortés</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-035</id>
+      <slug>dj-mateus-lobo</slug>
+      <name>DJ Mateus Lobo</name>
+      <type>dj</type>
+      <members />
+      <country>BR</country>
+      <styles>
+        <style>moderna</style>
+        <style>salsa</style>
+      </styles>
+      <bio>DJ Mateus Lobo plays danceable Latin mixes. Based in São Paulo. He plays the final set of many festivals back home.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-mateus-lobo.jpg</src>
+        <alt>Portrait of DJ Mateus Lobo</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-036</id>
+      <slug>dj-selene-arce</slug>
+      <name>DJ Selene Arce</name>
+      <type>dj</type>
+      <members />
+      <country>CR</country>
+      <styles>
+        <style>sensual</style>
+        <style>dominicana</style>
+      </styles>
+      <bio>DJ Selene Arce plays warm, guitar-driven sets. Based in San José. She finishes every set with the same slow song.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/dj-selene-arce.jpg</src>
+        <alt>Portrait of DJ Selene Arce</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-037</id>
+      <slug>cuarteto-salitre</slug>
+      <name>Cuarteto Salitre</name>
+      <type>band</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Cuarteto Salitre is a four-piece with guitar, bongo, güira and bass from Santo Domingo. They play traditional bachata the way it sounded in the barrios.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/cuarteto-salitre.jpg</src>
+        <alt>Portrait of Cuarteto Salitre</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-038</id>
+      <slug>los-faroleros-del-puerto</slug>
+      <name>Los Faroleros del Puerto</name>
+      <type>band</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>dominicana</style>
+        <style>sensual</style>
+      </styles>
+      <bio>Los Faroleros del Puerto is a five-piece port-city band from Valencia. They arrange Spanish ballads as bachata.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/los-faroleros-del-puerto.jpg</src>
+        <alt>Portrait of Los Faroleros del Puerto</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-039</id>
+      <slug>trio-guira-y-sal</slug>
+      <name>Trío Güira y Sal</name>
+      <type>band</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Trío Güira y Sal is a trio built around guitar and güira from Puerto Plata. Their live sets always include one song people can sing along to.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/trio-guira-y-sal.jpg</src>
+        <alt>Portrait of Trío Güira y Sal</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-040</id>
+      <slug>quinteto-canaveral</slug>
+      <name>Quinteto Cañaveral</name>
+      <type>band</type>
+      <members />
+      <country>CO</country>
+      <styles>
+        <style>moderna</style>
+        <style>salsa</style>
+      </styles>
+      <bio>Quinteto Cañaveral is a five-piece with horns from Cartagena. They add a Caribbean horn line to modern bachata.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/quinteto-canaveral.jpg</src>
+        <alt>Portrait of Quinteto Cañaveral</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-041</id>
+      <slug>costa-cuerda</slug>
+      <name>Costa Cuerda</name>
+      <type>band</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Costa Cuerda is a string-led quartet from Alicante. They play bachata on nylon guitars and a cajón.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/costa-cuerda.jpg</src>
+        <alt>Portrait of Costa Cuerda</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-042</id>
+      <slug>son-del-poniente</slug>
+      <name>Son del Poniente</name>
+      <type>band</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+        <style>salsa</style>
+      </styles>
+      <bio>Son del Poniente is a six-piece sunset band from Valencia. They are built for open-air stages at golden hour.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/son-del-poniente.jpg</src>
+        <alt>Portrait of Son del Poniente</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-043</id>
+      <slug>ledia-carrasco</slug>
+      <name>Ledia Carrasco</name>
+      <type>singer</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Ledia Carrasco is a singer-songwriter from Valencia. She writes her own lyrics in Valencian and Spanish.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/ledia-carrasco.jpg</src>
+        <alt>Portrait of Ledia Carrasco</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-044</id>
+      <slug>nestor-almonte</slug>
+      <name>Néstor Almonte</name>
+      <type>singer</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Néstor Almonte is a traditional bachata singer from Santo Domingo. He sings the old repertoire with a lead guitar.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/nestor-almonte.jpg</src>
+        <alt>Portrait of Néstor Almonte</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-045</id>
+      <slug>irene-valdes</slug>
+      <name>Irene Valdés</name>
+      <type>singer</type>
+      <members />
+      <country>VE</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Irene Valdés is a vocalist from Caracas. She sings slow bachata with a jazz phrasing.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/irene-valdes.jpg</src>
+        <alt>Portrait of Irene Valdés</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-046</id>
+      <slug>yeral-bonilla</slug>
+      <name>Yeral Bonilla</name>
+      <type>singer</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Yeral Bonilla is a young Dominican singer from La Romana. He mixes traditional lyrics with new rhythms.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/yeral-bonilla.jpg</src>
+        <alt>Portrait of Yeral Bonilla</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-047</id>
+      <slug>tamara-quiroga</slug>
+      <name>Tamara Quiroga</name>
+      <type>singer</type>
+      <members />
+      <country>CL</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Tamara Quiroga is a pop-leaning bachata singer from Santiago. She performs with only a guitarist and a cajón.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/tamara-quiroga.jpg</src>
+        <alt>Portrait of Tamara Quiroga</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-048</id>
+      <slug>abel-santoyo</slug>
+      <name>Abel Santoyo</name>
+      <type>singer</type>
+      <members />
+      <country>MX</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Abel Santoyo is a romantic singer from Monterrey. He closes every show with an acoustic song.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/abel-santoyo.jpg</src>
+        <alt>Portrait of Abel Santoyo</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-049</id>
+      <slug>ola-brava-dance-company</slug>
+      <name>Ola Brava Dance Company</name>
+      <type>show-team</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Ola Brava Dance Company is an eight-dancer company from Valencia. They build stage pieces from social dance moves.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/ola-brava-dance-company.jpg</src>
+        <alt>Portrait of Ola Brava Dance Company</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-050</id>
+      <slug>sal-y-compas</slug>
+      <name>Sal y Compás</name>
+      <type>show-team</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Sal y Compás is a six-dancer team from Seville. They mix bachata with flamenco hand percussion.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/sal-y-compas.jpg</src>
+        <alt>Portrait of Sal y Compás</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-051</id>
+      <slug>estudio-candela</slug>
+      <name>Estudio Candela</name>
+      <type>show-team</type>
+      <members />
+      <country>CO</country>
+      <styles>
+        <style>salsa</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Estudio Candela is a studio show team from Medellín. They perform fast footwork routines to live drums.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/estudio-candela.jpg</src>
+        <alt>Portrait of Estudio Candela</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-052</id>
+      <slug>navio-dance-crew</slug>
+      <name>Navío Dance Crew</name>
+      <type>show-team</type>
+      <members />
+      <country>PT</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Navío Dance Crew is a ten-dancer crew from Porto. They choreograph for big open-air stages.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/navio-dance-crew.jpg</src>
+        <alt>Portrait of Navío Dance Crew</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-053</id>
+      <slug>cuerpo-and-mar</slug>
+      <name>Cuerpo &amp; Mar</name>
+      <type>show-team</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Cuerpo &amp; Mar is a duo from Valencia. They created a piece inspired by the Valencia coastline.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/cuerpo-and-mar.jpg</src>
+        <alt>Portrait of Cuerpo &amp; Mar</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-054</id>
+      <slug>raiz-viva-ensemble</slug>
+      <name>Raíz Viva Ensemble</name>
+      <type>show-team</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Raíz Viva Ensemble is a ten-dancer ensemble from Santo Domingo. Their show traces bachata from the barrios to the world.</bio>
+      <featured>true</featured>
+      <image>
+        <src>images/performers/raiz-viva-ensemble.jpg</src>
+        <alt>Portrait of Raíz Viva Ensemble</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-055</id>
+      <slug>atlantico-show-team</slug>
+      <name>Atlántico Show Team</name>
+      <type>show-team</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>moderna</style>
+        <style>salsa</style>
+      </styles>
+      <bio>Atlántico Show Team is a team of six from Cádiz. They won a regional Latin dance competition in 2025.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/atlantico-show-team.jpg</src>
+        <alt>Portrait of Atlántico Show Team</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-056</id>
+      <slug>marea-alta-dance-collective</slug>
+      <name>Marea Alta Dance Collective</name>
+      <type>show-team</type>
+      <members />
+      <country>FR</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Marea Alta Dance Collective is a collective of seven from Bordeaux. They perform contemporary bachata with live lighting.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/marea-alta-dance-collective.jpg</src>
+        <alt>Portrait of Marea Alta Dance Collective</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-057</id>
+      <slug>duo-arrecife</slug>
+      <name>Duo Arrecife</name>
+      <type>show-team</type>
+      <members />
+      <country>MX</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Duo Arrecife is a couple from Cancún. Their show uses a single spotlight and a single chair.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/duo-arrecife.jpg</src>
+        <alt>Portrait of Duo Arrecife</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-058</id>
+      <slug>luna-rota</slug>
+      <name>Luna Rota</name>
+      <type>show-team</type>
+      <members />
+      <country>PL</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Luna Rota is a trio from Gdańsk. They blend bachata with contemporary dance.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/luna-rota.jpg</src>
+        <alt>Portrait of Luna Rota</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-059</id>
+      <slug>fuego-lento-show-team</slug>
+      <name>Fuego Lento Show Team</name>
+      <type>show-team</type>
+      <members />
+      <country>IT</country>
+      <styles>
+        <style>sensual</style>
+      </styles>
+      <bio>Fuego Lento Show Team is a team of eight from Naples. They are known for slow, controlled partner work.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/fuego-lento-show-team.jpg</src>
+        <alt>Portrait of Fuego Lento Show Team</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-060</id>
+      <slug>casa-tambora</slug>
+      <name>Casa Tambora</name>
+      <type>show-team</type>
+      <members />
+      <country>DO</country>
+      <styles>
+        <style>dominicana</style>
+      </styles>
+      <bio>Casa Tambora is an ensemble of nine from San Cristóbal. They dance to a live tambora and güira.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/casa-tambora.jpg</src>
+        <alt>Portrait of Casa Tambora</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-061</id>
+      <slug>mistral-dance-co</slug>
+      <name>Mistral Dance Co.</name>
+      <type>show-team</type>
+      <members />
+      <country>FR</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Mistral Dance Co. is a company of six from Montpellier. Their show is a mix of group and solo sections.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/mistral-dance-co.jpg</src>
+        <alt>Portrait of Mistral Dance Co.</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-062</id>
+      <slug>los-bailongos-del-cabanyal</slug>
+      <name>Los Bailongos del Cabanyal</name>
+      <type>show-team</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>dominicana</style>
+        <style>salsa</style>
+      </styles>
+      <bio>Los Bailongos del Cabanyal is a local neighbourhood group from Valencia. They are the festival's local favourites.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/los-bailongos-del-cabanyal.jpg</src>
+        <alt>Portrait of Los Bailongos del Cabanyal</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-063</id>
+      <slug>compania-sotavento</slug>
+      <name>Compañía Sotavento</name>
+      <type>show-team</type>
+      <members />
+      <country>ES</country>
+      <styles>
+        <style>sensual</style>
+        <style>moderna</style>
+      </styles>
+      <bio>Compañía Sotavento is a company of five from Tarifa. They choreograph on the beach at sunrise.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/compania-sotavento.jpg</src>
+        <alt>Portrait of Compañía Sotavento</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+    <performer>
+      <id>perf-064</id>
+      <slug>tropic-nine</slug>
+      <name>Tropic Nine</name>
+      <type>show-team</type>
+      <members />
+      <country>NL</country>
+      <styles>
+        <style>moderna</style>
+      </styles>
+      <bio>Tropic Nine is a crew of nine from Amsterdam. They bring Caribbean carnival energy to bachata.</bio>
+      <featured>false</featured>
+      <image>
+        <src>images/performers/tropic-nine.jpg</src>
+        <alt>Portrait of Tropic Nine</alt>
+        <credit>AI-generated (image to be created)</credit>
+        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+      </image>
+    </performer>
+  </performers>
+  <programmeItems>
+    <programmeItem>
+      <id>item-001</id>
+      <slug>welcome-sea-social-dj-kiko-mar-fri</slug>
+      <title>Welcome Sea Social: DJ Kiko Mar</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T12:00:00+02:00</start>
+      <end>2027-06-25T13:00:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-023</performerId>
+      </performerIds>
+      <description>DJ Kiko Mar plays bachata dominicana on the sand. Dance by the sea.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-002</id>
+      <slug>your-first-bachata-the-basic-step-fri</slug>
+      <title>Your first bachata: the basic step</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T12:30:00+02:00</start>
+      <end>2027-06-25T13:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-001</performerId>
+      </performerIds>
+      <description>Start from zero. Learn the basic step in four counts, the side step and how to pause between songs. No partner needed.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>first-timers</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-003</id>
+      <slug>salsa-on-the-sand-cross-body-for-bachata-dancers-fri</slug>
+      <title>Salsa on the sand: cross-body for bachata dancers</title>
+      <type>workshop</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>salsa</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T13:00:00+02:00</start>
+      <end>2027-06-25T14:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-003</performerId>
+      </performerIds>
+      <description>A relaxed all-levels class that borrows the cross-body lead from salsa and shows how it fits a bachata song.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>salsa</tag>
+        <tag>cross-body</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-004</id>
+      <slug>follow-with-ease-connection-basics-fri</slug>
+      <title>Follow with ease: connection basics</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>follow</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T14:00:00+02:00</start>
+      <end>2027-06-25T15:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-002</performerId>
+      </performerIds>
+      <description>Learn how to read a lead through the frame and the hand, and how to stay relaxed in a slow song.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>connection</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-005</id>
+      <slug>bachata-on-sand-balance-and-footwork-fri</slug>
+      <title>Bachata on sand: balance and footwork</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T14:30:00+02:00</start>
+      <end>2027-06-25T15:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-004</performerId>
+      </performerIds>
+      <description>Sand changes how you step. Learn to keep your weight low, keep your steps small and stay balanced barefoot or in shoes.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>sand</tag>
+        <tag>footwork</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-006</id>
+      <slug>lead-with-ease-clear-signals-for-beginners-fri</slug>
+      <title>Lead with ease: clear signals for beginners</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>lead</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T15:30:00+02:00</start>
+      <end>2027-06-25T16:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-009</performerId>
+      </performerIds>
+      <description>Learn three simple lead signals, how to count the room and how to ask a stranger to dance.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>lead</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-007</id>
+      <slug>follower-styling-in-the-sea-breeze-fri</slug>
+      <title>Follower styling in the sea breeze</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>follow</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T16:00:00+02:00</start>
+      <end>2027-06-25T17:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-005</performerId>
+      </performerIds>
+      <description>Add arm styling and soft body waves without losing your connection. For followers who know the basic step well.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>styling</tag>
+        <tag>follow</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-008</id>
+      <slug>turn-patterns-that-flow-fri</slug>
+      <title>Turn patterns that flow</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T17:00:00+02:00</start>
+      <end>2027-06-25T18:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-006</performerId>
+      </performerIds>
+      <description>Link three turn patterns without stopping. You work on timing, spotting and a quiet frame.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>turns</tag>
+        <tag>patterns</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-009</id>
+      <slug>leading-spins-without-pulling-fri</slug>
+      <title>Leading spins without pulling</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>lead</roleFocus>
+      <style>moderna</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T17:30:00+02:00</start>
+      <end>2027-06-25T18:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-007</performerId>
+      </performerIds>
+      <description>Learn to prepare, signal and release a spin with the frame, not the arm.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>spins</tag>
+        <tag>lead</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-010</id>
+      <slug>slow-musicality-dancing-the-pauses-fri</slug>
+      <title>Slow musicality: dancing the pauses</title>
+      <type>workshop</type>
+      <level>advanced</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T18:30:00+02:00</start>
+      <end>2027-06-25T19:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-010</performerId>
+        <performerId>perf-012</performerId>
+      </performerIds>
+      <description>Use silence, breaks and slow tempos. Explore how to listen first and move second.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>musicality</tag>
+        <tag>slow</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-011</id>
+      <slug>sunset-steps-dominican-footwork-for-everyone-fri</slug>
+      <title>Sunset steps: Dominican footwork for everyone</title>
+      <type>workshop</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T19:00:00+02:00</start>
+      <end>2027-06-25T20:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-014</performerId>
+      </performerIds>
+      <description>A sunset class on the roots of the dance: the side step, the tap and the small hip movement of traditional bachata.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>roots</tag>
+        <tag>sunset</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-012</id>
+      <slug>practica-social-dj-lorena-vela-fri</slug>
+      <title>Practica Social: DJ Lorena Vela</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T20:00:00+02:00</start>
+      <end>2027-06-25T21:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-024</performerId>
+      </performerIds>
+      <description>DJ Lorena Vela plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-013</id>
+      <slug>opening-show-ola-brava-dance-company-and-sal-y-compas-fri</slug>
+      <title>Opening Show: Ola Brava Dance Company and Sal y Compás</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T20:30:00+02:00</start>
+      <end>2027-06-25T21:15:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-049</performerId>
+        <performerId>perf-050</performerId>
+        <performerId>perf-037</performerId>
+      </performerIds>
+      <description>Ola Brava Dance Company and Sal y Compás on stage, with live music by Cuarteto Salitre. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-014</id>
+      <slug>pavilion-showcase-estudio-candela-and-navio-dance-crew-fri</slug>
+      <title>Pavilion Showcase: Estudio Candela and Navío Dance Crew</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T21:45:00+02:00</start>
+      <end>2027-06-25T22:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-051</performerId>
+        <performerId>perf-052</performerId>
+        <performerId>perf-038</performerId>
+      </performerIds>
+      <description>Estudio Candela and Navío Dance Crew on stage, with live music by Los Faroleros del Puerto. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-015</id>
+      <slug>club-night-dj-tarek-noor-fri</slug>
+      <title>Club Night: DJ Tarek Noor</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T22:00:00+02:00</start>
+      <end>2027-06-25T23:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-025</performerId>
+        <performerId>perf-046</performerId>
+      </performerIds>
+      <description>DJ Tarek Noor plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Yeral Bonilla.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-016</id>
+      <slug>midnight-show-cuerpo-and-mar-and-raiz-viva-ensemble-fri</slug>
+      <title>Midnight Show: Cuerpo &amp; Mar and Raíz Viva Ensemble</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-25T23:30:00+02:00</start>
+      <end>2027-06-26T00:00:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-053</performerId>
+        <performerId>perf-054</performerId>
+        <performerId>perf-039</performerId>
+      </performerIds>
+      <description>Cuerpo &amp; Mar and Raíz Viva Ensemble on stage, with live music by Trío Güira y Sal. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-017</id>
+      <slug>club-night-dj-ximena-flor-fri</slug>
+      <title>Club Night: DJ Ximena Flor</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-26T00:00:00+02:00</start>
+      <end>2027-06-26T01:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-026</performerId>
+      </performerIds>
+      <description>DJ Ximena Flor plays bachata moderna in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-018</id>
+      <slug>club-night-dj-bautista-fri</slug>
+      <title>Club Night: DJ Bautista</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-26T01:30:00+02:00</start>
+      <end>2027-06-26T03:00:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-027</performerId>
+      </performerIds>
+      <description>DJ Bautista plays bachata sensual in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-019</id>
+      <slug>last-dance-set-dj-anouk-bell-fri</slug>
+      <title>Last Dance Set: DJ Anouk Bell</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-fri</dayId>
+      <start>2027-06-26T03:00:00+02:00</start>
+      <end>2027-06-26T04:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-028</performerId>
+      </performerIds>
+      <description>DJ Anouk Bell plays bachata sensual in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-020</id>
+      <slug>morning-basics-by-the-sea-sat</slug>
+      <title>Morning basics by the sea</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T09:30:00+02:00</start>
+      <end>2027-06-26T10:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-016</performerId>
+      </performerIds>
+      <description>A relaxed first class on the sand with the basic step and the side step. Bring water and sunscreen.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>beach</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-021</id>
+      <slug>saturday-starter-the-follower-s-basics-sat</slug>
+      <title>Saturday starter: the follower's basics</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>follow</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T09:30:00+02:00</start>
+      <end>2027-06-26T10:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-001</performerId>
+      </performerIds>
+      <description>Learn the basic step, how to follow weight changes and how to stay light on your feet. Good first class for followers.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>follow</tag>
+        <tag>saturday</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-022</id>
+      <slug>beach-basics-for-followers-sat</slug>
+      <title>Beach basics for followers</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>follow</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T11:00:00+02:00</start>
+      <end>2027-06-26T12:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-015</performerId>
+      </performerIds>
+      <description>Learn how to follow on a soft floor. We look at posture, footwork and keeping balance with a partner.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>follow</tag>
+        <tag>sand</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-023</id>
+      <slug>saturday-starter-body-movement-basics-sat</slug>
+      <title>Saturday starter: body movement basics</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T11:00:00+02:00</start>
+      <end>2027-06-26T12:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-019</performerId>
+      </performerIds>
+      <description>Add a gentle hip and rib movement to the basic step. Leaders and followers both learn the same movement.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>body-movement</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-024</id>
+      <slug>salsa-bachata-fusion-footwork-sat</slug>
+      <title>Salsa-bachata fusion footwork</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>both</roleFocus>
+      <style>salsa</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T12:30:00+02:00</start>
+      <end>2027-06-26T13:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-013</performerId>
+      </performerIds>
+      <description>Mix salsa timing with bachata steps. You learn a short combination that works at any social.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>fusion</tag>
+        <tag>footwork</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-025</id>
+      <slug>lead-basics-posture-frame-and-counts-sat</slug>
+      <title>Lead basics: posture, frame and counts</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>lead</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T12:30:00+02:00</start>
+      <end>2027-06-26T13:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-008</performerId>
+      </performerIds>
+      <description>Build a strong, relaxed frame and learn to count a bachata phrase without looking at your feet.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>lead</tag>
+        <tag>frame</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-026</id>
+      <slug>roots-lab-dancing-to-the-guitar-sat</slug>
+      <title>Roots lab: dancing to the guitar</title>
+      <type>workshop</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T14:00:00+02:00</start>
+      <end>2027-06-26T15:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-004</performerId>
+      </performerIds>
+      <description>A live-guitar class on how bachata dominicana moves with the requinto and the güira. All levels welcome.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>roots</tag>
+        <tag>live-guitar</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-027</id>
+      <slug>dominican-side-steps-and-turns-sat</slug>
+      <title>Dominican side steps and turns</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T14:00:00+02:00</start>
+      <end>2027-06-26T15:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-009</performerId>
+      </performerIds>
+      <description>Combine the traditional side step with simple turns. You will practise the combination to a live-style rhythm.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>side-step</tag>
+        <tag>turns</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-028</id>
+      <slug>lead-the-dominican-side-step-sat</slug>
+      <title>Lead the Dominican side step</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>lead</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T15:30:00+02:00</start>
+      <end>2027-06-26T16:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-014</performerId>
+      </performerIds>
+      <description>Learn to lead the side step and the small turn in Dominican style, with a focus on rhythm and a relaxed frame.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>side-step</tag>
+        <tag>lead</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-029</id>
+      <slug>follow-through-the-musical-breaks-sat</slug>
+      <title>Follow through the musical breaks</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>follow</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T15:30:00+02:00</start>
+      <end>2027-06-26T16:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-011</performerId>
+      </performerIds>
+      <description>Learn to hear the breaks in a modern bachata song and to keep following when the lead pauses.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>breaks</tag>
+        <tag>follow</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-030</id>
+      <slug>improvise-playing-with-the-music-sat</slug>
+      <title>Improvise: playing with the music</title>
+      <type>workshop</type>
+      <level>advanced</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T17:00:00+02:00</start>
+      <end>2027-06-26T18:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-017</performerId>
+      </performerIds>
+      <description>Advanced dancers practise improvising on a changing playlist. The focus is listening to the song, not memorising patterns.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>improvisation</tag>
+        <tag>musicality</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-031</id>
+      <slug>advanced-lead-dips-and-safe-transitions-sat</slug>
+      <title>Advanced lead: dips and safe transitions</title>
+      <type>workshop</type>
+      <level>advanced</level>
+      <roleFocus>lead</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T17:00:00+02:00</start>
+      <end>2027-06-26T18:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-002</performerId>
+        <performerId>perf-005</performerId>
+      </performerIds>
+      <description>Plan dips, support the weight and exit calmly. For experienced leaders who already dance close.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>dips</tag>
+        <tag>lead</tag>
+        <tag>safety</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-032</id>
+      <slug>sunset-social-dj-oriol-pons-sat</slug>
+      <title>Sunset Social: DJ Oriol Pons</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T18:30:00+02:00</start>
+      <end>2027-06-26T20:00:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-029</performerId>
+      </performerIds>
+      <description>DJ Oriol Pons plays bachata dominicana on the sand. Dance by the sea.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-033</id>
+      <slug>advanced-follow-spins-and-balance-sat</slug>
+      <title>Advanced follow: spins and balance</title>
+      <type>workshop</type>
+      <level>advanced</level>
+      <roleFocus>follow</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T18:30:00+02:00</start>
+      <end>2027-06-26T19:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-022</performerId>
+      </performerIds>
+      <description>Fast spins, clean stops and balance on one foot. For experienced followers.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>spins</tag>
+        <tag>balance</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-034</id>
+      <slug>practica-social-dj-soledad-rey-sat</slug>
+      <title>Practica Social: DJ Soledad Rey</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T20:00:00+02:00</start>
+      <end>2027-06-26T21:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-030</performerId>
+      </performerIds>
+      <description>DJ Soledad Rey plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-035</id>
+      <slug>sunset-show-atlantico-show-team-and-marea-alta-dance-collective-sat</slug>
+      <title>Sunset Show: Atlántico Show Team and Marea Alta Dance Collective</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T20:15:00+02:00</start>
+      <end>2027-06-26T20:55:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-055</performerId>
+        <performerId>perf-056</performerId>
+        <performerId>perf-040</performerId>
+      </performerIds>
+      <description>Atlántico Show Team and Marea Alta Dance Collective on stage, with live music by Quinteto Cañaveral. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-036</id>
+      <slug>beach-night-set-dj-rodion-sat</slug>
+      <title>Beach Night Set: DJ Rodion</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T21:00:00+02:00</start>
+      <end>2027-06-26T22:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-031</performerId>
+      </performerIds>
+      <description>DJ Rodion plays bachata moderna on the sand. Dance by the sea.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-037</id>
+      <slug>pavilion-showcase-duo-arrecife-and-luna-rota-sat</slug>
+      <title>Pavilion Showcase: Duo Arrecife and Luna Rota</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T21:45:00+02:00</start>
+      <end>2027-06-26T22:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-057</performerId>
+        <performerId>perf-058</performerId>
+        <performerId>perf-041</performerId>
+      </performerIds>
+      <description>Duo Arrecife and Luna Rota on stage, with live music by Costa Cuerda. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-038</id>
+      <slug>club-night-dj-yasmina-cole-sat</slug>
+      <title>Club Night: DJ Yasmina Cole</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T22:00:00+02:00</start>
+      <end>2027-06-26T23:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-032</performerId>
+        <performerId>perf-047</performerId>
+      </performerIds>
+      <description>DJ Yasmina Cole plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Tamara Quiroga.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-039</id>
+      <slug>late-show-fuego-lento-show-team-and-casa-tambora-sat</slug>
+      <title>Late Show: Fuego Lento Show Team and Casa Tambora</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-26T23:30:00+02:00</start>
+      <end>2027-06-27T00:10:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-059</performerId>
+        <performerId>perf-060</performerId>
+        <performerId>perf-042</performerId>
+      </performerIds>
+      <description>Fuego Lento Show Team and Casa Tambora on stage, with live music by Son del Poniente. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-040</id>
+      <slug>club-night-dj-hugo-tamarit-sat</slug>
+      <title>Club Night: DJ Hugo Tamarit</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-27T00:10:00+02:00</start>
+      <end>2027-06-27T01:40:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-033</performerId>
+      </performerIds>
+      <description>DJ Hugo Tamarit plays bachata moderna in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-041</id>
+      <slug>club-night-dj-naia-cortes-sat</slug>
+      <title>Club Night: DJ Naia Cortés</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-27T01:40:00+02:00</start>
+      <end>2027-06-27T03:10:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-034</performerId>
+      </performerIds>
+      <description>DJ Naia Cortés plays bachata sensual in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-042</id>
+      <slug>club-night-dj-mateus-lobo-sat</slug>
+      <title>Club Night: DJ Mateus Lobo</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-27T03:10:00+02:00</start>
+      <end>2027-06-27T04:40:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-035</performerId>
+      </performerIds>
+      <description>DJ Mateus Lobo plays bachata moderna in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-043</id>
+      <slug>last-dance-set-dj-selene-arce-sat</slug>
+      <title>Last Dance Set: DJ Selene Arce</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sat</dayId>
+      <start>2027-06-27T04:40:00+02:00</start>
+      <end>2027-06-27T06:00:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-036</performerId>
+      </performerIds>
+      <description>DJ Selene Arce plays bachata sensual in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-044</id>
+      <slug>last-day-basics-on-the-sand-sun</slug>
+      <title>Last-day basics on the sand</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T09:30:00+02:00</start>
+      <end>2027-06-27T10:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-020</performerId>
+      </performerIds>
+      <description>Basic step and gentle body movement on the beach. Come as you are.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>beach</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-045</id>
+      <slug>sunday-refresher-the-follower-s-turns-sun</slug>
+      <title>Sunday refresher: the follower's turns</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>follow</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T09:30:00+02:00</start>
+      <end>2027-06-27T10:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-003</performerId>
+      </performerIds>
+      <description>Revisit the basic step and learn two simple turns. Good for followers who joined a workshop earlier in the weekend.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>turns</tag>
+        <tag>follow</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-046</id>
+      <slug>lead-basics-on-the-sand-sun</slug>
+      <title>Lead basics on the sand</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>lead</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T11:00:00+02:00</start>
+      <end>2027-06-27T12:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-016</performerId>
+      </performerIds>
+      <description>Practise leading the basic step and the side step on a soft floor.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>lead</tag>
+        <tag>sand</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-047</id>
+      <slug>sunday-refresher-the-basic-step-sun</slug>
+      <title>Sunday refresher: the basic step</title>
+      <type>workshop</type>
+      <level>beginner</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T11:00:00+02:00</start>
+      <end>2027-06-27T12:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-001</performerId>
+      </performerIds>
+      <description>A calm recap of the basic step and the side step before the last day of socials.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>basics</tag>
+        <tag>recap</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-048</id>
+      <slug>follower-footwork-on-sand-sun</slug>
+      <title>Follower footwork on sand</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>follow</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T12:30:00+02:00</start>
+      <end>2027-06-27T13:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-004</performerId>
+      </performerIds>
+      <description>Footwork, balance and soft ankles on a sand floor. Followers practise the side step and the tap.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>footwork</tag>
+        <tag>follow</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-049</id>
+      <slug>lead-variations-on-the-basic-sun</slug>
+      <title>Lead variations on the basic</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>lead</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T12:30:00+02:00</start>
+      <end>2027-06-27T13:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-006</performerId>
+      </performerIds>
+      <description>Learn four small variations that keep a social dance interesting without leaving the basic step.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>variations</tag>
+        <tag>lead</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-050</id>
+      <slug>salsa-on-the-beach-the-farewell-class-sun</slug>
+      <title>Salsa on the beach: the farewell class</title>
+      <type>workshop</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>salsa</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T14:00:00+02:00</start>
+      <end>2027-06-27T15:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-013</performerId>
+      </performerIds>
+      <description>A fun all-levels salsa class to a live-style rhythm. Perfect before the Sunday sunset social.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>salsa</tag>
+        <tag>fun</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-051</id>
+      <slug>partner-connection-and-weight-changes-sun</slug>
+      <title>Partner connection and weight changes</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T14:00:00+02:00</start>
+      <end>2027-06-27T15:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-018</performerId>
+      </performerIds>
+      <description>Practise sending and receiving weight through the frame. Works at any speed.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>connection</tag>
+        <tag>weight</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-052</id>
+      <slug>shine-steps-and-solo-styling-sun</slug>
+      <title>Shine steps and solo styling</title>
+      <type>workshop</type>
+      <level>intermediate</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T15:30:00+02:00</start>
+      <end>2027-06-27T16:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-021</performerId>
+      </performerIds>
+      <description>Short solo sequences that you can use between partner dances. No partner needed.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>shines</tag>
+        <tag>solo</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-053</id>
+      <slug>advanced-dominican-footwork-combinations-sun</slug>
+      <title>Advanced Dominican footwork combinations</title>
+      <type>workshop</type>
+      <level>advanced</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T15:30:00+02:00</start>
+      <end>2027-06-27T16:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-009</performerId>
+        <performerId>perf-014</performerId>
+      </performerIds>
+      <description>Fast footwork combinations from traditional bachata. Expect repetition and a lot of counting.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>footwork</tag>
+        <tag>roots</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-054</id>
+      <slug>advanced-follow-body-isolations-sun</slug>
+      <title>Advanced follow: body isolations</title>
+      <type>workshop</type>
+      <level>advanced</level>
+      <roleFocus>follow</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T17:00:00+02:00</start>
+      <end>2027-06-27T18:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-007</performerId>
+        <performerId>perf-010</performerId>
+      </performerIds>
+      <description>Clean isolations of the chest, ribs and hips for experienced followers.</description>
+      <capacity>80</capacity>
+      <tags>
+        <tag>isolations</tag>
+        <tag>follow</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-055</id>
+      <slug>lead-musicality-hitting-the-accents-sun</slug>
+      <title>Lead musicality: hitting the accents</title>
+      <type>workshop</type>
+      <level>advanced</level>
+      <roleFocus>lead</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T17:00:00+02:00</start>
+      <end>2027-06-27T18:15:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-008</performerId>
+        <performerId>perf-011</performerId>
+      </performerIds>
+      <description>Learn to hit the accents of a song and lead the change in the music.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>musicality</tag>
+        <tag>lead</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-056</id>
+      <slug>closing-sunset-social-dj-kiko-mar-sun</slug>
+      <title>Closing Sunset Social: DJ Kiko Mar</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T18:30:00+02:00</start>
+      <end>2027-06-27T20:00:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-023</performerId>
+      </performerIds>
+      <description>DJ Kiko Mar plays bachata dominicana on the sand. Dance by the sea.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-057</id>
+      <slug>festival-farewell-social-dance-skills-sun</slug>
+      <title>Festival farewell: social dance skills</title>
+      <type>workshop</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T18:30:00+02:00</start>
+      <end>2027-06-27T19:45:00+02:00</end>
+      <dayPart>day</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-012</performerId>
+      </performerIds>
+      <description>A final all-levels class on floor craft, asking for a dance and thanking your partner. A relaxed way to end the day.</description>
+      <capacity>60</capacity>
+      <tags>
+        <tag>social-skills</tag>
+        <tag>etiquette</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-058</id>
+      <slug>practica-social-dj-lorena-vela-sun</slug>
+      <title>Practica Social: DJ Lorena Vela</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T20:00:00+02:00</start>
+      <end>2027-06-27T21:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-024</performerId>
+      </performerIds>
+      <description>DJ Lorena Vela plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-059</id>
+      <slug>closing-gala-show-mistral-dance-co-and-los-bailongos-del-cabanyal-sun</slug>
+      <title>Closing Gala Show: Mistral Dance Co. and Los Bailongos del Cabanyal</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>dominicana</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T20:15:00+02:00</start>
+      <end>2027-06-27T21:00:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-061</performerId>
+        <performerId>perf-062</performerId>
+        <performerId>perf-043</performerId>
+      </performerIds>
+      <description>Mistral Dance Co. and Los Bailongos del Cabanyal on stage, with live music by Ledia Carrasco. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-060</id>
+      <slug>beach-night-set-dj-tarek-noor-sun</slug>
+      <title>Beach Night Set: DJ Tarek Noor</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T21:15:00+02:00</start>
+      <end>2027-06-27T22:45:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-001</venueId>
+      <performerIds>
+        <performerId>perf-025</performerId>
+      </performerIds>
+      <description>DJ Tarek Noor plays bachata moderna on the sand. Dance by the sea.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-061</id>
+      <slug>farewell-club-night-dj-ximena-flor-sun</slug>
+      <title>Farewell Club Night: DJ Ximena Flor</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T21:30:00+02:00</start>
+      <end>2027-06-27T23:00:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-026</performerId>
+        <performerId>perf-048</performerId>
+      </performerIds>
+      <description>DJ Ximena Flor plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Abel Santoyo.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-062</id>
+      <slug>pavilion-showcase-compania-sotavento-sun</slug>
+      <title>Pavilion Showcase: Compañía Sotavento</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T21:45:00+02:00</start>
+      <end>2027-06-27T22:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-002</venueId>
+      <performerIds>
+        <performerId>perf-063</performerId>
+        <performerId>perf-044</performerId>
+      </performerIds>
+      <description>Compañía Sotavento on stage, with live music by Néstor Almonte. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-063</id>
+      <slug>farewell-show-tropic-nine-sun</slug>
+      <title>Farewell Show: Tropic Nine</title>
+      <type>show</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T23:00:00+02:00</start>
+      <end>2027-06-27T23:40:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-064</performerId>
+        <performerId>perf-045</performerId>
+      </performerIds>
+      <description>Tropic Nine on stage, with live music by Irene Valdés. A short show for everyone, standing room only.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>show</tag>
+        <tag>live-music</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-064</id>
+      <slug>farewell-club-night-dj-bautista-sun</slug>
+      <title>Farewell Club Night: DJ Bautista</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>moderna</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-27T23:40:00+02:00</start>
+      <end>2027-06-28T01:10:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-027</performerId>
+      </performerIds>
+      <description>DJ Bautista plays bachata moderna in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+    <programmeItem>
+      <id>item-065</id>
+      <slug>farewell-club-night-dj-anouk-bell-sun</slug>
+      <title>Farewell Club Night: DJ Anouk Bell</title>
+      <type>social</type>
+      <level>all-levels</level>
+      <roleFocus>both</roleFocus>
+      <style>sensual</style>
+      <dayId>day-sun</dayId>
+      <start>2027-06-28T01:10:00+02:00</start>
+      <end>2027-06-28T02:30:00+02:00</end>
+      <dayPart>night</dayPart>
+      <venueId>ven-003</venueId>
+      <performerIds>
+        <performerId>perf-028</performerId>
+      </performerIds>
+      <description>DJ Anouk Bell plays bachata sensual in the club. The main floor for dancers who stay up late.</description>
+      <capacity nil="true" />
+      <tags>
+        <tag>social</tag>
+        <tag>dj</tag>
+      </tags>
+    </programmeItem>
+  </programmeItems>
+</festivalData>

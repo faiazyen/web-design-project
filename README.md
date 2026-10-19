@@ -13,6 +13,8 @@ CZU Web Design course project: a website for a fictional bachata festival in Val
 | `data.xml` | The same data as XML, generated from `data.json` |
 | `presentation.pptx` | 5-slide presentation (3 to 5 minutes) |
 
+**Upload folder:** `Seminar 2 Submission/` holds a copy of these four files, ready for Moodle. If a root file changes, run `sh scripts/make-submission.sh` to refresh the copies and check they are identical.
+
 ## Supporting files
 
 - `ai-log.md`: log of every AI-assisted step (what AI did, how it was checked, what was accepted, changed, rejected)

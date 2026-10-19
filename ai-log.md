@@ -240,3 +240,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none.
 - Rejected (what and why): rewriting the bios now, to save time before submission.
 - Errors/limitations found: the bios are still short and formulaic. Slide 5 and the spec both say so honestly.
+
+## 2026-10-19 – "Seminar 2 Submission" folder – Claude Code, on request of the team
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): check that a separate "Seminar 2 Submission" folder exists locally and on GitHub with the four final files, and create it if not.
+- What AI produced: the folder `Seminar 2 Submission/` with `project-specification.md`, `data.json`, `data.xml` and `presentation.pptx`; `scripts/make-submission.sh` to refresh and verify the copies; a README line.
+- How we verified it: the folder did not exist before (checked locally and in `git ls-files`). After the copy, SHA-256 checksums of all four copies equal the root files, and `validate-data.py` passes on the copied `data.json`.
+- Accepted: the copies as the files to upload to Moodle.
+- Modified (what and why): none.
+- Rejected (what and why): none.
+- Errors/limitations found: the copies can drift if a root file is edited later. Run `sh scripts/make-submission.sh` after any change and before uploading.
