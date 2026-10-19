@@ -90,3 +90,43 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none yet.
 - Rejected (what and why): none yet.
 - Errors/limitations found: none yet. Data has not been generated (the brief says to wait for approval).
+
+## 2026-10-19 – Step 1.5 Generate the data – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5). A one-off Python generator (kept outside the repo, in the session scratchpad) produced `data.json` from hand-written content lists.
+- Prompt (short): generate `data.json` from the approved schema: 3 days, 3 venues, 64 performers, 72 programme items; fictional names only; every performer in at least one item; no venue overlaps; no performer in two places at once.
+- What AI produced: `data.json` with 3 venues, 64 performers (22 instructors, 14 DJs, 6 bands, 6 singers, 16 show teams) and 72 items (36 workshops, 27 socials, 9 shows), plus festival content (tickets, accommodation, travel, FAQ, code of conduct, accessibility, sustainability, roots).
+- How we verified it: `python3 scripts/validate-data.py`. First run: **9 errors** (8 after-midnight sets with the wrong `dayId`, 1 set starting on 28 June). Final run: 0 errors, 0 warnings. 10 random records read by hand. Scenario 1, 2 and 3 checked against real records.
+- Accepted: the schema, the venue and performer mix, the content structure.
+- Modified (what and why): added a programme-day rule (06:00 to 06:00) to the schema and the spec, because the validator showed the schema had no rule for sets after midnight. Changed `dayPart` so that 00:00–05:59 counts as night (a 01:30 set had been labelled day). Removed an internal note ("the team will confirm this fact") from the visible Roots text.
+- Rejected (what and why): nothing rejected so far. Image files do not exist yet: the `src` paths in `data.json` are planned paths for AI-generated images, to be created and credited later.
+- Errors/limitations found: performer bios and event descriptions are short and somewhat formulaic and need a human pass. Travel facts (airport metro time) and the 2019 UNESCO listing in the Roots timeline must be checked before publishing. Fictional venue and performer names were not individually searched online.
+
+## 2026-10-19 – Step 1.5 Write and test the validator – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): write `scripts/validate-data.py` that checks the rules plus minimum counts, duplicate ids and slugs, and dates inside the festival range; run it and show the output.
+- What AI produced: `scripts/validate-data.py` (standard library only, exit code 1 on any error).
+- How we verified it: ran it on the real data (PASS), then on 11 deliberately broken copies. It failed all 11 with a clear message: venue overlap, performer double-booking, unknown performer id, duplicate slug, unused performer, beginner workshop at 02:00, real artist name, date outside the range, wrong `dayPart`, wrong UTC offset, too few performers.
+- Accepted: the validator as written.
+- Modified (what and why): the date and `dayPart` checks were rewritten for the programme-day rule after the first run.
+- Rejected (what and why): none.
+- Errors/limitations found: the real-artist list is a short blocklist of well-known names and cannot guarantee no clash with any real person. The validator checks structure and logic, not whether the text makes sense.
+
+## 2026-10-19 – Step 1.6 Data for the website – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): write `scripts/build-data.py` that converts `data.json` into `web/js/data.js` as `window.FESTIVAL_DATA = {...};` with a generated-file header.
+- What AI produced: `scripts/build-data.py` and the generated `web/js/data.js` (about 110 KB).
+- How we verified it: ran the script, read the header and the end of the file, and confirmed the file parses as JavaScript (a one-off check in a local runtime; the site itself uses no Node).
+- Accepted: yes.
+- Modified (what and why): none.
+- Rejected (what and why): none.
+- Errors/limitations found: `data.js` is not yet loaded by any page, so the `file://` behaviour has not been tested in a browser.
+
+## 2026-10-19 – Step 1.7 Roles confirmed, final commit – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): Faiaz confirmed Oscar Muz is B and Sebastian Betancur is C; fill section 9 from the log and commit.
+- What AI produced: section 9 of the spec updated with the roles, concrete validator evidence and the test results.
+- How we verified it: compared each claim in section 9 with the validator output and this log.
+- Accepted: pending review by B and C.
+- Modified (what and why): none.
+- Rejected (what and why): none.
+- Errors/limitations found: B has not yet reviewed the spec text and C has not yet written the critique (step 1.3), so the "changed versus the AI draft" list is still to be written by them.
