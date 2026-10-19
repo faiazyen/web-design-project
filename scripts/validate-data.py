@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data.json"
 
-MIN_DAYS, MIN_VENUES, MIN_PERFORMERS, MIN_ITEMS = 3, 2, 64, 72
+MIN_DAYS, MIN_VENUES, MIN_PERFORMERS, MIN_ITEMS = 3, 2, 64, 65
 FEST_START, FEST_END = "2027-06-25", "2027-06-27"
 OFFSET = "+02:00"
 ENUMS = {

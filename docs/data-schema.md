@@ -23,7 +23,7 @@ Source of truth: `data.json` at the repo root. `scripts/build-data.py` converts 
 | `categories` | object | yes | Lookup lists for filters and quiz |
 | `venues` | array of venue | yes | 3 records (minimum 2) |
 | `performers` | array of performer | yes | 64 records |
-| `programmeItems` | array of item | yes | 72 records |
+| `programmeItems` | array of item | yes | 65 records |
 
 ## festival
 

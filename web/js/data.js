@@ -1818,31 +1818,8 @@ window.FESTIVAL_DATA = {
   "programmeItems": [
     {
       "id": "item-001",
-      "slug": "welcome-practica-dj-kiko-mar-fri",
-      "title": "Welcome Practica: DJ Kiko Mar",
-      "type": "social",
-      "level": "all-levels",
-      "roleFocus": "both",
-      "style": "dominicana",
-      "dayId": "day-fri",
-      "start": "2027-06-25T11:30:00+02:00",
-      "end": "2027-06-25T12:25:00+02:00",
-      "dayPart": "day",
-      "venueId": "ven-002",
-      "performerIds": [
-        "perf-023"
-      ],
-      "description": "DJ Kiko Mar plays bachata dominicana in the pavilion. A relaxed floor where beginners are welcome to join.",
-      "capacity": null,
-      "tags": [
-        "social",
-        "dj"
-      ]
-    },
-    {
-      "id": "item-002",
-      "slug": "welcome-sea-social-dj-lorena-vela-fri",
-      "title": "Welcome Sea Social: DJ Lorena Vela",
+      "slug": "welcome-sea-social-dj-kiko-mar-fri",
+      "title": "Welcome Sea Social: DJ Kiko Mar",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -1853,9 +1830,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-024"
+        "perf-023"
       ],
-      "description": "DJ Lorena Vela plays bachata dominicana on the sand. Dance by the sea.",
+      "description": "DJ Kiko Mar plays bachata dominicana on the sand. Dance by the sea.",
       "capacity": null,
       "tags": [
         "social",
@@ -1863,7 +1840,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-003",
+      "id": "item-002",
       "slug": "your-first-bachata-the-basic-step-fri",
       "title": "Your first bachata: the basic step",
       "type": "workshop",
@@ -1886,7 +1863,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-004",
+      "id": "item-003",
       "slug": "salsa-on-the-sand-cross-body-for-bachata-dancers-fri",
       "title": "Salsa on the sand: cross-body for bachata dancers",
       "type": "workshop",
@@ -1909,7 +1886,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-005",
+      "id": "item-004",
       "slug": "follow-with-ease-connection-basics-fri",
       "title": "Follow with ease: connection basics",
       "type": "workshop",
@@ -1932,7 +1909,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-006",
+      "id": "item-005",
       "slug": "bachata-on-sand-balance-and-footwork-fri",
       "title": "Bachata on sand: balance and footwork",
       "type": "workshop",
@@ -1955,7 +1932,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-007",
+      "id": "item-006",
       "slug": "lead-with-ease-clear-signals-for-beginners-fri",
       "title": "Lead with ease: clear signals for beginners",
       "type": "workshop",
@@ -1978,7 +1955,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-008",
+      "id": "item-007",
       "slug": "follower-styling-in-the-sea-breeze-fri",
       "title": "Follower styling in the sea breeze",
       "type": "workshop",
@@ -2001,7 +1978,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-009",
+      "id": "item-008",
       "slug": "turn-patterns-that-flow-fri",
       "title": "Turn patterns that flow",
       "type": "workshop",
@@ -2024,7 +2001,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-010",
+      "id": "item-009",
       "slug": "leading-spins-without-pulling-fri",
       "title": "Leading spins without pulling",
       "type": "workshop",
@@ -2047,7 +2024,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-011",
+      "id": "item-010",
       "slug": "slow-musicality-dancing-the-pauses-fri",
       "title": "Slow musicality: dancing the pauses",
       "type": "workshop",
@@ -2071,7 +2048,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-012",
+      "id": "item-011",
       "slug": "sunset-steps-dominican-footwork-for-everyone-fri",
       "title": "Sunset steps: Dominican footwork for everyone",
       "type": "workshop",
@@ -2094,9 +2071,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-013",
-      "slug": "practica-social-dj-tarek-noor-fri",
-      "title": "Practica Social: DJ Tarek Noor",
+      "id": "item-012",
+      "slug": "practica-social-dj-lorena-vela-fri",
+      "title": "Practica Social: DJ Lorena Vela",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2107,9 +2084,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-025"
+        "perf-024"
       ],
-      "description": "DJ Tarek Noor plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.",
+      "description": "DJ Lorena Vela plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.",
       "capacity": null,
       "tags": [
         "social",
@@ -2117,7 +2094,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-014",
+      "id": "item-013",
       "slug": "opening-show-ola-brava-dance-company-and-sal-y-compas-fri",
       "title": "Opening Show: Ola Brava Dance Company and Sal y Compás",
       "type": "show",
@@ -2142,30 +2119,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-015",
-      "slug": "beach-night-set-dj-ximena-flor-fri",
-      "title": "Beach Night Set: DJ Ximena Flor",
-      "type": "social",
-      "level": "all-levels",
-      "roleFocus": "both",
-      "style": "sensual",
-      "dayId": "day-fri",
-      "start": "2027-06-25T21:30:00+02:00",
-      "end": "2027-06-25T23:00:00+02:00",
-      "dayPart": "night",
-      "venueId": "ven-001",
-      "performerIds": [
-        "perf-026"
-      ],
-      "description": "DJ Ximena Flor plays bachata sensual on the sand. Dance by the sea.",
-      "capacity": null,
-      "tags": [
-        "social",
-        "dj"
-      ]
-    },
-    {
-      "id": "item-016",
+      "id": "item-014",
       "slug": "pavilion-showcase-estudio-candela-and-navio-dance-crew-fri",
       "title": "Pavilion Showcase: Estudio Candela and Navío Dance Crew",
       "type": "show",
@@ -2190,9 +2144,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-017",
-      "slug": "club-night-dj-bautista-fri",
-      "title": "Club Night: DJ Bautista",
+      "id": "item-015",
+      "slug": "club-night-dj-tarek-noor-fri",
+      "title": "Club Night: DJ Tarek Noor",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2203,10 +2157,10 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-027",
+        "perf-025",
         "perf-046"
       ],
-      "description": "DJ Bautista plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Yeral Bonilla.",
+      "description": "DJ Tarek Noor plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Yeral Bonilla.",
       "capacity": null,
       "tags": [
         "social",
@@ -2214,30 +2168,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-018",
-      "slug": "late-practica-dj-anouk-bell-fri",
-      "title": "Late Practica: DJ Anouk Bell",
-      "type": "social",
-      "level": "all-levels",
-      "roleFocus": "both",
-      "style": "dominicana",
-      "dayId": "day-fri",
-      "start": "2027-06-25T22:45:00+02:00",
-      "end": "2027-06-26T00:15:00+02:00",
-      "dayPart": "night",
-      "venueId": "ven-002",
-      "performerIds": [
-        "perf-028"
-      ],
-      "description": "DJ Anouk Bell plays bachata dominicana in the pavilion. A relaxed floor where beginners are welcome to join.",
-      "capacity": null,
-      "tags": [
-        "social",
-        "dj"
-      ]
-    },
-    {
-      "id": "item-019",
+      "id": "item-016",
       "slug": "midnight-show-cuerpo-and-mar-and-raiz-viva-ensemble-fri",
       "title": "Midnight Show: Cuerpo & Mar and Raíz Viva Ensemble",
       "type": "show",
@@ -2262,9 +2193,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-020",
-      "slug": "club-night-dj-oriol-pons-fri",
-      "title": "Club Night: DJ Oriol Pons",
+      "id": "item-017",
+      "slug": "club-night-dj-ximena-flor-fri",
+      "title": "Club Night: DJ Ximena Flor",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2275,9 +2206,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-029"
+        "perf-026"
       ],
-      "description": "DJ Oriol Pons plays bachata moderna in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Ximena Flor plays bachata moderna in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -2285,9 +2216,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-021",
-      "slug": "club-night-dj-soledad-rey-fri",
-      "title": "Club Night: DJ Soledad Rey",
+      "id": "item-018",
+      "slug": "club-night-dj-bautista-fri",
+      "title": "Club Night: DJ Bautista",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2298,9 +2229,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-030"
+        "perf-027"
       ],
-      "description": "DJ Soledad Rey plays bachata sensual in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Bautista plays bachata sensual in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -2308,9 +2239,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-022",
-      "slug": "last-dance-set-dj-rodion-fri",
-      "title": "Last Dance Set: DJ Rodion",
+      "id": "item-019",
+      "slug": "last-dance-set-dj-anouk-bell-fri",
+      "title": "Last Dance Set: DJ Anouk Bell",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2321,9 +2252,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-031"
+        "perf-028"
       ],
-      "description": "DJ Rodion plays bachata sensual in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Anouk Bell plays bachata sensual in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -2331,7 +2262,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-023",
+      "id": "item-020",
       "slug": "morning-basics-by-the-sea-sat",
       "title": "Morning basics by the sea",
       "type": "workshop",
@@ -2354,7 +2285,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-024",
+      "id": "item-021",
       "slug": "saturday-starter-the-follower-s-basics-sat",
       "title": "Saturday starter: the follower's basics",
       "type": "workshop",
@@ -2378,7 +2309,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-025",
+      "id": "item-022",
       "slug": "beach-basics-for-followers-sat",
       "title": "Beach basics for followers",
       "type": "workshop",
@@ -2402,7 +2333,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-026",
+      "id": "item-023",
       "slug": "saturday-starter-body-movement-basics-sat",
       "title": "Saturday starter: body movement basics",
       "type": "workshop",
@@ -2425,7 +2356,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-027",
+      "id": "item-024",
       "slug": "salsa-bachata-fusion-footwork-sat",
       "title": "Salsa-bachata fusion footwork",
       "type": "workshop",
@@ -2448,7 +2379,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-028",
+      "id": "item-025",
       "slug": "lead-basics-posture-frame-and-counts-sat",
       "title": "Lead basics: posture, frame and counts",
       "type": "workshop",
@@ -2472,7 +2403,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-029",
+      "id": "item-026",
       "slug": "roots-lab-dancing-to-the-guitar-sat",
       "title": "Roots lab: dancing to the guitar",
       "type": "workshop",
@@ -2495,7 +2426,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-030",
+      "id": "item-027",
       "slug": "dominican-side-steps-and-turns-sat",
       "title": "Dominican side steps and turns",
       "type": "workshop",
@@ -2518,7 +2449,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-031",
+      "id": "item-028",
       "slug": "lead-the-dominican-side-step-sat",
       "title": "Lead the Dominican side step",
       "type": "workshop",
@@ -2541,7 +2472,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-032",
+      "id": "item-029",
       "slug": "follow-through-the-musical-breaks-sat",
       "title": "Follow through the musical breaks",
       "type": "workshop",
@@ -2564,7 +2495,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-033",
+      "id": "item-030",
       "slug": "improvise-playing-with-the-music-sat",
       "title": "Improvise: playing with the music",
       "type": "workshop",
@@ -2577,8 +2508,7 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-017",
-        "perf-018"
+        "perf-017"
       ],
       "description": "Advanced dancers practise improvising on a changing playlist. The focus is listening to the song, not memorising patterns.",
       "capacity": 80,
@@ -2588,7 +2518,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-034",
+      "id": "item-031",
       "slug": "advanced-lead-dips-and-safe-transitions-sat",
       "title": "Advanced lead: dips and safe transitions",
       "type": "workshop",
@@ -2601,8 +2531,8 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-020",
-        "perf-002"
+        "perf-002",
+        "perf-005"
       ],
       "description": "Plan dips, support the weight and exit calmly. For experienced leaders who already dance close.",
       "capacity": 60,
@@ -2613,9 +2543,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-035",
-      "slug": "sunset-social-dj-yasmina-cole-sat",
-      "title": "Sunset Social: DJ Yasmina Cole",
+      "id": "item-032",
+      "slug": "sunset-social-dj-oriol-pons-sat",
+      "title": "Sunset Social: DJ Oriol Pons",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2626,9 +2556,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-032"
+        "perf-029"
       ],
-      "description": "DJ Yasmina Cole plays bachata dominicana on the sand. Dance by the sea.",
+      "description": "DJ Oriol Pons plays bachata dominicana on the sand. Dance by the sea.",
       "capacity": null,
       "tags": [
         "social",
@@ -2636,7 +2566,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-036",
+      "id": "item-033",
       "slug": "advanced-follow-spins-and-balance-sat",
       "title": "Advanced follow: spins and balance",
       "type": "workshop",
@@ -2649,7 +2579,6 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-021",
         "perf-022"
       ],
       "description": "Fast spins, clean stops and balance on one foot. For experienced followers.",
@@ -2660,9 +2589,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-037",
-      "slug": "practica-social-dj-hugo-tamarit-sat",
-      "title": "Practica Social: DJ Hugo Tamarit",
+      "id": "item-034",
+      "slug": "practica-social-dj-soledad-rey-sat",
+      "title": "Practica Social: DJ Soledad Rey",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2673,9 +2602,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-033"
+        "perf-030"
       ],
-      "description": "DJ Hugo Tamarit plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.",
+      "description": "DJ Soledad Rey plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.",
       "capacity": null,
       "tags": [
         "social",
@@ -2683,7 +2612,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-038",
+      "id": "item-035",
       "slug": "sunset-show-atlantico-show-team-and-marea-alta-dance-collective-sat",
       "title": "Sunset Show: Atlántico Show Team and Marea Alta Dance Collective",
       "type": "show",
@@ -2708,9 +2637,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-039",
-      "slug": "beach-night-set-dj-naia-cortes-sat",
-      "title": "Beach Night Set: DJ Naia Cortés",
+      "id": "item-036",
+      "slug": "beach-night-set-dj-rodion-sat",
+      "title": "Beach Night Set: DJ Rodion",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2721,9 +2650,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-034"
+        "perf-031"
       ],
-      "description": "DJ Naia Cortés plays bachata moderna on the sand. Dance by the sea.",
+      "description": "DJ Rodion plays bachata moderna on the sand. Dance by the sea.",
       "capacity": null,
       "tags": [
         "social",
@@ -2731,7 +2660,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-040",
+      "id": "item-037",
       "slug": "pavilion-showcase-duo-arrecife-and-luna-rota-sat",
       "title": "Pavilion Showcase: Duo Arrecife and Luna Rota",
       "type": "show",
@@ -2756,9 +2685,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-041",
-      "slug": "club-night-dj-mateus-lobo-sat",
-      "title": "Club Night: DJ Mateus Lobo",
+      "id": "item-038",
+      "slug": "club-night-dj-yasmina-cole-sat",
+      "title": "Club Night: DJ Yasmina Cole",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2769,10 +2698,10 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-035",
+        "perf-032",
         "perf-047"
       ],
-      "description": "DJ Mateus Lobo plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Tamara Quiroga.",
+      "description": "DJ Yasmina Cole plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Tamara Quiroga.",
       "capacity": null,
       "tags": [
         "social",
@@ -2780,53 +2709,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-042",
-      "slug": "moonlight-set-dj-selene-arce-sat",
-      "title": "Moonlight Set: DJ Selene Arce",
-      "type": "social",
-      "level": "all-levels",
-      "roleFocus": "both",
-      "style": "sensual",
-      "dayId": "day-sat",
-      "start": "2027-06-26T22:45:00+02:00",
-      "end": "2027-06-27T00:15:00+02:00",
-      "dayPart": "night",
-      "venueId": "ven-001",
-      "performerIds": [
-        "perf-036"
-      ],
-      "description": "DJ Selene Arce plays bachata sensual on the sand. Dance by the sea.",
-      "capacity": null,
-      "tags": [
-        "social",
-        "dj"
-      ]
-    },
-    {
-      "id": "item-043",
-      "slug": "late-practica-dj-kiko-mar-sat",
-      "title": "Late Practica: DJ Kiko Mar",
-      "type": "social",
-      "level": "all-levels",
-      "roleFocus": "both",
-      "style": "dominicana",
-      "dayId": "day-sat",
-      "start": "2027-06-26T22:45:00+02:00",
-      "end": "2027-06-27T00:15:00+02:00",
-      "dayPart": "night",
-      "venueId": "ven-002",
-      "performerIds": [
-        "perf-023"
-      ],
-      "description": "DJ Kiko Mar plays bachata dominicana in the pavilion. A relaxed floor where beginners are welcome to join.",
-      "capacity": null,
-      "tags": [
-        "social",
-        "dj"
-      ]
-    },
-    {
-      "id": "item-044",
+      "id": "item-039",
       "slug": "late-show-fuego-lento-show-team-and-casa-tambora-sat",
       "title": "Late Show: Fuego Lento Show Team and Casa Tambora",
       "type": "show",
@@ -2851,9 +2734,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-045",
-      "slug": "club-night-dj-lorena-vela-sat",
-      "title": "Club Night: DJ Lorena Vela",
+      "id": "item-040",
+      "slug": "club-night-dj-hugo-tamarit-sat",
+      "title": "Club Night: DJ Hugo Tamarit",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2864,9 +2747,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-024"
+        "perf-033"
       ],
-      "description": "DJ Lorena Vela plays bachata moderna in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Hugo Tamarit plays bachata moderna in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -2874,9 +2757,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-046",
-      "slug": "club-night-dj-tarek-noor-sat",
-      "title": "Club Night: DJ Tarek Noor",
+      "id": "item-041",
+      "slug": "club-night-dj-naia-cortes-sat",
+      "title": "Club Night: DJ Naia Cortés",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2887,9 +2770,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-025"
+        "perf-034"
       ],
-      "description": "DJ Tarek Noor plays bachata sensual in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Naia Cortés plays bachata sensual in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -2897,9 +2780,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-047",
-      "slug": "club-night-dj-ximena-flor-sat",
-      "title": "Club Night: DJ Ximena Flor",
+      "id": "item-042",
+      "slug": "club-night-dj-mateus-lobo-sat",
+      "title": "Club Night: DJ Mateus Lobo",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2910,9 +2793,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-026"
+        "perf-035"
       ],
-      "description": "DJ Ximena Flor plays bachata moderna in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Mateus Lobo plays bachata moderna in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -2920,9 +2803,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-048",
-      "slug": "last-dance-set-dj-bautista-sat",
-      "title": "Last Dance Set: DJ Bautista",
+      "id": "item-043",
+      "slug": "last-dance-set-dj-selene-arce-sat",
+      "title": "Last Dance Set: DJ Selene Arce",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -2933,9 +2816,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-027"
+        "perf-036"
       ],
-      "description": "DJ Bautista plays bachata sensual in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Selene Arce plays bachata sensual in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -2943,7 +2826,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-049",
+      "id": "item-044",
       "slug": "last-day-basics-on-the-sand-sun",
       "title": "Last-day basics on the sand",
       "type": "workshop",
@@ -2956,7 +2839,7 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-005"
+        "perf-020"
       ],
       "description": "Basic step and gentle body movement on the beach. Come as you are.",
       "capacity": 80,
@@ -2966,7 +2849,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-050",
+      "id": "item-045",
       "slug": "sunday-refresher-the-follower-s-turns-sun",
       "title": "Sunday refresher: the follower's turns",
       "type": "workshop",
@@ -2990,7 +2873,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-051",
+      "id": "item-046",
       "slug": "lead-basics-on-the-sand-sun",
       "title": "Lead basics on the sand",
       "type": "workshop",
@@ -3014,7 +2897,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-052",
+      "id": "item-047",
       "slug": "sunday-refresher-the-basic-step-sun",
       "title": "Sunday refresher: the basic step",
       "type": "workshop",
@@ -3037,7 +2920,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-053",
+      "id": "item-048",
       "slug": "follower-footwork-on-sand-sun",
       "title": "Follower footwork on sand",
       "type": "workshop",
@@ -3060,7 +2943,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-054",
+      "id": "item-049",
       "slug": "lead-variations-on-the-basic-sun",
       "title": "Lead variations on the basic",
       "type": "workshop",
@@ -3083,7 +2966,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-055",
+      "id": "item-050",
       "slug": "salsa-on-the-beach-the-farewell-class-sun",
       "title": "Salsa on the beach: the farewell class",
       "type": "workshop",
@@ -3106,7 +2989,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-056",
+      "id": "item-051",
       "slug": "partner-connection-and-weight-changes-sun",
       "title": "Partner connection and weight changes",
       "type": "workshop",
@@ -3119,7 +3002,7 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-007"
+        "perf-018"
       ],
       "description": "Practise sending and receiving weight through the frame. Works at any speed.",
       "capacity": 60,
@@ -3129,7 +3012,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-057",
+      "id": "item-052",
       "slug": "shine-steps-and-solo-styling-sun",
       "title": "Shine steps and solo styling",
       "type": "workshop",
@@ -3142,7 +3025,7 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-008"
+        "perf-021"
       ],
       "description": "Short solo sequences that you can use between partner dances. No partner needed.",
       "capacity": 80,
@@ -3152,7 +3035,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-058",
+      "id": "item-053",
       "slug": "advanced-dominican-footwork-combinations-sun",
       "title": "Advanced Dominican footwork combinations",
       "type": "workshop",
@@ -3176,7 +3059,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-059",
+      "id": "item-054",
       "slug": "advanced-follow-body-isolations-sun",
       "title": "Advanced follow: body isolations",
       "type": "workshop",
@@ -3189,8 +3072,8 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-010",
-        "perf-012"
+        "perf-007",
+        "perf-010"
       ],
       "description": "Clean isolations of the chest, ribs and hips for experienced followers.",
       "capacity": 80,
@@ -3200,7 +3083,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-060",
+      "id": "item-055",
       "slug": "lead-musicality-hitting-the-accents-sun",
       "title": "Lead musicality: hitting the accents",
       "type": "workshop",
@@ -3213,8 +3096,8 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-011",
-        "perf-015"
+        "perf-008",
+        "perf-011"
       ],
       "description": "Learn to hit the accents of a song and lead the change in the music.",
       "capacity": 60,
@@ -3224,9 +3107,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-061",
-      "slug": "closing-sunset-social-dj-anouk-bell-sun",
-      "title": "Closing Sunset Social: DJ Anouk Bell",
+      "id": "item-056",
+      "slug": "closing-sunset-social-dj-kiko-mar-sun",
+      "title": "Closing Sunset Social: DJ Kiko Mar",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -3237,9 +3120,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-028"
+        "perf-023"
       ],
-      "description": "DJ Anouk Bell plays bachata dominicana on the sand. Dance by the sea.",
+      "description": "DJ Kiko Mar plays bachata dominicana on the sand. Dance by the sea.",
       "capacity": null,
       "tags": [
         "social",
@@ -3247,7 +3130,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-062",
+      "id": "item-057",
       "slug": "festival-farewell-social-dance-skills-sun",
       "title": "Festival farewell: social dance skills",
       "type": "workshop",
@@ -3260,7 +3143,7 @@ window.FESTIVAL_DATA = {
       "dayPart": "day",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-019"
+        "perf-012"
       ],
       "description": "A final all-levels class on floor craft, asking for a dance and thanking your partner. A relaxed way to end the day.",
       "capacity": 60,
@@ -3270,9 +3153,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-063",
-      "slug": "practica-social-dj-oriol-pons-sun",
-      "title": "Practica Social: DJ Oriol Pons",
+      "id": "item-058",
+      "slug": "practica-social-dj-lorena-vela-sun",
+      "title": "Practica Social: DJ Lorena Vela",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -3283,9 +3166,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-002",
       "performerIds": [
-        "perf-029"
+        "perf-024"
       ],
-      "description": "DJ Oriol Pons plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.",
+      "description": "DJ Lorena Vela plays bachata moderna in the pavilion. A relaxed floor where beginners are welcome to join.",
       "capacity": null,
       "tags": [
         "social",
@@ -3293,7 +3176,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-064",
+      "id": "item-059",
       "slug": "closing-gala-show-mistral-dance-co-and-los-bailongos-del-cabanyal-sun",
       "title": "Closing Gala Show: Mistral Dance Co. and Los Bailongos del Cabanyal",
       "type": "show",
@@ -3318,9 +3201,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-065",
-      "slug": "beach-night-set-dj-soledad-rey-sun",
-      "title": "Beach Night Set: DJ Soledad Rey",
+      "id": "item-060",
+      "slug": "beach-night-set-dj-tarek-noor-sun",
+      "title": "Beach Night Set: DJ Tarek Noor",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -3331,9 +3214,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-001",
       "performerIds": [
-        "perf-030"
+        "perf-025"
       ],
-      "description": "DJ Soledad Rey plays bachata moderna on the sand. Dance by the sea.",
+      "description": "DJ Tarek Noor plays bachata moderna on the sand. Dance by the sea.",
       "capacity": null,
       "tags": [
         "social",
@@ -3341,9 +3224,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-066",
-      "slug": "farewell-club-night-dj-rodion-sun",
-      "title": "Farewell Club Night: DJ Rodion",
+      "id": "item-061",
+      "slug": "farewell-club-night-dj-ximena-flor-sun",
+      "title": "Farewell Club Night: DJ Ximena Flor",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -3354,10 +3237,10 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-031",
+        "perf-026",
         "perf-048"
       ],
-      "description": "DJ Rodion plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Abel Santoyo.",
+      "description": "DJ Ximena Flor plays bachata sensual in the club. The main floor for dancers who stay up late. With live music by Abel Santoyo.",
       "capacity": null,
       "tags": [
         "social",
@@ -3365,7 +3248,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-067",
+      "id": "item-062",
       "slug": "pavilion-showcase-compania-sotavento-sun",
       "title": "Pavilion Showcase: Compañía Sotavento",
       "type": "show",
@@ -3389,53 +3272,7 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-068",
-      "slug": "late-practica-dj-yasmina-cole-sun",
-      "title": "Late Practica: DJ Yasmina Cole",
-      "type": "social",
-      "level": "all-levels",
-      "roleFocus": "both",
-      "style": "dominicana",
-      "dayId": "day-sun",
-      "start": "2027-06-27T22:45:00+02:00",
-      "end": "2027-06-28T00:15:00+02:00",
-      "dayPart": "night",
-      "venueId": "ven-002",
-      "performerIds": [
-        "perf-032"
-      ],
-      "description": "DJ Yasmina Cole plays bachata dominicana in the pavilion. A relaxed floor where beginners are welcome to join.",
-      "capacity": null,
-      "tags": [
-        "social",
-        "dj"
-      ]
-    },
-    {
-      "id": "item-069",
-      "slug": "farewell-set-dj-hugo-tamarit-sun",
-      "title": "Farewell Set: DJ Hugo Tamarit",
-      "type": "social",
-      "level": "all-levels",
-      "roleFocus": "both",
-      "style": "sensual",
-      "dayId": "day-sun",
-      "start": "2027-06-27T23:00:00+02:00",
-      "end": "2027-06-28T00:30:00+02:00",
-      "dayPart": "night",
-      "venueId": "ven-001",
-      "performerIds": [
-        "perf-033"
-      ],
-      "description": "DJ Hugo Tamarit plays bachata sensual on the sand. Dance by the sea.",
-      "capacity": null,
-      "tags": [
-        "social",
-        "dj"
-      ]
-    },
-    {
-      "id": "item-070",
+      "id": "item-063",
       "slug": "farewell-show-tropic-nine-sun",
       "title": "Farewell Show: Tropic Nine",
       "type": "show",
@@ -3459,9 +3296,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-071",
-      "slug": "farewell-club-night-dj-naia-cortes-sun",
-      "title": "Farewell Club Night: DJ Naia Cortés",
+      "id": "item-064",
+      "slug": "farewell-club-night-dj-bautista-sun",
+      "title": "Farewell Club Night: DJ Bautista",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -3472,9 +3309,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-034"
+        "perf-027"
       ],
-      "description": "DJ Naia Cortés plays bachata moderna in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Bautista plays bachata moderna in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
@@ -3482,9 +3319,9 @@ window.FESTIVAL_DATA = {
       ]
     },
     {
-      "id": "item-072",
-      "slug": "farewell-club-night-dj-mateus-lobo-sun",
-      "title": "Farewell Club Night: DJ Mateus Lobo",
+      "id": "item-065",
+      "slug": "farewell-club-night-dj-anouk-bell-sun",
+      "title": "Farewell Club Night: DJ Anouk Bell",
       "type": "social",
       "level": "all-levels",
       "roleFocus": "both",
@@ -3495,9 +3332,9 @@ window.FESTIVAL_DATA = {
       "dayPart": "night",
       "venueId": "ven-003",
       "performerIds": [
-        "perf-035"
+        "perf-028"
       ],
-      "description": "DJ Mateus Lobo plays bachata sensual in the club. The main floor for dancers who stay up late.",
+      "description": "DJ Anouk Bell plays bachata sensual in the club. The main floor for dancers who stay up late.",
       "capacity": null,
       "tags": [
         "social",
