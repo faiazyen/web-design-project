@@ -28,6 +28,12 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - **Follow-up from me:** "theme of the sea" and "theme of number C". AI read this as two themes together (the sea plus C's roots and heritage) and made both explicit in the themes row.
 - **AI then:** wrote section 1 of `project-specification.md`. It invented the merged working name "Raíces del Mar", which I have not yet confirmed.
 
+### 6. Audience, sitemap, navigation and search
+- **AI did:** I chose to keep the name "Raíces del Mar". AI wrote sections 2–5 of the spec: three audiences, goals with testable checks, a 12-page sitemap, navigation and breadcrumb rules, and search behaviour.
+- **Design choice to check:** artist and workshop detail pages are one template each, filled from `?id=` and `data.js`, which keeps the site build-free and `file://`-safe.
+- **Flagged by AI:** the final brief's list of required sections was not available, so the sitemap carries an assumption note to confirm.
+- **Checked:** I need to compare the sitemap with the final brief. Not done yet.
+
 ### 4. Project setup in this repo
 - **AI did:** created the required folder structure, `CLAUDE.md` with the project rules, and this log.
 - **Checked:** reviewed the rules against the brief (no build, `file://`, semantic HTML, AI logging).
