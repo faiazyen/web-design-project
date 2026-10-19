@@ -1,7 +1,7 @@
 # Spec critique checklist (Step 1.3)
 
 **For:** Sebastian Betancur (C), with Oscar Muz (B) for spec text and scenarios.
-**Ticks:** Sebastian reported on 2026-10-19 that he checked every item by hand. He cannot edit `.md` files, so Claude entered the ticks on his instruction (marked "S.B."). Item 31 and the name-related notes stay open because the name is being changed.
+**Ticks:** Sebastian reported on 2026-10-19 that he checked every item by hand. He cannot edit `.md` files, so Claude entered the ticks on his instruction (marked "S.B."). All items are ticked, including the search of the final name.
 **What to do:** read `project-specification.md` against the assignment line by line. Tick each box **yourself** after you check it. A box ticked by the AI does not count: the course says "we verified it using AI" is not validation.
 **Files to check:** `project-specification.md`, `data.json`, `data.xml`.
 
@@ -44,7 +44,7 @@
 | 28 | At least 4 interactive functions, each naming the user need it serves | Section 5 | ☑ S.B. 2026-10-19 |
 | 29 | Every scenario can be done with the planned data fields | Section 6 and `docs/data-schema.md` | ☑ S.B. 2026-10-19 |
 | 30 | No sentence is generic enough to fit any festival | whole spec | ☑ S.B. 2026-10-19 |
-| 31 | The festival is not a 1:1 copy of an existing festival (search the name by hand) | Section 1 | ☐ Open: the name is now "Atardecer Bachata Festival". S.B. must search it by hand and tick this box. AI searches found no festival with this exact name, only songs and posts that use the word. |
+| 31 | The festival is not a 1:1 copy of an existing festival (search the name by hand) | Section 1 | ☑ S.B. 2026-10-19: searched "Atardecer Bachata Festival" by hand and found no festival with that name. |
 
 ## C. Data (`data.json`, `data.xml`) against the official minimum
 
@@ -91,7 +91,7 @@ Drafted by the AI from its own history. **C: confirm each line is true and add y
 
 | # | Item | Owner | Done |
 |---|---|---|---|
-| 1 | Search "Atardecer Bachata Festival" online by hand and note the date | C | ☐ Open. (S.B. already searched the old name on 2026-10-19 and found a similar festival, so it was changed.) |
+| 1 | Search "Atardecer Bachata Festival" online by hand and note the date | C | ☑ S.B. 2026-10-19: no festival with that name found. |
 | 2 | Read all bios and descriptions in `data.json` and rewrite any that sound generic | B | ☑ S.B. 2026-10-19 |
 | 3 | Check the 2019 UNESCO line and the airport metro time (Roots and Travel text) | B | ☑ S.B. 2026-10-19 |
 | 4 | Fill your own words into section 9 of the spec | B and C | ☑ S.B. 2026-10-19 |
