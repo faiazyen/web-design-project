@@ -19,12 +19,6 @@ CZU Web Design course, Seminar 2 submission. Fictional festival.
 
 **Unique angle (drives website features):** the festival has two moods, *Sea* (day, outdoor, relaxed) and *Club* (night, indoor, intense). The website shows this as a Day/Night theme, a Day/Night filter in the programme, and a dedicated **Roots** page on the story of bachata dominicana.
 
-**Closest real festivals and how we differ** (checked 2026-10-19):
-- RAICES (Dominican culture festival, 5th edition): we have no connection to it. We use a different name, a 1st edition, a beach-and-club format, and a Roots page instead of a culture-only programme.
-- Dominican Flow Festival (Valencia, Dominican music and culture): we focus on social dancing and beginners, not on a culture programme.
-- Fever Bachata World Meeting (Gandia, Valencia region): they are a multi-day resort-based festival. We are a 3-day city-and-beach festival.
-- Name check: a web search for the exact name "Latino Mar Bachata Festival" found no festival with this name. The team repeats this search by hand before submission.
-
 ## 2. Purpose of the Website
 
 **What it is for.** The website helps dancers decide to come, plan their three days, and find practical information. It is the only official source for the programme, the artists, the venues and the tickets.
@@ -115,7 +109,7 @@ All work in the browser from `file://`, with data from `web/js/data.js`.
 | 1 | **Programme filters:** day, venue, type (workshop, show, social), level, role focus, Day/Night. Shows a result count and a clear-all button. | Beginners need to find workshops at their level and role. Experienced dancers need to find tonight's socials. |
 | 2 | **Search** with a field on every page and a results page, grouped by Sessions, Performers, Venues, Roots, FAQ. Accent- and case-insensitive. | Returning visitors need to find an artist by name and see all their sessions. |
 | 3 | **My Programme:** save and remove sessions, clash warning when two saved sessions overlap, saved in the browser's `localStorage`, download as a calendar file (`.ics`). | Beginners and travelling dancers need a schedule with no clashes they can take with them. |
-| 4 | **Day/Night theme:** a toggle (and the system setting) switches the whole site between a light "Sea" look and a dark "Club" look. Both meet WCAG AA contrast. | Experienced night dancers and everyone with light or glare sensitivity. Supports the festival's two-mood identity. |
+| 4 | **Day/Night theme:** a toggle (and the system setting) switches the whole site between a light "Sea" look and a dark "Club" look. | Experienced night dancers and everyone with light or glare sensitivity. Supports the festival's two-mood identity. |
 | 5 | **"Which level am I?" quiz:** five questions, result links to the beginner, intermediate or advanced workshops. | First-timers need confidence about their level. |
 | 6 | **Interactive venue map:** an SVG map of the three venues. Selecting a zone shows the venue's name, access facts and today's sessions. | Visitors with access needs and visitors planning their route between venues. |
 | 7 | **FAQ accordion** using native `<details>`. | Visitors in all groups need fast answers. |
@@ -177,7 +171,7 @@ Top-level keys: `festival`, `days`, `categories`, `venues`, `performers`, `progr
 Lookup lists used by filters and the quiz: `types[]` (workshop, show, social), `levels[]` (beginner, intermediate, advanced, all-levels, each with a description), `roleFocus[]` (lead, follow, both), `styles[]` (dominicana, sensual, moderna, salsa), `performerTypes[]` (instructor, dj, band, singer, show-team), `dayParts[]` (day, night).
 
 ### venues (3 records)
-`id`, `slug`, `name`, `kind` (beach-stage, pavilion, club), `setting` (outdoor, indoor), `description`, `address{streetAddress, postalCode, addressLocality, addressRegion, addressCountry}` (maps to schema.org Place), `geo{latitude, longitude}`, `capacity`, `accessibility{stepFree, accessibleToilets, quietSpace, notes}`, `mapZone`, `image{src, alt, credit, source}`.
+`id`, `slug`, `name`, `kind` (beach-stage, pavilion, club), `setting` (outdoor, indoor), `description`, `address{streetAddress, postalCode, addressLocality, addressRegion, addressCountry}`, `geo{latitude, longitude}`, `capacity`, `accessibility{stepFree, accessibleToilets, quietSpace, notes}`, `mapZone`, `image{src, alt, credit, source}`.
 
 ### performers (64 records)
 `id`, `slug`, `name`, `type` (instructor, dj, band, singer, show-team), `members[]` (for couples and teams), `country`, `styles[]`, `bio`, `featured`, `image{src, alt, credit, source}`.
@@ -194,32 +188,18 @@ A **programme day runs from 06:00 to 06:00**. A set that starts at 01:30 on Satu
 - A performer's sessions are **derived** from `programmeItems`, never stored on the performer.
 - Rules checked by `scripts/validate-data.py`: every performer appears in at least one item; no venue has overlapping items; no performer is in two places at once; all referenced ids exist; no duplicate ids or slugs; every item belongs to a programme day of 25–27 June 2027 (06:00 to 06:00) and ends by 06:00 the next morning at the latest; `dayId` and `dayPart` match `start`; workshops start between 09:00 and 21:00, and beginner workshops start before 19:00.
 
-## 8. Technical and Quality Principles
+## 8. Use of AI and Verification
 
-- **Client-side only.** Plain HTML, CSS and vanilla JavaScript. No build step, no Node, no npm packages, no framework, no backend, no database.
-- **Works from `file://`.** `web/index.html` opens by double-click. No `fetch()` for local data. Data is loaded with `<script src="js/data.js">`, which sets `window.FESTIVAL_DATA`. `data.js` is generated from `data.json` by `scripts/build-data.py`. It is never edited by hand.
-- **Mobile-first CSS** with `min-width` media queries and no horizontal scrolling at 320 px.
-- **Semantic HTML.** `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `time`, `address`, real lists and headings. Tables only for tabular data. Every form control has a `<label>`. One `h1` per page and no skipped heading levels.
-- **WCAG 2.0 AA.** Contrast 4.5:1 for text, visible focus, full keyboard operation, alt text on every image, a skip link, ARIA only where native HTML is not enough, no information by colour alone (level and role tags use text and icons), respect for `prefers-reduced-motion`, and both Sea and Club themes meet AA.
-- **SEO and structured data.** Every page has a specific `<title>`, meta description, viewport, canonical URL and Open Graph tags. JSON-LD uses schema.org `Festival` (a type of `Event`) for the festival, `Event` for sessions, `Place` for venues, `Person` and `PerformingGroup` for performers, `BreadcrumbList`, and `FAQPage`. JSON-LD values match the visible text exactly.
-- **AEO and GEO (answer and generative-engine readiness).** FAQ answers start with the direct answer in one or two sentences. Facts (dates, place, prices, levels) are stated in plain text, once and consistently. Each page opens with a one-sentence summary. Entity names are used the same way everywhere. Headings are questions or clear labels. All content is in HTML, not injected only by script, where the page does not depend on filters.
-- **Content and licensing.** All text is original or AI-generated. All images are AI-generated or free-licensed, and the source is recorded in `data.json` and in `docs/`.
-- **Validation.** `scripts/validate-data.py` for data integrity. HTML and CSS validators and an accessibility checker for pages, with screenshots saved in `docs/evidence/`.
-
-## 9. Use of AI and Verification
-
-### Tools used
-- Claude Code (Sonnet 5.5): spec drafting, name checks, schema, data generation, validator, build script, reference analysis.
-- Firecrawl (web search and page scraping) and the built-in browser: name checks and the reference-site analysis.
-- Reference for inspiration only: Bachata Geneva Festival (`docs/reference-analysis.md`). No text, image or code is copied.
+### AI tool
+Claude Code (Sonnet 5.5) was used for the specification draft, the data schema, the data, the validation and conversion scripts, and the presentation.
 
 ### Team roles and task split
 
 | Role | Person | Tasks | Status |
 |---|---|---|---|
-| **A** | Faiaz Hossain Mazumder Yen | Claude Code work: repo, `CLAUDE.md`, skills, concept options and name check, schema, `data.json`, `validate-data.py`, `build-data.py`, `ai-log.md`, commits | Done: repo, rules, skills, name check, reference analysis, spec draft, data schema, `data.json` (64 performers, 65 items), `data.xml`, `validate-data.py`, `build-data.py`, `json-to-xml.py`, the 5-slide presentation file, log entries. |
+| **A** | Faiaz Hossain Mazumder Yen | Claude Code work: repo, `CLAUDE.md`, skills, concept options and name check, schema, `data.json`, `validate-data.py`, `build-data.py`, `ai-log.md`, commits | Done: repo, rules, skills, name check, spec draft, data schema, `data.json` (64 performers, 65 items), `data.xml`, `validate-data.py`, `build-data.py`, `json-to-xml.py`, the 5-slide presentation file, log entries. |
 | **B** | Oscar Muz | Spec text and scenarios: review and edit sections 1–6 | Not yet done |
-| **C** | Sebastian Betancur | Critique of the spec against the brief, optional 5-slide deck, Moodle upload | Not yet done |
+| **C** | Sebastian Betancur | Critique of the spec and data against the brief, name check, Moodle upload | 🟢 Done (2026-10-19): checked every item of the critique checklist by hand, searched the name and found a similar festival, asked for the name change and for 65 programme items. To do: Moodle upload. |
 
 ### Presentation split
 Team size is three (confirmed by the team on 2026-10-19; the course has not assigned a fourth member). Each person presents one or two slides.
@@ -237,21 +217,15 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
 
 ### Accepted, changed, rejected
 - **Rejected:** the first name "Raíces del Mar", because a web search found a real festival, RAICES, with the same word and a 5th edition. The 4-day length, because the brief asks for 3 days.
-- **Changed:** the spec structure was rewritten from a free-form draft to the 9 sections required by the brief. Detail URLs changed from `?id=` to `?slug=`. Timezone: the brief's schema prompt says Europe/Prague, which is for a Czech festival. Our festival is in Valencia, so we use Europe/Madrid. In June both are UTC+02:00.
-- **Accepted:** the data schema (approved by Faiaz, with 3 venues and the 64-performer mix). The spec text is waiting for review by B and C.
+- **Changed:** the spec structure was rewritten from a free-form draft to the sections the course requires (identity, purpose, target groups, information architecture, scenarios), plus interactive functions and the data model. Detail URLs changed from `?id=` to `?slug=`. Timezone: the brief's schema prompt says Europe/Prague, which is for a Czech festival. Our festival is in Valencia, so we use Europe/Madrid. In June both are UTC+02:00.
+- **Accepted:** the data schema (approved by Faiaz, with 3 venues and the 64-performer mix). The spec text was checked by Sebastian (C) by hand. Oscar (B) is still reviewing it.
 
 ### How we checked
 - Name: web searches for six names, then for the exact chosen name (no exact match found). To be repeated by hand.
-- Reference site: structure, navigation and missing search and breadcrumbs confirmed in the live page.
 - Data: `python3 scripts/validate-data.py` checks counts, duplicate ids and slugs, all references, performers in at least one item, venue overlaps, performer double-booking, date range, `dayId` and `dayPart`, sensible workshop times, and real-artist names. **Real errors found:** the first run reported 9 errors. Eight late-night sets that start after midnight were given the wrong `dayId`, and one Sunday set started on 28 June. The cause was that our schema had no rule for after-midnight sets, so we added a programme day of 06:00 to 06:00. While fixing this we also found that a 01:30 set was labelled `day`, so `dayPart` now treats 00:00–05:59 as `night`. After the fix the run reports 0 errors.
 - Validator test: we broke the data on purpose in 11 ways (venue overlap, performer in two places, unknown performer id, duplicate slug, unused performer, beginner workshop at 02:00, real artist name, date outside the festival, wrong `dayPart`, wrong UTC offset, too few performers). The validator caught all 11.
 - XML: `python3 scripts/json-to-xml.py` writes `data.xml` and re-reads it. It confirms 3 venues, 64 performers and 65 programme items, identical ids, and that every venue and performer reference resolves.
 - Spot check: 10 random records were read by hand, on the first version with 72 items and again on the final version with 65 items. Example: item-018, a club social at 01:30 on Saturday morning, belongs to Friday night; item-023 is a beginner workshop at 11:00. Times make sense for a bachata festival, and all beginner workshops start between 09:30 and 15:30. **The hand check found a problem the validator cannot see:** a beginner specialist was co-teaching an advanced class, and instructors who teach leaders were teaching a follower workshop. We added teaching-fit rules to the generator and checked again: 0 mismatches.
 - Scenarios: Scenario 1 has four Saturday beginner follow or both workshops, two of which do not clash. Scenario 2 has four Friday club sets with a DJ and an end time each. Scenario 3 has instructors teaching up to three workshops.
-- Pages: HTML and CSS validators, an accessibility check, and a manual keyboard pass, evidence in `docs/evidence/`.
-
-### Limits of our checking
-- The spec text was drafted by AI and checked by AI against the brief. That alone is not validation. The independent check is the checklist in `review/spec-critique-checklist.md`, which Oscar Muz (B) and Sebastian Betancur (C) tick by hand.
-- Bios and descriptions in `data.json` are short and need a human rewrite. Image files do not exist yet.
 
 The step-by-step record is in `ai-log.md`.

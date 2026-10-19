@@ -8,7 +8,7 @@ CZU Web Design course project: a website for a fictional bachata festival in Val
 
 | File | What it is |
 |---|---|
-| `project-specification.md` | Specification: identity, purpose, target groups, information architecture, interactive functions, scenarios, data model, quality principles, AI use |
+| `project-specification.md` | Specification: identity, purpose, target groups, information architecture, interactive functions, scenarios, data model, AI use |
 | `data.json` | Data foundation (source of truth): 1 festival, 3 days, 3 venues, 64 performers, 65 programme items |
 | `data.xml` | The same data as XML, generated from `data.json` |
 | `presentation.pptx` | 5-slide presentation (3 to 5 minutes) |

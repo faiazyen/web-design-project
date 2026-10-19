@@ -71,7 +71,7 @@ Drafted by the AI from its own history. **C: confirm each line is true and add y
 
 | # | First AI draft | Final | Why |
 |---|---|---|---|
-| 1 | Free-form structure (identity, audience, sitemap, navigation, search, "open sections") | The 9 sections the team brief requires | Draft did not match the required structure |
+| 1 | Free-form structure (identity, audience, sitemap, navigation, search, "open sections") | The sections the course requires, plus interactive functions and the data model | Draft did not match the required structure. Sebastian later removed the technical principles (SEO, AEO, GEO, WCAG) and the reference-site text because the course did not ask for them. |
 | 2 | Name "Raíces del Mar", 5th edition | "Latino Mar Bachata Festival", 1st edition | A real festival, RAICES (5th edition), uses the same word and theme |
 | 3 | 4 days (24–27 June) | 3 days (25–27 June 2027) | The team brief asks for a 3-day range |
 | 4 | Pages "Artists" and "Workshops" | Programme, Performers, Venues | Required sitemap items |
