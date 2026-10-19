@@ -207,6 +207,16 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
 | 2 Target groups; 3 Information architecture | Oscar Muz (B) |
 | 4 Two key scenarios | Sebastian Betancur (C) |
 
+### Sebastian's part (C)
+- **Checked:** Sebastian read the spec and the data against the teacher's requirements and ticked every item of the critique checklist by hand (`review/spec-critique-checklist.md`, 2026-10-19).
+- **Found and decided:**
+  - The second festival name was too similar to an existing festival and too generic. The team chose "Atardecer Bachata Festival", and Sebastian searched it by hand and found no festival with that name.
+  - 72 programme items were too many, so the data was cut to 65.
+  - The spec was trimmed to what the teacher asked for: the SEO, AEO and GEO section, the tools list and the "closest real festivals" block were removed.
+  - The sitemap was cut from 17 to 12 pages.
+- **Accepted without changes:** the target groups, the five scenarios, and the presentation (slide 4, the two key scenarios).
+- **What the AI got wrong or overdid:** it proposed names that clashed with or resembled real festivals, added more than the teacher asked (the technical section, 17 pages, 7 interactive functions), generated more data items than needed (72), and wrote generic performer bios.
+
 ### What was decided by the team (not by AI)
 - **Concept:** Faiaz and the team chose Valencia with the Dominican-roots theme from three options AI proposed. The reason is in section 1. The team call with B and C took place on 2026-10-19.
 - **Name:** the first name, "Raíces del Mar", was dropped because of the real festival RAICES. The second name was dropped after Sebastian (C) searched it and found a festival with a similar name, and judged it too generic. The team then chose "Atardecer Bachata Festival" from options AI had searched. Atardecer is Spanish for sunset.
