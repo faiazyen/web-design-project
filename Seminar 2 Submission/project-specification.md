@@ -36,6 +36,7 @@ CZU Web Design course, Seminar 2 submission. Fictional festival.
 **Key user actions**
 - Filter the programme by day, venue, type and level.
 - Open a session, an artist or a venue.
+- Sign up or log in (simulated) so the personal programme belongs to them.
 - Save sessions to My Programme and see clashes.
 - Search for an artist, a session or a venue by name.
 - Find ticket prices and how to buy.
@@ -66,14 +67,15 @@ All pages are static HTML files in `web/`. Detail pages are one template each, f
   - **Roots** (`roots.html`) — story of bachata dominicana: origins, instruments, timeline.
   - **Practical info** (`practical.html`) — one page with five sections, reached from an anchor menu at the top: Travel (including the sustainability note), Accommodation, Accessibility, FAQ and Code of conduct.
     - **Tickets** (`tickets.html`) — passes, prices, what is included, group information.
-  - **My Programme** (`my-programme.html`) — the visitor's personal schedule with clash warnings.
+  - **My Programme** (`my-programme.html`) — the logged-in visitor's personal schedule with clash warnings.
+  - **Log in / Sign up** (`login.html`) — simulated account for My Programme: a sign-up form (name, email, demo password) and a log-in form (email, demo password).
   - **Search results** (`search.html?q=`) — results for a query, grouped by type.
 
-12 page files in total. Travel, Accommodation, Accessibility, FAQ and Code of conduct are sections of the Practical info page, not separate pages. Search field and the main navigation appear on every page.
+13 page files in total. Travel, Accommodation, Accessibility, FAQ and Code of conduct are sections of the Practical info page, not separate pages. Search field and the main navigation appear on every page.
 
 ### Main navigation
 
-**Programme, Performers, Venues, Roots, Practical info, My Programme.** A search field sits in the header of every page. **Tickets** is a highlighted button linking to `tickets.html`. The footer links to Practical info and Tickets, and shows the festival dates and location, and a contact email.
+**Programme, Performers, Venues, Roots, Practical info, My Programme.** A search field and a **Log in / Sign up** link sit in the header of every page. After login the link becomes "Hi, *name*" with a Log out button. **Tickets** is a highlighted button linking to `tickets.html`. The footer links to Practical info and Tickets, and shows the festival dates and location, and a contact email.
 
 ### Breadcrumbs
 
@@ -81,7 +83,7 @@ Every page except Home shows breadcrumbs as an ordered list inside `<nav aria-la
 
 | Page | Breadcrumb |
 |---|---|
-| Programme, Performers, Venues, Roots, Practical info, My Programme | Home > Page |
+| Programme, Performers, Venues, Roots, Practical info, My Programme, Log in / Sign up | Home > Page |
 | Programme item detail | Home > Programme > *Session title* |
 | Performer detail | Home > Performers > *Artist name* |
 | Venue detail | Home > Venues > *Venue name* |
@@ -92,10 +94,25 @@ Every page except Home shows breadcrumbs as an ordered list inside `<nav aria-la
 
 - Programme item ⇄ Performer: a session lists its performers, and a performer page lists all their sessions.
 - Programme item ⇄ Venue: a session names its venue, and a venue page lists all sessions held there.
-- Programme item → My Programme: every session has a Save button.
+- Programme item → My Programme: every session has a Save button. A logged-out visitor is sent to Log in / Sign up first and then back to the same session.
+- My Programme needs a logged-in visitor. When logged out it shows a short prompt with a link to Log in / Sign up.
 - Search covers sessions, performers, venues, Roots and FAQ.
 - Accessibility facts appear on each venue page and are summarised in the Accessibility section of Practical info.
 - Home links to Programme, Tickets and Roots.
+
+### Simulated sign-up and login flow
+
+This is a front-end simulation. There is no backend, and the browser's `localStorage` keeps the accounts and the saved programmes, which is enough for a client-only prototype.
+
+1. A logged-out visitor presses **Save** on a session, or opens **My Programme**.
+2. The site opens **Log in / Sign up** (`login.html`) and remembers the page to return to.
+3. **Sign up:** name, email and a demo password. The browser creates an account record (id, name, email). The password is accepted but never stored. The visitor is logged in at once.
+4. **Log in:** email and demo password. The email must match an account in this browser. If not, the page says "No account in this browser. Please sign up first."
+5. After login the visitor returns to the page they came from, and a pending Save is completed.
+6. The header shows "Hi, *name*" and a Log out button. Logging out keeps the account and the saved sessions in the browser.
+7. Saved sessions belong to the account. Another browser or device starts empty.
+8. The page states: "Demo only. Nothing leaves your browser. Do not use a real password."
+9. Every field has a label. Errors (empty field, bad email) appear next to the field in text.
 
 ## 5. Interactive Functions (planned)
 
@@ -105,22 +122,23 @@ All work in the browser from `file://`, with data from `web/js/data.js`.
 |---|---|---|
 | 1 | **Programme filters:** day, venue, type (workshop, show, social), level, role focus, Day/Night. Shows a result count and a clear-all button. | Beginners need to find workshops at their level and role. Experienced dancers need to find tonight's socials. |
 | 2 | **Search** with a field on every page and a results page, grouped by Sessions, Performers, Venues, Roots, FAQ. Accent- and case-insensitive. | Returning visitors need to find an artist by name and see all their sessions. |
-| 3 | **My Programme:** save and remove sessions, clash warning when two saved sessions overlap, saved in the browser's `localStorage`, download as a calendar file (`.ics`). | Beginners and travelling dancers need a schedule with no clashes they can take with them. |
+| 3 | **My Programme:** save and remove sessions, clash warning when two saved sessions overlap, saved per logged-in user in the browser's `localStorage`, download as a calendar file (`.ics`). | Beginners and travelling dancers need a schedule with no clashes they can take with them. |
 | 4 | **Day/Night theme:** a toggle (and the system setting) switches the whole site between a light "Sea" look and a dark "Club" look. | Experienced night dancers and everyone with light or glare sensitivity. Supports the festival's two-mood identity. |
 | 5 | **"Which level am I?" quiz:** five questions, result links to the beginner, intermediate or advanced workshops. | First-timers need confidence about their level. |
 | 6 | **Interactive venue map:** an SVG map of the three venues. Selecting a zone shows the venue's name, access facts and today's sessions. | Visitors with access needs and visitors planning their route between venues. |
 | 7 | **FAQ accordion** using native `<details>`. | Visitors in all groups need fast answers. |
+| 8 | **Simulated sign-up and login:** a sign-up and a log-in form, a header status with Log out, and a redirect back to the page the visitor came from. Accounts and saved programmes stay in the browser (`localStorage`). | Beginners and travelling dancers need a personal programme that is kept when they come back. |
 
 ## 6. User Scenarios
 
-Scenarios 1, 2 and 3 are the **KEY** scenarios.
+Scenarios 1, 2 and 3 are the **KEY** scenarios. Scenario 6 was added after the Seminar 2 feedback.
 
 ### Scenario 1 — KEY: First-timer, beginner follower
 - **User type:** Group 1, first-time dancer who usually dances the follow role.
-- **Goal:** Pick two Saturday beginner workshops and have a personal schedule with no clashes.
+- **Goal:** Pick two Saturday beginner workshops and keep them in her own personal schedule with no clashes.
 - **Initial situation:** She lands on the Home page from a friend's message and has never been to a bachata festival.
-- **Expected outcome:** She opens Programme, filters Day = Saturday, Type = Workshop, Level = Beginner, Role = Follow or Both, saves two sessions, and My Programme lists both with no clash warning.
-- **Data needed:** `programmeItems` with `dayId`, `type`, `level`, `roleFocus`, `start`, `end`.
+- **Expected outcome:** She opens Programme and filters Day = Saturday, Type = Workshop, Level = Beginner, Role = Follow or Both. When she presses Save on the first workshop, the site asks her to sign up (name, email, demo password). After signing up she returns to the session and saves it, saves a second one, and My Programme lists both with no clash warning.
+- **Data needed:** `programmeItems` with `dayId`, `type`, `level`, `roleFocus`, `start`, `end`. In the browser: her account record and the ids of her saved sessions (not in `data.json`).
 
 ### Scenario 2 — KEY: Experienced social dancer, evening
 - **User type:** Group 2, experienced dancer who travelled from abroad.
@@ -149,6 +167,13 @@ Scenarios 1, 2 and 3 are the **KEY** scenarios.
 - **Initial situation:** They know the dates and have not yet booked.
 - **Expected outcome:** On Tickets they compare passes. On Practical info they use the Accommodation section to pick a place by distance and price, and the Travel section to find airport-to-city options.
 - **Data needed:** `festival.tickets`, `festival.accommodation`, `festival.travel`.
+
+### Scenario 6: Returning visitor logs in and finds her programme
+- **User type:** Group 1, the first-timer from Scenario 1, coming back a day later in the same browser.
+- **Goal:** Check her saved programme before the festival.
+- **Initial situation:** She closed the browser and is logged out. She already has an account from Scenario 1.
+- **Expected outcome:** She opens My Programme and sees the prompt to log in. She logs in with her email and a demo password, returns to My Programme, and sees her two saved workshops with no clash warning.
+- **Data needed:** her account record and saved session ids in `localStorage`; every saved id resolves to a `programmeItems.id`.
 
 ## 7. Data Model
 
@@ -184,6 +209,9 @@ A **programme day runs from 06:00 to 06:00**. A set that starts at 01:30 on Satu
 - `programmeItems.dayId` → `days.id`.
 - A performer's sessions are **derived** from `programmeItems`, never stored on the performer.
 - Rules checked by `scripts/validate-data.py`: every performer appears in at least one item; no venue has overlapping items; no performer is in two places at once; all referenced ids exist; no duplicate ids or slugs; every item belongs to a programme day of 25–27 June 2027 (06:00 to 06:00) and ends by 06:00 the next morning at the latest; `dayId` and `dayPart` match `start`; workshops start between 09:00 and 21:00, and beginner workshops start before 19:00.
+
+### Browser data (not in data.json)
+The simulated accounts and saved programmes are created in the browser at runtime, so they are not part of `data.json` or `data.xml`. They use `localStorage` keys `atardecer.users` (list of id, name, email), `atardecer.session` (id of the logged-in user) and `atardecer.programme.<userId>` (list of saved `programmeItems` ids). No password is stored.
 
 ## 8. Use of AI and Verification
 
@@ -235,10 +263,11 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
 ### Accepted, changed, rejected
 - **Rejected:** the first name "Raíces del Mar", because a web search found a real festival, RAICES, with the same word and a 5th edition. The second name, "Latino Mar Bachata Festival", because Sebastian found a festival with a similar name. 72 programme items, cut to 65, which is closer to the minimum of 60. The 4-day length, because the brief asks for 3 days.
 - **Changed:** the spec structure was rewritten from a free-form draft to the sections the course requires (identity, purpose, target groups, information architecture, scenarios), plus interactive functions and the data model. Detail URLs changed from `?id=` to `?slug=`. Timezone: the brief's schema prompt says Europe/Prague, which is for a Czech festival. Our festival is in Valencia, so we use Europe/Madrid. In June both are UTC+02:00.
-- **Accepted:** the data schema (approved by Faiaz, with 3 venues and the 64-performer mix). The spec text was checked by Sebastian (C) by hand. Oscar (B) is still reviewing it.
+- **Changed after the Seminar 2 feedback (2026-11-03):** the teacher pointed out that My Programme uses `localStorage` but the IA has no login step. We added a simulated sign-up and login flow: one page (Log in / Sign up, 13 pages in total), a header status, a new function 8, an updated Scenario 1 and a new Scenario 6. The teacher also said browser storage can keep the programme in a client-only prototype, so the storage stays. The data files did not change.
+- **Accepted:** the data schema (approved by Faiaz, with 3 venues and the 64-performer mix). The spec text was checked by Sebastian (C) by hand. Oscar (B) checked it too.
 
 ### How we checked
-- Name: web searches for six names, then for the exact chosen name (no exact match found). To be repeated by hand.
+- Name: web searches for several names, then for the exact chosen name. Sebastian also searched "Atardecer Bachata Festival" by hand and found no festival with that name.
 - Data: `python3 scripts/validate-data.py` checks counts, duplicate ids and slugs, all references, performers in at least one item, venue overlaps, performer double-booking, date range, `dayId` and `dayPart`, sensible workshop times, and real-artist names. **Real errors found:** the first run reported 9 errors. Eight late-night sets that start after midnight were given the wrong `dayId`, and one Sunday set started on 28 June. The cause was that our schema had no rule for after-midnight sets, so we added a programme day of 06:00 to 06:00. While fixing this we also found that a 01:30 set was labelled `day`, so `dayPart` now treats 00:00–05:59 as `night`. After the fix the run reports 0 errors.
 - Validator test: we broke the data on purpose in 11 ways (venue overlap, performer in two places, unknown performer id, duplicate slug, unused performer, beginner workshop at 02:00, real artist name, date outside the festival, wrong `dayPart`, wrong UTC offset, too few performers). The validator caught all 11.
 - XML: `python3 scripts/json-to-xml.py` writes `data.xml` and re-reads it. It confirms 3 venues, 64 performers and 65 programme items, identical ids, and that every venue and performer reference resolves.

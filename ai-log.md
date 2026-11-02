@@ -250,3 +250,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none.
 - Rejected (what and why): none.
 - Errors/limitations found: the copies can drift if a root file is edited later. Run `sh scripts/make-submission.sh` after any change and before uploading.
+
+## 2026-11-03 – Seminar 2 feedback: simulated sign-up and login – Claude Code, approved by the team
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): the teacher wrote: "My Programme uses localStorage, but the IA has no login step. Add a simulated sign-up/login flow to the IA and scenarios. Browser storage can retain the programme in the client-only prototype without a backend." The team approved a 9-point plan and a rebuilt zip.
+- What AI produced: spec changes (new page Log in / Sign up, 13 pages; header login link; a "Simulated sign-up and login flow" subsection with 9 steps; function 8; Scenario 1 updated; new Scenario 6; "Browser data (not in data.json)" with the localStorage keys; a change record in section 8); deck slide 3 (new box, 13 pages) and slide 4 (sign-up in the path) plus speaker notes; `CLAUDE.md` name fixed and the login and mid-fidelity wireframe rules added; `.gitignore`; refreshed `Seminar 2 Submission/` and a rebuilt zip.
+- How we verified it: the spec now has `login.html` in the sitemap and the flow; `validate-data.py` and `json-to-xml.py` still pass (data files unchanged); the deck file passes the pptx validator and slides 3 and 4 were rendered and read as images; the four files in the zip have the same SHA-256 checksums as the files in the repo root.
+- Accepted: the simulated flow design. Passwords are accepted but never stored, as the team approved.
+- Modified (what and why): `CLAUDE.md` still said "Raíces del Mar" (the first name) because earlier renames missed it; fixed. Spec lines saying Oscar was "still reviewing" and the name search was "to be repeated by hand" were out of date and were corrected.
+- Rejected (what and why): nothing.
+- Errors/limitations found: the AI's deck builder script was lost when the session scratchpad was cleared, so the deck was edited directly in its XML instead of regenerated. If we need big deck changes, the deck should be rebuilt. The login is a simulation: another browser or device sees no accounts, and the spec says so. This change is about 1 page in 12 (8%), inside the 15% limit, and is justified by the teacher's feedback.

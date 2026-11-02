@@ -1,4 +1,4 @@
-# Project: Raíces del Mar Bachata Festival website (CZU Web Design, team of 3)
+# Project: Atardecer Bachata Festival website (CZU Web Design, team of 3)
 
 Repo and folder name stay **web-design-project**.
 
@@ -17,6 +17,14 @@ Repo and folder name stay **web-design-project**.
 - Every page: specific <title>, meta description, viewport, canonical, Open Graph.
 - JSON-LD (schema.org Event/Festival, Place, Person) must match visible content exactly.
 - All texts and images are AI-generated or free-licensed; record the source.
+- Login is a client-side simulation only (no backend): accounts and each user's saved programme live in
+  localStorage, and no password is ever stored (see project-specification.md, simulated sign-up and login flow).
+
+## Wireframes (strict)
+- All wireframes and prototypes in this project use **mid-level fidelity**, for the whole project:
+  real layout and section order, real labels and navigation text, realistic placeholder content, defined
+  components and states, neutral grayscale. No low-fi sketches, no final colours, photos or polished type.
+- Applies to everything in prototype/. Ask the team before changing this rule.
 
 ## Scope lock
 - project-specification.md is binding (max ~15% change). If a task would change the
