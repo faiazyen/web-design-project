@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visual design direction | Atardecer Bachata Festival (prototype)</title>
+<meta name="description" content="The planned look of the Atardecer Bachata Festival website: day and night palette, type and components. The wireframe pages stay grayscale.">
+<link rel="stylesheet" href="css/proto.css">
+<link rel="stylesheet" href="css/visual.css">
+</head>
+<body>
+<main id="main" class="container" tabindex="-1">
+  <h1>Visual design direction</h1>
+  <p class="banner"><strong>This is not the wireframe.</strong> The prototype pages stay grayscale (mid-fidelity). This page shows the look planned for the real build: palette "Golden Hour", with a Day (Sea) and a Night (Club) mood.</p>
+
+  <h2>Day and night, same components</h2>
+  <div class="v-grid v-grid-2">
+    <section class="v-panel theme-day" aria-labelledby="vd">
+      <p class="v-label" id="vd">Day (Sea)</p>
+      <h3>Saturday 26 June</h3>
+      <div class="v-card">
+        <p class="v-muted">Sat 09:30–10:45 · Pabellón Brisa</p>
+        <h3>Saturday starter: the follower's basics</h3>
+        <div class="v-row"><span class="v-tag">Workshop</span><span class="v-tag">Beginner</span><span class="v-tag">Follow</span><span class="v-tag v-tag-hi">Day</span></div>
+        <div class="v-row"><span class="v-btn">Save</span><span class="v-btn v-btn-2">Details</span></div>
+      </div>
+      <p class="v-ok" style="margin-top:12px">✓ No clashes. All your sessions fit together.</p>
+    </section>
+    <section class="v-panel theme-night" aria-labelledby="vn">
+      <p class="v-label" id="vn">Night (Club)</p>
+      <h3>Friday 25 June</h3>
+      <div class="v-card">
+        <p class="v-muted">Fri 22:00–23:30 · Marea Club</p>
+        <h3>Club Night: DJ Tarek Noor</h3>
+        <div class="v-row"><span class="v-tag">Social</span><span class="v-tag">All levels</span><span class="v-tag">Lead and follow</span><span class="v-tag v-tag-hi">Night</span></div>
+        <div class="v-row"><span class="v-btn">Save</span><span class="v-btn v-btn-2">Details</span></div>
+      </div>
+      <p class="v-ok" style="margin-top:12px">✓ Saved to My Programme.</p>
+    </section>
+  </div>
+
+  <h2>Palette</h2>
+  <div class="v-swatches" role="list" aria-label="Day palette">
+    <div class="v-sw theme-day" role="listitem" style="background:#FFF7EC;color:#1B2A41">Background<br>#FFF7EC</div>
+    <div class="v-sw theme-day" role="listitem" style="background:#C93A22;color:#FFFFFF">Primary<br>#C93A22</div>
+    <div class="v-sw theme-day" role="listitem" style="background:#0B6E77;color:#FFFFFF">Sea<br>#0B6E77</div>
+    <div class="v-sw theme-day" role="listitem" style="background:#F2A33A;color:#1B2A41">Highlight<br>#F2A33A</div>
+  </div>
+  <div class="v-swatches" role="list" aria-label="Night palette" style="margin-top:8px">
+    <div class="v-sw" role="listitem" style="background:#0D1B2A;color:#FDF3E7">Background<br>#0D1B2A</div>
+    <div class="v-sw" role="listitem" style="background:#FF7B5C;color:#0D1B2A">Primary<br>#FF7B5C</div>
+    <div class="v-sw" role="listitem" style="background:#57C7CE;color:#0D1B2A">Sea<br>#57C7CE</div>
+    <div class="v-sw" role="listitem" style="background:#F5B04C;color:#0D1B2A">Highlight<br>#F5B04C</div>
+  </div>
+  <p>Calculated contrast: text 13.6:1 by day and 15.9:1 at night; button text 5.1:1 and 6.8:1. Meaning never depends on colour alone: level and role are written as text.</p>
+
+  <h2>Type</h2>
+  <div class="v-panel theme-day">
+    <h3 style="font-size:1.75rem;margin-bottom:8px">Fraunces for headings</h3>
+    <p>Source Sans 3 for body text at 18 px, with a 1.5 line height. Both fonts are free and will be saved with the site, so it works offline. This page shows the closest system fonts until they are added.</p>
+  </div>
+  <aside class="note"><strong>Why separate:</strong> the team rule is mid-fidelity grayscale wireframes. This page is the visual design deliverable for the build, so the wireframe stays easy to judge on structure and function.</aside>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script>Site.init({ nav: "", crumbs: [["Home", "index.html"], ["Visual design direction"]] });</script>
+</body>
+</html>

@@ -40,7 +40,19 @@ Date: 2026-11-03. Tester: Claude Code, driving a real browser (the app's built-i
 - **Calendar file:** the My Programme download builds valid calendar text: 2 events, correct UTC times (09:30 Madrid time shows as 07:30Z), commas escaped, ends with END:VCALENDAR.
 - **Venues page** (added after the first test round): 3 venue cards with address, access facts and a link to each venue's sessions (Arena Stage links to 25 sessions).
 
-## 6. Not verified
+## 6. Second audit round (design-audit checks, 2026-11-03)
+Measured from the CSS and the rendered pages, then fixed:
+- Spacing: 6, 10, 14 and 18 px values were off the 4 px grid. Now all spacing is on the grid.
+- Radius: 6, 8 and 10 px were three near-identical values. Now two (8 px and 12 px) plus pill and circle.
+- Type: 14 different font sizes and one text at 9.6 px. Now 7 sizes, none under 12 px.
+- Line length: body text ran to about 140 characters on desktop. Now at most 70 to 80.
+- Tokens: 9 hard-coded colours outside the variables. Now 0.
+- Login: error messages now announce themselves, fields are marked required, "All fields are required" is stated, and decorative day and night symbols are no longer read out twice.
+- Contrast (calculated): ink 18.9:1, muted text 9.7:1, text on gray fill 7.4:1, button text 16.5:1, borders 3.5:1 or more.
+- Added a "Visual design direction" page (planned Day and Night look, palette and type) so visual design can be shown without colouring the wireframe. Screenshot: `desktop-visual-design.jpg`.
+- Re-run after the fixes: all 12 pages clean at 320 px; sign-up validation (empty, bad email) and the pending-save flow still work.
+
+## 7. Not verified
 - Safari and Firefox (only Chrome was used for the file test).
 - Screen readers, tablets, and a real user test.
 - Opening the downloaded calendar file in a calendar app.

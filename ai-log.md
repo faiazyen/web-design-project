@@ -300,3 +300,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): the navigation entry "Venues" now opens a real page instead of a placeholder, because venues are a required part of the website structure. `progress-02.md` was shortened because the task asks for a short file. Screen counts were made consistent between the file and the slides.
 - Rejected (what and why): applying brand colours to the prototype to show "visual design" (team rule: mid-fidelity grayscale); the visual design is shown as the palette slide and the design kit.
 - Errors/limitations found: the hosted site is public, so anyone with the link can open it. Safari, Firefox, screen readers and real users were not tested. Pages can take a few minutes to update after a push.
+
+## 2026-11-03 – Design-audit round on the prototype and the Seminar 3 submission – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), the design-auditor skill checklist, CSS measurement scripts, the app's built-in browser, real Chrome for `file://`
+- Prompt (short): run a strict expert audit of the prototype against the Seminar 3 task and design rules, and fix what is found.
+- What AI produced: measurements of contrast, spacing, radius, type scale, tokens, line length and touch targets; fixes in `proto.css` and the login page; a separate "Visual design direction" page; a shorter `progress-02.md`; an updated verification record; rebuilt submission folder and zip.
+- How we verified it: all 12 pages were re-checked at 320 px by an automated page script (0 issues); sign-up validation and the pending-save flow were re-run; the copied prototype was opened from `file://` in real Chrome; the deck file was validated.
+- Accepted: the audit findings as listed in the verification record.
+- Modified (what and why): spacing, radius and font sizes were snapped to scales; text line length was limited; login errors announce themselves; decorative symbols are no longer read twice.
+- Rejected (what and why): a bottom navigation bar for phones (a larger redesign; listed as a recommendation for the build); colouring the wireframe pages (team rule).
+- Errors/limitations found: primary navigation sits behind a Menu button on phones; form errors appear only on submit, not when leaving a field; no loading or disabled states exist because nothing loads or is disabled; Safari, Firefox, screen readers and real users were not tested.

@@ -3,48 +3,41 @@
 **Festival:** Atardecer Bachata Festival, Valencia, 25–27 June 2027. **Team:** Faiaz Hossain Mazumder Yen, Oscar Muz, Sebastian Betancur. **Date:** 2026-11-03.
 
 ## Prototype
-- **Live link (any computer, no installation):** https://faiazyen.github.io/web-design-project/prototype/
-- **Offline:** open `prototype/index.html` by double-click. The footer link "Prototype guide" walks through both key scenarios and has a button that resets the demo.
-- **What it is:** a mid-fidelity wireframe in plain HTML, CSS and JavaScript, built from the project specification. It is grayscale on purpose (team rule); images are labelled boxes. The sample content comes from `data.json` (65 sessions, 64 performers, 3 venues).
-- **Mobile first:** the default layout is a phone (320 px and up). From 900 px wide the layout changes: header in two rows, filters in a left column, detail pages in two columns.
-- **Screens:** Home, Programme, Session detail, Performers, Performer detail, Venues, Search results, My Programme, Log in / Sign up, plus a Prototype guide. Roots, Practical info and Tickets are in the navigation but open a short placeholder, because they are outside the two key scenarios.
-- **Navigation and hierarchy:** main menu with a Tickets button, a search field and login status in every header, breadcrumbs, a skip link, and a Menu button on phones. Home shows what and when first, then the two key actions, the two moods (day, night), people, and the personal programme.
+- **Live (any computer, no installation):** https://faiazyen.github.io/web-design-project/prototype/ . Offline: open `prototype/index.html`. The footer link "Prototype guide" walks through both key scenarios and resets the demo.
+- **What it is:** a mid-fidelity, grayscale wireframe in plain HTML, CSS and JavaScript, built from the project specification, with sample content from `data.json`. Mobile first (320 px and up), with a desktop layout from 900 px.
+- **Screens:** Home, Programme, Session, Performers, Performer, Venues, Search, My Programme, Log in / Sign up. Roots, Practical info and Tickets open a placeholder (outside the two key scenarios).
+- **Navigation and hierarchy:** main menu with a Tickets button, search and login status in every header, breadcrumbs, skip link. Home shows what and when first, then the key actions, the two moods (day, night), people, and the personal programme.
+- **Visual design:** the planned Day and Night look (palette "Golden Hour") is on a separate page, "Visual design direction", so the wireframe stays grayscale.
 
 ## 1. Proposed functions
 | # | Function | In the prototype |
 |---|---|---|
 | 1 | Programme filters: day, venue, type, level, role focus, day or night | Yes |
-| 2 | Search (header field, results grouped by performers, sessions, venues) and a name filter on Performers | Yes |
-| 3 | My Programme: save and remove sessions, clash warning, calendar download | Yes |
-| 4 | Simulated sign-up and login (My Programme is personal; teacher feedback from Seminar 2) | Yes |
+| 2 | Search (header, results grouped) and a name filter on Performers | Yes |
+| 3 | My Programme: save and remove, clash warning, calendar download | Yes |
+| 4 | Simulated sign-up and login (teacher feedback from Seminar 2) | Yes |
 | 5–8 | Day/Night theme, level quiz, venue map, FAQ accordion | Planned for the build |
 
-## 2. How the functions meet user needs
-| Function | User need | Group and scenario |
+## 2. Functions and user needs
+| Function | User need | Group, scenario |
 |---|---|---|
-| 1 Filters | Beginners find workshops at their level and role. Night dancers find tonight's socials. | Groups 1 and 2, Scenarios 1 and 2 |
-| 2 Search | A returning visitor finds one artist by name and sees every session. | Group 3, Scenario 3 |
-| 3 My Programme | A personal schedule with no clashes that can be taken away. | Groups 1 and 2, Scenario 1 |
-| 4 Simulated login | A personal programme belongs to a person and is kept when they come back. | Group 1, Scenarios 1 and 6 |
-
-Each one changes what the visitor sees or keeps something for them. None is only a menu or a slideshow.
+| 1 Filters | Beginners find workshops at their level. Night dancers find tonight's socials. | 1 and 2, Scenarios 1 and 2 |
+| 2 Search | A returning visitor finds one artist and all their sessions. | 3, Scenario 3 |
+| 3 My Programme | A personal schedule without clashes, to take away. | 1 and 2, Scenario 1 |
+| 4 Simulated login | The personal programme belongs to a person and is kept. | 1, Scenarios 1 and 6 |
 
 ## 3. What we verified, and how
-Full record and screenshots: `docs/evidence/prototype-verification.md`.
-- **Key scenario 1 (phone, 375 px):** filter Saturday beginner follower workshops (4 results), Save while logged out, sign up, return with the first workshop saved, save a second one, see both in My Programme with "No clashes". **Passed**, on a local test server and again on the live site.
-- **Key scenario 2 (desktop, 1280 px):** filter Friday, Social, Night, Marea Club (4 sessions), open the 22:00 session, follow the DJ link to the set times. **Passed**, locally and on the live site.
-- **Opening by double-click:** all main pages were opened from `file://` in real Chrome: they render, and browser storage is available. Safari and Firefox were not tested.
-- **Extra checks:** clash warning, accent-insensitive search ("raiz" finds "Raíz"), log out and in again, phone menu with the keyboard, no password stored, the downloaded calendar file has valid events and times (09:30 Madrid time is 07:30 UTC).
-- **Layout and accessibility (automated page check, 320 px and 1280 px):** one h1 per page, no skipped heading levels, every input labelled, every button named, no horizontal overflow, touch targets of at least 44 px, no external requests.
-- **Problems found by testing and fixed:** a pending Save was lost on the login page; the performers list skipped a heading level; the filter title lacked a space; sets after midnight read "Fri 00:00"; on a phone the filters filled a whole screen.
-- **Not verified:** screen readers, tablets, real users.
+Details and screenshots: `docs/evidence/prototype-verification.md`.
+- **Scenario 1 (phone):** filter Saturday beginner follower workshops, Save while logged out, sign up, save a second workshop, My Programme shows both with "No clashes". **Passed** locally and on the live site.
+- **Scenario 2 (desktop):** filter Friday night socials at the club, open the 22:00 session, follow the DJ link to the set times. **Passed** locally and on the live site.
+- **Double-click:** the main pages open from `file://` in real Chrome, with storage working.
+- **Automated page check (all 12 pages at 320 px, key pages at 1280 px):** one h1, no skipped headings, labelled inputs, no overflow, touch targets of at least 44 px, no text under 12 px, lines at most about 70 characters, no external requests. The CSS uses one 4 px spacing grid, one radius scale and 7 font sizes. Contrast was calculated: every text pair is at least 7.4:1.
+- **Bugs found and fixed:** a pending Save lost on the login page; a skipped heading; a confusing "Fri 00:00" label; filters filling a phone screen; long text lines; too many font sizes; off-grid spacing.
+- **Not verified:** Safari, Firefox, screen readers, real users.
 
 ## 4. Use of AI, and how we checked it
-- **What AI (Claude Code) did:** planned the screens and functions, wrote the prototype code, wrote the design kit (palette, type, image brief), ran the browser tests, and drafted this file and the slides.
-- **What we decided:** grayscale mid-fidelity for the prototype; scenarios 1 and 2 as the key scenarios; the simulated login; for the build, palette "Golden Hour", the fonts Fraunces and Source Sans 3, and illustrated avatars for 56 performers (`docs/design-kit.md`).
-- **How we checked AI output:** we ran both scenarios step by step in a real browser, on two hosts, and counted headings, labels, overflow and touch targets on every page. We checked the data with a script (0 errors), calculated palette contrast instead of guessing, and wrote down the bugs the tests found (section 3).
-- **Accepted:** the page structure, the four functions, the design kit. **Modified after testing:** the saved-session logic, the late-night time label, the phone filter layout. **Rejected:** colours and photos in the prototype (team rule).
-- **AI limits we saw:** the AI first lost a saved session on the login page and mislabelled late-night sessions; both showed up only by running the scenarios. Sample bios and descriptions are fictional and formulaic.
-
-## Next
-Build the real site in `web/`: apply the Golden Hour look and generated images, add the planned functions.
+- **AI (Claude Code) did:** planned the screens, wrote the prototype code, the design kit and the visual design page, ran the tests, drafted this file and the slides.
+- **We decided:** grayscale mid-fidelity for the prototype, Scenarios 1 and 2 as key scenarios, the simulated login, and the Golden Hour look, fonts and avatars for the build.
+- **How we checked:** we ran both scenarios in a real browser on two hosts, measured headings, labels, overflow, text size, contrast and spacing on every page, checked the data with a script (0 errors), and wrote down every bug found.
+- **Accepted:** page structure, the four functions. **Modified after testing:** the items under "Bugs found". **Rejected:** colours and photos in the wireframe pages.
+- **AI limits seen:** it first lost a saved session on the login page and left inconsistent sizes and spacing; only running the scenarios and measuring the CSS showed this. Sample bios are fictional and formulaic.

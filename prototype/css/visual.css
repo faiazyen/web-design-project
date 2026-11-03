@@ -1,0 +1,27 @@
+/* Visual design direction for the real build (palette "Golden Hour").
+   Used only by visual-design.html. The wireframe pages stay grayscale. */
+.theme-day {
+  --v-bg: #FFF7EC; --v-surface: #FFFFFF; --v-ink: #1B2A41; --v-muted: #4B5563; --v-primary: #C93A22;
+  --v-on-primary: #FFFFFF; --v-sea: #0B6E77; --v-highlight: #F2A33A; --v-on-highlight: #1B2A41; --v-line: #E5D6C3;
+}
+.theme-night {
+  --v-bg: #0D1B2A; --v-surface: #14283C; --v-ink: #FDF3E7; --v-muted: #B8C4D0; --v-primary: #FF7B5C;
+  --v-on-primary: #0D1B2A; --v-sea: #57C7CE; --v-highlight: #F5B04C; --v-on-highlight: #0D1B2A; --v-line: #2B4560;
+}
+.v-grid { display: grid; gap: 16px; }
+.v-panel { background: var(--v-bg); color: var(--v-ink); border: 2px solid var(--ink); border-radius: var(--radius); padding: 16px; font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+.v-panel h2, .v-panel h3 { font-family: Fraunces, Georgia, "Times New Roman", serif; color: var(--v-ink); margin-top: 0; }
+.v-panel p { color: var(--v-ink); }
+.v-panel .v-muted { color: var(--v-muted); font-size: 0.875rem; }
+.v-label { font-weight: 700; margin: 0 0 8px; }
+.v-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid var(--v-primary); background: var(--v-primary); color: var(--v-on-primary); font: inherit; font-weight: 700; }
+.v-btn-2 { background: transparent; color: var(--v-ink); border-color: var(--v-ink); }
+.v-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.v-tag { display: inline-block; padding: 2px 12px; border-radius: 999px; border: 1.5px solid var(--v-sea); color: var(--v-sea); font-weight: 700; font-size: 0.875rem; }
+.v-tag-hi { background: var(--v-highlight); color: var(--v-on-highlight); border-color: var(--v-highlight); }
+.v-card { background: var(--v-surface); border: 1px solid var(--v-line); border-radius: var(--radius); padding: 16px; }
+.v-card h3 { margin-bottom: 4px; }
+.v-ok { border-left: 6px solid var(--v-sea); padding: 8px 12px; background: var(--v-surface); border-radius: var(--radius-sm); font-weight: 700; }
+.v-swatches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.v-sw { padding: 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: 0.875rem; font-weight: 700; }
+@media (min-width: 900px) { .v-grid-2 { grid-template-columns: 1fr 1fr; } .v-swatches { grid-template-columns: repeat(4, 1fr); } }
