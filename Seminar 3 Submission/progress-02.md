@@ -31,13 +31,16 @@ Details and screenshots: `docs/evidence/prototype-verification.md`.
 - **Scenario 1 (phone):** filter Saturday beginner follower workshops, Save while logged out, sign up, save a second workshop, My Programme shows both with "No clashes". **Passed** locally and on the live site.
 - **Scenario 2 (desktop):** filter Friday night socials at the club, open the 22:00 session, follow the DJ link to the set times. **Passed** locally and on the live site.
 - **Double-click:** the main pages open from `file://` in real Chrome, with storage working.
-- **Automated page check (all 12 pages at 320 px, key pages at 1280 px):** one h1, no skipped headings, labelled inputs, no overflow, touch targets of at least 44 px, no text under 12 px, lines at most about 70 characters, no external requests. The CSS uses one 4 px spacing grid, one radius scale and 7 font sizes. Contrast was calculated: every text pair is at least 7.4:1.
-- **Bugs found and fixed:** a pending Save lost on the login page; a skipped heading; a confusing "Fri 00:00" label; filters filling a phone screen; long text lines; too many font sizes; off-grid spacing.
+- **Automated page check (all 12 pages at 320 px, key pages at 1280 px):** one h1, no skipped headings, labelled inputs, no overflow, touch targets of at least 44 px, no text under 12 px, text lines of 70 to 80 characters at most, no external requests. The CSS uses one 4 px spacing grid, one radius scale and 7 font sizes. Contrast was calculated: every text pair is at least 7.4:1.
+- **Problems found and fixed (12):** a pending Save lost on the login page; a skipped heading level; a missing space in the filter title; a confusing "Fri 00:00" label for late sets; filters filling a whole phone screen; text lines too long; too many font sizes; off-grid spacing; inconsistent corner radius; hard-coded colours; sign-up errors not announced to screen readers; decorative symbols read out twice.
 - **Not verified:** Safari, Firefox, screen readers, real users.
 
 ## 4. Use of AI, and how we checked it
 - **AI (Claude Code) did:** planned the screens, wrote the prototype code, the design kit and the visual design page, ran the tests, drafted this file and the slides.
 - **We decided:** grayscale mid-fidelity for the prototype, Scenarios 1 and 2 as key scenarios, the simulated login, and the Golden Hour look, fonts and avatars for the build.
 - **How we checked:** we ran both scenarios in a real browser on two hosts, measured headings, labels, overflow, text size, contrast and spacing on every page, checked the data with a script (0 errors), and wrote down every bug found.
-- **Accepted:** page structure, the four functions. **Modified after testing:** the items under "Bugs found". **Rejected:** colours and photos in the wireframe pages.
+- **Accepted:** page structure, the four functions. **Modified after testing:** the 12 items above. **Rejected:** colours and photos in the wireframe pages.
 - **AI limits seen:** it first lost a saved session on the login page and left inconsistent sizes and spacing; only running the scenarios and measuring the CSS showed this. Sample bios are fictional and formulaic.
+
+## Next
+Build the real site in `web/`: plain HTML for all content (so search engines and AI tools can read it), the Golden Hour look, and the planned functions. Hero: two AI-generated stills (Day and Night) with real text on top. A short loop video is optional and last, with a poster image and a pause button, only if speed checks stay good.

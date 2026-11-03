@@ -310,3 +310,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): spacing, radius and font sizes were snapped to scales; text line length was limited; login errors announce themselves; decorative symbols are no longer read twice.
 - Rejected (what and why): a bottom navigation bar for phones (a larger redesign; listed as a recommendation for the build); colouring the wireframe pages (team rule).
 - Errors/limitations found: primary navigation sits behind a Menu button on phones; form errors appear only on submit, not when leaving a field; no loading or disabled states exist because nothing loads or is disabled; Safari, Firefox, screen readers and real users were not tested.
+
+## 2026-11-03 – Final check before the Seminar 3 upload – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), real Chrome, the W3C HTML checker, shell checks
+- Prompt (short): final strict check of the prototype, `progress-02.md` and the presentation against the Seminar 3 task, then apply the agreed hero plan (two stills, optional loop video last).
+- What AI produced: the hero placeholder text in the prototype, a "Hero plan" note on the visual design page, a "Next" section in `progress-02.md`, slide 3 and slide 5 text updated to the final test numbers (12 problems found and fixed), a rebuilt submission folder and zip.
+- How we verified it: see the verification record; every deliverable was opened and compared with the files on the live site.
+- Accepted: the hero plan from the team.
+- Modified (what and why): slide 5 and `progress-02.md` said "5 problems" and "Chrome double-click not tested"; they now say 12 problems and Chrome tested, matching what was done.
+- Rejected (what and why): nothing.
+- Errors/limitations found: Safari, Firefox, screen readers and real users are still untested.
