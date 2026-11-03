@@ -359,7 +359,7 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Accepted: a CSS-drawn hero for the preview, because the real AI photos do not exist yet.
 - Modified (what and why): the Day/Night toggle label was shortened to "Night" / "Day" so the header fits at 375 px.
 - Rejected (what and why): a Claude artifact page; the preview lives in the prototype folder so the teacher can open it from the same live link.
-- Errors/limitations found: the preview uses system fonts instead of Fraunces and Source Sans 3, and drawn shapes instead of photos; it is sample content, not the final site.
+- Errors/limitations found: the preview uses system fonts instead of Fraunces and Source Sans 3, and drawn shapes instead of photos; it is sample content, not the final site. The W3C HTML checker answered "too many requests" for the new page, so it was only checked offline for balanced tags and duplicate ids; the other pages passed the W3C checker with 0 errors.
 
 ## 2026-11-03 – Notes kept outside the repository (for completeness) – Claude Code
 - Tool/model: Claude Code (Sonnet 5.5), Claude's local memory
