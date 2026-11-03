@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programme | Atardecer Bachata Festival (prototype)</title>
+<meta name="description" content="All sessions of the Atardecer Bachata Festival: filter by day, venue, type, level, role and day or night, then save sessions to your own programme.">
+<link rel="stylesheet" href="css/proto.css">
+</head>
+<body>
+<main id="main" class="container" tabindex="-1">
+  <h1>Programme</h1>
+  <p class="lede">Friday 25 to Sunday 27 June 2027. Filter the list, open a session, or save it to My Programme.</p>
+
+  <aside class="note"><strong>Function 1 · Programme filters.</strong> Need: beginners find workshops at their level and role (Scenario 1); night dancers find tonight's socials (Scenario 2). Phone: filters sit in a panel above the list that you can fold away. Desktop: filters sit in a left column.</aside>
+
+  <div class="layout-programme">
+    <aside aria-label="Filters">
+      <details class="filters" id="filters" open>
+        <summary>Filters <span id="filter-badge"></span></summary>
+        <form id="filter-form" action="programme.html" method="get">
+          <div class="field"><label for="f-day">Day</label>
+            <select id="f-day" name="day"><option value="">All days</option></select></div>
+          <div class="field"><label for="f-venue">Venue</label>
+            <select id="f-venue" name="venue"><option value="">All venues</option></select></div>
+          <div class="field"><label for="f-type">Type</label>
+            <select id="f-type" name="type"><option value="">All types</option></select></div>
+          <div class="field"><label for="f-level">Level</label>
+            <select id="f-level" name="level"><option value="">All levels</option></select></div>
+          <div class="field"><label for="f-role">Role focus</label>
+            <select id="f-role" name="role"><option value="">Any role</option></select></div>
+          <div class="field"><label for="f-daypart">Day or night</label>
+            <select id="f-daypart" name="daypart"><option value="">Day and night</option></select></div>
+          <button type="button" class="btn btn-secondary" id="clear">Clear all filters</button>
+          <noscript><button type="submit" class="btn btn-primary">Apply</button></noscript>
+        </form>
+      </details>
+    </aside>
+
+    <section aria-labelledby="results-title">
+      <h2 id="results-title" style="margin-top:12px">Sessions</h2>
+      <p class="count" id="count" role="status" aria-live="polite"></p>
+      <div id="results"></div>
+    </section>
+  </div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/programme.js"></script>
+</body>
+</html>

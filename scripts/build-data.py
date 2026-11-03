@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Convert data.json into web/js/data.js (window.FESTIVAL_DATA).
 
-Usage:  python3 scripts/build-data.py
+Usage:  python3 scripts/build-data.py [output-path]
+        (default output: web/js/data.js; the Seminar 3 prototype uses prototype/js/data.js)
 Plain Python 3, standard library only. Run it after every change to data.json,
 then run scripts/validate-data.py. Never edit web/js/data.js by hand.
 """
@@ -11,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data.json"
-DST = ROOT / "web" / "js" / "data.js"
+DST = (ROOT / sys.argv[1]) if len(sys.argv) > 1 else ROOT / "web" / "js" / "data.js"
 
 HEADER = """/*
  * GENERATED FILE - DO NOT EDIT BY HAND.

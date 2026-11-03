@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in / Sign up | Atardecer Bachata Festival (prototype)</title>
+<meta name="description" content="Demo sign-up and login for My Programme at the Atardecer Bachata Festival. Nothing leaves your browser.">
+<link rel="stylesheet" href="css/proto.css">
+</head>
+<body>
+<main id="main" class="container" tabindex="-1">
+  <h1>Log in / Sign up</h1>
+  <p class="banner" id="reason" hidden></p>
+  <p class="banner"><strong>Demo only.</strong> Nothing leaves your browser. Do not use a real password. The password is accepted but never stored.</p>
+  <aside class="note"><strong>Simulated sign-up and login.</strong> Needed because My Programme is personal. Flow: Save while logged out → this page → back to the session, which is then saved. Sign up logs you in at once. Phone: the two forms stack; desktop: side by side.</aside>
+
+  <div class="layout-two">
+    <form id="signup" novalidate aria-labelledby="su-title">
+      <fieldset>
+        <legend id="su-title">New here? Sign up</legend>
+        <div class="field"><label for="su-name">Name</label><input id="su-name" name="name" type="text" autocomplete="given-name" aria-describedby="su-name-err"><p class="error" id="su-name-err" hidden></p></div>
+        <div class="field"><label for="su-email">Email</label><input id="su-email" name="email" type="email" autocomplete="email" aria-describedby="su-email-err"><p class="error" id="su-email-err" hidden></p></div>
+        <div class="field"><label for="su-pass">Demo password</label><input id="su-pass" name="password" type="password" autocomplete="new-password" aria-describedby="su-pass-hint su-pass-err"><p class="hint" id="su-pass-hint">Any text. It is not stored.</p><p class="error" id="su-pass-err" hidden></p></div>
+        <button class="btn btn-primary" type="submit">Create demo account</button>
+      </fieldset>
+    </form>
+
+    <form id="login" novalidate aria-labelledby="li-title">
+      <fieldset>
+        <legend id="li-title">Already have an account? Log in</legend>
+        <div class="field"><label for="li-email">Email</label><input id="li-email" name="email" type="email" autocomplete="email" aria-describedby="li-email-err"><p class="error" id="li-email-err" hidden></p></div>
+        <div class="field"><label for="li-pass">Demo password</label><input id="li-pass" name="password" type="password" autocomplete="current-password" aria-describedby="li-pass-err"><p class="error" id="li-pass-err" hidden></p></div>
+        <button class="btn btn-primary" type="submit">Log in</button>
+      </fieldset>
+    </form>
+  </div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

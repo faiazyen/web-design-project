@@ -97,8 +97,8 @@ Generating 56 portraits is a lot. My recommendation: **12 illustrated avatars** 
 ### Prompt template for each image
 > [Style block] Subject: [what to show]. Composition: [wide / medium / close], [camera height], [space left for text if needed]. Aspect ratio [16:9 / 4:3 / 1:1]. Quality: sharp, high resolution.
 
-## 5. Decisions needed
-1. Palette: A, B or C.
-2. Font pair: 1 or 2.
-3. Performer images: 12 illustrated avatars (recommended) or 56 individual images.
-4. Which images you will generate first (start with 1, 3, 4 and 5).
+## 5. Decisions (team, 2026-11-03)
+1. Palette: **A, Golden Hour**.
+2. Fonts: **Fraunces + Source Sans 3**, bundled locally in `web/fonts/`.
+3. Performer images: **12 illustrated avatars** (4 types x 3 colour variants) for the 56 non-featured performers. The 8 featured performers get individual images. This changes the image paths of those 56 performers in `data.json` later, as a small logged change.
+4. First images to generate: 1, 3, 4 and 5 from the Priority 1 table (hero by day, and the three venues).
