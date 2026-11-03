@@ -283,7 +283,7 @@
     footer.innerHTML = '<div class="container"><p><strong>' + esc(f.name) + "</strong><br>" + esc(f.city) + ", " + esc(f.country) + " · 25–27 June 2027 · " +
       '<a href="mailto:' + esc(f.contact.email) + '">' + esc(f.contact.email) + "</a></p>" +
       '<ul><li><a href="placeholder.html?page=Practical%20info">Practical info</a></li><li><a href="placeholder.html?page=Tickets">Tickets</a></li>' +
-      '<li><a href="walkthrough.html">Prototype guide</a></li><li><a href="visual-design.html">Visual design direction</a></li></ul>' +
+      '<li><a href="walkthrough.html">Prototype guide</a></li><li><a href="visual-design.html">Visual design direction</a></li><li><a href="visual-preview.html">Preview of the planned look</a></li></ul>' +
       "<p>Seminar 3 prototype: mid-fidelity wireframe, grayscale, sample content. Accounts and saved sessions stay in your browser.</p></div>";
     document.body.appendChild(footer);
 

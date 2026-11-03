@@ -7,7 +7,7 @@
 - **What it is:** a mid-fidelity, grayscale wireframe in plain HTML, CSS and JavaScript, built from the project specification, with sample content from `data.json`. Mobile first (320 px and up), with a desktop layout from 900 px.
 - **Screens:** Home, Programme, Session, Performers, Performer, Venues, Search, My Programme, Log in / Sign up. Roots, Practical info and Tickets open a placeholder (outside the two key scenarios).
 - **Navigation and hierarchy:** main menu with a Tickets button, search and login status in every header, breadcrumbs, skip link. Home shows what and when first, then the key actions, the two moods (day, night), people, and the personal programme.
-- **Visual design:** the planned Day and Night look (palette "Golden Hour") is on a separate page, "Visual design direction", so the wireframe stays grayscale.
+- **Visual design:** the planned Day and Night look (palette "Golden Hour") is on two separate pages, so the wireframe stays grayscale: "Visual design direction" (palette, type, components) and "Preview of the planned look" (the home page in colour, by day and by night, on phone and desktop, with sample content): https://faiazyen.github.io/web-design-project/prototype/visual-preview.html
 
 ## 1. Proposed functions
 | # | Function | In the prototype |

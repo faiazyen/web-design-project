@@ -25,6 +25,8 @@ CZU Web Design course project: a website for a fictional bachata festival in Val
 | `progress-02.md` | Functions, user needs, verification, use of AI |
 | `presentation-seminar3.pptx` | 5-slide presentation |
 
+Visual preview of the planned look: `prototype/visual-preview.html` (live: https://faiazyen.github.io/web-design-project/prototype/visual-preview.html).
+
 `Seminar 3 Submission/` holds a copy of these (plus `docs/design-kit.md` and the verification evidence), and `Seminar 3 Submission.zip` is the same folder zipped. Refresh with `sh scripts/make-submission-3.sh`.
 
 ## Supporting files

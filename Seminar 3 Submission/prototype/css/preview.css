@@ -1,0 +1,55 @@
+/* Preview of the planned look (palette "Golden Hour"). Sample content, CSS-drawn hero, system fonts until the real fonts and images are added. */
+:root { color-scheme: light; }
+.pv { --bg:#FFF7EC; --surface:#FFFFFF; --ink:#1B2A41; --muted:#4B5563; --primary:#C93A22; --on-primary:#FFFFFF; --sea:#0B6E77; --hi:#F2A33A; --on-hi:#1B2A41; --line:#E5D6C3;
+  --sky-1:#FFE8C7; --sky-2:#FFC98B; --sky-3:#F2A33A; --sun:#C93A22; --wave-1:#0B6E77; --wave-2:#0A5961;
+  background: var(--bg); color: var(--ink); font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; font-size: 1.125rem; line-height: 1.5; }
+.pv[data-theme="night"] { --bg:#0D1B2A; --surface:#14283C; --ink:#FDF3E7; --muted:#B8C4D0; --primary:#FF7B5C; --on-primary:#0D1B2A; --sea:#57C7CE; --hi:#F5B04C; --on-hi:#0D1B2A; --line:#2B4560;
+  --sky-1:#0D1B2A; --sky-2:#1B3350; --sky-3:#5A3A52; --sun:#FDF3E7; --wave-1:#14506A; --wave-2:#0F3A50; }
+.pv * { box-sizing: border-box; }
+.pv h1, .pv h2, .pv h3, .pv .brand-name { font-family: Fraunces, Georgia, "Times New Roman", serif; }
+.pv a { color: inherit; }
+.pv .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+.pv-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; padding: 12px 0; }
+.pv .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.pv .sun-logo { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(180deg, var(--primary), var(--hi)); box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px var(--primary); }
+.pv .brand-name { font-size: 1.375rem; font-weight: 700; }
+.pv nav ul { display: none; list-style: none; margin: 0; padding: 0; gap: 20px; }
+.pv nav a { text-decoration: none; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+.pv .actions { display: flex; align-items: center; gap: 8px; }
+.pv .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px; white-space: nowrap; border-radius: 999px; border: 2px solid var(--primary); background: var(--primary); color: var(--on-primary); font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.pv .btn-2 { background: transparent; color: var(--ink); border-color: var(--ink); }
+.pv .toggle[aria-pressed="true"] { background: var(--surface); }
+.pv-hero { position: relative; overflow: hidden; border-radius: 20px; min-height: 480px; background: linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 55%, var(--sky-3) 100%); display: flex; align-items: flex-start; }
+.pv-hero .sun { position: absolute; right: 12%; bottom: 120px; width: 150px; height: 150px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, var(--sun), var(--primary)); opacity: 0.95; }
+.pv[data-theme="night"] .pv-hero .sun { background: radial-gradient(circle at 40% 40%, #FFFFFF, var(--sun)); box-shadow: 0 0 60px rgba(253,243,231,0.35); }
+.pv-hero .wave { position: absolute; left: -10%; width: 120%; border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
+.pv-hero .w1 { bottom: 0; height: 110px; background: var(--wave-2); }
+.pv-hero .w2 { bottom: 40px; height: 90px; background: var(--wave-1); opacity: 0.95; }
+.pv-hero .dancers { position: absolute; right: 14%; bottom: 100px; display: flex; gap: 6px; align-items: flex-end; }
+.pv-hero .dancers span { width: 14px; border-radius: 7px 7px 0 0; background: var(--bg); opacity: 0.9; }
+.pv-hero .dancers span:nth-child(1) { height: 56px; } .pv-hero .dancers span:nth-child(2) { height: 66px; } .pv-hero .dancers span:nth-child(3) { height: 52px; } .pv-hero .dancers span:nth-child(4) { height: 62px; }
+.pv-card { position: relative; z-index: 2; margin: 20px; padding: 20px; max-width: 520px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
+.pv-card .eyebrow { margin: 0 0 4px; font-weight: 700; color: var(--sea); }
+.pv-card h1 { font-size: 2.25rem; line-height: 1.1; margin: 0 0 8px; }
+.pv-card p { margin: 0 0 12px; }
+.pv-card .row { display: flex; flex-wrap: wrap; gap: 8px; }
+.pv-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0; }
+.pv-stats div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px; text-align: center; }
+.pv-stats strong { display: block; font-family: Fraunces, Georgia, serif; font-size: 1.75rem; color: var(--primary); }
+.pv h2 { font-size: 1.75rem; margin: 28px 0 12px; }
+.pv .grid { display: grid; gap: 12px; }
+.pv .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+.pv .card h3 { margin: 0 0 4px; font-size: 1.25rem; }
+.pv .muted { color: var(--muted); font-size: 0.875rem; margin: 0 0 8px; }
+.pv .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 8px 0; padding: 0; }
+.pv .tag { padding: 2px 12px; border-radius: 999px; border: 1.5px solid var(--sea); color: var(--sea); font-weight: 700; font-size: 0.875rem; }
+.pv .tag-hi { background: var(--hi); border-color: var(--hi); color: var(--on-hi); }
+.pv .avatar { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: Fraunces, Georgia, serif; font-size: 1.5rem; font-weight: 700; color: var(--on-primary); background: var(--primary); margin-bottom: 8px; }
+.pv .avatar.a2 { background: var(--sea); color: var(--bg); } .pv .avatar.a3 { background: var(--hi); color: var(--on-hi); } .pv .avatar.a4 { background: var(--ink); color: var(--bg); }
+.pv .artist { text-align: center; }
+.pv .artist h3 a { text-decoration: none; }
+.pv footer { margin-top: 32px; padding: 20px 0 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.875rem; }
+.pv-note { padding: 12px 16px; background: #f3f3f3; color: #111; border-bottom: 2px solid #111; font: 600 0.9375rem/1.4 system-ui, sans-serif; }
+@media (min-width: 700px) { .pv-stats { grid-template-columns: repeat(4, 1fr); } .pv .grid-2 { grid-template-columns: 1fr 1fr; } .pv .grid-4 { grid-template-columns: repeat(4, 1fr); } .pv-card h1 { font-size: 3rem; } }
+@media (min-width: 900px) { .pv nav ul { display: flex; } .pv-hero { min-height: 520px; } .pv-hero .sun { width: 190px; height: 190px; right: 14%; } .pv-card { margin: 40px; padding: 28px; } }
+@media (prefers-reduced-motion: no-preference) { .pv-hero .sun { transition: transform 0.6s ease-out; } }

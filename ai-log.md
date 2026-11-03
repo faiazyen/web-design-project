@@ -320,3 +320,53 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): slide 5 and `progress-02.md` said "5 problems" and "Chrome double-click not tested"; they now say 12 problems and Chrome tested, matching what was done.
 - Rejected (what and why): nothing.
 - Errors/limitations found: Safari, Firefox, screen readers and real users are still untested.
+
+## 2026-11-03 – Hosting question and how long the site stays online – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), GitHub Pages settings
+- Prompt (short): will the deployed site stay live if the computer is off, for how long, and is it the same as Vercel?
+- What AI produced: an explanation: GitHub Pages runs on GitHub's servers, has no expiry for a public repository, and stays up as long as the repository stays public, is not deleted or renamed, and the account stays active. Vercel's free plan is similar, but preview links may ask for a login.
+- How we verified it: the Pages settings were read from GitHub (status built, source main, HTTPS enforced); the live address was fetched after the computer's browser tests.
+- Accepted: GitHub Pages as the host.
+- Modified (what and why): none.
+- Rejected (what and why): Vercel, because its command-line tool was not logged in and Pages needed no new account.
+- Errors/limitations found: the site is public and the address changes if the repository is renamed; Pages can take a minute to update after a push.
+
+## 2026-11-03 – Advice on a looping hero video – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): should a high-quality 3D looping video be the hero of the front page, and when?
+- What AI produced: a recommendation to use two AI-generated hero stills (Day and Night) with the dates and button as real text, and to add a short silent loop video only last, with a poster image, a pause button, small file size and no loading on slow connections or reduced motion. Reasons: the video earns no marks, speed is part of SEO, moving content needs a pause control, and GitHub rejects files over 100 MB.
+- How we verified it: checked against the course text (SEO and AEO/GEO, WCAG 2.0 AA, semantic HTML, interactive-function rule). Nothing forbids a video, but it does not count as a function.
+- Accepted: the team followed the recommendation. The hero placeholder, the visual design page, `progress-02.md` ("Next") and the slides now say so.
+- Modified (what and why): none.
+- Rejected (what and why): a video-first hero.
+- Errors/limitations found: no video or hero image exists yet; the team has to generate the two stills.
+
+## 2026-11-03 – Advice from the full list of course requirements – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): given all the seminar requirements, what should we do after Seminar 3?
+- What AI produced: advice that the real site must have its content as plain HTML (not built only by JavaScript) so search engines, AI tools and HTML checkers can read it; one page per performer, session and venue written by a script on our own computer, with unique titles and matching JSON-LD; semantic elements (`time`, `address`, `article`); `progress-03.md` must list current UX trends and how they were used; `documentation.md` must be started now; `review/` must hold only the received review; keep one table of changes against the 15% rule.
+- How we verified it: each point was matched to a sentence in the pasted requirements.
+- Accepted: the team asked for a plan before any code, as the project rule says; no code was written for this step.
+- Modified (what and why): none yet.
+- Rejected (what and why): none.
+- Errors/limitations found: the static-pages approach changes the spec's "one template with ?slug" into one file per entity; it needs a written justification (SEO and AEO requirement) in the change table.
+
+## 2026-11-03 – Preview of the planned look, link in the deck, log update – Claude Code, requested by the team
+- Tool/model: Claude Code (Sonnet 5.5), the app's built-in browser, pptx tooling, W3C HTML checker
+- Prompt (short): add the website link to the presentation, add a slide that shows how the website will look with our palette, and record every step of the day in the AI log.
+- What AI produced: `prototype/visual-preview.html` and `css/preview.css` (the home page in Golden Hour, Day and Night, with a toggle); 4 screenshots in `docs/evidence/`; a sixth slide "Preview: how the website will look"; a clickable live link on slides 1, 4 and 6 and the address in every slide footer; shorter speaker notes (about 4 minutes 25 seconds in total); updates to `progress-02.md`, the verification record and the README; this set of log entries.
+- How we verified it: the preview was opened on phone and desktop in both moods and the screenshots were read. This found two defects, both fixed: the header overflowed on a phone (a button was cut off), and the "tonight" card named the wrong venue and showed a lower-case type because both were typed in by hand instead of read from the data. The deck passed the file validator and every slide was rendered and read; links were read back from the file.
+- Accepted: a CSS-drawn hero for the preview, because the real AI photos do not exist yet.
+- Modified (what and why): the Day/Night toggle label was shortened to "Night" / "Day" so the header fits at 375 px.
+- Rejected (what and why): a Claude artifact page; the preview lives in the prototype folder so the teacher can open it from the same live link.
+- Errors/limitations found: the preview uses system fonts instead of Fraunces and Source Sans 3, and drawn shapes instead of photos; it is sample content, not the final site.
+
+## 2026-11-03 – Notes kept outside the repository (for completeness) – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), Claude's local memory
+- Prompt (short): remember the team's rules for later sessions.
+- What AI produced: local memory notes (not in the repository) for: wireframes are mid-fidelity grayscale for the whole project; the design reference is never named in the repository or documents; design decisions (palette Golden Hour, fonts, avatars, 13-page sitemap with simulated login); commit and push after every change.
+- How we verified it: the notes were read back from the memory folder.
+- Accepted: all notes were requested or approved by the team.
+- Modified (what and why): none.
+- Rejected (what and why): none.
+- Errors/limitations found: the notes are only on this computer, so a teammate's session will not see them; the same rules are written in `CLAUDE.md` in the repository, apart from the private reference rule, which is intentionally not written there.

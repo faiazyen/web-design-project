@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview of the planned look | Atardecer Bachata Festival (prototype)</title>
+<meta name="description" content="A preview of how the Atardecer Bachata Festival home page will look with the Golden Hour palette, by day and by night. Sample content.">
+<link rel="stylesheet" href="css/preview.css">
+</head>
+<body class="pv" data-theme="day" id="pv">
+<p class="pv-note">Preview of the planned look (Golden Hour palette) with sample content. Not the wireframe and not final: real photos, fonts and pages come in the build. <a href="index.html">Back to the grayscale prototype</a></p>
+<div class="wrap">
+  <header class="pv-top">
+    <a class="brand" href="visual-preview.html"><span class="sun-logo" aria-hidden="true"></span><span class="brand-name">Atardecer</span></a>
+    <nav aria-label="Main"><ul><li><a href="#programme">Programme</a></li><li><a href="#artists">Performers</a></li><li><a href="#moods">Venues</a></li><li><a href="#tonight">My Programme</a></li></ul></nav>
+    <div class="actions">
+      <button type="button" class="btn btn-2 toggle" id="toggle" aria-pressed="false" aria-label="Switch to night mode">Night</button>
+      <a class="btn" href="#tonight">Tickets</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="pv-hero" aria-labelledby="h">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="dancers" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="wave w2" aria-hidden="true"></div><div class="wave w1" aria-hidden="true"></div>
+      <div class="pv-card">
+        <p class="eyebrow">1st edition · Primera Ola</p>
+        <h1 id="h">Atardecer Bachata Festival</h1>
+        <p>Three days of bachata in Valencia. Sea by day, club by night.</p>
+        <p><strong><time datetime="2027-06-25">25</time>–<time datetime="2027-06-27">27 June 2027</time></strong> · Valencia, Spain</p>
+        <div class="row"><a class="btn" href="#programme">See the programme</a><a class="btn btn-2" href="#artists">Meet the artists</a></div>
+      </div>
+    </section>
+
+    <section class="pv-stats" aria-label="The festival in numbers">
+      <div><strong>3</strong>days</div><div><strong>3</strong>venues</div><div><strong id="n-perf">64</strong>performers</div><div><strong id="n-items">65</strong>sessions</div>
+    </section>
+
+    <section id="moods" aria-labelledby="m">
+      <h2 id="m">Pick your mood</h2>
+      <div class="grid grid-2">
+        <article class="card"><h3>Sea by day</h3><p>Workshops by level, sand socials and the sunset social.</p><a class="btn btn-2" href="#programme">Show day sessions</a></article>
+        <article class="card"><h3>Club by night</h3><p>Shows, DJs and live music, late into the morning.</p><a class="btn btn-2" href="#programme">Show night sessions</a></article>
+      </div>
+    </section>
+
+    <section id="artists" aria-labelledby="a">
+      <h2 id="a">Featured artists</h2>
+      <ul class="grid grid-4" id="artist-list" style="list-style:none;margin:0;padding:0"></ul>
+    </section>
+
+    <section id="tonight" aria-labelledby="t">
+      <h2 id="t">Tonight at the festival</h2>
+      <article class="card" id="tonight-card"></article>
+    </section>
+  </main>
+  <footer><p><strong>Atardecer Bachata Festival</strong> · Valencia, Spain · 25–27 June 2027 · info@atardecer.example</p><p>Preview with sample content. Photos in the final site are AI-generated, with no real people.</p></footer>
+</div>
+<script src="js/data.js"></script>
+<script>
+(function () {
+  var D = window.FESTIVAL_DATA, body = document.getElementById("pv"), btn = document.getElementById("toggle");
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  document.getElementById("n-perf").textContent = D.performers.length;
+  document.getElementById("n-items").textContent = D.programmeItems.length;
+  var av = ["", "a2", "a3", "a4"];
+  document.getElementById("artist-list").innerHTML = D.performers.filter(function (p) { return p.featured; }).slice(0, 4).map(function (p, i) {
+    var ini = p.name.split(/[ &]+/).filter(Boolean).slice(0, 2).map(function (w) { return w.charAt(0); }).join("");
+    return '<li class="card artist"><div class="avatar ' + av[i % 4] + '" aria-hidden="true">' + esc(ini) + '</div><h3><a href="#artists">' + esc(p.name) + '</a></h3><p class="muted">' + esc(typeLabel(p.type)) + "</p></li>";
+  }).join("");
+  var it = D.programmeItems.filter(function (x) { return x.dayId === "day-fri" && x.type === "social" && x.venueId === "ven-003"; })[0];
+  var venue = D.venues.filter(function (v) { return v.id === it.venueId; })[0];
+  function typeLabel(id) { return D.categories.performerTypes.filter(function (t) { return t.id === id; })[0].label; }
+  var dj = D.performers.filter(function (p) { return p.id === it.performerIds[0]; })[0];
+  document.getElementById("tonight-card").innerHTML = '<p class="muted"><time datetime="' + esc(it.start) + '">Friday ' + esc(it.start.slice(11, 16)) + "–" + esc(it.end.slice(11, 16)) + "</time> · " + esc(venue.name) + "</p><h3>" + esc(it.title) +
+    '</h3><ul class="tags"><li class="tag">Social</li><li class="tag">All levels</li><li class="tag">Lead and follow</li><li class="tag tag-hi">Night</li></ul><p>' + esc(it.description) + '</p><a class="btn" href="#tonight">Save to My Programme</a>';
+  btn.addEventListener("click", function () {
+    var night = body.getAttribute("data-theme") !== "night";
+    body.setAttribute("data-theme", night ? "night" : "day");
+    btn.setAttribute("aria-pressed", String(night));
+    btn.textContent = night ? "Day" : "Night";
+    btn.setAttribute("aria-label", night ? "Switch to day mode" : "Switch to night mode");
+  });
+  if (/theme=night/.test(location.search)) btn.click();
+})();
+</script>
+</body>
+</html>
