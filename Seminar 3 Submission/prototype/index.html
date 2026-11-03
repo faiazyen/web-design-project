@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atardecer Bachata Festival: Valencia, 25–27 June 2027 (prototype)</title>
+<meta name="description" content="Atardecer Bachata Festival, Valencia, 25–27 June 2027. Sea by day, club by night. Find the programme, artists and venues, and build your own schedule.">
+<link rel="stylesheet" href="css/proto.css">
+</head>
+<body>
+<main id="main" class="container" tabindex="-1">
+  <section class="hero" aria-labelledby="hero-title">
+    <div>
+      <p class="eyebrow">1st edition · Primera Ola</p>
+      <h1 id="hero-title">Atardecer Bachata Festival</h1>
+      <p class="lede">Three days of bachata in Valencia. Sea by day, club by night.</p>
+      <p><strong>25–27 June 2027</strong> · Valencia, Spain</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="programme.html">See the programme</a>
+        <a class="btn btn-secondary" href="placeholder.html?page=Tickets">Tickets</a>
+      </div>
+    </div>
+    <div class="ph ph-hero" role="img" aria-label="Image placeholder: hero photo, dancers on the sand at sunset">Image placeholder<br>Hero, 16:9<br>Dancers on the sand at sunset</div>
+  </section>
+
+  <aside class="note"><strong>Design note · hierarchy:</strong> 1) what and when, 2) two buttons for the two key actions, 3) the two moods as quick filters, 4) people, 5) personal programme. On phones the hero image sits under the buttons; on desktop it sits beside them.</aside>
+
+  <section aria-labelledby="moods-title">
+    <h2 id="moods-title">Pick your mood</h2>
+    <div class="grid grid-2">
+      <a class="card mood-card" href="programme.html?daypart=day">
+        <h3>Sea by day</h3>
+        <p>Workshops by level, sand socials and the sunset social. Starts before 20:00.</p>
+        <span class="btn btn-secondary btn-small" aria-hidden="true">Show day sessions</span>
+      </a>
+      <a class="card mood-card" href="programme.html?daypart=night">
+        <h3>Club by night</h3>
+        <p>Shows, DJs and live music, late into the morning. Starts at 20:00 or later.</p>
+        <span class="btn btn-secondary btn-small" aria-hidden="true">Show night sessions</span>
+      </a>
+    </div>
+  </section>
+
+  <section aria-labelledby="feat-title">
+    <h2 id="feat-title">Featured artists</h2>
+    <ul class="card-list grid grid-4" id="featured"></ul>
+    <p><a href="performers.html">See all 64 performers</a></p>
+  </section>
+
+  <section aria-labelledby="mine-title">
+    <h2 id="mine-title">Plan your three days</h2>
+    <div class="card">
+      <h3>My Programme</h3>
+      <p>Save the sessions you like. We warn you if two of them overlap. Sign-up is a quick demo account kept in your browser.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="programme.html">Find sessions</a>
+        <a class="btn btn-secondary" href="my-programme.html">Open My Programme</a>
+      </div>
+    </div>
+  </section>
+
+  <aside class="note"><strong>Prototype guide:</strong> to try the two key scenarios step by step, open the <a href="walkthrough.html">prototype guide</a>.</aside>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script>
+  Site.init({ nav: "" });
+  (function () {
+    var list = document.getElementById("featured");
+    var html = Site.data.performers.filter(function (p) { return p.featured; }).map(function (p) {
+      return '<li class="card"><div class="ph ph-square" aria-hidden="true">Photo</div><h3><a href="performer.html?slug=' + Site.esc(p.slug) + '">' + Site.esc(p.name) + '</a></h3><p class="meta">' +
+        Site.esc(Site.label("performerTypes", p.type)) + " · " + Site.esc(Site.country(p.country)) + "</p></li>";
+    }).join("");
+    list.innerHTML = html;
+  })();
+</script>
+</body>
+</html>

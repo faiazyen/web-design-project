@@ -260,3 +260,33 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): `CLAUDE.md` still said "Raíces del Mar" (the first name) because earlier renames missed it; fixed. Spec lines saying Oscar was "still reviewing" and the name search was "to be repeated by hand" were out of date and were corrected.
 - Rejected (what and why): nothing.
 - Errors/limitations found: the AI's deck builder script was lost when the session scratchpad was cleared, so the deck was edited directly in its XML instead of regenerated. If we need big deck changes, the deck should be rebuilt. The login is a simulation: another browser or device sees no accounts, and the spec says so. This change is about 1 page in 12 (8%), inside the 15% limit, and is justified by the teacher's feedback.
+
+## 2026-11-03 – Inspiration source hidden from the repository – Claude Code, on request of the team
+- Tool/model: Claude Code (Sonnet 5.5), git
+- Prompt (short): the team asked that the website used as design inspiration is not named or described anywhere in the repository or on GitHub.
+- What AI produced: the analysis note was moved out of the repository into a private local folder; mentions in project files and log entries were removed or made generic; the 24 commits of `main` were rewritten so no old commit contains the text; a private backup of the old history was kept outside the repo; the cleaned history was force-pushed.
+- How we verified it: before and after, every commit of `main` was searched for the source's name, city, venue and file names: 4 commits matched before, 0 matched after, locally and on the remote. The final files are identical to the old ones except the four cleaned files, and the data checks still pass.
+- Accepted: the team chose "remove it and rewrite history" over "remove from files only" and "make the repo private".
+- Modified (what and why): old log entries were edited, which the log rule normally forbids, because the privacy request overrides it. Only identifying details were removed.
+- Rejected (what and why): keeping the analysis in the repository.
+- Errors/limitations found: copies that others already cloned or viewed before the rewrite cannot be recalled, and GitHub may keep old commit pages reachable by their hash for a while. A separate local worktree from another session still holds the old files on this computer; it is not on GitHub.
+
+## 2026-11-03 – Seminar 3 design kit – Claude Code, decided by the team
+- Tool/model: Claude Code (Sonnet 5.5), a contrast calculator script
+- Prompt (short): act as senior web designer: propose a palette, type and an image brief for AI image tools.
+- What AI produced: `docs/design-kit.md` with three palette options (Day and Night tokens), two font pairs, UI basics, and a prioritised image brief with prompt templates.
+- How we verified it: WCAG contrast ratios were computed for the intended pairs of every option (text 13.6:1 or more, button text 5.1:1 or more). The team chose palette A "Golden Hour", fonts Fraunces and Source Sans 3, and 12 illustrated avatars for 56 performers.
+- Accepted: option A, the font pair, the avatar plan.
+- Modified (what and why): the kit is applied to the real build only. The prototype stays grayscale because of the team's mid-fidelity rule.
+- Rejected (what and why): options B and C; 56 individual images.
+- Errors/limitations found: image generation is still to be done by the team; no fonts are downloaded yet.
+
+## 2026-11-03 – Seminar 3 prototype, verification and submission – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), the app's built-in browser, a local test server, pptx tooling
+- Prompt (short): build a mobile-first mid-fidelity prototype that lets users complete two key scenarios, with at least 3 interactive functions; write `progress-02.md` and a presentation.
+- What AI produced: `prototype/` (9 pages plus a guide, 4 interactive functions: filters, search, My Programme with clash warnings, simulated login), a data snapshot for it, `progress-02.md`, `presentation-seminar3.pptx` (5 slides), `docs/evidence/` (verification record and 5 screenshots), and `Seminar 3 Submission/` with a zip.
+- How we verified it: both key scenarios were run step by step in a real browser (phone 375 px and desktop 1280 px); an automated page check ran on 11 pages at 320 px and 7 at 1280 px (headings, labels, names, overflow, touch size, titles, duplicate ids); the code was searched for network calls (none); the deck file passed the pptx validator and every slide was read as an image.
+- Accepted: the page structure, the four functions, the filter and search logic.
+- Modified (what and why): five problems found by testing were fixed: a pending Save lost on the login page, a skipped heading level, a missing space in the filter title, a confusing "Fri 00:00" label for sets after midnight, and filters filling a whole phone screen.
+- Rejected (what and why): colours and photos in the prototype (team rule); showing the unbuilt pages as finished designs (they open a placeholder).
+- Errors/limitations found: opening by double-click (`file://`) could not be tested in the tool, so the team must check it in their own browser; no screen reader or real-user test; the .ics file was not opened in a calendar app.

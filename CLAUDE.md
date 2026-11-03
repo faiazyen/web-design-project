@@ -26,6 +26,11 @@ Repo and folder name stay **web-design-project**.
   components and states, neutral grayscale. No low-fi sketches, no final colours, photos or polished type.
 - Applies to everything in prototype/. Ask the team before changing this rule.
 
+## Design decisions (team, 2026-11-03)
+- Brand look for the real build: palette A "Golden Hour", fonts Fraunces + Source Sans 3 (bundled locally),
+  12 illustrated avatars for the 56 non-featured performers. Details and hex values: docs/design-kit.md.
+- The Seminar 3 prototype (prototype/) is mid-fidelity grayscale and frozen after Seminar 3.
+
 ## Scope lock
 - project-specification.md is binding (max ~15% change). If a task would change the
   sitemap, entities or scenarios, STOP and ask. Do not silently diverge.

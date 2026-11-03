@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype guide | Atardecer Bachata Festival (prototype)</title>
+<meta name="description" content="Step-by-step walkthrough of the two key scenarios in the Atardecer Bachata Festival prototype.">
+<link rel="stylesheet" href="css/proto.css">
+</head>
+<body>
+<main id="main" class="container" tabindex="-1">
+  <h1>Prototype guide</h1>
+  <p class="lede">Mid-fidelity wireframe, grayscale, built from the project specification. Open it by double-clicking <code>index.html</code>; nothing needs installing.</p>
+
+  <div class="banner"><p style="margin:0 0 8px">Start each scenario with a clean demo, so there is no account or saved session left over.</p>
+    <button type="button" class="btn btn-secondary" id="reset">Reset demo data</button></div>
+
+  <section aria-labelledby="s1">
+    <h2 id="s1">Scenario 1: first-timer, beginner follower</h2>
+    <p><strong>Goal:</strong> pick two Saturday beginner workshops and keep them in her own programme with no clashes.</p>
+    <ol>
+      <li>Open <a href="programme.html">Programme</a>.</li>
+      <li>Set <strong>Day</strong> = Saturday, <strong>Type</strong> = Workshop, <strong>Level</strong> = Beginner, <strong>Role focus</strong> = Follow. (Shortcut: <a href="programme.html?day=day-sat&amp;type=workshop&amp;level=beginner&amp;role=follow">same filters pre-set</a>.)</li>
+      <li>Press <strong>Save</strong> on “Saturday starter: the follower's basics” (09:30).</li>
+      <li>The site sends you to <strong>Log in / Sign up</strong>. Sign up with any name, email and demo password.</li>
+      <li>You return to the session list and the first workshop is saved. Press <strong>Save</strong> on “Saturday starter: body movement basics” (11:00).</li>
+      <li>Open <a href="my-programme.html">My Programme</a>: both sessions are listed and the banner says there are no clashes.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="s2">
+    <h2 id="s2">Scenario 2: experienced dancer, evening</h2>
+    <p><strong>Goal:</strong> find out which DJ plays the main social tonight and when it ends.</p>
+    <ol>
+      <li>Open <a href="programme.html">Programme</a>.</li>
+      <li>Set <strong>Day</strong> = Friday, <strong>Type</strong> = Social, <strong>Day or night</strong> = Night, and <strong>Venue</strong> = Marea Club. (Shortcut: <a href="programme.html?day=day-fri&amp;type=social&amp;daypart=night&amp;venue=ven-003">same filters pre-set</a>.)</li>
+      <li>Open the 22:00 club social. The page shows the DJ and the time range.</li>
+      <li>Follow the DJ's name to their performer page: it lists the set time and every other set.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="fn">
+    <h2 id="fn">Interactive functions in this prototype</h2>
+    <ul>
+      <li><strong>Programme filters</strong> (day, venue, type, level, role, day or night)</li>
+      <li><strong>Search</strong> and a name filter on the performers list</li>
+      <li><strong>My Programme</strong> with clash warnings and a calendar download</li>
+      <li><strong>Simulated sign-up and login</strong> (accounts live in your browser)</li>
+    </ul>
+    <p>Pages that the specification plans but this prototype does not design (Venues, Roots, Practical info, Tickets) open a short placeholder.</p>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script>
+  Site.init({ nav: "", crumbs: [["Home", "index.html"], ["Prototype guide"]] });
+  document.getElementById("reset").addEventListener("click", function () {
+    Site.resetDemo();
+    Site.toast("Demo data cleared. You are logged out.");
+    var a = document.getElementById("auth"); if (a) a.innerHTML = '<a href="login.html">Log in / Sign up</a>';
+  });
+</script>
+</body>
+</html>

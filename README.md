@@ -17,6 +17,16 @@ CZU Web Design course project: a website for a fictional bachata festival in Val
 
 **Upload folder:** `Seminar 2 Submission/` holds a copy of these four files, ready for Moodle. If a root file changes, run `sh scripts/make-submission.sh` to refresh the copies and check they are identical.
 
+## Seminar 3 deliverables
+
+| File | What it is |
+|---|---|
+| `prototype/` | Mid-fidelity HTML prototype (open `prototype/index.html` by double-click) |
+| `progress-02.md` | Functions, user needs, verification, use of AI |
+| `presentation-seminar3.pptx` | 5-slide presentation |
+
+`Seminar 3 Submission/` holds a copy of these (plus `docs/design-kit.md` and the verification evidence), and `Seminar 3 Submission.zip` is the same folder zipped. Refresh with `sh scripts/make-submission-3.sh`.
+
 ## Supporting files
 
 - `ai-log.md`: log of every AI-assisted step (what AI did, how it was checked, what was accepted, changed, rejected)
