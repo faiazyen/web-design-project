@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venues | Atardecer Bachata Festival (prototype)</title>
+<meta name="description" content="The three venues of the Atardecer Bachata Festival in Valencia: a beach stage, a seaside pavilion and a club, with access facts and their sessions.">
+<link rel="stylesheet" href="css/proto.css">
+</head>
+<body>
+<main id="main" class="container" tabindex="-1">
+  <h1>Venues</h1>
+  <p class="lede">Three venues within a short walk of each other along the beachfront. Sand and sea by day, club floor by night.</p>
+  <aside class="note"><strong>Design note.</strong> Planned for the build: venue detail pages and an interactive map. This prototype shows the venue list with access facts and a link to each venue's sessions (it uses the Programme filter).</aside>
+  <h2 style="margin-top:12px">Where it happens</h2>
+  <ul class="card-list grid grid-3" id="list"></ul>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script>
+  Site.init({ nav: "venues", crumbs: [["Home", "index.html"], ["Venues"]] });
+  document.getElementById("list").innerHTML = Site.data.venues.map(function (v) {
+    var a = v.accessibility, n = Site.sessionsAt(v.id).length;
+    function yn(b) { return b ? "Yes" : "No"; }
+    return '<li class="card"><div class="ph ph-hero" role="img" aria-label="Image placeholder: photo of ' + Site.esc(v.name) + '">Image placeholder<br>' + Site.esc(v.name) + ", 4:3</div>" +
+      "<h3>" + Site.esc(v.name) + '</h3><p class="meta">' + Site.esc(v.setting.charAt(0).toUpperCase() + v.setting.slice(1)) + " · capacity " + Site.esc(v.capacity) + " · " + n + " sessions</p>" +
+      "<p>" + Site.esc(v.description) + "</p>" +
+      '<dl class="facts"><dt>Address</dt><dd>' + Site.esc(v.address.streetAddress + ", " + v.address.postalCode + " " + v.address.addressLocality) + "</dd>" +
+      "<dt>Step-free</dt><dd>" + yn(a.stepFree) + "</dd><dt>Accessible toilets</dt><dd>" + yn(a.accessibleToilets) + "</dd><dt>Quiet space</dt><dd>" + yn(a.quietSpace) + "</dd></dl>" +
+      "<p>" + Site.esc(a.notes) + "</p>" +
+      '<a class="btn btn-secondary btn-small" href="programme.html?venue=' + Site.esc(v.id) + '">See sessions at ' + Site.esc(v.name) + "</a></li>";
+  }).join("");
+</script>
+</body>
+</html>

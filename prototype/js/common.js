@@ -232,7 +232,7 @@
   var NAV = [
     ["programme", "Programme", "programme.html"],
     ["performers", "Performers", "performers.html"],
-    ["venues", "Venues", "placeholder.html?page=Venues"],
+    ["venues", "Venues", "venues.html"],
     ["roots", "Roots", "placeholder.html?page=Roots"],
     ["practical", "Practical info", "placeholder.html?page=Practical%20info"],
     ["my", "My Programme", "my-programme.html"],

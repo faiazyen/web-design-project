@@ -290,3 +290,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): five problems found by testing were fixed: a pending Save lost on the login page, a skipped heading level, a missing space in the filter title, a confusing "Fri 00:00" label for sets after midnight, and filters filling a whole phone screen.
 - Rejected (what and why): colours and photos in the prototype (team rule); showing the unbuilt pages as finished designs (they open a placeholder).
 - Errors/limitations found: opening by double-click (`file://`) could not be tested in the tool, so the team must check it in their own browser; no screen reader or real-user test; the .ics file was not opened in a calendar app.
+
+## 2026-11-03 – Hosting and grader-style audit of the Seminar 3 submission – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), GitHub Pages, real Chrome (headless, for `file://`), the app's built-in browser
+- Prompt (short): the teacher wants the site viewable from any computer, so host it free; then audit everything against the Seminar 3 task as a teacher would, and fix gaps.
+- What AI produced: the site published on free GitHub Pages (a landing page and `.nojekyll` were added; Vercel was not used because the CLI was not logged in); a Venues page for the prototype; a shorter `progress-02.md` with the live link; an updated deck (live link on slide 1) and evidence record; a rebuilt `Seminar 3 Submission/` and zip.
+- How we verified it: every key URL answers 200 over HTTPS; both key scenarios were run again on the live site (phone and desktop widths); the main pages were opened from `file://` in real Chrome and render with storage available; the calendar download was inspected (2 valid events, correct UTC times).
+- Accepted: GitHub Pages as the host, because the repository is already public and needs no new account.
+- Modified (what and why): the navigation entry "Venues" now opens a real page instead of a placeholder, because venues are a required part of the website structure. `progress-02.md` was shortened because the task asks for a short file. Screen counts were made consistent between the file and the slides.
+- Rejected (what and why): applying brand colours to the prototype to show "visual design" (team rule: mid-fidelity grayscale); the visual design is shown as the palette slide and the design kit.
+- Errors/limitations found: the hosted site is public, so anyone with the link can open it. Safari, Firefox, screen readers and real users were not tested. Pages can take a few minutes to update after a push.

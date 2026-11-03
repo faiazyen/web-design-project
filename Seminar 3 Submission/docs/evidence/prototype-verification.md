@@ -1,6 +1,6 @@
 # Prototype verification record (Seminar 3)
 
-Date: 2026-11-03. Tester: Claude Code, driving a real browser (the app's built-in browser), with the prototype served from a local test server (`http://localhost:8765`). Viewports: 320 px, 375 px (phone) and 1280 px (desktop). The team still has to open `prototype/index.html` by double-click in their own browser (see "Not verified").
+Date: 2026-11-03. Tester: Claude Code, driving a real browser (the app's built-in browser), first with the prototype on a local test server (`http://localhost:8765`) and later on the live site. Viewports: 320 px, 375 px (phone) and 1280 px (desktop).
 
 ## 1. Scenario 1: first-timer, beginner follower (phone, 375 px)
 | Step | Result |
@@ -34,7 +34,13 @@ Date: 2026-11-03. Tester: Claude Code, driving a real browser (the app's built-i
 4. Sets after midnight read "Fri 00:00", which looks like the start of Friday. Now "Fri night 00:00–01:30 (after midnight)".
 5. On a phone the six filters filled a whole screen before the results. Now two columns, and the panel folds when filters are already set.
 
-## 5. Not verified
-- Opening by double-click (`file://`) in Chrome, Safari and Firefox. The test used a local web server. The code does not use `fetch` or any network call, and `localStorage` works on file pages in these browsers, so it should work, but the team must confirm it.
-- Screen readers, other browsers, tablets, and a real user test.
-- The calendar file (.ics) download was built but its file was not opened in a calendar app.
+## 5. Hosting and offline opening (added 2026-11-03)
+- **Live site:** https://faiazyen.github.io/web-design-project/prototype/ (free GitHub Pages, public, HTTPS). Every key file answers 200 with the right type. Scenario 1 (phone, 375 px) and Scenario 2 (desktop, 1280 px) were run again on the live site: same results as above, no layout overflow, storage works.
+- **Double-click (`file://`) in real Chrome:** the main pages (Home, Programme with the two scenario filters, a performer page, Search, Login, My Programme, the guide, Venues) were opened from local files. Each renders the header, the h1 and the results (for example "Showing 4 of 65 sessions"), and the "browser blocks storage" warning does not appear.
+- **Calendar file:** the My Programme download builds valid calendar text: 2 events, correct UTC times (09:30 Madrid time shows as 07:30Z), commas escaped, ends with END:VCALENDAR.
+- **Venues page** (added after the first test round): 3 venue cards with address, access facts and a link to each venue's sessions (Arena Stage links to 25 sessions).
+
+## 6. Not verified
+- Safari and Firefox (only Chrome was used for the file test).
+- Screen readers, tablets, and a real user test.
+- Opening the downloaded calendar file in a calendar app.

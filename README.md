@@ -21,7 +21,7 @@ CZU Web Design course project: a website for a fictional bachata festival in Val
 
 | File | What it is |
 |---|---|
-| `prototype/` | Mid-fidelity HTML prototype (open `prototype/index.html` by double-click) |
+| `prototype/` | Mid-fidelity HTML prototype. Live: https://faiazyen.github.io/web-design-project/prototype/ . Offline: open `prototype/index.html` by double-click |
 | `progress-02.md` | Functions, user needs, verification, use of AI |
 | `presentation-seminar3.pptx` | 5-slide presentation |
 
