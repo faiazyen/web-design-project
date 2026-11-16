@@ -440,3 +440,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): AI first called the level quiz and venue map "planned" without saying they are not built; both documents now say so. A first draft also claimed the change stays "under 15%" with a vague count; it now states what changed and what did not.
 - Rejected (what and why): none.
 - Errors/limitations found: the cross-review of the Seminar 4 build by Oscar and Sebastian has not happened yet and is marked open in `documentation.md`.
+
+## 2026-11-17 – Seminar 4 deck and submission folder – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), pptxgenjs, LibreOffice (to render slides), the pptx file validator
+- Prompt (short): make a 6-slide presentation with phone and desktop views, the main navigation, working features, trends, and AI use, and build the submission folder and zip.
+- What AI produced: `presentation-seminar4.pptx` (6 slides, presenters Faiaz, Oscar, Sebastian, speaker notes of about 4 minutes in total, the live link on slides 1 and 6, alt text on every screenshot), `scripts/make-submission-4.sh`, `Seminar 4 Submission/` and its zip (the current `web/`, `progress-03.md`, the presentation, the verification record and screenshots), and the Seminar 4 section of `README.md`.
+- How we verified it: the deck passed the file validator; every slide was rendered to an image and read. The first render had the live link wrapping across lines on slide 1 and cards with large empty areas on slide 5, both fixed. The submission script compares every copied file with its source (identical) and writes the zip. Numbers on the slides (142 pages, 100 Lighthouse, 9 problems) were matched to `docs/evidence/web-verification.md`.
+- Accepted: the six-slide structure, the speaker split (the team can change who presents which slide).
+- Modified (what and why): link layout on slide 1; card text size on slide 5; the slide 5 heading "System-aware dark mode" replaced a heading that wrapped into its text.
+- Rejected (what and why): a video demo (more files to submit, not required, and only materials submitted beforehand may be shown).
+- Errors/limitations found: the deck has not been rehearsed against the clock by the team; the timing (about 4 minutes) is an estimate from the speaker notes. The Lighthouse numbers on slide 5 and 6 are from a local test and say so.

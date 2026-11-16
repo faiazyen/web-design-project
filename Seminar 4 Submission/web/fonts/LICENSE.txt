@@ -1,0 +1,5 @@
+Fonts bundled in this folder
+- Fraunces (variable: optical size and weight), latin subset. Copyright The Fraunces Project Authors.
+- Source Sans 3 (variable: weight), latin subset. Copyright Adobe. Source is a trademark of Adobe.
+Both are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org).
+Downloaded on 2026-11-17 from fonts.gstatic.com (Google Fonts), using the latin subset files.

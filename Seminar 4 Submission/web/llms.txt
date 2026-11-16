@@ -1,0 +1,24 @@
+# Atardecer Bachata Festival
+
+> Three days of bachata in Valencia. Workshops on the sand and in a seaside pavilion by day, socials with DJs, live acts and shows in a club by night. Beginners are welcome, and the Dominican roots of the dance are part of the programme.
+
+Fictional festival for a course project. 3 days (25-27 June 2027), 3 venues in Valencia, 64 performers, 65 sessions.
+
+## Key pages
+- [Programme](https://faiazyen.github.io/web-design-project/web/programme.html): all sessions, filterable by day, venue, type, level, role
+- [Performers](https://faiazyen.github.io/web-design-project/web/performers.html): instructors, DJs, bands, singers, show teams
+- [Venues](https://faiazyen.github.io/web-design-project/web/venues.html): Arena Stage, Pabellón Brisa, Marea Club, with access facts
+- [Tickets](https://faiazyen.github.io/web-design-project/web/tickets.html): four passes, Full Pass EUR 149
+- [Practical info](https://faiazyen.github.io/web-design-project/web/practical.html): travel, accommodation, accessibility, FAQ, code of conduct
+- [Roots](https://faiazyen.github.io/web-design-project/web/roots.html): story of bachata dominicana
+
+## Facts
+- Name: Atardecer Bachata Festival, 1st edition · Primera Ola
+- Dates: 2027-06-25 to 2027-06-27
+- Location: Valencia, Spain
+- Styles: bachata dominicana, bachata sensual, bachata moderna, salsa
+- Contact: info@atardecer.example
+
+## Notes
+- Every session, performer and venue has its own page with structured data (JSON-LD).
+- Accounts and saved sessions are a browser-only demo, not real accounts.

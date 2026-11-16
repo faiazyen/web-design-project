@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /web-design-project/web/my-programme.html
+Disallow: /web-design-project/web/login.html
+Sitemap: https://faiazyen.github.io/web-design-project/web/sitemap.xml

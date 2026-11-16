@@ -29,6 +29,17 @@ Visual preview of the planned look: `prototype/visual-preview.html` (live: https
 
 `Seminar 3 Submission/` holds a copy of these (plus `docs/design-kit.md` and the verification evidence), and `Seminar 3 Submission.zip` is the same folder zipped. Refresh with `sh scripts/make-submission-3.sh`.
 
+## Seminar 4 deliverables
+
+| File | What it is |
+|---|---|
+| `web/` | The real website: 142 plain HTML pages, CSS, JavaScript. Live: https://faiazyen.github.io/web-design-project/web/ . Offline: open `web/index.html` by double-click |
+| `progress-03.md` | What was implemented, UX and design trends used, changes since the prototype, tests, use of AI |
+| `presentation-seminar4.pptx` | 6-slide presentation (about 4 minutes) |
+| `documentation.md` | Running write-up: change table for the 15% rule, cross-review, work process, use of AI |
+
+`Seminar 4 Submission/` holds a copy of these (plus the verification record and screenshots), and `Seminar 4 Submission.zip` is the same folder zipped. Refresh with `sh scripts/make-submission-4.sh`.
+
 ## Supporting files
 
 - `ai-log.md`: log of every AI-assisted step (what AI did, how it was checked, what was accepted, changed, rejected)
@@ -42,6 +53,8 @@ Visual preview of the planned look: `prototype/visual-preview.html` (live: https
 python3 scripts/validate-data.py   # check data.json
 python3 scripts/build-data.py      # data.json -> web/js/data.js
 python3 scripts/json-to-xml.py     # data.json -> data.xml, and check they match
+python3 scripts/build-site.py      # data.json -> the 142 pages, sitemap.xml, robots.txt, llms.txt in web/
+python3 scripts/check-site.py      # offline check of the built site: links, tags, JSON-LD, contrast
 ```
 
-The website itself (`web/`) is plain HTML, CSS and JavaScript, with no build step, and works from `file://`. It is built in later phases.
+The website itself (`web/`) is plain HTML, CSS and JavaScript, needs no build to run, and works from `file://`. `build-site.py` is only run on our own computers when `data.json` changes.
