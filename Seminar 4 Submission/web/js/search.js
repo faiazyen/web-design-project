@@ -8,7 +8,7 @@
     if (q) document.title = "Search: " + q + " | Atardecer Bachata Festival";
     var out = document.getElementById("results");
     var terms = Site.norm(q).split(/\s+/).filter(Boolean);
-    if (!terms.length || !Site.data) return;   // the page already says what to do
+    if (!terms.length || !Site.data) { document.documentElement.classList.add("ready"); return; }   // the page already says what to do
 
     function hit(hay) { return terms.every(function (t) { return hay.indexOf(t) > -1; }); }
     function mark(text) {
@@ -50,5 +50,6 @@
     }
     out.innerHTML = html;
     Site.refreshSaveButtons();
+    document.documentElement.classList.add("ready");
   });
 })();

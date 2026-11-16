@@ -40,3 +40,9 @@ Date: 2026-11-17. Everything below was run on our own computer against the built
 
 ## Not verified
 Safari, Firefox, screen readers (NVDA, VoiceOver) and real users. The W3C online HTML checker was not run on the 142 pages in this round (it rate-limits repeated use); the offline check covers balanced tags, duplicate ids and links. Lighthouse numbers come from a local server and will differ a little on GitHub Pages.
+
+## Live site check (https://faiazyen.github.io/web-design-project/web/), after the final push
+- **Files:** all 177 files in `web/` were downloaded from the live site and compared by checksum with the local files: 0 differ.
+- **Page audit** of all 142 live pages at 320 px: 0 problems (run before the last small fix). The audit was not repeated on the live site at the other widths.
+- **Lighthouse on the live site:** Home, Programme and a session page: 100 in all four categories on phone and desktop. Search and My Programme after the fix: Accessibility, Best practices and SEO 100, Performance 99 to 100, layout shift 0 to 0.003.
+- **Scenario 1 on the live site (phone size), passed:** Save while logged out, demo sign-up, return to the same filtered list with the session saved, second workshop saved, My Programme shows both with "No clashes". Scenario 2 was run locally only.

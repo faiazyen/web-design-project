@@ -52,16 +52,16 @@ All changes are in the table in `documentation.md` and in `project-specification
 - **Page audit of all 142 pages at 320, 375, 768 and 1280 px: 0 problems** (one h1, no skipped headings, labelled controls, no overflow, targets of at least 44 px, alt text, metadata).
 - **Offline site check: 0 problems:** 3,750 links and 809 assets resolve, balanced tags, unique titles and descriptions, 277 JSON-LD blocks match the visible text, sitemap files exist, no external requests.
 - **Contrast:** 30 pairs, Day and Night, lowest 4.81:1.
-- **Lighthouse (local, phone and desktop presets, three page types):** Performance, Accessibility, Best practices and SEO all 100.
+- **Lighthouse (phone and desktop presets), local and on the live site:** Home, Programme and a session page: Performance, Accessibility, Best practices and SEO all 100. Search, My Programme and Login: Accessibility, Best practices and SEO 100, Performance 98 to 100 (the live run found a layout shift on Search, fixed, now 0).
 - **Double-click test:** pages open from `file://` in Chrome and filters and search work.
-- **Problems found and fixed (9):** footer and breadcrumb links under 44 px wide; two session pages with the same title; tickets JSON-LD that listed venues not shown on the page; a missing space in the filter label; a phone header that took a third of the screen; a phone hero whose art was hidden; a Night hero that was too dark; tables too tight on a phone; cropped phone screenshots.
+- **Problems found and fixed (10):** footer and breadcrumb links under 44 px wide; two session pages with the same title; tickets JSON-LD that listed venues not shown on the page; a missing space in the filter label; a phone header that took a third of the screen; a phone hero whose art was hidden; a Night hero that was too dark; tables too tight on a phone; cropped phone screenshots; a layout shift of 0.567 on the Search page, found by Lighthouse on the live site and now 0.
 - **Not verified:** Safari, Firefox, screen readers, real users, and the W3C online validator on all pages.
 
 ## 5. Use of AI, and how we checked it
 - **AI (Claude Code) did:** planned the build, wrote the page generator, the CSS, the JavaScript, the 15 vector images, the check scripts, and drafted this file and the slides.
 - **We decided:** build all pages from the data by script, draw the images as vectors now, bundle the two fonts, keep the prototype available, and what to show in the presentation.
 - **How we checked:** we did not accept the code because it looked right. We ran scripts over all 142 pages, ran both key scenarios in a real browser on phone and desktop sizes, read screenshots, and measured contrast, targets, headings and links.
-- **Accepted:** the generator approach, the layout, the JavaScript features. **Modified after testing:** the 9 items above. **Rejected:** a loading video in the hero (speed and no marks), stock photos, and framework code from design tools.
+- **Accepted:** the generator approach, the layout, the JavaScript features. **Modified after testing:** the 10 items above. **Rejected:** a loading video in the hero (speed and no marks), stock photos, and framework code from design tools.
 - **AI limits seen:** the first headers, heroes and tables looked fine on desktop and failed on a phone; the audit and screenshots found it. It also first listed venues in a JSON-LD block where they were not visible on the page. Sample bios are still fictional and formulaic.
 - Every step is in `ai-log.md`.
 
