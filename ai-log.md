@@ -370,3 +370,73 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): none.
 - Rejected (what and why): none.
 - Errors/limitations found: the notes are only on this computer, so a teammate's session will not see them; the same rules are written in `CLAUDE.md` in the repository, apart from the private reference rule, which is intentionally not written there.
+
+## 2026-11-17 – Plan for Seminar 4 (first functional implementation) – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): we got 7 points for Seminar 3; here is the Seminar 4 brief; plan first, then build.
+- What AI produced: a plan with four questions for the team: build all pages by script or by hand, who makes the images, whether to download the fonts, and whether to commit the edited Seminar 3 deck and zip as they are. It also proposed static pre-built pages for every session, performer and venue instead of the prototype's `?slug=` templates, with JavaScript only as an improvement.
+- How we verified it: the plan was matched point by point to the brief (home page, a second page with different content, working navigation, responsive, functional features, semantic HTML, `progress-03.md` with five parts, a presentation with mobile and desktop views).
+- Accepted: all four recommended answers (all pages via the script; AI draws the images as SVG now; download both fonts; commit the deck and zip as they are).
+- Modified (what and why): none.
+- Rejected (what and why): hand-writing 140 pages (slow and inconsistent); waiting for AI photos (blocks the whole build).
+- Errors/limitations found: the plan changes the spec's `?slug=` templates to one file per entity, so it needs an entry in the change table and in section 8 of the spec (done below).
+
+## 2026-11-17 – Bundled fonts – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), Google Fonts (download only)
+- Prompt (short): download Fraunces and Source Sans 3 so the site needs no external request.
+- What AI produced: `web/fonts/fraunces-latin.woff2` (67 KB), `web/fonts/source-sans-3-latin.woff2` (29 KB) and `web/fonts/LICENSE.txt` (SIL Open Font License, source and date).
+- How we verified it: both files are the variable latin subsets; the site check finds no external request; the pages render in the fonts when opened from `file://`. Spanish accents (ó, í) display correctly in venue names.
+- Accepted: both fonts as the design decision of 2026-11-03.
+- Modified (what and why): none.
+- Rejected (what and why): linking the fonts from Google's servers (extra request, privacy, breaks offline).
+- Errors/limitations found: only the latin subset is included, which covers every character in our data; other alphabets would need more files.
+
+## 2026-11-17 – Vector images and image paths in the data – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): draw the avatars, venue scenes, logo and social card as SVG in the Golden Hour palette.
+- What AI produced: `scripts/make-images.py`, which writes 12 avatars (4 kinds in 3 colour variants), 3 venue scenes, a logo and a social card; a rewrite of the image fields in `data.json` for 64 performers and 3 venues (path, alt text, credit "AI-generated vector illustration", source); `docs/image-prompts.md`; the social card rendered to a PNG for Open Graph.
+- How we verified it: a contact sheet of all images was rendered and read. The text and waves on the social card overlapped, so positions were moved and the script re-run. `validate-data.py` passed with 0 errors, `json-to-xml.py` and `build-data.py` re-ran without errors.
+- Accepted: simple flat illustrations instead of photos.
+- Modified (what and why): social card text and wave positions, after reading the first render.
+- Rejected (what and why): AI photos for performers (real-looking faces of people who do not exist, licence and trust questions, and they would block the build).
+- Errors/limitations found: the avatars are generic by design (4 kinds in 3 colours). Open Graph readers need PNG or JPG, so `social-card.png` is a render of the SVG made in headless Chrome.
+
+## 2026-11-17 – Page generator for the whole site – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): write a script that builds every page as plain HTML from `data.json`, with metadata and JSON-LD.
+- What AI produced: `scripts/build-site.py`: 142 pages (10 page types, 65 sessions, 64 performers, 3 venues), relative links that work from `file://` and from the Pages subfolder, header, footer and breadcrumbs, `time`, `address`, `details` and tables, a themed SVG hero, unique title, description, canonical and Open Graph tags, JSON-LD, `sitemap.xml`, `robots.txt`, `llms.txt`.
+- How we verified it: ran it (142 pages), then wrote `scripts/check-site.py` to check every link and asset, balanced tags, unique titles and descriptions, and whether each JSON-LD value appears as visible text.
+- Accepted: static pages as the main structure.
+- Modified (what and why): country codes (CU, DO) were shown on pages and now show names; the JSON-LD for performers inside a session no longer carries the bio, because the bio is not visible on that page; the tickets JSON-LD lost its venue list for the same reason; session page titles now include the day, because two sessions had the same title.
+- Rejected (what and why): `availability` in ticket offers (not visible text, and there is no real sale).
+- Errors/limitations found: the first version of the JSON-LD did not match the visible text on three page types. Only the checker found this.
+
+## 2026-11-17 – CSS and JavaScript of the real site – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): write the Golden Hour stylesheet (mobile first, Day and Night) and the scripts for filters, search, My Programme, login and the theme switch.
+- What AI produced: `web/css/style.css` (17 KB, one spacing grid, one radius scale, 7 font sizes), `web/js/site.js` (menu, theme, login status, Save buttons, toast), `programme.js`, `performers.js`, `search.js`, `my-programme.js`, `login.js`. The login, saved-programme and clash logic were ported from the Seminar 3 prototype, including the fix that keeps a pending save until the visitor is logged in.
+- How we verified it: both key scenarios were run in a real browser (phone 375 px and desktop 1280 px), a deliberate clash was created and removed, search for "marisol" was run, and the keyboard focus ring and skip link were checked.
+- Accepted: JavaScript that only improves pages that already work as HTML.
+- Modified (what and why): after the audit and screenshots the header folds behind the Menu button on phones, the phone hero shows its art above the card, the Night sky got a dusk gradient and the hero card a border, and tables became stacked cards on phones.
+- Rejected (what and why): copying the prototype's JavaScript-rendered lists, because they hide content from search engines.
+- Errors/limitations found: AI's first layout looked fine on desktop and failed on a phone in three places. Headless Chrome cannot render below 500 px, so phone screenshots were taken in the browser pane.
+
+## 2026-11-17 – Audits, Lighthouse and evidence – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), the app's built-in browser, headless Chrome, Lighthouse (installed outside the repository only to measure)
+- Prompt (short): test the real site on all pages, at phone and desktop widths, and record what is found.
+- What AI produced: `scripts/audit-pages.js` (all pages at a given width: headings, labels, overflow, touch targets, alt text, metadata), `scripts/check-site.py` (offline check with 30 contrast pairs), `scripts/make-evidence-shots.sh`, screenshots in `docs/evidence/`, `docs/evidence/web-verification.md`, Lighthouse runs on Home, Programme and a session page for phone and desktop.
+- How we verified it: the scripts were run and their output read; problems were fixed and the scripts re-run until 0 problems at 320, 375, 768 and 1280 px (142 pages each). Lighthouse gave 100 in all four categories on all six runs (local server). Screenshots of phone and desktop, Day and Night, were read.
+- Accepted: all results above as the Seminar 4 evidence.
+- Modified (what and why): nine problems were fixed (listed in `web-verification.md`), among them 142 pages with footer, breadcrumb and navigation links narrower than 44 px.
+- Rejected (what and why): reporting Lighthouse as a live-site result; it was run on a local server and is labelled that way.
+- Errors/limitations found: not tested in Safari, Firefox, with a screen reader, or by real users. The W3C online validator was not run on the 142 pages in this round (rate limit).
+
+## 2026-11-17 – Documents for Seminar 4 – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5)
+- Prompt (short): write `progress-03.md`, start `documentation.md`, record the spec change, point the root page at the real site.
+- What AI produced: `progress-03.md` (five parts), `documentation.md` (change table for the 15% rule, cross-review table, work process, use of AI), a change note in the sitemap section and section 8 of `project-specification.md`, a root `index.html` that opens `web/` and still links the prototype.
+- How we verified it: every number in `progress-03.md` (142 pages, 3,750 links, 277 JSON-LD blocks, 30 contrast pairs, 9 problems, Lighthouse 100) was checked against the script output. The trends table cites general standards (WCAG, Core Web Vitals, schema.org), not a particular site.
+- Accepted: the structure with five required parts.
+- Modified (what and why): AI first called the level quiz and venue map "planned" without saying they are not built; both documents now say so. A first draft also claimed the change stays "under 15%" with a vague count; it now states what changed and what did not.
+- Rejected (what and why): none.
+- Errors/limitations found: the cross-review of the Seminar 4 build by Oscar and Sebastian has not happened yet and is marked open in `documentation.md`.
