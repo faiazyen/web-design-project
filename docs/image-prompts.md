@@ -1,14 +1,19 @@
-# Image prompts and sources
+# Image sources
 
-All images on the site are AI-generated or freely licensed (course rule). Every image in `data.json` has `credit` and `source` fields. This file records the prompt or licence for each image once it exists.
+All images on the site are AI-generated or freely licensed (course rule). Every image in `data.json` has `credit` and `source` fields.
 
-**Status (2026-10-19):** no image files have been created yet. `data.json` holds the planned paths only (`images/venues/*.jpg`, `images/performers/*.jpg`). Images are created in a later phase, after the prototype, and each one is added to the table below the moment it is made.
+## Images in the site (2026-11-17)
+| Files | What | Tool | How made |
+|---|---|---|---|
+| `web/images/avatars/*.svg` (12) | Illustrated avatars: 4 kinds (instructor, DJ, musician, show team) in 3 colour variants, used for all 64 performers | Claude Code (AI) | Drawn as code by `scripts/make-images.py`. No photos, no real people. |
+| `web/images/venues/*.svg` (3) | Illustrated scenes for Arena Stage, Pabellón Brisa and Marea Club | Claude Code (AI) | Same script |
+| `web/images/logo.svg`, `social-card.svg` | Sun logo and the picture used when the site is shared | Claude Code (AI) | Same script |
+| The hero scene (Day and Night) | Sunset scene drawn in the page itself | Claude Code (AI) | Written into the page by `scripts/build-site.py` |
 
-| Image file | Used for | Tool or licence | Prompt or source URL | Date | Checked by (alt text, no real person, no logo) |
-|---|---|---|---|---|---|
-| *(none yet)* | | | | | |
+Change to the data foundation: the `image` fields of the performers and venues in `data.json` now point to these files (before, they pointed to photo files that did not exist yet). Reason: the team chose illustrated avatars for performers without their own photo, and vector art is small and fast.
 
-Rules:
-- No image may show a real, identifiable person or a real brand logo.
-- Every image needs meaningful `alt` text in `data.json`.
-- If an image is replaced, keep the old row and mark it replaced.
+## Not yet made (optional, later)
+AI photos (hero stills, venues, featured artists) may be added if time allows. Log each prompt, tool and date here when they exist.
+
+## Fonts
+Fraunces and Source Sans 3 (SIL Open Font License), see `web/fonts/LICENSE.txt`.

@@ -446,10 +446,10 @@
       </accessibility>
       <mapZone>zone-arena</mapZone>
       <image>
-        <src>images/venues/arena-stage.jpg</src>
-        <alt>Dancers on a sand dance floor at sunset</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/venues/arena-stage.svg</src>
+        <alt>Illustration of a sand dance floor with a canopy stage at sunset</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </venue>
     <venue>
@@ -479,10 +479,10 @@
       </accessibility>
       <mapZone>zone-pavilion</mapZone>
       <image>
-        <src>images/venues/pabellon-brisa.jpg</src>
-        <alt>A bright pavilion with a wooden dance floor and sea-view windows</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/venues/pabellon-brisa.svg</src>
+        <alt>Illustration of a bright seaside pavilion with sea-view windows and a wooden floor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </venue>
     <venue>
@@ -512,10 +512,10 @@
       </accessibility>
       <mapZone>zone-club</mapZone>
       <image>
-        <src>images/venues/marea-club.jpg</src>
-        <alt>A night club dance floor lit in warm amber</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/venues/marea-club.svg</src>
+        <alt>Illustration of a night club floor with spotlights and a DJ booth</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </venue>
   </venues>
@@ -537,10 +537,10 @@
       <bio>Marisol Vega and Tavo Reyes teach bachata from Santo Domingo. Their classes focus on the footwork and side step of traditional Dominican bachata. They count every step out loud until the room does it too.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/marisol-and-tavo.jpg</src>
-        <alt>Portrait of Marisol &amp; Tavo</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Marisol &amp; Tavo, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -560,10 +560,10 @@
       <bio>Ilena Quispe and Dario Mena teach bachata from Lima. Their classes focus on body isolations and slow, patient musicality. Their classes start with two minutes of silence before the first song.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/ilena-and-dario.jpg</src>
-        <alt>Portrait of Ilena &amp; Dario</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-b.svg</src>
+        <alt>Illustrated avatar for Ilena &amp; Dario, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -583,10 +583,10 @@
       <bio>Noelia Ferrer and Bruno Salas teach bachata from Valencia. Their classes focus on partner communication and clear connection. Both grew up dancing on the Valencia beachfront.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/noelia-and-bruno.jpg</src>
-        <alt>Portrait of Noelia &amp; Bruno</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-c.svg</src>
+        <alt>Illustrated avatar for Noelia &amp; Bruno, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -605,10 +605,10 @@
       <bio>Yara Montero and Elías Brito teach bachata from Santiago de los Caballeros. Their classes focus on guitar-led traditional bachata and how to dance to the requinto. Elías plays guitar and brings it to class.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/yara-and-elias.jpg</src>
-        <alt>Portrait of Yara &amp; Elías</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Yara &amp; Elías, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -627,10 +627,10 @@
       <bio>Katia Orlov and Leandro Pires teach bachata from Lisbon. Their classes focus on weight changes, spins and smooth exits. They film every class and share a slow-motion clip afterwards.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/katia-and-leandro.jpg</src>
-        <alt>Portrait of Katia &amp; Leandro</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-b.svg</src>
+        <alt>Illustrated avatar for Katia &amp; Leandro, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -650,10 +650,10 @@
       <bio>Amparo Ruiz and Joaquín Lledó teach bachata from Alicante. Their classes focus on lead and follow clarity for social dancing. Their rule: if the move needs a pull, it is not ready.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/amparo-and-joaquin.jpg</src>
-        <alt>Portrait of Amparo &amp; Joaquín</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-c.svg</src>
+        <alt>Illustrated avatar for Amparo &amp; Joaquín, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -673,10 +673,10 @@
       <bio>Zoe Laurent and Matteo Ricci teach bachata from Lyon. Their classes focus on musicality, breaks and playing with the song structure. They teach with a different playlist for every group.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/zoe-and-matteo.jpg</src>
-        <alt>Portrait of Zoe &amp; Matteo</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Zoe &amp; Matteo, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -695,10 +695,10 @@
       <bio>Camila Duarte and Ostap Melnyk teach bachata from Warsaw. Their classes focus on styling, shadow work and dancing apart. They run a weekly open floor for beginners in Warsaw.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/camila-and-ostap.jpg</src>
-        <alt>Portrait of Camila &amp; Ostap</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-b.svg</src>
+        <alt>Illustrated avatar for Camila &amp; Ostap, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -718,10 +718,10 @@
       <bio>Nerea Aguirre and Fidel Cabrera teach bachata from Havana. Their classes focus on Latin social fundamentals that carry over from salsa to bachata. Fidel starts every class with a rumba warm-up.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/nerea-and-fidel.jpg</src>
-        <alt>Portrait of Nerea &amp; Fidel</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-c.svg</src>
+        <alt>Illustrated avatar for Nerea &amp; Fidel, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -740,10 +740,10 @@
       <bio>Lourdes Peña and Pavel Horák teach bachata from Prague. Their classes focus on dips, transitions and safe partner support. They always teach the way out of a move before the move itself.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/lourdes-and-pavel.jpg</src>
-        <alt>Portrait of Lourdes &amp; Pavel</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Lourdes &amp; Pavel, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -762,10 +762,10 @@
       <bio>Greta Lindqvist and Isaías Cordero teach bachata from Stockholm. Their classes focus on tempo, breathing and relaxed posture. Their advice for nervous dancers is to hum the melody.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/greta-and-isaias.jpg</src>
-        <alt>Portrait of Greta &amp; Isaías</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-b.svg</src>
+        <alt>Illustrated avatar for Greta &amp; Isaías, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -785,10 +785,10 @@
       <bio>Dalia Haddad and Kofi Mensah teach bachata from Berlin. Their classes focus on improvisation on a crowded dance floor. They hold a no-choreography rule in all their classes.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dalia-and-kofi.jpg</src>
-        <alt>Portrait of Dalia &amp; Kofi</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-c.svg</src>
+        <alt>Illustrated avatar for Dalia &amp; Kofi, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -808,10 +808,10 @@
       <bio>Ruth Calderón and Anselmo Paz teach bachata from Cali. Their classes focus on salsa timing for bachata dancers. Anselmo grew up in a family of percussionists.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/ruth-and-anselmo.jpg</src>
-        <alt>Portrait of Ruth &amp; Anselmo</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Ruth &amp; Anselmo, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -830,10 +830,10 @@
       <bio>Perla Santana and Wilmer Rosario teach bachata from San Pedro de Macorís. Their classes focus on merengue-influenced footwork in the Dominican style. They bring a güira to teach the rhythm by ear.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/perla-and-wilmer.jpg</src>
-        <alt>Portrait of Perla &amp; Wilmer</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-b.svg</src>
+        <alt>Illustrated avatar for Perla &amp; Wilmer, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -850,10 +850,10 @@
       <bio>Jimena Cruz teaches bachata from Madrid. The classes focus on first steps and confidence for complete beginners. She teaches the first class of the weekend every year.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/jimena-cruz.jpg</src>
-        <alt>Portrait of Jimena Cruz</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-c.svg</src>
+        <alt>Illustrated avatar for Jimena Cruz, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -869,10 +869,10 @@
       <bio>Rafael Montilla teaches bachata from Puerto Plata. The classes focus on traditional guitar rhythms and how to dance them. He learned to dance before he learned to walk, his family says.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/rafael-montilla.jpg</src>
-        <alt>Portrait of Rafael Montilla</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Rafael Montilla, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -888,10 +888,10 @@
       <bio>Sanaa Benali teaches bachata from Casablanca. The classes focus on clear leading and floor craft. She is known for teaching leaders how to lead with their whole body.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/sanaa-benali.jpg</src>
-        <alt>Portrait of Sanaa Benali</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-b.svg</src>
+        <alt>Illustrated avatar for Sanaa Benali, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -907,10 +907,10 @@
       <bio>Tomasz Wrona teaches bachata from Kraków. The classes focus on lead technique and calm posture. He insists on a five-minute stretch before every class.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/tomasz-wrona.jpg</src>
-        <alt>Portrait of Tomasz Wrona</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-c.svg</src>
+        <alt>Illustrated avatar for Tomasz Wrona, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -926,10 +926,10 @@
       <bio>Ayelén Sosa teaches bachata from Córdoba. The classes focus on follow technique, balance and styling. She teaches followers to choose, not just react.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/ayelen-sosa.jpg</src>
-        <alt>Portrait of Ayelén Sosa</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Ayelén Sosa, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -945,10 +945,10 @@
       <bio>Mireia Planas teaches bachata from Barcelona. The classes focus on body movement and flow for followers. Her background is contemporary dance.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/mireia-planas.jpg</src>
-        <alt>Portrait of Mireia Planas</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-b.svg</src>
+        <alt>Illustrated avatar for Mireia Planas, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -964,10 +964,10 @@
       <bio>Dominik Brandt teaches bachata from Hamburg. The classes focus on footwork and rhythm for leaders. He dances in sneakers and tells you why.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dominik-brandt.jpg</src>
-        <alt>Portrait of Dominik Brandt</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-c.svg</src>
+        <alt>Illustrated avatar for Dominik Brandt, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -984,10 +984,10 @@
       <bio>Luz Marina Echeverri teaches bachata from Bogotá. The classes focus on solo styling, shines and rhythm. She teaches every class with a live clave on the wood block.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/luz-marina-echeverri.jpg</src>
-        <alt>Portrait of Luz Marina Echeverri</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/instructor-a.svg</src>
+        <alt>Illustrated avatar for Luz Marina Echeverri, instructor</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1004,10 +1004,10 @@
       <bio>DJ Kiko Mar plays smooth bachata sensual with a warm bass. Based in Valencia. He built his first playlist for his cousin's wedding.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-kiko-mar.jpg</src>
-        <alt>Portrait of DJ Kiko Mar</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-a.svg</src>
+        <alt>Illustrated avatar for DJ Kiko Mar, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1024,10 +1024,10 @@
       <bio>DJ Lorena Vela plays bachata moderna that crosses over into salsa. Based in Madrid. She keeps a notebook of every song that cleared a floor.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-lorena-vela.jpg</src>
-        <alt>Portrait of DJ Lorena Vela</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-b.svg</src>
+        <alt>Illustrated avatar for DJ Lorena Vela, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1043,10 +1043,10 @@
       <bio>DJ Tarek Noor plays dark, slow bachata for late-night floors. Based in Marseille. He plays vinyl-only sets at home.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-tarek-noor.jpg</src>
-        <alt>Portrait of DJ Tarek Noor</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-c.svg</src>
+        <alt>Illustrated avatar for DJ Tarek Noor, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1063,10 +1063,10 @@
       <bio>DJ Ximena Flor plays classic and new bachata in the same set. Based in Guadalajara. She always opens with a song from the 1990s.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-ximena-flor.jpg</src>
-        <alt>Portrait of DJ Ximena Flor</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-a.svg</src>
+        <alt>Illustrated avatar for DJ Ximena Flor, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1083,10 +1083,10 @@
       <bio>DJ Bautista plays emotional, melodic sets. Based in Buenos Aires. He talks to the room between songs.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-bautista.jpg</src>
-        <alt>Portrait of DJ Bautista</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-b.svg</src>
+        <alt>Illustrated avatar for DJ Bautista, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1102,10 +1102,10 @@
       <bio>DJ Anouk Bell plays bright, upbeat bachata for big floors. Based in Rotterdam. She plays beach festivals every summer.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-anouk-bell.jpg</src>
-        <alt>Portrait of DJ Anouk Bell</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-c.svg</src>
+        <alt>Illustrated avatar for DJ Anouk Bell, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1122,10 +1122,10 @@
       <bio>DJ Oriol Pons plays late-night sensual sets. Based in Barcelona. His sets are known for long, slow build-ups.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-oriol-pons.jpg</src>
-        <alt>Portrait of DJ Oriol Pons</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-a.svg</src>
+        <alt>Illustrated avatar for DJ Oriol Pons, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1141,10 +1141,10 @@
       <bio>DJ Soledad Rey plays traditional Dominican bachata and its guitar sound. Based in Santo Domingo. She collects old cassettes from record markets.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/dj-soledad-rey.jpg</src>
-        <alt>Portrait of DJ Soledad Rey</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-b.svg</src>
+        <alt>Illustrated avatar for DJ Soledad Rey, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1161,10 +1161,10 @@
       <bio>DJ Rodion plays high-energy sets with remixes. Based in Lviv. He plays one request per hour.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-rodion.jpg</src>
-        <alt>Portrait of DJ Rodion</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-c.svg</src>
+        <alt>Illustrated avatar for DJ Rodion, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1181,10 +1181,10 @@
       <bio>DJ Yasmina Cole plays bachata and salsa blended. Based in Manchester. She mixes live with two controllers and a loop pedal.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-yasmina-cole.jpg</src>
-        <alt>Portrait of DJ Yasmina Cole</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-a.svg</src>
+        <alt>Illustrated avatar for DJ Yasmina Cole, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1201,10 +1201,10 @@
       <bio>DJ Hugo Tamarit plays beach-ready roots bachata for sunset. Based in Valencia. He is the local DJ who knows every beach bar in Valencia.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/dj-hugo-tamarit.jpg</src>
-        <alt>Portrait of DJ Hugo Tamarit</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-b.svg</src>
+        <alt>Illustrated avatar for DJ Hugo Tamarit, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1221,10 +1221,10 @@
       <bio>DJ Naia Cortés plays romantic bachata with Andalusian touches. Based in Seville. She started as a dancer before she became a DJ.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-naia-cortes.jpg</src>
-        <alt>Portrait of DJ Naia Cortés</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-c.svg</src>
+        <alt>Illustrated avatar for DJ Naia Cortés, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1241,10 +1241,10 @@
       <bio>DJ Mateus Lobo plays danceable Latin mixes. Based in São Paulo. He plays the final set of many festivals back home.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-mateus-lobo.jpg</src>
-        <alt>Portrait of DJ Mateus Lobo</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-a.svg</src>
+        <alt>Illustrated avatar for DJ Mateus Lobo, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1261,10 +1261,10 @@
       <bio>DJ Selene Arce plays warm, guitar-driven sets. Based in San José. She finishes every set with the same slow song.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/dj-selene-arce.jpg</src>
-        <alt>Portrait of DJ Selene Arce</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/dj-b.svg</src>
+        <alt>Illustrated avatar for DJ Selene Arce, DJ</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1280,10 +1280,10 @@
       <bio>Cuarteto Salitre is a four-piece with guitar, bongo, güira and bass from Santo Domingo. They play traditional bachata the way it sounded in the barrios.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/cuarteto-salitre.jpg</src>
-        <alt>Portrait of Cuarteto Salitre</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-a.svg</src>
+        <alt>Illustrated avatar for Cuarteto Salitre, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1300,10 +1300,10 @@
       <bio>Los Faroleros del Puerto is a five-piece port-city band from Valencia. They arrange Spanish ballads as bachata.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/los-faroleros-del-puerto.jpg</src>
-        <alt>Portrait of Los Faroleros del Puerto</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-b.svg</src>
+        <alt>Illustrated avatar for Los Faroleros del Puerto, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1319,10 +1319,10 @@
       <bio>Trío Güira y Sal is a trio built around guitar and güira from Puerto Plata. Their live sets always include one song people can sing along to.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/trio-guira-y-sal.jpg</src>
-        <alt>Portrait of Trío Güira y Sal</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-c.svg</src>
+        <alt>Illustrated avatar for Trío Güira y Sal, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1339,10 +1339,10 @@
       <bio>Quinteto Cañaveral is a five-piece with horns from Cartagena. They add a Caribbean horn line to modern bachata.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/quinteto-canaveral.jpg</src>
-        <alt>Portrait of Quinteto Cañaveral</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-a.svg</src>
+        <alt>Illustrated avatar for Quinteto Cañaveral, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1358,10 +1358,10 @@
       <bio>Costa Cuerda is a string-led quartet from Alicante. They play bachata on nylon guitars and a cajón.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/costa-cuerda.jpg</src>
-        <alt>Portrait of Costa Cuerda</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-b.svg</src>
+        <alt>Illustrated avatar for Costa Cuerda, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1378,10 +1378,10 @@
       <bio>Son del Poniente is a six-piece sunset band from Valencia. They are built for open-air stages at golden hour.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/son-del-poniente.jpg</src>
-        <alt>Portrait of Son del Poniente</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-c.svg</src>
+        <alt>Illustrated avatar for Son del Poniente, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1397,10 +1397,10 @@
       <bio>Ledia Carrasco is a singer-songwriter from Valencia. She writes her own lyrics in Valencian and Spanish.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/ledia-carrasco.jpg</src>
-        <alt>Portrait of Ledia Carrasco</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-a.svg</src>
+        <alt>Illustrated avatar for Ledia Carrasco, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1416,10 +1416,10 @@
       <bio>Néstor Almonte is a traditional bachata singer from Santo Domingo. He sings the old repertoire with a lead guitar.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/nestor-almonte.jpg</src>
-        <alt>Portrait of Néstor Almonte</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-b.svg</src>
+        <alt>Illustrated avatar for Néstor Almonte, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1436,10 +1436,10 @@
       <bio>Irene Valdés is a vocalist from Caracas. She sings slow bachata with a jazz phrasing.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/irene-valdes.jpg</src>
-        <alt>Portrait of Irene Valdés</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-c.svg</src>
+        <alt>Illustrated avatar for Irene Valdés, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1456,10 +1456,10 @@
       <bio>Yeral Bonilla is a young Dominican singer from La Romana. He mixes traditional lyrics with new rhythms.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/yeral-bonilla.jpg</src>
-        <alt>Portrait of Yeral Bonilla</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-a.svg</src>
+        <alt>Illustrated avatar for Yeral Bonilla, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1475,10 +1475,10 @@
       <bio>Tamara Quiroga is a pop-leaning bachata singer from Santiago. She performs with only a guitarist and a cajón.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/tamara-quiroga.jpg</src>
-        <alt>Portrait of Tamara Quiroga</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-b.svg</src>
+        <alt>Illustrated avatar for Tamara Quiroga, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1494,10 +1494,10 @@
       <bio>Abel Santoyo is a romantic singer from Monterrey. He closes every show with an acoustic song.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/abel-santoyo.jpg</src>
-        <alt>Portrait of Abel Santoyo</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/music-c.svg</src>
+        <alt>Illustrated avatar for Abel Santoyo, musician</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1514,10 +1514,10 @@
       <bio>Ola Brava Dance Company is an eight-dancer company from Valencia. They build stage pieces from social dance moves.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/ola-brava-dance-company.jpg</src>
-        <alt>Portrait of Ola Brava Dance Company</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-a.svg</src>
+        <alt>Illustrated avatar for Ola Brava Dance Company, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1533,10 +1533,10 @@
       <bio>Sal y Compás is a six-dancer team from Seville. They mix bachata with flamenco hand percussion.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/sal-y-compas.jpg</src>
-        <alt>Portrait of Sal y Compás</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-b.svg</src>
+        <alt>Illustrated avatar for Sal y Compás, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1553,10 +1553,10 @@
       <bio>Estudio Candela is a studio show team from Medellín. They perform fast footwork routines to live drums.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/estudio-candela.jpg</src>
-        <alt>Portrait of Estudio Candela</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-c.svg</src>
+        <alt>Illustrated avatar for Estudio Candela, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1572,10 +1572,10 @@
       <bio>Navío Dance Crew is a ten-dancer crew from Porto. They choreograph for big open-air stages.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/navio-dance-crew.jpg</src>
-        <alt>Portrait of Navío Dance Crew</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-a.svg</src>
+        <alt>Illustrated avatar for Navío Dance Crew, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1591,10 +1591,10 @@
       <bio>Cuerpo &amp; Mar is a duo from Valencia. They created a piece inspired by the Valencia coastline.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/cuerpo-and-mar.jpg</src>
-        <alt>Portrait of Cuerpo &amp; Mar</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-b.svg</src>
+        <alt>Illustrated avatar for Cuerpo &amp; Mar, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1610,10 +1610,10 @@
       <bio>Raíz Viva Ensemble is a ten-dancer ensemble from Santo Domingo. Their show traces bachata from the barrios to the world.</bio>
       <featured>true</featured>
       <image>
-        <src>images/performers/raiz-viva-ensemble.jpg</src>
-        <alt>Portrait of Raíz Viva Ensemble</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-c.svg</src>
+        <alt>Illustrated avatar for Raíz Viva Ensemble, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1630,10 +1630,10 @@
       <bio>Atlántico Show Team is a team of six from Cádiz. They won a regional Latin dance competition in 2025.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/atlantico-show-team.jpg</src>
-        <alt>Portrait of Atlántico Show Team</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-a.svg</src>
+        <alt>Illustrated avatar for Atlántico Show Team, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1650,10 +1650,10 @@
       <bio>Marea Alta Dance Collective is a collective of seven from Bordeaux. They perform contemporary bachata with live lighting.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/marea-alta-dance-collective.jpg</src>
-        <alt>Portrait of Marea Alta Dance Collective</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-b.svg</src>
+        <alt>Illustrated avatar for Marea Alta Dance Collective, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1669,10 +1669,10 @@
       <bio>Duo Arrecife is a couple from Cancún. Their show uses a single spotlight and a single chair.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/duo-arrecife.jpg</src>
-        <alt>Portrait of Duo Arrecife</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-c.svg</src>
+        <alt>Illustrated avatar for Duo Arrecife, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1688,10 +1688,10 @@
       <bio>Luna Rota is a trio from Gdańsk. They blend bachata with contemporary dance.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/luna-rota.jpg</src>
-        <alt>Portrait of Luna Rota</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-a.svg</src>
+        <alt>Illustrated avatar for Luna Rota, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1707,10 +1707,10 @@
       <bio>Fuego Lento Show Team is a team of eight from Naples. They are known for slow, controlled partner work.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/fuego-lento-show-team.jpg</src>
-        <alt>Portrait of Fuego Lento Show Team</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-b.svg</src>
+        <alt>Illustrated avatar for Fuego Lento Show Team, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1726,10 +1726,10 @@
       <bio>Casa Tambora is an ensemble of nine from San Cristóbal. They dance to a live tambora and güira.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/casa-tambora.jpg</src>
-        <alt>Portrait of Casa Tambora</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-c.svg</src>
+        <alt>Illustrated avatar for Casa Tambora, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1745,10 +1745,10 @@
       <bio>Mistral Dance Co. is a company of six from Montpellier. Their show is a mix of group and solo sections.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/mistral-dance-co.jpg</src>
-        <alt>Portrait of Mistral Dance Co.</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-a.svg</src>
+        <alt>Illustrated avatar for Mistral Dance Co., show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1765,10 +1765,10 @@
       <bio>Los Bailongos del Cabanyal is a local neighbourhood group from Valencia. They are the festival's local favourites.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/los-bailongos-del-cabanyal.jpg</src>
-        <alt>Portrait of Los Bailongos del Cabanyal</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-b.svg</src>
+        <alt>Illustrated avatar for Los Bailongos del Cabanyal, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1785,10 +1785,10 @@
       <bio>Compañía Sotavento is a company of five from Tarifa. They choreograph on the beach at sunrise.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/compania-sotavento.jpg</src>
-        <alt>Portrait of Compañía Sotavento</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-c.svg</src>
+        <alt>Illustrated avatar for Compañía Sotavento, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
     <performer>
@@ -1804,10 +1804,10 @@
       <bio>Tropic Nine is a crew of nine from Amsterdam. They bring Caribbean carnival energy to bachata.</bio>
       <featured>false</featured>
       <image>
-        <src>images/performers/tropic-nine.jpg</src>
-        <alt>Portrait of Tropic Nine</alt>
-        <credit>AI-generated (image to be created)</credit>
-        <source>AI image model; prompt recorded in docs/image-prompts.md</source>
+        <src>images/avatars/team-a.svg</src>
+        <alt>Illustrated avatar for Tropic Nine, show team</alt>
+        <credit>AI-generated vector illustration (Claude Code)</credit>
+        <source>scripts/make-images.py, 2026-11-17</source>
       </image>
     </performer>
   </performers>

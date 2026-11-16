@@ -450,10 +450,10 @@ window.FESTIVAL_DATA = {
       },
       "mapZone": "zone-arena",
       "image": {
-        "src": "images/venues/arena-stage.jpg",
-        "alt": "Dancers on a sand dance floor at sunset",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/venues/arena-stage.svg",
+        "alt": "Illustration of a sand dance floor with a canopy stage at sunset",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -483,10 +483,10 @@ window.FESTIVAL_DATA = {
       },
       "mapZone": "zone-pavilion",
       "image": {
-        "src": "images/venues/pabellon-brisa.jpg",
-        "alt": "A bright pavilion with a wooden dance floor and sea-view windows",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/venues/pabellon-brisa.svg",
+        "alt": "Illustration of a bright seaside pavilion with sea-view windows and a wooden floor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -516,10 +516,10 @@ window.FESTIVAL_DATA = {
       },
       "mapZone": "zone-club",
       "image": {
-        "src": "images/venues/marea-club.jpg",
-        "alt": "A night club dance floor lit in warm amber",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/venues/marea-club.svg",
+        "alt": "Illustration of a night club floor with spotlights and a DJ booth",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     }
   ],
@@ -541,10 +541,10 @@ window.FESTIVAL_DATA = {
       "bio": "Marisol Vega and Tavo Reyes teach bachata from Santo Domingo. Their classes focus on the footwork and side step of traditional Dominican bachata. They count every step out loud until the room does it too.",
       "featured": true,
       "image": {
-        "src": "images/performers/marisol-and-tavo.jpg",
-        "alt": "Portrait of Marisol & Tavo",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Marisol & Tavo, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -564,10 +564,10 @@ window.FESTIVAL_DATA = {
       "bio": "Ilena Quispe and Dario Mena teach bachata from Lima. Their classes focus on body isolations and slow, patient musicality. Their classes start with two minutes of silence before the first song.",
       "featured": false,
       "image": {
-        "src": "images/performers/ilena-and-dario.jpg",
-        "alt": "Portrait of Ilena & Dario",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-b.svg",
+        "alt": "Illustrated avatar for Ilena & Dario, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -587,10 +587,10 @@ window.FESTIVAL_DATA = {
       "bio": "Noelia Ferrer and Bruno Salas teach bachata from Valencia. Their classes focus on partner communication and clear connection. Both grew up dancing on the Valencia beachfront.",
       "featured": true,
       "image": {
-        "src": "images/performers/noelia-and-bruno.jpg",
-        "alt": "Portrait of Noelia & Bruno",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-c.svg",
+        "alt": "Illustrated avatar for Noelia & Bruno, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -609,10 +609,10 @@ window.FESTIVAL_DATA = {
       "bio": "Yara Montero and Elías Brito teach bachata from Santiago de los Caballeros. Their classes focus on guitar-led traditional bachata and how to dance to the requinto. Elías plays guitar and brings it to class.",
       "featured": true,
       "image": {
-        "src": "images/performers/yara-and-elias.jpg",
-        "alt": "Portrait of Yara & Elías",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Yara & Elías, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -631,10 +631,10 @@ window.FESTIVAL_DATA = {
       "bio": "Katia Orlov and Leandro Pires teach bachata from Lisbon. Their classes focus on weight changes, spins and smooth exits. They film every class and share a slow-motion clip afterwards.",
       "featured": false,
       "image": {
-        "src": "images/performers/katia-and-leandro.jpg",
-        "alt": "Portrait of Katia & Leandro",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-b.svg",
+        "alt": "Illustrated avatar for Katia & Leandro, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -654,10 +654,10 @@ window.FESTIVAL_DATA = {
       "bio": "Amparo Ruiz and Joaquín Lledó teach bachata from Alicante. Their classes focus on lead and follow clarity for social dancing. Their rule: if the move needs a pull, it is not ready.",
       "featured": false,
       "image": {
-        "src": "images/performers/amparo-and-joaquin.jpg",
-        "alt": "Portrait of Amparo & Joaquín",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-c.svg",
+        "alt": "Illustrated avatar for Amparo & Joaquín, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -677,10 +677,10 @@ window.FESTIVAL_DATA = {
       "bio": "Zoe Laurent and Matteo Ricci teach bachata from Lyon. Their classes focus on musicality, breaks and playing with the song structure. They teach with a different playlist for every group.",
       "featured": false,
       "image": {
-        "src": "images/performers/zoe-and-matteo.jpg",
-        "alt": "Portrait of Zoe & Matteo",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Zoe & Matteo, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -699,10 +699,10 @@ window.FESTIVAL_DATA = {
       "bio": "Camila Duarte and Ostap Melnyk teach bachata from Warsaw. Their classes focus on styling, shadow work and dancing apart. They run a weekly open floor for beginners in Warsaw.",
       "featured": false,
       "image": {
-        "src": "images/performers/camila-and-ostap.jpg",
-        "alt": "Portrait of Camila & Ostap",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-b.svg",
+        "alt": "Illustrated avatar for Camila & Ostap, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -722,10 +722,10 @@ window.FESTIVAL_DATA = {
       "bio": "Nerea Aguirre and Fidel Cabrera teach bachata from Havana. Their classes focus on Latin social fundamentals that carry over from salsa to bachata. Fidel starts every class with a rumba warm-up.",
       "featured": false,
       "image": {
-        "src": "images/performers/nerea-and-fidel.jpg",
-        "alt": "Portrait of Nerea & Fidel",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-c.svg",
+        "alt": "Illustrated avatar for Nerea & Fidel, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -744,10 +744,10 @@ window.FESTIVAL_DATA = {
       "bio": "Lourdes Peña and Pavel Horák teach bachata from Prague. Their classes focus on dips, transitions and safe partner support. They always teach the way out of a move before the move itself.",
       "featured": false,
       "image": {
-        "src": "images/performers/lourdes-and-pavel.jpg",
-        "alt": "Portrait of Lourdes & Pavel",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Lourdes & Pavel, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -766,10 +766,10 @@ window.FESTIVAL_DATA = {
       "bio": "Greta Lindqvist and Isaías Cordero teach bachata from Stockholm. Their classes focus on tempo, breathing and relaxed posture. Their advice for nervous dancers is to hum the melody.",
       "featured": false,
       "image": {
-        "src": "images/performers/greta-and-isaias.jpg",
-        "alt": "Portrait of Greta & Isaías",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-b.svg",
+        "alt": "Illustrated avatar for Greta & Isaías, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -789,10 +789,10 @@ window.FESTIVAL_DATA = {
       "bio": "Dalia Haddad and Kofi Mensah teach bachata from Berlin. Their classes focus on improvisation on a crowded dance floor. They hold a no-choreography rule in all their classes.",
       "featured": false,
       "image": {
-        "src": "images/performers/dalia-and-kofi.jpg",
-        "alt": "Portrait of Dalia & Kofi",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-c.svg",
+        "alt": "Illustrated avatar for Dalia & Kofi, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -812,10 +812,10 @@ window.FESTIVAL_DATA = {
       "bio": "Ruth Calderón and Anselmo Paz teach bachata from Cali. Their classes focus on salsa timing for bachata dancers. Anselmo grew up in a family of percussionists.",
       "featured": false,
       "image": {
-        "src": "images/performers/ruth-and-anselmo.jpg",
-        "alt": "Portrait of Ruth & Anselmo",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Ruth & Anselmo, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -834,10 +834,10 @@ window.FESTIVAL_DATA = {
       "bio": "Perla Santana and Wilmer Rosario teach bachata from San Pedro de Macorís. Their classes focus on merengue-influenced footwork in the Dominican style. They bring a güira to teach the rhythm by ear.",
       "featured": false,
       "image": {
-        "src": "images/performers/perla-and-wilmer.jpg",
-        "alt": "Portrait of Perla & Wilmer",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-b.svg",
+        "alt": "Illustrated avatar for Perla & Wilmer, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -854,10 +854,10 @@ window.FESTIVAL_DATA = {
       "bio": "Jimena Cruz teaches bachata from Madrid. The classes focus on first steps and confidence for complete beginners. She teaches the first class of the weekend every year.",
       "featured": false,
       "image": {
-        "src": "images/performers/jimena-cruz.jpg",
-        "alt": "Portrait of Jimena Cruz",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-c.svg",
+        "alt": "Illustrated avatar for Jimena Cruz, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -873,10 +873,10 @@ window.FESTIVAL_DATA = {
       "bio": "Rafael Montilla teaches bachata from Puerto Plata. The classes focus on traditional guitar rhythms and how to dance them. He learned to dance before he learned to walk, his family says.",
       "featured": false,
       "image": {
-        "src": "images/performers/rafael-montilla.jpg",
-        "alt": "Portrait of Rafael Montilla",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Rafael Montilla, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -892,10 +892,10 @@ window.FESTIVAL_DATA = {
       "bio": "Sanaa Benali teaches bachata from Casablanca. The classes focus on clear leading and floor craft. She is known for teaching leaders how to lead with their whole body.",
       "featured": false,
       "image": {
-        "src": "images/performers/sanaa-benali.jpg",
-        "alt": "Portrait of Sanaa Benali",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-b.svg",
+        "alt": "Illustrated avatar for Sanaa Benali, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -911,10 +911,10 @@ window.FESTIVAL_DATA = {
       "bio": "Tomasz Wrona teaches bachata from Kraków. The classes focus on lead technique and calm posture. He insists on a five-minute stretch before every class.",
       "featured": false,
       "image": {
-        "src": "images/performers/tomasz-wrona.jpg",
-        "alt": "Portrait of Tomasz Wrona",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-c.svg",
+        "alt": "Illustrated avatar for Tomasz Wrona, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -930,10 +930,10 @@ window.FESTIVAL_DATA = {
       "bio": "Ayelén Sosa teaches bachata from Córdoba. The classes focus on follow technique, balance and styling. She teaches followers to choose, not just react.",
       "featured": false,
       "image": {
-        "src": "images/performers/ayelen-sosa.jpg",
-        "alt": "Portrait of Ayelén Sosa",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Ayelén Sosa, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -949,10 +949,10 @@ window.FESTIVAL_DATA = {
       "bio": "Mireia Planas teaches bachata from Barcelona. The classes focus on body movement and flow for followers. Her background is contemporary dance.",
       "featured": false,
       "image": {
-        "src": "images/performers/mireia-planas.jpg",
-        "alt": "Portrait of Mireia Planas",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-b.svg",
+        "alt": "Illustrated avatar for Mireia Planas, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -968,10 +968,10 @@ window.FESTIVAL_DATA = {
       "bio": "Dominik Brandt teaches bachata from Hamburg. The classes focus on footwork and rhythm for leaders. He dances in sneakers and tells you why.",
       "featured": false,
       "image": {
-        "src": "images/performers/dominik-brandt.jpg",
-        "alt": "Portrait of Dominik Brandt",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-c.svg",
+        "alt": "Illustrated avatar for Dominik Brandt, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -988,10 +988,10 @@ window.FESTIVAL_DATA = {
       "bio": "Luz Marina Echeverri teaches bachata from Bogotá. The classes focus on solo styling, shines and rhythm. She teaches every class with a live clave on the wood block.",
       "featured": false,
       "image": {
-        "src": "images/performers/luz-marina-echeverri.jpg",
-        "alt": "Portrait of Luz Marina Echeverri",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/instructor-a.svg",
+        "alt": "Illustrated avatar for Luz Marina Echeverri, instructor",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1008,10 +1008,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Kiko Mar plays smooth bachata sensual with a warm bass. Based in Valencia. He built his first playlist for his cousin's wedding.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-kiko-mar.jpg",
-        "alt": "Portrait of DJ Kiko Mar",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-a.svg",
+        "alt": "Illustrated avatar for DJ Kiko Mar, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1028,10 +1028,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Lorena Vela plays bachata moderna that crosses over into salsa. Based in Madrid. She keeps a notebook of every song that cleared a floor.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-lorena-vela.jpg",
-        "alt": "Portrait of DJ Lorena Vela",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-b.svg",
+        "alt": "Illustrated avatar for DJ Lorena Vela, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1047,10 +1047,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Tarek Noor plays dark, slow bachata for late-night floors. Based in Marseille. He plays vinyl-only sets at home.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-tarek-noor.jpg",
-        "alt": "Portrait of DJ Tarek Noor",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-c.svg",
+        "alt": "Illustrated avatar for DJ Tarek Noor, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1067,10 +1067,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Ximena Flor plays classic and new bachata in the same set. Based in Guadalajara. She always opens with a song from the 1990s.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-ximena-flor.jpg",
-        "alt": "Portrait of DJ Ximena Flor",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-a.svg",
+        "alt": "Illustrated avatar for DJ Ximena Flor, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1087,10 +1087,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Bautista plays emotional, melodic sets. Based in Buenos Aires. He talks to the room between songs.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-bautista.jpg",
-        "alt": "Portrait of DJ Bautista",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-b.svg",
+        "alt": "Illustrated avatar for DJ Bautista, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1106,10 +1106,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Anouk Bell plays bright, upbeat bachata for big floors. Based in Rotterdam. She plays beach festivals every summer.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-anouk-bell.jpg",
-        "alt": "Portrait of DJ Anouk Bell",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-c.svg",
+        "alt": "Illustrated avatar for DJ Anouk Bell, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1126,10 +1126,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Oriol Pons plays late-night sensual sets. Based in Barcelona. His sets are known for long, slow build-ups.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-oriol-pons.jpg",
-        "alt": "Portrait of DJ Oriol Pons",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-a.svg",
+        "alt": "Illustrated avatar for DJ Oriol Pons, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1145,10 +1145,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Soledad Rey plays traditional Dominican bachata and its guitar sound. Based in Santo Domingo. She collects old cassettes from record markets.",
       "featured": true,
       "image": {
-        "src": "images/performers/dj-soledad-rey.jpg",
-        "alt": "Portrait of DJ Soledad Rey",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-b.svg",
+        "alt": "Illustrated avatar for DJ Soledad Rey, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1165,10 +1165,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Rodion plays high-energy sets with remixes. Based in Lviv. He plays one request per hour.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-rodion.jpg",
-        "alt": "Portrait of DJ Rodion",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-c.svg",
+        "alt": "Illustrated avatar for DJ Rodion, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1185,10 +1185,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Yasmina Cole plays bachata and salsa blended. Based in Manchester. She mixes live with two controllers and a loop pedal.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-yasmina-cole.jpg",
-        "alt": "Portrait of DJ Yasmina Cole",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-a.svg",
+        "alt": "Illustrated avatar for DJ Yasmina Cole, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1205,10 +1205,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Hugo Tamarit plays beach-ready roots bachata for sunset. Based in Valencia. He is the local DJ who knows every beach bar in Valencia.",
       "featured": true,
       "image": {
-        "src": "images/performers/dj-hugo-tamarit.jpg",
-        "alt": "Portrait of DJ Hugo Tamarit",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-b.svg",
+        "alt": "Illustrated avatar for DJ Hugo Tamarit, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1225,10 +1225,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Naia Cortés plays romantic bachata with Andalusian touches. Based in Seville. She started as a dancer before she became a DJ.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-naia-cortes.jpg",
-        "alt": "Portrait of DJ Naia Cortés",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-c.svg",
+        "alt": "Illustrated avatar for DJ Naia Cortés, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1245,10 +1245,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Mateus Lobo plays danceable Latin mixes. Based in São Paulo. He plays the final set of many festivals back home.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-mateus-lobo.jpg",
-        "alt": "Portrait of DJ Mateus Lobo",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-a.svg",
+        "alt": "Illustrated avatar for DJ Mateus Lobo, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1265,10 +1265,10 @@ window.FESTIVAL_DATA = {
       "bio": "DJ Selene Arce plays warm, guitar-driven sets. Based in San José. She finishes every set with the same slow song.",
       "featured": false,
       "image": {
-        "src": "images/performers/dj-selene-arce.jpg",
-        "alt": "Portrait of DJ Selene Arce",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/dj-b.svg",
+        "alt": "Illustrated avatar for DJ Selene Arce, DJ",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1284,10 +1284,10 @@ window.FESTIVAL_DATA = {
       "bio": "Cuarteto Salitre is a four-piece with guitar, bongo, güira and bass from Santo Domingo. They play traditional bachata the way it sounded in the barrios.",
       "featured": true,
       "image": {
-        "src": "images/performers/cuarteto-salitre.jpg",
-        "alt": "Portrait of Cuarteto Salitre",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-a.svg",
+        "alt": "Illustrated avatar for Cuarteto Salitre, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1304,10 +1304,10 @@ window.FESTIVAL_DATA = {
       "bio": "Los Faroleros del Puerto is a five-piece port-city band from Valencia. They arrange Spanish ballads as bachata.",
       "featured": false,
       "image": {
-        "src": "images/performers/los-faroleros-del-puerto.jpg",
-        "alt": "Portrait of Los Faroleros del Puerto",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-b.svg",
+        "alt": "Illustrated avatar for Los Faroleros del Puerto, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1323,10 +1323,10 @@ window.FESTIVAL_DATA = {
       "bio": "Trío Güira y Sal is a trio built around guitar and güira from Puerto Plata. Their live sets always include one song people can sing along to.",
       "featured": false,
       "image": {
-        "src": "images/performers/trio-guira-y-sal.jpg",
-        "alt": "Portrait of Trío Güira y Sal",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-c.svg",
+        "alt": "Illustrated avatar for Trío Güira y Sal, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1343,10 +1343,10 @@ window.FESTIVAL_DATA = {
       "bio": "Quinteto Cañaveral is a five-piece with horns from Cartagena. They add a Caribbean horn line to modern bachata.",
       "featured": false,
       "image": {
-        "src": "images/performers/quinteto-canaveral.jpg",
-        "alt": "Portrait of Quinteto Cañaveral",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-a.svg",
+        "alt": "Illustrated avatar for Quinteto Cañaveral, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1362,10 +1362,10 @@ window.FESTIVAL_DATA = {
       "bio": "Costa Cuerda is a string-led quartet from Alicante. They play bachata on nylon guitars and a cajón.",
       "featured": false,
       "image": {
-        "src": "images/performers/costa-cuerda.jpg",
-        "alt": "Portrait of Costa Cuerda",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-b.svg",
+        "alt": "Illustrated avatar for Costa Cuerda, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1382,10 +1382,10 @@ window.FESTIVAL_DATA = {
       "bio": "Son del Poniente is a six-piece sunset band from Valencia. They are built for open-air stages at golden hour.",
       "featured": false,
       "image": {
-        "src": "images/performers/son-del-poniente.jpg",
-        "alt": "Portrait of Son del Poniente",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-c.svg",
+        "alt": "Illustrated avatar for Son del Poniente, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1401,10 +1401,10 @@ window.FESTIVAL_DATA = {
       "bio": "Ledia Carrasco is a singer-songwriter from Valencia. She writes her own lyrics in Valencian and Spanish.",
       "featured": false,
       "image": {
-        "src": "images/performers/ledia-carrasco.jpg",
-        "alt": "Portrait of Ledia Carrasco",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-a.svg",
+        "alt": "Illustrated avatar for Ledia Carrasco, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1420,10 +1420,10 @@ window.FESTIVAL_DATA = {
       "bio": "Néstor Almonte is a traditional bachata singer from Santo Domingo. He sings the old repertoire with a lead guitar.",
       "featured": false,
       "image": {
-        "src": "images/performers/nestor-almonte.jpg",
-        "alt": "Portrait of Néstor Almonte",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-b.svg",
+        "alt": "Illustrated avatar for Néstor Almonte, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1440,10 +1440,10 @@ window.FESTIVAL_DATA = {
       "bio": "Irene Valdés is a vocalist from Caracas. She sings slow bachata with a jazz phrasing.",
       "featured": false,
       "image": {
-        "src": "images/performers/irene-valdes.jpg",
-        "alt": "Portrait of Irene Valdés",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-c.svg",
+        "alt": "Illustrated avatar for Irene Valdés, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1460,10 +1460,10 @@ window.FESTIVAL_DATA = {
       "bio": "Yeral Bonilla is a young Dominican singer from La Romana. He mixes traditional lyrics with new rhythms.",
       "featured": false,
       "image": {
-        "src": "images/performers/yeral-bonilla.jpg",
-        "alt": "Portrait of Yeral Bonilla",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-a.svg",
+        "alt": "Illustrated avatar for Yeral Bonilla, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1479,10 +1479,10 @@ window.FESTIVAL_DATA = {
       "bio": "Tamara Quiroga is a pop-leaning bachata singer from Santiago. She performs with only a guitarist and a cajón.",
       "featured": false,
       "image": {
-        "src": "images/performers/tamara-quiroga.jpg",
-        "alt": "Portrait of Tamara Quiroga",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-b.svg",
+        "alt": "Illustrated avatar for Tamara Quiroga, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1498,10 +1498,10 @@ window.FESTIVAL_DATA = {
       "bio": "Abel Santoyo is a romantic singer from Monterrey. He closes every show with an acoustic song.",
       "featured": false,
       "image": {
-        "src": "images/performers/abel-santoyo.jpg",
-        "alt": "Portrait of Abel Santoyo",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/music-c.svg",
+        "alt": "Illustrated avatar for Abel Santoyo, musician",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1518,10 +1518,10 @@ window.FESTIVAL_DATA = {
       "bio": "Ola Brava Dance Company is an eight-dancer company from Valencia. They build stage pieces from social dance moves.",
       "featured": true,
       "image": {
-        "src": "images/performers/ola-brava-dance-company.jpg",
-        "alt": "Portrait of Ola Brava Dance Company",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-a.svg",
+        "alt": "Illustrated avatar for Ola Brava Dance Company, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1537,10 +1537,10 @@ window.FESTIVAL_DATA = {
       "bio": "Sal y Compás is a six-dancer team from Seville. They mix bachata with flamenco hand percussion.",
       "featured": false,
       "image": {
-        "src": "images/performers/sal-y-compas.jpg",
-        "alt": "Portrait of Sal y Compás",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-b.svg",
+        "alt": "Illustrated avatar for Sal y Compás, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1557,10 +1557,10 @@ window.FESTIVAL_DATA = {
       "bio": "Estudio Candela is a studio show team from Medellín. They perform fast footwork routines to live drums.",
       "featured": false,
       "image": {
-        "src": "images/performers/estudio-candela.jpg",
-        "alt": "Portrait of Estudio Candela",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-c.svg",
+        "alt": "Illustrated avatar for Estudio Candela, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1576,10 +1576,10 @@ window.FESTIVAL_DATA = {
       "bio": "Navío Dance Crew is a ten-dancer crew from Porto. They choreograph for big open-air stages.",
       "featured": false,
       "image": {
-        "src": "images/performers/navio-dance-crew.jpg",
-        "alt": "Portrait of Navío Dance Crew",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-a.svg",
+        "alt": "Illustrated avatar for Navío Dance Crew, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1595,10 +1595,10 @@ window.FESTIVAL_DATA = {
       "bio": "Cuerpo & Mar is a duo from Valencia. They created a piece inspired by the Valencia coastline.",
       "featured": false,
       "image": {
-        "src": "images/performers/cuerpo-and-mar.jpg",
-        "alt": "Portrait of Cuerpo & Mar",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-b.svg",
+        "alt": "Illustrated avatar for Cuerpo & Mar, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1614,10 +1614,10 @@ window.FESTIVAL_DATA = {
       "bio": "Raíz Viva Ensemble is a ten-dancer ensemble from Santo Domingo. Their show traces bachata from the barrios to the world.",
       "featured": true,
       "image": {
-        "src": "images/performers/raiz-viva-ensemble.jpg",
-        "alt": "Portrait of Raíz Viva Ensemble",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-c.svg",
+        "alt": "Illustrated avatar for Raíz Viva Ensemble, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1634,10 +1634,10 @@ window.FESTIVAL_DATA = {
       "bio": "Atlántico Show Team is a team of six from Cádiz. They won a regional Latin dance competition in 2025.",
       "featured": false,
       "image": {
-        "src": "images/performers/atlantico-show-team.jpg",
-        "alt": "Portrait of Atlántico Show Team",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-a.svg",
+        "alt": "Illustrated avatar for Atlántico Show Team, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1654,10 +1654,10 @@ window.FESTIVAL_DATA = {
       "bio": "Marea Alta Dance Collective is a collective of seven from Bordeaux. They perform contemporary bachata with live lighting.",
       "featured": false,
       "image": {
-        "src": "images/performers/marea-alta-dance-collective.jpg",
-        "alt": "Portrait of Marea Alta Dance Collective",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-b.svg",
+        "alt": "Illustrated avatar for Marea Alta Dance Collective, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1673,10 +1673,10 @@ window.FESTIVAL_DATA = {
       "bio": "Duo Arrecife is a couple from Cancún. Their show uses a single spotlight and a single chair.",
       "featured": false,
       "image": {
-        "src": "images/performers/duo-arrecife.jpg",
-        "alt": "Portrait of Duo Arrecife",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-c.svg",
+        "alt": "Illustrated avatar for Duo Arrecife, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1692,10 +1692,10 @@ window.FESTIVAL_DATA = {
       "bio": "Luna Rota is a trio from Gdańsk. They blend bachata with contemporary dance.",
       "featured": false,
       "image": {
-        "src": "images/performers/luna-rota.jpg",
-        "alt": "Portrait of Luna Rota",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-a.svg",
+        "alt": "Illustrated avatar for Luna Rota, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1711,10 +1711,10 @@ window.FESTIVAL_DATA = {
       "bio": "Fuego Lento Show Team is a team of eight from Naples. They are known for slow, controlled partner work.",
       "featured": false,
       "image": {
-        "src": "images/performers/fuego-lento-show-team.jpg",
-        "alt": "Portrait of Fuego Lento Show Team",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-b.svg",
+        "alt": "Illustrated avatar for Fuego Lento Show Team, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1730,10 +1730,10 @@ window.FESTIVAL_DATA = {
       "bio": "Casa Tambora is an ensemble of nine from San Cristóbal. They dance to a live tambora and güira.",
       "featured": false,
       "image": {
-        "src": "images/performers/casa-tambora.jpg",
-        "alt": "Portrait of Casa Tambora",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-c.svg",
+        "alt": "Illustrated avatar for Casa Tambora, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1749,10 +1749,10 @@ window.FESTIVAL_DATA = {
       "bio": "Mistral Dance Co. is a company of six from Montpellier. Their show is a mix of group and solo sections.",
       "featured": false,
       "image": {
-        "src": "images/performers/mistral-dance-co.jpg",
-        "alt": "Portrait of Mistral Dance Co.",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-a.svg",
+        "alt": "Illustrated avatar for Mistral Dance Co., show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1769,10 +1769,10 @@ window.FESTIVAL_DATA = {
       "bio": "Los Bailongos del Cabanyal is a local neighbourhood group from Valencia. They are the festival's local favourites.",
       "featured": false,
       "image": {
-        "src": "images/performers/los-bailongos-del-cabanyal.jpg",
-        "alt": "Portrait of Los Bailongos del Cabanyal",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-b.svg",
+        "alt": "Illustrated avatar for Los Bailongos del Cabanyal, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1789,10 +1789,10 @@ window.FESTIVAL_DATA = {
       "bio": "Compañía Sotavento is a company of five from Tarifa. They choreograph on the beach at sunrise.",
       "featured": false,
       "image": {
-        "src": "images/performers/compania-sotavento.jpg",
-        "alt": "Portrait of Compañía Sotavento",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-c.svg",
+        "alt": "Illustrated avatar for Compañía Sotavento, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     },
     {
@@ -1808,10 +1808,10 @@ window.FESTIVAL_DATA = {
       "bio": "Tropic Nine is a crew of nine from Amsterdam. They bring Caribbean carnival energy to bachata.",
       "featured": false,
       "image": {
-        "src": "images/performers/tropic-nine.jpg",
-        "alt": "Portrait of Tropic Nine",
-        "credit": "AI-generated (image to be created)",
-        "source": "AI image model; prompt recorded in docs/image-prompts.md"
+        "src": "images/avatars/team-a.svg",
+        "alt": "Illustrated avatar for Tropic Nine, show team",
+        "credit": "AI-generated vector illustration (Claude Code)",
+        "source": "scripts/make-images.py, 2026-11-17"
       }
     }
   ],
