@@ -53,5 +53,6 @@
 
     document.addEventListener("programme-changed", render);   // the shared click handler already toggled the save
     render();
+    document.documentElement.classList.add("ready");
   });
 })();

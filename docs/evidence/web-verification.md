@@ -17,7 +17,7 @@ Date: 2026-11-17. Everything below was run on our own computer against the built
 | Offline check (`check-site.py`) | **PASS, 0 problems.** 142 pages, 3,750 internal links and 809 asset references resolve, 277 JSON-LD blocks parse and their names, times, prices, addresses and FAQ text appear as visible text, 140 sitemap URLs exist, no external requests, every title and description is unique |
 | Colour contrast (30 pairs, Day and Night) | lowest pair 4.81:1 (Day, link colour on the page background). Main text 13.6:1 (Day) and 15.9:1 (Night). Button text 5.1:1 and 6.8:1 |
 | Page audit at 320, 375, 768 and 1280 px (142 pages each) | **0 problems** at every width: one h1, no skipped headings, every control has a label, no horizontal overflow, all touch targets at least 44 px, every image has `alt`, skip link, `lang`, canonical and Open Graph tags present, no text under 14 px |
-| Lighthouse (local server, throttled phone and desktop presets) on Home, Programme and one session page | Performance 100, Accessibility 100, Best practices 100, SEO 100 on all six runs. Largest paint 0.2 to 1.2 s, layout shift 0 to 0.004, blocking time 0 ms |
+| Lighthouse (throttled phone and desktop presets) | Home, Programme and a session page, on a local server and on the live site: Performance 100, Accessibility 100, Best practices 100, SEO 100 on all runs, largest paint 0.2 to 1.2 s, layout shift 0 to 0.004, blocking time 0 to 70 ms. Search, My Programme and Login after the fix in item 10 below: Accessibility, Best practices and SEO 100, Performance 98 to 100, layout shift 0 |
 | Opened from `file://` in real Chrome (double-click case) | Programme filters, search and the Day/Night follow-the-system rule work with no server. A dark system setting gives `data-theme="night"` |
 | Keyboard | the first Tab stops on "Skip to main content" with a visible 3 px focus ring |
 
@@ -36,6 +36,7 @@ Date: 2026-11-17. Everything below was run on our own computer against the built
 7. The Night hero was too dark and the card blended into the sky. A dusk gradient and a card border were added.
 8. On a phone, tables with 4 columns were too tight. They now turn into stacked cards, and the table caption was squeezed into one word per line (fixed with `display: block`).
 9. The headless Chrome screenshots of the phone layout were cropped at 500 px (its minimum window width), so the phone screenshots were taken in the browser pane instead.
+10. Lighthouse on the live site found a layout shift of 0.567 on the Search page (performance 78 on a phone): the results are drawn by JavaScript and pushed the footer down. The footer now stays hidden until the results are in place, and the results area has a reserved height. After the fix the layout shift is 0 on Search and My Programme (performance 100 and 98).
 
 ## Not verified
 Safari, Firefox, screen readers (NVDA, VoiceOver) and real users. The W3C online HTML checker was not run on the 142 pages in this round (it rate-limits repeated use); the offline check covers balanced tags, duplicate ids and links. Lighthouse numbers come from a local server and will differ a little on GitHub Pages.

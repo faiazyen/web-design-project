@@ -46,4 +46,4 @@ The cross-review of the Seminar 4 build is still open: Oscar and Sebastian have 
 Every AI-assisted step is in `ai-log.md` with the prompt, what AI produced, how we checked it, and what we accepted, changed or rejected. Summary for Seminar 4:
 - AI wrote the page generator, the CSS, the JavaScript, the 15 vector images and the check scripts.
 - We verified the output with scripts (data, links, JSON-LD against visible text, contrast), a page audit of all 142 pages at four widths, Lighthouse, and both key scenarios in a real browser.
-- Errors found in AI output are listed in `docs/evidence/web-verification.md` (9 problems, all fixed).
+- Errors found in AI output are listed in `docs/evidence/web-verification.md` (10 problems, all fixed).

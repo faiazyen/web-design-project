@@ -127,7 +127,7 @@ def breadcrumb_ld(crumbs, rel):
     return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": out}
 
 
-def page(rel, title, description, body, current="", crumbs=None, ld=None, scripts=(), data_js=False, og_type="website", h1_html=None):
+def page(rel, title, description, body, current="", crumbs=None, ld=None, scripts=(), data_js=False, og_type="website", dynamic=False):
     """Write one page. rel is the path inside web/, for example sessions/x.html."""
     depth = rel.count("/")
     pfx = "../" * depth
@@ -145,10 +145,10 @@ def page(rel, title, description, body, current="", crumbs=None, ld=None, script
            '<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#FFF7EC">\n'
            '<link rel="icon" href="%simages/logo.svg" type="image/svg+xml">\n<link rel="stylesheet" href="%scss/style.css">\n'
            '<script>(function(){var d=document.documentElement;d.className="js";try{var t=localStorage.getItem("atardecer.theme");if(!t&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches){t="night"}if(t==="night"||t==="day"){d.setAttribute("data-theme",t)}}catch(e){}})();</script>\n'
-           '%s\n</head>\n<body>\n%s\n%s<main id="main" tabindex="-1">\n%s\n</main>\n%s\n%s\n</body>\n</html>\n') % (
+           '%s\n</head>\n<body>\n%s\n%s<main id="main" tabindex="-1"%s>\n%s\n</main>\n%s\n%s\n</body>\n</html>\n') % (
         pfx, esc(full_title), esc(clip(description)), esc(abs_url(rel if rel != "index.html" else "")), esc(SITE), og_type, esc(full_title), esc(clip(description)),
         esc(abs_url(rel if rel != "index.html" else "")), esc(abs_url("images/social-card.png")), pfx, pfx,
-        "\n".join(jsonld(x) for x in ld_all), header(pfx, current), crumbs_html(crumbs, pfx), body, footer(pfx), scripts_html)
+        "\n".join(jsonld(x) for x in ld_all), header(pfx, current), crumbs_html(crumbs, pfx), " data-dynamic" if dynamic else "", body, footer(pfx), scripts_html)
     path = WEB / rel
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(doc, encoding="utf-8")
@@ -419,14 +419,14 @@ def build_roots():
 
 def build_dynamic():
     page("search.html", "Search", "Search the Atardecer Bachata Festival for sessions, performers and venues.",
-         '<h1>Search results</h1><div id="results" aria-live="polite"><p>Type a name, a session or a venue in the search box at the top of the page.</p></div>'
+         '<h1>Search results</h1><div id="results" aria-live="polite"><p>Type a name, a session or a venue in the search box at the top of the page.</p>'
          '<noscript><p>Search needs JavaScript. You can browse instead: <a href="programme.html">programme</a>, <a href="performers.html">performers</a>, <a href="venues.html">venues</a>.</p></noscript>'
-         '<section aria-labelledby="pop"><h2 id="pop">Popular searches</h2><ul><li><a href="search.html?q=beginner">beginner</a></li><li><a href="search.html?q=guitar">guitar</a></li>'
-         '<li><a href="search.html?q=marisol">marisol</a></li><li><a href="search.html?q=sunset">sunset</a></li></ul></section>',
-         current="", crumbs=[("Home", "index.html"), ("Search results", "search.html")], data_js=True, scripts=("search.js",))
+         '<h2 id="pop">Popular searches</h2><ul><li><a href="search.html?q=beginner">beginner</a></li><li><a href="search.html?q=guitar">guitar</a></li>'
+         '<li><a href="search.html?q=marisol">marisol</a></li><li><a href="search.html?q=sunset">sunset</a></li></ul></div>',
+         current="", crumbs=[("Home", "index.html"), ("Search results", "search.html")], data_js=True, scripts=("search.js",), dynamic=True)
     page("my-programme.html", "My Programme", "Your personal programme for the Atardecer Bachata Festival: saved sessions, clash warnings and a calendar download.",
          '<h1>My Programme</h1><div id="content"><p>This page shows the sessions you saved. It needs JavaScript and a browser that allows storage.</p></div>',
-         current="my", crumbs=[("Home", "index.html"), ("My Programme", "my-programme.html")], data_js=True, scripts=("my-programme.js",))
+         current="my", crumbs=[("Home", "index.html"), ("My Programme", "my-programme.html")], data_js=True, scripts=("my-programme.js",), dynamic=True)
     page("login.html", "Log in / Sign up", "Demo sign-up and login for My Programme at the Atardecer Bachata Festival. Nothing leaves your browser.",
          '<h1>Log in / Sign up</h1><p class="banner" id="reason" hidden></p><p class="banner"><strong>Demo only.</strong> Nothing leaves your browser. Do not use a real password. The password is accepted but never stored.</p>'
          '<div class="layout-two"><form id="signup" novalidate aria-labelledby="su-title"><fieldset><legend id="su-title">New here? Sign up</legend><p class="hint">All fields are required.</p>'

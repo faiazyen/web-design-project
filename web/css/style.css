@@ -82,6 +82,11 @@ input[aria-invalid="true"] { border-color: var(--primary); }
 .clash { padding: var(--s2) var(--s3); border-left: 4px solid var(--primary); border-radius: var(--r); font-weight: 600; }
 .empty { background: var(--surface); border: 2px dashed var(--border-strong); border-radius: var(--r-lg); padding: var(--s6); max-width: var(--measure); }
 .count { font-weight: 600; }
+/* Search and My Programme are drawn by JavaScript. The footer stays hidden until the content is in place, so nothing jumps. */
+#results, #content { min-height: 40vh; }
+.js main[data-dynamic] ~ .site-footer { visibility: hidden; animation: reveal 0s 1.5s forwards; }
+.js.ready main[data-dynamic] ~ .site-footer { visibility: visible; animation: none; }
+@keyframes reveal { to { visibility: visible; } }
 mark { background: var(--highlight); color: #1B2A41; padding: 0 2px; border-radius: 2px; }
 
 /* ---------------------------------------------------------------- header */

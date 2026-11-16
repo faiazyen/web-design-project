@@ -427,7 +427,7 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - What AI produced: `scripts/audit-pages.js` (all pages at a given width: headings, labels, overflow, touch targets, alt text, metadata), `scripts/check-site.py` (offline check with 30 contrast pairs), `scripts/make-evidence-shots.sh`, screenshots in `docs/evidence/`, `docs/evidence/web-verification.md`, Lighthouse runs on Home, Programme and a session page for phone and desktop.
 - How we verified it: the scripts were run and their output read; problems were fixed and the scripts re-run until 0 problems at 320, 375, 768 and 1280 px (142 pages each). Lighthouse gave 100 in all four categories on all six runs (local server). Screenshots of phone and desktop, Day and Night, were read.
 - Accepted: all results above as the Seminar 4 evidence.
-- Modified (what and why): nine problems were fixed (listed in `web-verification.md`), among them 142 pages with footer, breadcrumb and navigation links narrower than 44 px.
+- Modified (what and why): ten problems were fixed (listed in `web-verification.md`), among them 142 pages with footer, breadcrumb and navigation links narrower than 44 px, and a layout shift of 0.567 on the Search page that only Lighthouse on the live site showed (the footer is now hidden until the JavaScript results are in place; shift 0).
 - Rejected (what and why): reporting Lighthouse as a live-site result; it was run on a local server and is labelled that way.
 - Errors/limitations found: not tested in Safari, Firefox, with a screen reader, or by real users. The W3C online validator was not run on the 142 pages in this round (rate limit).
 
@@ -435,7 +435,7 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Tool/model: Claude Code (Sonnet 5.5)
 - Prompt (short): write `progress-03.md`, start `documentation.md`, record the spec change, point the root page at the real site.
 - What AI produced: `progress-03.md` (five parts), `documentation.md` (change table for the 15% rule, cross-review table, work process, use of AI), a change note in the sitemap section and section 8 of `project-specification.md`, a root `index.html` that opens `web/` and still links the prototype.
-- How we verified it: every number in `progress-03.md` (142 pages, 3,750 links, 277 JSON-LD blocks, 30 contrast pairs, 9 problems, Lighthouse 100) was checked against the script output. The trends table cites general standards (WCAG, Core Web Vitals, schema.org), not a particular site.
+- How we verified it: every number in `progress-03.md` (142 pages, 3,750 links, 277 JSON-LD blocks, 30 contrast pairs, 10 problems, Lighthouse 98 to 100) was checked against the script output. The trends table cites general standards (WCAG, Core Web Vitals, schema.org), not a particular site.
 - Accepted: the structure with five required parts.
 - Modified (what and why): AI first called the level quiz and venue map "planned" without saying they are not built; both documents now say so. A first draft also claimed the change stays "under 15%" with a vague count; it now states what changed and what did not.
 - Rejected (what and why): none.
@@ -445,7 +445,7 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Tool/model: Claude Code (Sonnet 5.5), pptxgenjs, LibreOffice (to render slides), the pptx file validator
 - Prompt (short): make a 6-slide presentation with phone and desktop views, the main navigation, working features, trends, and AI use, and build the submission folder and zip.
 - What AI produced: `presentation-seminar4.pptx` (6 slides, presenters Faiaz, Oscar, Sebastian, speaker notes of about 4 minutes in total, the live link on slides 1 and 6, alt text on every screenshot), `scripts/make-submission-4.sh`, `Seminar 4 Submission/` and its zip (the current `web/`, `progress-03.md`, the presentation, the verification record and screenshots), and the Seminar 4 section of `README.md`.
-- How we verified it: the deck passed the file validator; every slide was rendered to an image and read. The first render had the live link wrapping across lines on slide 1 and cards with large empty areas on slide 5, both fixed. The submission script compares every copied file with its source (identical) and writes the zip. Numbers on the slides (142 pages, 100 Lighthouse, 9 problems) were matched to `docs/evidence/web-verification.md`.
+- How we verified it: the deck passed the file validator; every slide was rendered to an image and read. The first render had the live link wrapping across lines on slide 1 and cards with large empty areas on slide 5, both fixed. The submission script compares every copied file with its source (identical) and writes the zip. Numbers on the slides (142 pages, 100 Lighthouse, 10 problems) were matched to `docs/evidence/web-verification.md`.
 - Accepted: the six-slide structure, the speaker split (the team can change who presents which slide).
 - Modified (what and why): link layout on slide 1; card text size on slide 5; the slide 5 heading "System-aware dark mode" replaced a heading that wrapped into its text.
 - Rejected (what and why): a video demo (more files to submit, not required, and only materials submitted beforehand may be shown).
