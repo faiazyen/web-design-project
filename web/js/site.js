@@ -156,12 +156,13 @@
 
   /* ------------------------------------------------------------ header: menu, theme, login status */
   function setupHeader() {
-    var btn = document.querySelector(".menu-btn"), nav = document.getElementById("main-nav");
-    if (btn && nav) {
+    var btn = document.querySelector(".menu-btn"), nav = document.getElementById("main-nav"), tools = document.getElementById("tools");
+    if (btn && nav) {   // phones: search, login and the main menu fold behind one Menu button
       btn.hidden = false;
-      btn.addEventListener("click", function () { var open = nav.classList.toggle("open"); btn.setAttribute("aria-expanded", String(open)); });
+      var setOpen = function (open) { nav.classList.toggle("open", open); if (tools) tools.classList.toggle("open", open); btn.setAttribute("aria-expanded", String(open)); };
+      btn.addEventListener("click", function () { setOpen(!nav.classList.contains("open")); });
       document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && nav.classList.contains("open")) { nav.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); btn.focus(); }
+        if (e.key === "Escape" && nav.classList.contains("open")) { setOpen(false); btn.focus(); }
       });
     }
 

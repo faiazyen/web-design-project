@@ -86,8 +86,8 @@ def header(pfx, current):
     return ('<a class="skip-link" href="#main">Skip to main content</a>'
             '<header class="site-header"><div class="wrap header-row">'
             '<div class="bar"><a class="brand" href="%sindex.html"><img src="%simages/logo.svg" alt="" width="40" height="40"><span class="brand-name">Atardecer</span></a>'
-            '<button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu</button></div>'
-            '<div class="tools"><form class="search-form" role="search" action="%ssearch.html" method="get">'
+            '<button class="menu-btn" type="button" aria-expanded="false" aria-controls="tools main-nav" hidden>Menu</button></div>'
+            '<div class="tools" id="tools"><form class="search-form" role="search" action="%ssearch.html" method="get">'
             '<label for="site-search">Search the festival</label><input id="site-search" name="q" type="search" placeholder="Artist, session or venue" autocomplete="off">'
             '<button class="btn btn-2" type="submit">Search</button></form>'
             '<div class="auth"><span id="auth"><a href="%slogin.html">Log in / Sign up</a></span>'
@@ -304,7 +304,7 @@ def build_sessions():
                "superEvent": {"@type": "Festival", "name": SITE, "url": abs_url("")}, "url": abs_url("sessions/%s.html" % it["slug"])}]
         for x in ld[0]["performer"]:
             x.pop("@context", None)
-        page("sessions/%s.html" % it["slug"], it["title"], "%s, %s %s–%s at %s, Valencia. %s" % (it["title"], DAY[it["dayId"]]["label"], it["start"][11:16], it["end"][11:16], v["name"], it["description"]),
+        page("sessions/%s.html" % it["slug"], "%s, %s" % (it["title"], DAY[it["dayId"]]["label"]), "%s, %s %s–%s at %s, Valencia. %s" % (it["title"], DAY[it["dayId"]]["label"], it["start"][11:16], it["end"][11:16], v["name"], it["description"]),
              body, current="programme", crumbs=crumbs, ld=ld, og_type="article")
 
 
@@ -402,7 +402,7 @@ def build_tickets():
             '<section aria-labelledby="buy"><h2 id="buy">How to buy</h2><p>This is a course project, so there is no real ticket sale. In a real festival the buttons here would lead to a checkout. Questions about groups: <a href="mailto:%s">%s</a>.</p>'
             '<p><a href="programme.html">Choose your sessions first</a> and see what each pass covers.</p></section>') % (esc(F["tickets"][0]["price"]), rows, esc(F["contact"]["email"]), esc(F["contact"]["email"]))
     offers = [{"@type": "Offer", "name": t["name"], "price": t["price"], "priceCurrency": t["currency"], "url": abs_url("tickets.html")} for t in F["tickets"]]
-    ld = [{"@context": "https://schema.org", "@type": "Festival", "name": SITE, "startDate": F["startDate"], "endDate": F["endDate"], "location": [place_ld(v) for v in D["venues"]], "offers": offers}]
+    ld = [{"@context": "https://schema.org", "@type": "Festival", "name": SITE, "startDate": F["startDate"], "endDate": F["endDate"], "offers": offers}]
     page("tickets.html", "Tickets and prices", "Compare the four passes for the Atardecer Bachata Festival, Valencia, 25–27 June 2027: Full Pass €%s, Party Pass, Saturday Day Pass and Group Pass." % F["tickets"][0]["price"],
          body, current="tickets", crumbs=[("Home", "index.html"), ("Practical info", "practical.html"), ("Tickets", "tickets.html")], ld=ld)
 

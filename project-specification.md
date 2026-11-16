@@ -57,6 +57,8 @@ CZU Web Design course, Seminar 2 submission. Fictional festival.
 
 All pages are static HTML files in `web/`. Detail pages are one template each, filled from the URL query `?slug=` using `web/js/data.js`.
 
+> **Changed in Seminar 4 (2026-11-17):** in the real site every session, performer and venue has its own static HTML file (`sessions/<slug>.html`, `performers/<slug>.html`, `venues/<slug>.html`), written from `data.json` by `scripts/build-site.py`, instead of one template filled from `?slug=`. The sitemap, the entities and the scenarios do not change. Reason and record: section 8 and `documentation.md`.
+
 - **Home** (`index.html`) — first impression, dates, Sea/Night mood, next steps.
   - **Programme** (`programme.html`) — all sessions with filters by day, venue, type, level, role focus and Day/Night.
     - **Programme item detail** (`programme-item.html?slug=`) — one session: time, venue, level, role focus, performers, save button.
@@ -264,6 +266,7 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
 - **Rejected:** the first name "Raíces del Mar", because a web search found a real festival, RAICES, with the same word and a 5th edition. The second name, "Latino Mar Bachata Festival", because Sebastian found a festival with a similar name. 72 programme items, cut to 65, which is closer to the minimum of 60. The 4-day length, because the brief asks for 3 days.
 - **Changed:** the spec structure was rewritten from a free-form draft to the sections the course requires (identity, purpose, target groups, information architecture, scenarios), plus interactive functions and the data model. Detail URLs changed from `?id=` to `?slug=`. Timezone: the brief's schema prompt says Europe/Prague, which is for a Czech festival. Our festival is in Valencia, so we use Europe/Madrid. In June both are UTC+02:00.
 - **Changed after the Seminar 2 feedback (2026-11-03):** the teacher pointed out that My Programme uses `localStorage` but the IA has no login step. We added a simulated sign-up and login flow: one page (Log in / Sign up, 13 pages in total), a header status, a new function 8, an updated Scenario 1 and a new Scenario 6. The teacher also said browser storage can keep the programme in a client-only prototype, so the storage stays. The data files did not change.
+- **Changed in Seminar 4 (2026-11-17), with reasons (full table in `documentation.md`):** (1) detail pages are one static file per session, performer and venue (142 pages) instead of three templates with `?slug=`, so that search engines, AI tools and HTML validators read the content without JavaScript (SEO and AEO requirement of the course); (2) the practical pages stay one page with five sections, now with anchors; (3) `image` paths in `data.json` now point to the AI-generated vector images in `web/images/`; (4) a Day/Night switch was added to the header. Sitemap (13 page types), entities, functions 1–4 and the scenarios are unchanged.
 - **Accepted:** the data schema (approved by Faiaz, with 3 venues and the 64-performer mix). The spec text was checked by Sebastian (C) by hand. Oscar (B) checked it too.
 
 ### How we checked
