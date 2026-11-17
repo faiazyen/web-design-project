@@ -54,3 +54,4 @@ Safari, Firefox, screen readers (NVDA, VoiceOver) and real users. The W3C online
 ### After the quiz and the venue map were added (local server)
 - Page audit of all 142 pages at 320, 375, 768 and 1280 px: 0 problems. Offline check: 0 problems (3,818 links, 811 assets).
 - Lighthouse after the layout-shift fix: Programme 99 (phone) and 100 (desktop), Venues 100 and 100, Accessibility, Best practices and SEO 100. The live check is repeated after the push (below).
+- **Live site after the push:** all 179 files in `web/` match the local files by checksum. Lighthouse on live Programme and Venues: Performance 99 to 100, Accessibility, Best practices and SEO 100, layout shift 0 to 0.016.
