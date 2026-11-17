@@ -7,7 +7,7 @@
 ## 1. What has been implemented
 - **142 real pages** in plain HTML, CSS and JavaScript (no framework, no build step to run, no server needed): Home, Programme, Performers, Venues, Roots, Practical info, Tickets, My Programme, Log in / Sign up, Search results, plus one page for each of the 65 sessions, 64 performers and 3 venues.
 - **Home page and pages with very different content:** Home (hero, mood switch, numbers, opening night, venues, featured artists), Programme (65 sessions with filters), Tickets (price table), Practical info (travel, accommodation table, accessibility, FAQ, code of conduct), Roots (timeline and instruments), session, performer and venue pages.
-- **Main navigation:** Programme, Performers, Venues, Roots, Practical info, My Programme and a Tickets button in the header of every page, the current page marked, breadcrumbs, a skip link, a footer with the same key links. On a phone the header folds behind one Menu button. No link leads to a missing page (3,750 internal links checked by script).
+- **Main navigation:** Programme, Performers, Venues, Roots, Practical info, My Programme and a Tickets button in the header of every page, the current page marked, breadcrumbs, a skip link, a footer with the same key links. On a phone the header folds behind one Menu button. No link leads to a missing page (3,818 internal links checked by script).
 - **Responsive, mobile first:** the base CSS is for 320 px and up, with larger layouts from 600 px and 900 px. Tables turn into stacked cards on a phone. No horizontal scrolling at 320 px.
 - **Functional interactive features** (JavaScript only improves pages that already work as HTML):
   1. Programme filters: day, venue, type, level, role focus, day or night. Filters live in the URL, so a filtered list can be shared. A count is announced, an empty state is shown.
@@ -27,7 +27,7 @@
 |---|---|---|
 | Content in HTML first, JavaScript as an improvement (progressive enhancement) | web standards practice, and needed by search and AI crawlers that do not run scripts | all 142 pages are complete HTML. Filters hide and show cards that are already there. Without JavaScript the full list is still readable |
 | Structured data and answer-first content for search and AI answers (SEO, AEO, GEO) | schema.org, search engine guidance | JSON-LD on each page, checked by script against the visible text. FAQ with real questions and short answers. `llms.txt` with the key facts |
-| Speed and Core Web Vitals | Google's page experience metrics | no framework, one 17 KB stylesheet, one small script per page, vector images, fonts bundled and swapped in. Lighthouse performance 100, largest paint 0.2 to 1.2 s, layout shift near 0 (local test) |
+| Speed and Core Web Vitals | Google's page experience metrics | no framework, one 21 KB stylesheet, one small script per page, vector images, fonts bundled and swapped in. Lighthouse performance 98 to 100, largest paint 0.2 to 1.6 s, layout shift 0 to 0.016 (local and live tests) |
 | Mobile first and thumb-friendly targets | usage patterns, WCAG 2.2 target size guidance | base CSS for 320 px, 44 px minimum targets (checked on all pages), the menu folds on a phone |
 | Accessibility as a base layer | WCAG 2.0 AA (our minimum) | contrast of 4.8:1 or higher on 30 colour pairs, visible 3 px focus ring, skip link, labelled forms with announced errors, `aria-live` for filter counts and the toast, `prefers-reduced-motion` |
 | Dark mode that follows the system | `prefers-color-scheme` | the page starts in the user's system mode and a button changes it. The choice is remembered. It is also our concept: Sea by day, club by night |
@@ -52,11 +52,12 @@ All changes are in the table in `documentation.md` and in `project-specification
 ## 4. Tests and checks (details and screenshots: `docs/evidence/web-verification.md`)
 - **Both key scenarios in the real design, passed.** Scenario 1 on a 375 px phone: filter Saturday beginner follower workshops, Save while logged out, sign up, return, save a second workshop, My Programme shows both with no clashes (a deliberate clash was warned about on both cards, and Remove cleared it). Scenario 2 on 1280 px desktop: Friday night socials at the club, the 22:00 session, its DJ page with both sets. Search for "marisol" found the performer and 3 sessions.
 - **Page audit of all 142 pages at 320, 375, 768 and 1280 px: 0 problems** (one h1, no skipped headings, labelled controls, no overflow, targets of at least 44 px, alt text, metadata).
-- **Offline site check: 0 problems:** 3,750 links and 809 assets resolve, balanced tags, unique titles and descriptions, 277 JSON-LD blocks match the visible text, sitemap files exist, no external requests.
+- **Offline site check: 0 problems:** 3,818 links and 811 assets resolve, balanced tags, unique titles and descriptions, 277 JSON-LD blocks match the visible text, sitemap files exist, no external requests.
 - **Contrast:** 30 pairs, Day and Night, lowest 4.81:1.
 - **Lighthouse (phone and desktop presets), local and on the live site:** Home, Programme and a session page: Performance, Accessibility, Best practices and SEO all 100. Search, My Programme and Login: Accessibility, Best practices and SEO 100, Performance 98 to 100 (the live run found a layout shift on Search, fixed, now 0).
 - **Double-click test:** pages open from `file://` in Chrome and filters and search work.
 - **Problems found and fixed (11):** footer and breadcrumb links under 44 px wide; two session pages with the same title; tickets JSON-LD that listed venues not shown on the page; a missing space in the filter label; a phone header that took a third of the screen; a phone hero whose art was hidden; a Night hero that was too dark; tables too tight on a phone; cropped phone screenshots; a layout shift of 0.567 on the Search page, found by Lighthouse on the live site and now 0; a layout shift of 0.143 on the Venues page when the map appeared after load (the map and quiz are now shown from the first paint when JavaScript is on).
+- **Team review (2026-11-17):** Oscar and Sebastian tested the live site by hand on a phone and a computer: menu, Programme filters, the level quiz, the venue map, Save then demo sign-up then My Programme, and the Day/Night button. Everything worked and no problems were reported.
 - **Not verified:** Safari, Firefox, screen readers, real users, and the W3C online validator on all pages.
 
 ## 5. Use of AI, and how we checked it
@@ -68,4 +69,4 @@ All changes are in the table in `documentation.md` and in `project-specification
 - Every step is in `ai-log.md`.
 
 ## Next
-All eight planned functions of the spec are built. Next: cross-review of the build by Oscar and Sebastian, native Safari and Firefox tests, screen reader check, the final polish and the remaining documentation.
+All eight planned functions of the spec are built. The cross-review by Oscar and Sebastian is done. Next: Safari and Firefox tests, a screen reader check, the W3C validator on all pages, the final polish and the remaining documentation.

@@ -460,3 +460,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): radio inputs were made as large as their label (44 px touch target); venue cards under the map became h3 to keep heading order; "today's sessions" from the spec became a day picker, because the festival is not running yet.
 - Rejected (what and why): a map drawn from real coordinates or a map service (outside request, and our venues are fictional); a separate quiz page (a 14th page type).
 - Errors/limitations found: the quiz is a simple scoring guide, not a validated test of dance level, and says to choose the lower level when unsure. Not tested with a screen reader.
+
+## 2026-11-17 – Final audit before the Seminar 4 submission – Claude Code, requested by Oscar and Sebastian
+- Tool/model: Claude Code (Sonnet 5.5), the repository scripts, curl
+- Prompt (short): after our hand review, double-check everything, fill in anything empty and make the files ready to submit.
+- What AI produced: a search of the repository for empty files and unfinished text; the filled cross-review row and a "Team review" line in `progress-03.md`; a Seminar 4 roles and presentation table in the specification (section 8); a re-run of all checks (data validation, page build, offline site check, comparison of the live files with the local files, submission folder and zip); a rebuilt submission folder and zip.
+- How we verified it: the team's own hand test (phone and computer: menu, filters, quiz, venue map, save and sign-up, Day/Night) is recorded as told by the team; AI only wrote it down and added no findings. The only unfinished text found was the open cross-review row. The checks were read from their output.
+- Accepted: the roles and presentation split as in the deck (Faiaz slides 1 and 2, Oscar 3 and 4, Sebastian 5 and 6), unless the team says otherwise.
+- Modified (what and why): the "Next" lines in `progress-03.md` no longer list the cross-review.
+- Rejected (what and why): inventing review findings; the team reported none.
+- Errors/limitations found: still not covered: Safari, Firefox, a screen reader, the W3C online validator on all pages, and the Moodle upload (Sebastian).

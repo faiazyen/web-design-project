@@ -237,6 +237,15 @@ Team size is three (confirmed by the team on 2026-10-19; the course has not assi
 | 2 Target groups; 3 Information architecture | Oscar Muz (B) |
 | 4 Two key scenarios | Sebastian Betancur (C) |
 
+### Seminar 4 (2026-11-17)
+| Person | Part | Status |
+|---|---|---|
+| Faiaz Hossain Mazumder Yen (A) | Build with Claude Code: generator, CSS, JavaScript, images, checks, `progress-03.md`, `documentation.md`, deck, submission folder, deployment | Done |
+| Oscar Muz (B) | Review of the live site on a phone and a computer; presents slides 3 and 4 | Review done 2026-11-17, no problems reported |
+| Sebastian Betancur (C) | Review of the live site on a phone and a computer; presents slides 5 and 6; Moodle upload | Review done 2026-11-17, no problems reported. To do: Moodle upload |
+
+Slides 1 and 2 of the Seminar 4 deck are presented by Faiaz.
+
 ### Oscar's part (B)
 - **Checked:** Oscar read the spec sections 1 to 6 (identity, purpose, target groups, sitemap, interactive functions, scenarios), checked the scenarios against the data files, looked through `data.json`, and checked slides 2 and 3, which he presents.
 - **Found and decided:**

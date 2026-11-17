@@ -14,7 +14,7 @@ Date: 2026-11-17. Everything below was run on our own computer against the built
 ## Results
 | Check | Result |
 |---|---|
-| Offline check (`check-site.py`) | **PASS, 0 problems.** 142 pages, 3,750 internal links and 809 asset references resolve, 277 JSON-LD blocks parse and their names, times, prices, addresses and FAQ text appear as visible text, 140 sitemap URLs exist, no external requests, every title and description is unique |
+| Offline check (`check-site.py`) | **PASS, 0 problems.** 142 pages, 3,818 internal links and 811 asset references resolve, 277 JSON-LD blocks parse and their names, times, prices, addresses and FAQ text appear as visible text, 140 sitemap URLs exist, no external requests, every title and description is unique |
 | Colour contrast (30 pairs, Day and Night) | lowest pair 4.81:1 (Day, link colour on the page background). Main text 13.6:1 (Day) and 15.9:1 (Night). Button text 5.1:1 and 6.8:1 |
 | Page audit at 320, 375, 768 and 1280 px (142 pages each) | **0 problems** at every width: one h1, no skipped headings, every control has a label, no horizontal overflow, all touch targets at least 44 px, every image has `alt`, skip link, `lang`, canonical and Open Graph tags present, no text under 14 px |
 | Lighthouse (throttled phone and desktop presets) | Home, Programme and a session page, on a local server and on the live site: Performance 100, Accessibility 100, Best practices 100, SEO 100 on all runs, largest paint 0.2 to 1.2 s, layout shift 0 to 0.004, blocking time 0 to 70 ms. Search, My Programme and Login after the fix in item 10 below: Accessibility, Best practices and SEO 100, Performance 98 to 100, layout shift 0 |

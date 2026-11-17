@@ -32,9 +32,9 @@ Each team member reviewed another part of the work. This table records the findi
 | Sebastian Betancur | Seminar 2: spec and data against the brief, name check | asked for the name change and for 65 items | both done |
 | Teacher | Seminar 2 | My Programme needs a login step | simulated login added (change 2) |
 | Teacher | Seminar 3 prototype | 7 points, no comments | accepted |
-| (Seminar 4) | the real site | to be added after the team review of the build | open |
+| Oscar Muz and Sebastian Betancur | Seminar 4: the live site on a phone and on a computer (2026-11-17): menu, Programme filters, "Which level am I?" quiz, venue map, Save then demo sign-up then My Programme, Day/Night button | everything worked, no problems reported | accepted, no changes |
 
-The cross-review of the Seminar 4 build is still open: Oscar and Sebastian have not yet reviewed the real site.
+The Seminar 4 cross-review was done by Oscar and Sebastian by hand on the live site. Not covered by anyone yet: Safari, Firefox and screen readers.
 
 ## 3. Work process
 - **Roles:** Faiaz (A) leads and decides, Oscar (B) checks the text and scenarios, Sebastian (C) checks against the brief and uploads. The split for each seminar is in `project-specification.md`, section 8.
