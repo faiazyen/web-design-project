@@ -450,3 +450,13 @@ Format per entry: **Prompt → What AI did → How I checked → Accepted / Reje
 - Modified (what and why): link layout on slide 1; card text size on slide 5; the slide 5 heading "System-aware dark mode" replaced a heading that wrapped into its text.
 - Rejected (what and why): a video demo (more files to submit, not required, and only materials submitted beforehand may be shown).
 - Errors/limitations found: the deck has not been rehearsed against the clock by the team; the timing (about 4 minutes) is an estimate from the speaker notes. The Lighthouse numbers on slide 5 and 6 are from a local test and say so.
+
+## 2026-11-17 – Level quiz and venue map – Claude Code
+- Tool/model: Claude Code (Sonnet 5.5), the app's built-in browser, Lighthouse
+- Prompt (short): build the two planned functions that were still missing, the "Which level am I?" quiz and the interactive venue map.
+- What AI produced: in `scripts/build-site.py` the quiz (a level guide and five radio-group questions on the Programme page) and the map (an SVG scene with three native buttons, a pre-rendered panel for each venue with access facts and session lists per day, walking times worked out from the venue coordinates); `web/js/quiz.js`, `web/js/venues.js`; CSS for both; two screenshots in `docs/evidence/`.
+- How we verified it: in a real browser on a 375 px phone size: submitting an empty quiz, a scored quiz (3 points gave Beginner) and the result button applying the filters (13 of 65 sessions); the map pin, the panel and the day switch (Friday 5 sessions, Saturday 6). Offline check 0 problems (3,818 links). Lighthouse found a layout shift (0.143 on Venues) because JavaScript revealed the new parts after load; they are now visible from the first paint with JavaScript on, and the shift is 0.
+- Accepted: the quiz on the Programme page and the map on the Venues page, so the sitemap does not change. The map is schematic and says "not to scale".
+- Modified (what and why): radio inputs were made as large as their label (44 px touch target); venue cards under the map became h3 to keep heading order; "today's sessions" from the spec became a day picker, because the festival is not running yet.
+- Rejected (what and why): a map drawn from real coordinates or a map service (outside request, and our venues are fictional); a separate quiz page (a 14th page type).
+- Errors/limitations found: the quiz is a simple scoring guide, not a validated test of dance level, and says to choose the lower level when unsure. Not tested with a screen reader.

@@ -216,6 +216,74 @@ def hero_svg():
             '<rect x="1054" y="356" width="16" height="60" rx="8"/><rect x="1076" y="344" width="16" height="72" rx="8"/></g></svg>')
 
 
+import math
+
+QUIZ = [
+    ("How long have you danced bachata?", ["Never, or under 3 months", "Between 3 months and 2 years", "More than 2 years"]),
+    ("How does the basic step feel?", ["I am still learning it", "I can do it on the beat without thinking", "I add footwork and body movement and stay on the beat"]),
+    ("What about turns?", ["I have not learned turns yet", "I can do simple turns", "I lead or follow chains of turns and changes of direction"]),
+    ("How do you hear the music?", ["I count to stay on the beat", "I feel the main beat", "I follow the guitar and bass and play with the pauses"]),
+    ("How about social dancing?", ["I have never danced at a social", "I dance a few songs a night", "I dance most of the night with different partners"]),
+]
+PINS = {"ven-001": (400, 120), "ven-002": (150, 190), "ven-003": (330, 300)}   # position on the schematic map (600 x 400)
+
+
+def metres(a, b):
+    la1, lo1, la2, lo2 = [math.radians(x) for x in (a["latitude"], a["longitude"], b["latitude"], b["longitude"])]
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 2 * 6371000 * math.asin(math.sqrt(h))
+
+
+def quiz_html():
+    levels = "".join("<dt>%s</dt><dd>%s</dd>" % (esc(l["label"]), esc(l["description"])) for l in CAT["levels"])
+    qs = ""
+    for i, (q, opts) in enumerate(QUIZ, 1):
+        qs += '<fieldset class="q"><legend>%d. %s</legend><div class="choices">%s</div></fieldset>' % (
+            i, esc(q), "".join('<label class="choice"><input type="radio" name="q%d" value="%d"><span>%s</span></label>' % (i, v, esc(o)) for v, o in enumerate(opts)))
+    return ('<section class="quiz-section" aria-labelledby="quiz-h"><h2 id="quiz-h">Which level am I?</h2><p>Pick the level that fits you today. If you are between two levels, choose the lower one.</p>'
+            '<dl class="facts wide level-guide">%s</dl>'
+            '<details class="quiz" id="quiz"><summary>Not sure? Take the 5-question quiz</summary>'
+            '<form id="quiz-form" novalidate><p class="hint">Answer all five questions. Nothing is saved.</p>%s<p class="error" id="quiz-err" role="alert" hidden></p>'
+            '<p class="btn-row"><button class="btn" type="submit">Show my level</button></p></form>'
+            '<div id="quiz-result" class="card" tabindex="-1" aria-live="polite" hidden></div></details></section>') % (levels, qs)
+
+
+def map_html():
+    pins = "".join('<button class="pin" type="button" data-venue="%s" aria-pressed="false" aria-controls="panel-%s" style="left:%.1f%%;top:%.1f%%"><b aria-hidden="true">%d</b> %s</button>' % (
+        v["id"], v["id"], PINS[v["id"]][0] / 6, PINS[v["id"]][1] / 4, i, esc(v["name"])) for i, v in enumerate(D["venues"], 1))
+    a, b, c = (PINS[v["id"]] for v in D["venues"])
+    art = ('<svg viewBox="0 0 600 400" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect class="m-land" width="600" height="400"/>'
+           '<path class="m-sand" d="M450 0 H505 Q520 200 500 400 H455 Q470 200 450 0Z"/><path class="m-sea" d="M505 0 H600 V400 H500 Q520 200 505 0Z"/>'
+           '<path class="m-wave" d="M530 60 q15 -8 30 0 t30 0 M525 150 q15 -8 30 0 t30 0 M535 250 q15 -8 30 0 t30 0 M525 340 q15 -8 30 0 t30 0"/>'
+           '<line class="m-road" x1="430" y1="0" x2="430" y2="400"/><path class="m-walk" d="M%d %d L%d %d L%d %d L%d %d"/></svg>') % (a[0], a[1], b[0], b[1], c[0], c[1], a[0], a[1])
+    names = {v["id"]: v["name"] for v in D["venues"]}
+    ids = [v["id"] for v in D["venues"]]
+    walks = ""
+    for i in range(3):
+        for j in range(i + 1, 3):
+            m = metres(VEN[ids[i]]["geo"], VEN[ids[j]]["geo"])
+            walks += "<li>%s to %s: about %d m, a %d minute walk</li>" % (esc(names[ids[i]]), esc(names[ids[j]]), round(m, -1), max(1, round(m / 80)))
+    panels = ""
+    for v in D["venues"]:
+        ac = v["accessibility"]
+        lists = ""
+        for d in D["days"]:
+            its = [x for x in ITEMS if x["venueId"] == v["id"] and x["dayId"] == d["id"]]
+            lists += '<div class="map-day" data-day="%s"><h4>%s (%d sessions)</h4><ul class="plain compact">%s</ul></div>' % (
+                d["id"], esc(date_long(d["id"])), len(its), "".join('<li><time datetime="%s">%s</time> <a href="venues/../sessions/%s.html">%s</a></li>' % (esc(x["start"]), x["start"][11:16], x["slug"], esc(x["title"])) for x in its))
+        opts = "".join('<option value="%s">%s</option>' % (d["id"], esc(date_long(d["id"]))) for d in D["days"])
+        panels += ('<article class="map-panel card" id="panel-%s" data-venue="%s" aria-labelledby="mp-%s"><h3 id="mp-%s">%s</h3><p class="meta">%s · capacity %s</p>%s'
+                   '<ul><li>Step-free: %s</li><li>Accessible toilets: %s</li><li>Quiet space: %s</li></ul><p>%s</p>'
+                   '<div class="field day-pick" hidden><label for="day-%s">Show sessions on</label><select id="day-%s">%s</select></div>%s'
+                   '<p><a href="venues/%s.html">Full page for %s</a></p></article>') % (
+            v["id"], v["id"], v["id"], v["id"], esc(v["name"]), esc(v["setting"].capitalize()), v["capacity"], address_html(v), "Yes" if ac["stepFree"] else "No",
+            "Yes" if ac["accessibleToilets"] else "No", "Yes" if ac["quietSpace"] else "No", esc(ac["notes"]), v["id"], v["id"], opts, lists, v["slug"], esc(v["name"]))
+    panels = panels.replace("venues/../", "")
+    return ('<section aria-labelledby="map-h"><h2 id="map-h">Venue map</h2><p>A schematic map, not to scale. Select a venue to see its access facts and its sessions for each day.</p>'
+            '<div class="venue-map" id="venue-map">%s%s</div><p class="meta map-hint" id="map-hint">No venue selected yet.</p>'
+            '<div id="map-detail" aria-live="polite">%s</div><h3>Walking between venues</h3><ul>%s</ul></section>') % (art, pins, panels, walks)
+
+
 # ---------------------------------------------------------------- pages
 def build_home():
     feat = [p for p in D["performers"] if p["featured"]]
@@ -277,9 +345,10 @@ def build_programme():
             '<p class="count" id="count" role="status" aria-live="polite">Showing all %d sessions</p>'
             '<div id="none" class="empty" hidden><p><strong>No sessions match these filters.</strong></p><p>Try a different level or role, or clear all filters.</p></div>%s</section></div>') % (
         len(ITEMS), form, len(ITEMS), groups)
+    body = body.replace('<div class="layout-programme">', quiz_html() + '<div class="layout-programme">', 1)
     page("programme.html", "Programme: workshops, socials and shows",
          "The full programme of the Atardecer Bachata Festival, 25–27 June 2027 in Valencia: %d workshops, socials and shows. Filter by day, venue, type, level and role." % len(ITEMS),
-         body, current="programme", crumbs=[("Home", "index.html"), ("Programme", "programme.html")], scripts=("programme.js",))
+         body, current="programme", crumbs=[("Home", "index.html"), ("Programme", "programme.html")], scripts=("programme.js", "quiz.js"))
 
 
 def build_sessions():
@@ -342,14 +411,14 @@ def build_venues():
         a = v["accessibility"]
         n = len([i for i in ITEMS if i["venueId"] == v["id"]])
         yn = lambda b: "Yes" if b else "No"
-        cards += ('<article class="card venue-card"><img class="venue-img" src="images/venues/%s.svg" alt="%s" width="800" height="500" loading="lazy"><h2><a href="venues/%s.html">%s</a></h2>'
+        cards += ('<article class="card venue-card"><img class="venue-img" src="images/venues/%s.svg" alt="%s" width="800" height="500" loading="lazy"><h3><a href="venues/%s.html">%s</a></h3>'
                   '<p class="meta">%s · capacity %s · %d sessions</p><p>%s</p>%s<dl class="facts"><dt>Step-free</dt><dd>%s</dd><dt>Accessible toilets</dt><dd>%s</dd><dt>Quiet space</dt><dd>%s</dd></dl>'
                   '<p><a class="btn btn-2 btn-small" href="venues/%s.html">Venue details</a> <a class="btn btn-2 btn-small" href="programme.html?venue=%s">See sessions here</a></p></article>') % (
             v["slug"], esc(v["image"]["alt"]), v["slug"], esc(v["name"]), esc(v["setting"].capitalize()), v["capacity"], n, esc(v["description"]), address_html(v), yn(a["stepFree"]), yn(a["accessibleToilets"]), yn(a["quietSpace"]), v["slug"], v["id"])
-    body = '<h1>Venues</h1><p class="lede">Three venues within a short walk of each other along the beachfront: sand and sea by day, club floor by night.</p><div class="grid grid-3">%s</div>' % cards
+    body = '<h1>Venues</h1><p class="lede">Three venues within a short walk of each other along the beachfront: sand and sea by day, club floor by night.</p>%s<h2>The three venues</h2><div class="grid grid-3">%s</div>' % (map_html(), cards)
     page("venues.html", "Venues: beach stage, pavilion and club in Valencia",
          "The three venues of the Atardecer Bachata Festival in Valencia: Arena Stage on the beach, Pabellón Brisa and Marea Club, with addresses and access facts.",
-         body, current="venues", crumbs=[("Home", "index.html"), ("Venues", "venues.html")])
+         body, current="venues", crumbs=[("Home", "index.html"), ("Venues", "venues.html")], scripts=("venues.js",))
     for v in D["venues"]:
         a = v["accessibility"]
         its = [i for i in ITEMS if i["venueId"] == v["id"]]

@@ -13,7 +13,7 @@
   --border: #E6D6BF; --border-strong: #1B2A41; --focus: #0B6E77;
   --tag-bg: #F3E2C6; --tag-fg: #1B2A41; --tag-night-bg: #1B2A41; --tag-night-fg: #FDF3E7;
   --warn-bg: #FDE7D6; --ok-bg: #E2F1EC;
-  --sky-1: #FDE7C5; --sky-2: #FFC98B; --sky-3: #F2A33A; --sun: #C93A22; --sun-core: #F2703F; --wave-1: #0B6E77; --wave-2: #0A5961;
+  --ground: #FFFFFF; --sand: #F6D9A8; --road: #C9B79B; --sky-1: #FDE7C5; --sky-2: #FFC98B; --sky-3: #F2A33A; --sun: #C93A22; --sun-core: #F2703F; --wave-1: #0B6E77; --wave-2: #0A5961;
   --font-head: "Fraunces", Georgia, "Times New Roman", serif;
   --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s6: 24px; --s8: 32px; --s12: 48px; --s16: 64px;
@@ -28,7 +28,7 @@
   --border: #2A4560; --border-strong: #FDF3E7; --focus: #57C7CE;
   --tag-bg: #223C55; --tag-fg: #FDF3E7; --tag-night-bg: #3C2E63; --tag-night-fg: #FDF3E7;
   --warn-bg: #4A2A24; --ok-bg: #12363A;
-  --sky-1: #14264A; --sky-2: #46387A; --sky-3: #C25B6E; --sun: #FF7B5C; --sun-core: #FFB38A; --wave-1: #1D3F63; --wave-2: #0D1B2A;
+  --ground: #14283C; --sand: #5A5148; --road: #4A6580; --sky-1: #14264A; --sky-2: #46387A; --sky-3: #C25B6E; --sun: #FF7B5C; --sun-core: #FFB38A; --wave-1: #1D3F63; --wave-2: #0D1B2A;
   color-scheme: dark;
 }
 
@@ -194,6 +194,44 @@ td ul { margin: 0; padding-left: var(--s4); }
   th[scope="row"] { background: var(--tag-bg); font-family: var(--font-head); font-size: var(--fs-m); }
   td { border-bottom: 0; }
 }
+
+/* ---------------------------------------------------------------- level quiz */
+.quiz-section { margin: var(--s6) 0; }
+.level-guide { margin-bottom: var(--s4); }
+.quiz { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 0 var(--s4); max-width: 44rem; }
+.quiz summary { font-weight: 700; cursor: pointer; min-height: 44px; display: flex; align-items: center; padding: var(--s2) 0; }
+.quiz[open] summary { margin-bottom: var(--s3); }
+.quiz[open] { padding-bottom: var(--s4); }
+.q { margin: 0 0 var(--s6); }
+.choices { display: grid; gap: var(--s2); }
+.choice { position: relative; display: block; margin: 0; font-weight: 400; cursor: pointer; }
+.choice input { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 0; margin: 0; opacity: 0; cursor: pointer; }
+.choice span { position: relative; display: flex; align-items: center; min-height: 44px; padding: var(--s2) var(--s3) var(--s2) calc(var(--s3) + 28px); border: 2px solid var(--border); border-radius: var(--r); background: var(--bg); }
+.choice span::before { content: ""; position: absolute; left: var(--s3); top: 50%; width: 16px; height: 16px; margin-top: -8px; border: 2px solid var(--border-strong); border-radius: 50%; }
+.choice input:checked + span { border-color: var(--sea); background: var(--ok-bg); font-weight: 600; }
+.choice input:checked + span::before { background: var(--sea); box-shadow: inset 0 0 0 3px var(--ok-bg); }
+.choice input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 2px; }
+#quiz-result h3 { margin-top: 0; }
+
+/* ---------------------------------------------------------------- venue map */
+.venue-map { position: relative; aspect-ratio: 3 / 2; border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; margin-bottom: var(--s4); }
+.venue-map svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.m-land { fill: var(--ground); } .m-sand { fill: var(--sand); } .m-sea { fill: var(--wave-1); }
+.m-wave { fill: none; stroke: var(--bg); stroke-width: 3; opacity: 0.6; stroke-linecap: round; }
+.m-road { stroke: var(--road); stroke-width: 6; stroke-dasharray: 2 14; stroke-linecap: round; }
+.m-walk { fill: none; stroke: var(--sea); stroke-width: 3; stroke-dasharray: 8 8; opacity: 0.8; }
+.pin { position: absolute; transform: translate(-50%, -50%); min-height: 44px; min-width: 44px; padding: 0 var(--s3) 0 var(--s1); border: 2px solid var(--border-strong); border-radius: var(--r-pill); background: var(--surface); color: var(--text); font: inherit; font-size: var(--fs-s); font-weight: 700; white-space: nowrap; display: inline-flex; align-items: center; gap: var(--s2); cursor: pointer; }
+.pin b { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: var(--on-primary); }
+.pin[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); border-color: var(--primary); }
+.pin[aria-pressed="true"] b { background: var(--on-primary); color: var(--primary); }
+/* the quiz and the map need JavaScript: they are hidden without it and shown from the first paint with it, so nothing jumps */
+.quiz, .venue-map, .map-hint { display: none; }
+.js .quiz, .js .venue-map, .js .map-hint { display: block; }
+.js .map-panel:not(.active) { display: none; }
+.map-day[hidden] { display: none; }
+.map-day h4 { margin: var(--s4) 0 var(--s2); font-size: var(--fs-b); }
+.compact li { padding: var(--s1) 0; }
+.map-panel { max-width: 44rem; margin-bottom: var(--s4); }
 
 /* ---------------------------------------------------------------- footer, toast */
 .site-footer { background: var(--surface); border-top: 1px solid var(--border); padding: var(--s6) 0; }

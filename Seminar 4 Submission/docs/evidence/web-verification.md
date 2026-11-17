@@ -24,6 +24,8 @@ Date: 2026-11-17. Everything below was run on our own computer against the built
 ## Scenarios run in the real design
 - **Scenario 1 (phone, 375 px), passed:** Programme filtered to Saturday, workshops, beginner, follow. Save while logged out went to the sign-up page with the reason shown. After a demo sign-up the page returned to the same filtered list and the pending session was saved. A second workshop was saved. My Programme showed both with "No clashes". Saving a session at the same time as the first showed the clash warning on both cards, and Remove cleared it.
 - **Scenario 2 (desktop, 1280 px), passed:** Friday, Marea Club, social, night filters showed 4 sets. The 22:00 session opened and its DJ link led to the DJ page with both sets.
+- **Level quiz (phone):** submitting with no answers names the unanswered questions and moves focus to the first one; answers scoring 3 gave Beginner, and the result button applied the filters workshop + beginner (13 of 65 sessions) and folded the quiz.
+- **Venue map (phone):** selecting Marea Club showed its panel (address, access facts, Friday's 5 sessions); switching the day to Saturday showed 6; the walking times (130 m, 240 m, 280 m) come from the venue coordinates.
 - **Scenario 3 (search):** "marisol" returned 1 performer and 3 sessions with the name highlighted.
 
 ## Problems found by these checks, and fixed
@@ -38,11 +40,17 @@ Date: 2026-11-17. Everything below was run on our own computer against the built
 9. The headless Chrome screenshots of the phone layout were cropped at 500 px (its minimum window width), so the phone screenshots were taken in the browser pane instead.
 10. Lighthouse on the live site found a layout shift of 0.567 on the Search page (performance 78 on a phone): the results are drawn by JavaScript and pushed the footer down. The footer now stays hidden until the results are in place, and the results area has a reserved height. After the fix the layout shift is 0 on Search and My Programme (performance 100 and 98).
 
+11. After the quiz and map were added, Lighthouse showed a layout shift of 0.143 on the Venues page (phone) and 0.037 on Programme (desktop) because JavaScript revealed them after load. They are now shown from the first paint when JavaScript is on (shift 0 and 0.016, performance 99 to 100).
+
 ## Not verified
 Safari, Firefox, screen readers (NVDA, VoiceOver) and real users. The W3C online HTML checker was not run on the 142 pages in this round (it rate-limits repeated use); the offline check covers balanced tags, duplicate ids and links. Lighthouse numbers come from a local server and will differ a little on GitHub Pages.
 
 ## Live site check (https://faiazyen.github.io/web-design-project/web/), after the final push
 - **Files:** all 177 files in `web/` were downloaded from the live site and compared by checksum with the local files: 0 differ.
-- **Page audit** of all 142 live pages at 320 px: 0 problems (run before the last small fix). The audit was not repeated on the live site at the other widths.
+- **Page audit** of all 142 live pages at 320 px: 0 problems (run before the quiz and map were added). The audit was not repeated on the live site at the other widths.
 - **Lighthouse on the live site:** Home, Programme and a session page: 100 in all four categories on phone and desktop. Search and My Programme after the fix: Accessibility, Best practices and SEO 100, Performance 99 to 100, layout shift 0 to 0.003.
 - **Scenario 1 on the live site (phone size), passed:** Save while logged out, demo sign-up, return to the same filtered list with the session saved, second workshop saved, My Programme shows both with "No clashes". Scenario 2 was run locally only.
+
+### After the quiz and the venue map were added (local server)
+- Page audit of all 142 pages at 320, 375, 768 and 1280 px: 0 problems. Offline check: 0 problems (3,818 links, 811 assets).
+- Lighthouse after the layout-shift fix: Programme 99 (phone) and 100 (desktop), Venues 100 and 100, Accessibility, Best practices and SEO 100. The live check is repeated after the push (below).

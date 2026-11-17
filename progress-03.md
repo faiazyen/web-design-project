@@ -16,6 +16,8 @@
   4. Simulated sign-up and login (accounts and saved sessions in the browser, no password stored). Saving while logged out sends the visitor to log in and then saves the session after returning.
   5. Day/Night theme switch that also follows the system setting.
   6. FAQ as native expandable sections (works without JavaScript).
+  7. "Which level am I?" quiz on the Programme page: five questions, a result (Beginner, Intermediate or Advanced) and a button that applies the matching workshop filters. The level guide is plain text, so it works without JavaScript.
+  8. Interactive venue map on the Venues page: a schematic SVG map with three venue buttons (keyboard operable). Selecting one shows its address, access facts and a session list for the day you choose, plus walking times between venues. All the content is already in the HTML.
 - **Semantic HTML:** `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `time`, `address`, `details`, lists, tables only for prices and accommodation, every control has a `label`, one h1 per page, no skipped heading levels.
 - **Visual design:** the Golden Hour palette (Day and Night), Fraunces and Source Sans 3 bundled in the site (no external requests), 12 illustrated avatars, 3 venue scenes, a sunset hero drawn in SVG that changes with the theme. All images are AI-generated vector drawings, recorded in `docs/image-prompts.md`.
 - **For search engines and AI tools:** every page has its own title, description, canonical address and Open Graph tags; JSON-LD (Festival, Event, Place, Person or PerformingGroup, BreadcrumbList, FAQPage, offers) that matches visible text; `sitemap.xml`, `robots.txt`, `llms.txt`.
@@ -54,16 +56,16 @@ All changes are in the table in `documentation.md` and in `project-specification
 - **Contrast:** 30 pairs, Day and Night, lowest 4.81:1.
 - **Lighthouse (phone and desktop presets), local and on the live site:** Home, Programme and a session page: Performance, Accessibility, Best practices and SEO all 100. Search, My Programme and Login: Accessibility, Best practices and SEO 100, Performance 98 to 100 (the live run found a layout shift on Search, fixed, now 0).
 - **Double-click test:** pages open from `file://` in Chrome and filters and search work.
-- **Problems found and fixed (10):** footer and breadcrumb links under 44 px wide; two session pages with the same title; tickets JSON-LD that listed venues not shown on the page; a missing space in the filter label; a phone header that took a third of the screen; a phone hero whose art was hidden; a Night hero that was too dark; tables too tight on a phone; cropped phone screenshots; a layout shift of 0.567 on the Search page, found by Lighthouse on the live site and now 0.
+- **Problems found and fixed (11):** footer and breadcrumb links under 44 px wide; two session pages with the same title; tickets JSON-LD that listed venues not shown on the page; a missing space in the filter label; a phone header that took a third of the screen; a phone hero whose art was hidden; a Night hero that was too dark; tables too tight on a phone; cropped phone screenshots; a layout shift of 0.567 on the Search page, found by Lighthouse on the live site and now 0; a layout shift of 0.143 on the Venues page when the map appeared after load (the map and quiz are now shown from the first paint when JavaScript is on).
 - **Not verified:** Safari, Firefox, screen readers, real users, and the W3C online validator on all pages.
 
 ## 5. Use of AI, and how we checked it
 - **AI (Claude Code) did:** planned the build, wrote the page generator, the CSS, the JavaScript, the 15 vector images, the check scripts, and drafted this file and the slides.
 - **We decided:** build all pages from the data by script, draw the images as vectors now, bundle the two fonts, keep the prototype available, and what to show in the presentation.
 - **How we checked:** we did not accept the code because it looked right. We ran scripts over all 142 pages, ran both key scenarios in a real browser on phone and desktop sizes, read screenshots, and measured contrast, targets, headings and links.
-- **Accepted:** the generator approach, the layout, the JavaScript features. **Modified after testing:** the 10 items above. **Rejected:** a loading video in the hero (speed and no marks), stock photos, and framework code from design tools.
+- **Accepted:** the generator approach, the layout, the JavaScript features. **Modified after testing:** the 11 items above. **Rejected:** a loading video in the hero (speed and no marks), stock photos, and framework code from design tools.
 - **AI limits seen:** the first headers, heroes and tables looked fine on desktop and failed on a phone; the audit and screenshots found it. It also first listed venues in a JSON-LD block where they were not visible on the page. Sample bios are still fictional and formulaic.
 - Every step is in `ai-log.md`.
 
-## Not built yet, and next
-Two planned functions from the spec are not built yet: the level quiz and the venue map. The Programme filters already cover choosing by level, and the venue pages carry the address and access facts, so Scenarios 1 and 2 do not depend on them. Next: cross-review of the build by Oscar and Sebastian, native Safari and Firefox tests, screen reader check, the final polish and the remaining documentation.
+## Next
+All eight planned functions of the spec are built. Next: cross-review of the build by Oscar and Sebastian, native Safari and Firefox tests, screen reader check, the final polish and the remaining documentation.

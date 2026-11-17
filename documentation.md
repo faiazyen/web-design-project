@@ -14,7 +14,8 @@ The binding specification is `project-specification.md` (Seminar 2). After Semin
 | 3 | 2026-11-03 | Practical info (travel, accommodation, accessibility, FAQ, code of conduct) kept as one page with five sections | five thin pages would repeat the same header and footer and say little each | none (it was already one page in the sitemap) |
 | 4 | 2026-11-17 | Detail pages: one static HTML file per session (65), performer (64) and venue (3) instead of three templates filled from `?slug=` | a template that is filled by JavaScript shows search engines, AI tools and HTML validators an empty page. The course asks for SEO and AEO/GEO, so the content must be in the HTML | URLs change, sitemap, entities and scenarios do not |
 | 5 | 2026-11-17 | `image` paths in `data.json` point to AI-generated vector images in `web/images/` (12 avatars, 3 venue scenes) | the images had no files yet. Vector art loads fast and needs no photo licences | data only |
-| 6 | 2026-11-17 | Day/Night switch in the header, following the system setting | the Day/Night theme was a planned function and part of the Golden Hour design decision | the planned theme function is now built. The level quiz and the venue map are not built yet |
+| 6 | 2026-11-17 | Day/Night switch in the header, following the system setting | the Day/Night theme was a planned function and part of the Golden Hour design decision | the planned theme function is now built |
+| 8 | 2026-11-17 | "Which level am I?" quiz (Programme page) and interactive venue map (Venues page) built as planned | functions 5 and 6 of the spec. They live on existing pages, so the sitemap does not change | none, both were planned |
 | 7 | 2026-11-17 | Home page shows a short intro text and a four-number summary | the JSON-LD description must match visible text, and first-time visitors see the scale at once | none |
 
 The sitemap still has 13 page types. Only the address form of three of them (the detail pages) changed, and the entities, functions 1–4 and scenarios are the same. We count this as one structural change plus small additions, which stays inside the 15% limit.
@@ -46,4 +47,4 @@ The cross-review of the Seminar 4 build is still open: Oscar and Sebastian have 
 Every AI-assisted step is in `ai-log.md` with the prompt, what AI produced, how we checked it, and what we accepted, changed or rejected. Summary for Seminar 4:
 - AI wrote the page generator, the CSS, the JavaScript, the 15 vector images and the check scripts.
 - We verified the output with scripts (data, links, JSON-LD against visible text, contrast), a page audit of all 142 pages at four widths, Lighthouse, and both key scenarios in a real browser.
-- Errors found in AI output are listed in `docs/evidence/web-verification.md` (10 problems, all fixed).
+- Errors found in AI output are listed in `docs/evidence/web-verification.md` (11 problems, all fixed).
