@@ -2,7 +2,7 @@
 
 **Festival:** Atardecer Bachata Festival, Valencia, 25–27 June 2027. **Team:** Faiaz Hossain Mazumder Yen, Oscar Muz, Sebastian Betancur. **Date:** 2026-11-17.
 
-**Live (any computer, no installation):** https://faiazyen.github.io/web-design-project/web/ . **Offline:** open `web/index.html` by double-click. The earlier wireframe stays at `/prototype/`.
+**Live (any computer, no installation):** [https://faiazyen.github.io/web-design-project/web/](https://faiazyen.github.io/web-design-project/web/) — **Offline:** open `web/index.html` by double-click. The earlier wireframe stays at `/prototype/`.
 
 ## 1. What has been implemented
 - **142 real pages** in plain HTML, CSS and JavaScript (no framework, no build step to run, no server needed): Home, Programme, Performers, Venues, Roots, Practical info, Tickets, My Programme, Log in / Sign up, Search results, plus one page for each of the 65 sessions, 64 performers and 3 venues.
